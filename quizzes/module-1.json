@@ -1,0 +1,103 @@
+{
+  "module": 1,
+  "title": "Quiz: Dasar-Dasar JavaScript",
+  "description": "Test your understanding of JavaScript fundamentals",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Siapa pencipta JavaScript dan dalam berapa hari ia membuatnya?",
+      "options": [
+        "Brendan Eich dalam 10 hari",
+        "Linus Torvalds dalam 1 bulan",
+        "Guido van Rossum dalam 2 minggu",
+        "John Resig dalam 3 bulan"
+      ],
+      "correct": 0,
+      "explanation": "Brendan Eich menciptakan JavaScript di Netscape dalam waktu 10 hari pada tahun 1995."
+    },
+    {
+      "id": 2,
+      "question": "Manakah yang merupakan keyword deklarasi variabel yang direkomendasikan untuk nilai yang tidak berubah?",
+      "options": ["var", "let", "const", "static"],
+      "correct": 2,
+      "explanation": "Gunakan 'const' untuk nilai yang tidak akan di-reassign. Ini adalah best practice modern JavaScript."
+    },
+    {
+      "id": 3,
+      "question": "Apa hasil dari typeof null?",
+      "options": ["null", "undefined", "object", "boolean"],
+      "correct": 2,
+      "explanation": "Ini adalah bug historis di JavaScript. typeof null mengembalikan 'object' meskipun null adalah primitif."
+    },
+    {
+      "id": 4,
+      "question": "Manakah yang benar tentang strict equality (===)?",
+      "options": [
+        "Melakukan type coercion",
+        "Tidak melakukan type coercion",
+        "Hanya membandingkan nilai",
+        "Hanya membandingkan tipe"
+      ],
+      "correct": 1,
+      "explanation": "=== membandingkan kedua nilai tanpa type coercion. Kedua nilai harus sama tipe dan nilainya."
+    },
+    {
+      "id": 5,
+      "question": "Apa output dari: console.log(2 ** 3);",
+      "options": ["6", "8", "9", "Error"],
+      "correct": 1,
+      "explanation": "** adalah operator exponentiation. 2 ** 3 = 2^3 = 8."
+    },
+    {
+      "id": 6,
+      "question": "Manakah yang merupakan tipe primitif JavaScript?",
+      "options": ["Array", "Object", "Function", "Symbol"],
+      "correct": 3,
+      "explanation": "Symbol adalah salah satu dari 7 tipe primitif JavaScript. Array, Object, dan Function adalah tipe referensi."
+    },
+    {
+      "id": 7,
+      "question": "Apa hasil dari: Boolean(0), Boolean(''), Boolean(null)?",
+      "options": [
+        "true, true, true",
+        "false, false, false",
+        "false, true, false",
+        "0, '', null"
+      ],
+      "correct": 1,
+      "explanation": "0, empty string, dan null adalah falsy values. Boolean() mengembalikan false untuk ketiganya."
+    },
+    {
+      "id": 8,
+      "question": "Operator apa yang digunakan untuk nullish coalescing?",
+      "options": ["||", "??", "&&", "???"],
+      "correct": 1,
+      "explanation": "?? adalah operator nullish coalescing. Ia mengembalikan operand kanan jika operand kiri adalah null atau undefined."
+    },
+    {
+      "id": 9,
+      "question": "Di mana JavaScript dapat dijalankan?",
+      "options": [
+        "Hanya di browser",
+        "Hanya di Node.js",
+        "Browser dan Node.js",
+        "Hanya di desktop aplikasi"
+      ],
+      "correct": 2,
+      "explanation": "JavaScript bisa berjalan di browser (client-side) dan Node.js (server-side)."
+    },
+    {
+      "id": 10,
+      "question": "Apa fungsi dari 'use strict'?",
+      "options": [
+        "Membuat kode lebih cepat",
+        "Mengaktifkan strict mode yang membatasi beberapa perilaku tidak aman",
+        "Memaksa penggunaan ES6",
+        "Mengaktifkan type checking"
+      ],
+      "correct": 1,
+      "explanation": "Strict mode ('use strict') membatasi perilaku yang tidak aman seperti penggunaan variabel tanpa deklarasi, atau duplicate parameter names."
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+<h1>Setup Environment: Browser vs Node.js</h1>
+
+<div class="bg-gray-900 p-6 rounded-lg mb-6">
+    <h2 class="text-2xl font-semibold mb-4 text-blue-300">Dua Lingkungan Eksekusi Utama</h2>
+    <p class="mb-4">JavaScript bisa berjalan di dua lingkungan utama dengan perbedaan API dan use case yang berbeda:</p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+        <div class="bg-gray-800 p-5 rounded-lg border border-gray-700">
+            <div class="text-center mb-4">
+                <i class="fab fa-chrome text-4xl text-blue-500 mb-2"></i>
+                <h3 class="text-xl font-bold">Browser (Client-side)</h3>
+            </div>
+            <ul class="text-sm text-gray-300 space-y-2">
+                <li><i class="fas fa-check text-green-500 mr-2"></i>DOM Manipulation</li>
+                <li><i class="fas fa-check text-green-500 mr-2"></i>Event Handling</li>
+                <li><i class="fas fa-check text-green-500 mr-2"></i>Fetch API (AJAX)</li>
+                <li><i class="fas fa-check text-green-500 mr-2"></i>Canvas/WebGL</li>
+                <li><i class="fas fa-check text-green-500 mr-2"></i>Web Storage (localStorage)</li>
+                <li><i class="fas fa-check text-green-500 mr-2"></i>Service Workers</li>
+            </ul>
+        </div>
+        
+        <div class="bg-gray-800 p-5 rounded-lg border border-gray-700">
+            <div class="text-center mb-4">
+                <i class="fab fa-node-js text-4xl text-green-500 mb-2"></i>
+                <h3 class="text-xl font-bold">Node.js (Server-side)</h3>
+            </div>
+            <ul class="text-sm text-gray-300 space-y-2">
+                <li><i class="fas fa-check text-green-500 mr-2"></i>File System Access</li>
+                <li><i class="fas fa-check text-green-500 mr-2"></i>HTTP Server (Express, Koa)</li>
+                <li><i class="fas fa-check text-green-500 mr-2"></i>Database Connectivity</li>
+                <li><i class="fas fa-check text-green-500 mr-2"></i>Child Processes</li>
+                <li><i class="fas fa-check text-green-500 mr-2"></i>CLI Tools & Scripts</li>
+                <li><i class="fas fa-check text-green-500 mr-2"></i>Package Management (npm)</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="bg-gray-900 p-6 rounded-lg mb-6">
+    <h2 class="text-2xl font-semibold mb-4 text-blue-300">Global Objects yang Berbeda</h2>
+    <table class="w-full text-left border-collapse">
+        <thead>
+            <tr class="border-b border-gray-700">
+                <th class="py-3 px-4 text-blue-400">Object</th>
+                <th class="py-3 px-4 text-blue-400">Browser</th>
+                <th class="py-3 px-4 text-blue-400">Node.js</th>
+            </tr>
+        </thead>
+        <tbody class="text-gray-300">
+            <tr class="border-b border-gray-700">
+                <td class="py-3 px-4 font-semibold"><code>window</code> / <code>global</code></td>
+                <td class="py-3 px-4"><code>window</code> (global object)</td>
+                <td class="py-3 px-4"><code>global</code></td>
+            </tr>
+            <tr class="border-b border-gray-700">
+                <td class="py-3 px-4 font-semibold"><code>document</code></td>
+                <td class="py-3 px-4">Available (DOM API)</td>
+                <td class="py-3 px-4">Undefined</td>
+            </tr>
+            <tr class="border-b border-gray-700">
+                <td class="py-3 px-4 font-semibold"><code>location</code></td>
+                <td class="py-3 px-4">URL manipulation</td>
+                <td class="py-3 px-4">Not available</td>
+            </tr>
+            <tr class="border-b border-gray-700">
+                <td class="py-3 px-4 font-semibold"><code>process</code></td>
+                <td class="py-3 px-4">Undefined</td>
+                <td class="py-3 px-4">Process info & env vars</td>
+            </tr>
+            <tr>
+                <td class="py-3 px-4 font-semibold"><code>require()</code></td>
+                <td class="py-3 px-4">Undefined (unless bundler)</td>
+                <td class="py-3 px-4">Module system (CommonJS)</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="bg-gray-900 p-6 rounded-lg mb-6">
+    <h2 class="text-2xl font-semibold mb-4 text-blue-300">Mengapa Dua Lingkungan?</h2>
+    <div class="space-y-4">
+        <div>
+            <h3 class="text-lg font-semibold text-green-400">Browser: Focus pada UI/UX</h3>
+            <p class="text-gray-300">JavaScript di browser bertanggung jawab untuk membuat halaman web interaktif, menangani event user, berkomunikasi dengan server tanpa reload (AJAX), dan memanipulasi tampilan DOM.</p>
+        </div>
+        <div>
+            <h3 class="text-lg font-semibold text-blue-400">Node.js: Focus pada Server & Tools</h3>
+            <p class="text-gray-300">Node.js memungkinkan JavaScript berjalan di server, mengakses file system, membuat API, dan menjalankan task otomatis. Sama sekali tidak ada DOM.</p>
+        </div>
+        <div>
+            <h3 class="text-lg font-semibold text-purple-400">Universal/Isomorphic JS</h3>
+            <p class="text-gray-300">Framework seperti Next.js, Nuxt, atau SvelteKit memungkinkan kode JavaScript berjalan baik di server (SSR) maupun client (hydration), memberikan performa terbaik dan SEO friendly.</p>
+        </div>
+    </div>
+</div>
+
+<div class="bg-blue-900 border border-blue-700 p-6 rounded-lg mb-6">
+    <h2 class="text-2xl font-semibold mb-4 text-blue-300">Cara Menjalankan Kode</h2>
+    
+    <h3 class="text-lg font-semibold mb-3 text-green-300">1. Di Browser Console</h3>
+    <p class="text-gray-300 mb-3">Buka Developer Tools (F12) → Tab Console. Coba:</p>
+    <pre><code class="language-javascript">console.log("Hello from browser!");
+alert("Hello World");
+document.title = "My Page Title";</code></pre>
+    
+    <h3 class="text-lg font-semibold mb-3 mt-6 text-green-300">2. Di Node.js REPL</h3>
+    <p class="text-gray-300 mb-3">Install Node.js, lalu jalankan <code>node</code> di terminal:</p>
+    <pre><code class="language-bash">$ node
+> console.log("Hello from Node!");
+Hello from Node!
+> process.version
+'v20.11.0'</code></pre>
+    
+    <h3 class="text-lg font-semibold mb-3 mt-6 text-green-300">3. Di File Script</h3>
+    <p class="text-gray-300 mb-3">Buat file <code>hello.js</code>:</p>
+    <pre><code class="language-javascript">// hello.js
+const greet = (name) => `Hello, ${name}!`;
+console.log(greet("World"));</code></pre>
+    <p class="text-gray-300">Jalankan:</p>
+    <pre><code class="language-bash">$ node hello.js
+Hello, World!</code></pre>
+</div>
+
+<div class="bg-gray-900 p-6 rounded-lg mb-6">
+    <h2 class="text-2xl font-semibold mb-4 text-blue-300">Deteksi Environment</h2>
+    <p class="mb-4 text-gray-300">Kadang kita perlu menulis kode yang compatible di kedua environment. Gunakan deteksi:</p>
+    <pre><code class="language-javascript">const isBrowser = typeof window !== 'undefined' && typeof document !== 'undefined';
+const isNode = typeof process !== 'undefined' && process.versions != null && process.versions.node;
+
+if (isBrowser) {
+    console.log("Running in browser");
+    // Use DOM APIs
+} else if (isNode) {
+    console.log("Running in Node.js");
+    // Use fs, http, etc.
+} else {
+    console.log("Unknown environment");
+}</code></pre>
+</div>
+
+<div class="bg-yellow-900 border border-yellow-700 p-6 rounded-lg mb-6">
+    <h2 class="text-xl font-semibold mb-3 text-yellow-300"><i class="fas fa-exclamation-triangle mr-2"></i>Pitfalls Umum</h2>
+    <ul class="space-y-2 text-gray-200">
+        <li><strong>Jangan gunakan <code>document</code> di Node.js</strong> - akan error karena tidak ada DOM</li>
+        <li><strong><code>require()</code> tidak ada di browser</strong> - gunakan ES6 modules (<code>import</code>) atau bundler (Webpack, Vite)</li>
+        <li><strong>Path handling berbeda</strong> - Node punya <code>__dirname</code>, browser path relatif terhadap URL</li>
+        <li><strong>Global object name</strong> - <code>window</code> (browser) vs <code>global</code> (Node)</li>
+    </ul>
+</div>
+
+<hr class="border-gray-700 my-8">
+
+<div class="bg-blue-900 border border-blue-700 p-6 rounded-lg">
+    <h3 class="text-xl font-semibold mb-4 text-blue-300">Exercise</h3>
+    <p class="mb-4 text-gray-300">Buat file <code>detect.js</code> yang menampilkan environment mana yang digunakan:</p>
+    <pre><code class="language-javascript">// Your code here
+// Output: "Browser" atau "Node.js"</code></pre>
+    <p class="mt-4 text-gray-300">Test di kedua environment.</p>
+</div>

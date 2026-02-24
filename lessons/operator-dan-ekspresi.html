@@ -1,0 +1,235 @@
+<h1>Operator dan Ekspresi</h1>
+
+<div class="bg-gray-900 p-6 rounded-lg mb-6">
+    <h2 class="text-2xl font-semibold mb-4 text-blue-300">Kategori Operator</h2>
+    <ul class="grid grid-cols-2 md:grid-cols-3 gap-3 text-gray-300 text-sm">
+        <li><span class="text-green-400 font-semibold">Arithmetic</span> + - * / % **</li>
+        <li><span class="text-green-400 font-semibold">Assignment</span> = += -= *= /= %= **=</li>
+        <li><span class="text-green-400 font-semibold">Comparison</span> == === != !== > < >= <=</li>
+        <li><span class="text-green-400 font-semibold">Logical</span> && || ! ??</li>
+        <li><span class="text-green-400 font-semibold">Bitwise</span> & | ^ ~ << >> >>></li>
+        <li><span class="text-green-400 font-semibold">String</span> + (concat)</li>
+        <li><span class="text-green-400 font-semibold">Conditional</span> ? : (ternary)</li>
+        <li><span class="text-green-400 font-semibold">Unary</span> + - ~ ! typeof void delete</li>
+        <li><span class="text-green-400 font-semibold">Comma</span> , </li>
+    </ul>
+</div>
+
+<div class="bg-gray-900 p-6 rounded-lg mb-6">
+    <h2 class="text-2xl font-semibold mb-4 text-blue-300">Arithmetic Operators</h2>
+    <pre><code class="language-javascript">10 + 5;     // 15
+10 - 5;     // 5
+10 * 5;     // 50
+10 / 5;     // 2
+10 % 3;     // 1 (remainder)
+2 ** 3;     // 8 (exponentiation, ES2016)</code></pre>
+    <p class="mt-4 text-yellow-300">Division by zero:</p>
+    <pre><code class="language-javascript">5 / 0;   // Infinity
+-5 / 0;  // -Infinity
+0 / 0;   // NaN</code></pre>
+</div>
+
+<div class="bg-gray-900 p-6 rounded-lg mb-6">
+    <h2 class="text-2xl font-semibold mb-4 text-blue-300">Assignment & Compound Assignment</h2>
+    <pre><code class="language-javascript">let x = 10;
+x += 5;   // x = 15
+x -= 3;   // x = 12
+x *= 2;   // x = 24
+x /= 4;   // x = 6
+x %= 5;   // x = 1
+x **= 3;  // x = 1</code></pre>
+</div>
+
+<div class="bg-gray-900 p-6 rounded-lg mb-6">
+    <h2 class="text-2xl font-semibold mb-4 text-blue-300">Comparison Operators</h2>
+    <div class="overflow-x-auto">
+        <table class="w-full text-left border-collapse min-w-[600px]">
+            <thead>
+                <tr class="border-b border-gray-700">
+                    <th class="py-2 px-3 text-blue-400">Operator</th>
+                    <th class="py-2 px-3 text-blue-400">Description</th>
+                    <th class="py-2 px-3 text-blue-400">Example</th>
+                    <th class="py-2 px-3 text-blue-400">Result</th>
+                </tr>
+            </thead>
+            <tbody class="text-gray-300">
+                <tr class="border-b border-gray-700">
+                    <td class="py-2 px-3 font-mono">==</td>
+                    <td class="py-2 px-3">Loose equality (type coercion)</td>
+                    <td class="py-2 px-3"><code>5 == "5"</code></td>
+                    <td class="py-2 px-3">true</td>
+                </tr>
+                <tr class="border-b border-gray-700">
+                    <td class="py-2 px-3 font-mono text-green-400">===</td>
+                    <td class="py-2 px-3">Strict equality (no coercion)</td>
+                    <td class="py-2 px-3"><code>5 === "5"</code></td>
+                    <td class="py-2 px-3">false</td>
+                </tr>
+                <tr class="border-b border-gray-700">
+                    <td class="py-2 px-3 font-mono">!=</td>
+                    <td class="py-2 px-3">Loose inequality</td>
+                    <td class="py-2 px-3"><code>5 != "6"</code></td>
+                    <td class="py-2 px-3">true</td>
+                </tr>
+                <tr class="border-b border-gray-700">
+                    <td class="py-2 px-3 font-mono text-red-400">!==</td>
+                    <td class="py-2 px-3">Strict inequality</td>
+                    <td class="py-2 px-3"><code>5 !== "5"</code></td>
+                    <td class="py-2 px-3">true</td>
+                </tr>
+                <tr class="border-b border-gray-700">
+                    <td class="py-2 px-3 font-mono">&gt;</td>
+                    <td class="py-2 px-3">Greater than</td>
+                    <td class="py-2 px-3"><code>10 &gt; 5</code></td>
+                    <td class="py-2 px-3">true</td>
+                </tr>
+                <tr class="border-b border-gray-700">
+                    <td class="py-2 px-3 font-mono">&lt;</td>
+                    <td class="py-2 px-3">Less than</td>
+                    <td class="py-2 px-3"><code>3 &lt; 7</code></td>
+                    <td class="py-2 px-3">true</td>
+                </tr>
+                <tr class="border-b border-gray-700">
+                    <td class="py-2 px-3 font-mono">&gt;=</td>
+                    <td class="py-2 px-3">Greater or equal</td>
+                    <td class="py-2 px-3"><code>5 &gt;= 5</code></td>
+                    <td class="py-2 px-3">true</td>
+                </tr>
+                <tr>
+                    <td class="py-2 px-3 font-mono">&lt;=</td>
+                    <td class="py-2 px-3">Less or equal</td>
+                    <td class="py-2 px-3"><code>5 &lt;= 5</code></td>
+                    <td class="py-2 px-3">true</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="mt-4 text-yellow-300">⚠️ Gunakan <code>===</code> dan <code>!==</code> selalu, hindari <code>==</code> dan <code>!=</code>.</p>
+</div>
+
+<div class="bg-gray-900 p-6 rounded-lg mb-6">
+    <h2 class="text-2xl font-semibold mb-4 text-blue-300">Logical Operators</h2>
+    <pre><code class="language-javascript">// && (AND) - kedua sisi harus truthy
+true && true;     // true
+true && false;    // false
+"hello" && 42;    // 42 (return last truthy)
+
+// || (OR) - return first truthy, atau last falsy
+true || false;    // true
+false || "hi";    // "hi"
+0 || "" || null;  // null (semua falsy)
+
+// ! (NOT) - boolean negation
+!true;            // false
+!false;           // true
+!"hello";         // false
+!0;               // true
+!!"test";         // true (force boolean)</code></pre>
+    
+    <h3 class="text-xl font-semibold mt-6 mb-3 text-green-300">Nullish Coalescing (??)</h3>
+    <p class="mb-3 text-gray-300">Return right operand jika left adalah <code>null</code> atau <code>undefined</code> (tidak termasuk falsy lain seperti <code>0</code> atau <code>""</code>).</p>
+    <pre><code class="language-javascript">0 ?? 100;       // 0 (0 bukan nullish)
+"" ?? "default"; // ""
+null ?? "default"; // "default"
+undefined ?? 42;   // 42
+let name = null;
+console.log(name ?? "Anonymous"); // "Anonymous"</code></pre>
+</div>
+
+<div class="bg-gray-900 p-6 rounded-lg mb-6">
+    <h2 class="text-2xl font-semibold mb-4 text-blue-300">Unary Operators</h2>
+    <pre><code class="language-javascript">// typeof - cek tipe data (string result)
+typeof 42;          // "number"
+typeof "hi";        // "string"
+typeof true;        // "boolean"
+typeof undefined;   // "undefined"
+typeof null;        // "object" (bug!)
+typeof [1,2];       // "object"
+typeof function(){} // "function"
+
+// void - selalu return undefined
+void 0;             // undefined
+void (console.log("hi")); // undefined, tapi log executed
+
+// delete - hapus property dari object
+let obj = {a:1, b:2};
+delete obj.a;       // true
+console.log(obj);   // {b:2}
+
+// + (unary plus) - convert ke number
++"42";              // 42
++"3.14";            // 3.14
++true;              // 1
++false;             // 0
++"hello";           // NaN
+
+// - (unary minus) - negate number
+-5;                 // -5
+-"10";              // -10
+-(-5);              // 5</code></pre>
+</div>
+
+<div class="bg-yellow-900 border border-yellow-700 p-6 rounded-lg mb-6">
+    <h2 class="text-xl font-semibold mb-3 text-yellow-300"><i class="fas fa-exclamation-triangle mr-2"></i>Operator Precedence</h2>
+    <p class="mb-3 text-gray-200">Operator memiliki prioritas. Gunakan parentheses untuk kejelasan.</p>
+    <pre><code class="language-javascript">// Precedence tinggi: **
+2 ** 3 ** 2;  // 512 (2^(3^2) = 2^9)
+
+// * / % sebelum + -
+10 + 20 * 5;  // 110 (20*5 dulu)
+
+// && sebelum ||
+true || false && false; // true (&& dulu)
+
+// Gunakan parentheses untuk explicit grouping
+(10 + 20) * 5; // 150
+
+// Conditional (ternary) operator
+let status = score >= 60 ? "pass" : "fail";</code></pre>
+    <p class="mt-3 text-sm text-gray-300">Lihat tabel precedence lengkap di MDN: Operator Precedence</p>
+</div>
+
+<div class="bg-blue-900 border border-blue-700 p-6 rounded-lg mb-6">
+    <h2 class="text-2xl font-semibold mb-4 text-blue-300">Short-Circuit Evaluation</h2>
+    <p class="mb-4 text-gray-300">Logical operators <code>&amp;&amp;</code> dan <code>||</code> tidak mengevaluasi operand kedua jika hasil sudah bisa ditentukan dari operand pertama.</p>
+    
+    <h3 class="text-lg font-semibold mb-2 text-green-300">AND Short-Circuit (&amp;&amp;)</h3>
+    <pre><code class="language-javascript">function test() {
+    console.log("test executed");
+    return true;
+}
+
+false && test();  // test() TIDAK dieksekusi (false already)
+true && test();   // test() dieksekusi, return true</code></pre>
+    
+    <h3 class="text-lg font-semibold mb-2 mt-4 text-green-300">OR Short-Circuit (||)</h3>
+    <pre><code class="language-javascript">function compute() {
+    console.log("compute executed");
+    return 42;
+}
+
+true || compute();   // compute() TIDAK dieksekusi
+false || compute();  // compute() dieksekusi, return 42</code></pre>
+    
+    <h3 class="text-lg font-semibold mb-2 mt-4 text-green-300">Praktik Umum: Default Values</h3>
+    <pre><code class="language-javascript">// || untuk fallback (tapi hati-hati dengan falsy values seperti 0, "")
+const name = inputName || "Anonymous";
+const count = items || [];
+
+// ?? untuk nullish fallback (lebih aman)
+const name = inputName ?? "Anonymous";
+const count = items ?? [];</code></pre>
+</div>
+
+<hr class="border-gray-700 my-8">
+
+<div class="bg-blue-900 border border-blue-700 p-6 rounded-lg">
+    <h3 class="text-xl font-semibold mb-4 text-blue-300">Exercise</h3>
+    <ol class="list-decimal pl-6 space-y-3 text-gray-300">
+        <li>Tulis ekspresi yang mengembalikan <code>true</code> jika angka <code>x</code> berada di antara 10 dan 20 (inclusive).</li>
+        <li>Gunakan operator assignment compound untuk menggandakan nilai <code>x</code> lalu tambah 5.</li>
+        <li>Buat fungsi <code>isPositive(num)</code> yang return <code>true</code> jika <code>num</code> adalah number positif, <code>false</code> jika negatif atau nol.</li>
+        <li>Gunakan short-circuit evaluation untuk memanggil fungsi <code>log(message)</code> hanya jika <code>DEBUG</code> adalah <code>true</code>.</li>
+        <li>Coba evaluasi: <code>2 + 3 * 4 - 5 / 2</code>. Apakah hasilnya sesuai ekspektasi? Tambah parentheses untuk mendapatkan hasil 10.</li>
+    </ol>
+</div>

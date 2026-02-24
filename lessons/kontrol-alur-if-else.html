@@ -1,0 +1,224 @@
+<h1>Kontrol Alur: if/else dan switch</h1>
+
+<div class="bg-gray-900 p-6 rounded-lg mb-6">
+    <h2 class="text-2xl font-semibold mb-4 text-blue-300">Struktur Keputusan</h2>
+    <p class="mb-4 text-gray-300">Kontrol alur memungkinkan program membuat keputusan berdasarkan kondisi. JavaScript menyediakan:</p>
+    <ul class="list-disc pl-6 space-y-2 text-gray-300">
+        <li><code>if...else</code> - untuk kondisi boolean</li>
+        <li><code>switch</code> - untuk banyak nilai yang mungkin dari satu ekspresi</li>
+        <li><code>?:</code> (ternary) - if...else dalam satu baris</li>
+    </ul>
+</div>
+
+<div class="bg-gray-900 p-6 rounded-lg mb-6">
+    <h2 class="text-2xl font-semibold mb-4 text-blue-300">1. If Statement</h2>
+    <pre><code class="language-javascript">// if sederhana
+if (condition) {
+    // executed jika condition truthy
+}
+
+// if...else
+if (condition) {
+    // jika true
+} else {
+    // jika false
+}
+
+// if...else if...else chain
+if (score >= 90) {
+    grade = "A";
+} else if (score >= 80) {
+    grade = "B";
+} else if (score >= 70) {
+    grade = "C";
+} else {
+    grade = "F";
+}</code></pre>
+    <p class="mt-4 text-yellow-300">Condition bisa berupa nilai apa pun - JavaScript akan mengkonversi ke boolean (truthy/falsy).</p>
+</div>
+
+<div class="bg-gray-900 p-6 rounded-lg mb-6">
+    <h2 class="text-2xl font-semibold mb-4 text-blue-300">2. Switch Statement</h2>
+    <p class="mb-4 text-gray-300">Switch mengevaluasi satu ekspresi dan membandingkan dengan beberapa case.</p>
+    <pre><code class="language-javascript">switch (expression) {
+    case value1:
+        // code block
+        break;
+    case value2:
+        // code block
+        break;
+    case value3:
+        // code block
+        break;
+    default:
+        // jika tidak ada case yang match
+}</code></pre>
+    
+    <h3 class="text-lg font-semibold mt-6 mb-2 text-green-300">Contoh: Hari dalam seminggu</h3>
+    <pre><code class="language-javascript">const day = new Date().getDay(); // 0-6
+let dayName;
+
+switch (day) {
+    case 0:
+        dayName = "Minggu";
+        break;
+    case 1:
+        dayName = "Senin";
+        break;
+    case 2:
+        dayName = "Selasa";
+        break;
+    case 3:
+        dayName = "Rabu";
+        break;
+    case 4:
+        dayName = "Kamis";
+        break;
+    case 5:
+        dayName = "Jumat";
+        break;
+    case 6:
+        dayName = "Sabtu";
+        break;
+    default:
+        dayName = "Unknown";
+}</code></pre>
+    
+    <h3 class="text-xl font-semibold mt-6 mb-2 text-green-300">Grouping Cases</h3>
+    <p class="mb-3 text-gray-300">Beberapa case bisa menjalankan kode yang sama:</p>
+    <pre><code class="language-javascript">switch (grade) {
+    case "A":
+    case "A+":
+    case "A-":
+        console.log("Excellent");
+        break;
+    case "B":
+    case "B+":
+    case "B-":
+        console.log("Good");
+        break;
+    default:
+        console.log("Needs improvement");
+}</code></pre>
+</div>
+
+<div class="bg-yellow-900 border border-yellow-700 p-6 rounded-lg mb-6">
+    <h2 class="text-xl font-semibold mb-3 text-yellow-300"><i class="fas fa-exclamation-triangle mr-2"></i>Pitfalls Switch & If</h2>
+    <ul class="space-y-3 text-gray-200">
+        <li><strong>Jangan lupa <code>break</code></strong> - tanpa break, execution "fall through" ke case berikutnya (kadang diinginkan, tapi sering bug).
+            <pre><code class="language-javascript">// BUG: lupa break
+switch (x) {
+    case 1:
+        console.log("one");
+    case 2:
+        console.log("two"); // akan dieksekusi jika x === 1 juga!
+}</code></pre>
+        </li>
+        <li><strong>Switch menggunakan strict equality (<code>===</code>)</strong> - tidak ada type coercion.
+            <pre><code class="language-javascript">switch ("5") {
+    case 5: console.log("match"); // tidak match (string vs number)
+}</code></pre>
+        </li>
+        <li><strong>If conditions bisa truthy/falsy</strong> - hati-hati dengan nilai yang tidak diharapkan.
+            <pre><code class="language-javascript">if (0) { /* tidak dieksekusi */ }
+if ("0") { /* DIEKSEKUSI karena "0" truthy */ }</code></pre>
+        </li>
+    </ul>
+</div>
+
+<div class="bg-gray-900 p-6 rounded-lg mb-6">
+    <h2 class="text-2xl font-semibold mb-4 text-blue-300">3. Ternary Operator (Conditional)</h2>
+    <p class="mb-4 text-gray-300">Sintaks singkat untuk if...else yang mengembalikan nilai.</p>
+    <pre><code class="language-javascript">condition ? expressionIfTrue : expressionIfFalse
+
+// Contoh:
+const status = age >= 18 ? "adult" : "minor";
+const price = isMember ? discountPrice : regularPrice;
+const message = loggedIn ? "Welcome back!" : "Please login";</code></pre>
+    
+    <h3 class="text-lg font-semibold mt-6 mb-2 text-green-300">Nested Ternary (hati-hati!)</h3>
+    <pre><code class="language-javascript">// Kurang readable
+let grade = score >= 90 ? "A" : score >= 80 ? "B" : score >= 70 ? "C" : "F";
+
+// Lebih baik gunakan if...else atau switch untuk kompleks</code></pre>
+</div>
+
+<div class="bg-blue-900 border border-blue-700 p-6 rounded-lg mb-6">
+    <h2 class="text-2xl font-semibold mb-4 text-blue-300">Truthy/Falsy dalam Kondisi</h2>
+    <p class="mb-4 text-gray-300">If dan switch mengevaluasi kebenaran kondisi menggunakan truthiness:</p>
+    <pre><code class="language-javascript">// Falsy values: false, 0, -0, 0n, "", null, undefined, NaN
+if (0) { console.log("false"); }        // tidak dieksekusi
+if (1) { console.log("true"); }         // dieksekusi
+if ("") { console.log("false"); }       // tidak dieksekusi
+if ("0") { console.log("true"); }       // dieksekusi (string "0" truthy!)
+if ([]) { console.log("true"); }        // dieksekusi (array truthy)
+if ({}) { console.log("true"); }        // dieksekusi (object truthy)</code></pre>
+    <p class="mt-4 text-yellow-300">Gunakan pengecekan eksplisit jika perlu membedakan:</p>
+    <pre><code class="language-javascript">if (value === 0) { /* exactly zero */ }
+if (value === "") { /* exactly empty string */ }
+if (value == null) { /* null atau undefined */ }</code></pre>
+</div>
+
+<div class="bg-gray-900 p-6 rounded-lg mb-6">
+    <h2 class="text-2xl font-semibold mb-4 text-blue-300">Pattern: Guard Clause</h2>
+    <p class="mb-4 text-gray-300">Gunakan early return untuk menghindari nested if terlalu dalam:</p>
+    <pre><code class="language-javascript">// BAD: deeply nested
+function process(data) {
+    if (data) {
+        if (data.valid) {
+            if (data.user) {
+                // process...
+            }
+        }
+    }
+}
+
+// GOOD: guard clauses
+function process(data) {
+    if (!data) return;
+    if (!data.valid) return;
+    if (!data.user) return;
+    // process...
+}</code></pre>
+</div>
+
+<div class="bg-yellow-900 border border-yellow-700 p-6 rounded-lg mb-6">
+    <h2 class="text-xl font-semibold mb-3 text-yellow-300"><i class="fas fa-exclamation-triangle mr-2"></i>Common Mistakes</h2>
+    <ol class="list-decimal pl-6 space-y-2 text-gray-200">
+        <li><strong>Assignment (=) vs Equality (==, ===)</strong>
+            <pre><code class="language-javascript">if (x = 5) { /* assignment! x menjadi 5, selalu true */ }
+if (x === 5) { /* comparison */ }</code></pre>
+        </li>
+        <li><strong>Comparison dengan NaN</strong>
+            <pre><code class="language-javascript">NaN === NaN; // false!
+Number.isNaN(NaN); // true (gunakan ini)
+isNaN("hello"); // true (converted to NaN, hati-hati)</code></pre>
+        </li>
+        <li><strong>Floating point precision</strong>
+            <pre><code class="language-javascript">0.1 + 0.2 === 0.3; // false!
+// Gunakan epsilon comparison atau integer math
+Math.abs(0.1 + 0.2 - 0.3) < 1e-10; // true</code></pre>
+        </li>
+    </ol>
+</div>
+
+<hr class="border-gray-700 my-8">
+
+<div class="bg-blue-900 border border-blue-700 p-6 rounded-lg">
+    <h3 class="text-xl font-semibold mb-4 text-blue-300">Exercise</h3>
+    <ol class="list-decimal pl-6 space-y-3 text-gray-300">
+        <li>Tulis fungsi <code>getDayType(day)</code> yang menerima angka 1-7 (Senin-Minggu) dan return "weekday" untuk 1-5, "weekend" untuk 6-7.</li>
+        <li>Buat kalkulator sederhana dengan switch: operator (+, -, *, /) dan dua angka.</li>
+        <li>Gunakan ternary untuk menentukan apakah sebuah tahun kabisat: (divisible by 4 AND not by 100) OR divisible by 400.</li>
+        <li>Buat fungsi <code>describeNumber(num)</code> yang return: "positive" jika >0, "negative" jika &lt;0, "zero" jika 0, "NaN" jika NaN.</li>
+        <li>Rewrite nested if berikut menggunakan guard clauses:
+            <pre><code class="language-javascript">if (user) {
+    if (user.active) {
+        if (user.subscription) {
+            console.log("Access granted");
+        }
+    }
+}</code></pre>
+        </li>
+    </ol>
+</div>

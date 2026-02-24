@@ -1,0 +1,194 @@
+<h1>Variabel dan Tipe Data</h1>
+
+<div class="bg-gray-900 p-6 rounded-lg mb-6">
+    <h2 class="text-2xl font-semibold mb-4 text-blue-300">Deklarasi Variabel: var, let, const</h2>
+    <p class="mb-4">JavaScript memiliki 3 cara mendeklarasi variabel. Gunakan <code>let</code> dan <code>const</code> untuk hampir semua kasus.</p>
+    
+    <div class="overflow-x-auto mb-6">
+        <table class="w-full text-left border-collapse min-w-[600px]">
+            <thead>
+                <tr class="border-b border-gray-700">
+                    <th class="py-3 px-4 text-blue-400">Keyword</th>
+                    <th class="py-3 px-4 text-blue-400">Scope</th>
+                    <th class="py-3 px-4 text-blue-400">Reassign</th>
+                    <th class="py-3 px-4 text-blue-400">Hoisting</th>
+                    <th class="py-3 px-400">Rekomendasi</th>
+                </tr>
+            </thead>
+            <tbody class="text-gray-300">
+                <tr class="border-b border-gray-700">
+                    <td class="py-3 px-4 font-mono text-yellow-400">var</td>
+                    <td class="py-3 px-4">Function scope</td>
+                    <td class="py-3 px-4">✅</td>
+                    <td class="py-3 px-4">✅ (undefined)</td>
+                    <td class="py-3 px-4 text-red-400">Hindari</td>
+                </tr>
+                <tr class="border-b border-gray-700">
+                    <td class="py-3 px-4 font-mono text-green-400">let</td>
+                    <td class="py-3 px-4">Block scope</td>
+                    <td class="py-3 px-4">✅</td>
+                    <td class="py-3 px-4">❌ (Temporal Dead Zone)</td>
+                    <td class="py-3 px-4 text-yellow-400">Nilai yang berubah</td>
+                </tr>
+                <tr>
+                    <td class="py-3 px-4 font-mono text-blue-400">const</td>
+                    <td class="py-3 px-4">Block scope</td>
+                    <td class="py-3 px-4">❌</td>
+                    <td class="py-3 px-4">❌ (Temporal Dead Zone)</td>
+                    <td class="py-3 px-4 text-green-400">Default pilihan</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-800 p-4 rounded-lg">
+        <h4 class="font-semibold mb-2 text-yellow-300">Contoh:</h4>
+        <pre><code class="language-javascript">let age = 25;      // bisa diubah
+age = 26;          // ✅ OK
+
+const name = "Budi"; // tidak bisa reassign
+name = "Ana";        // ❌ TypeError
+
+// Tapi const untuk object/array: isi bisa diubah
+const arr = [1, 2, 3];
+arr.push(4);  // ✅ OK (mutasi)
+arr = [5, 6]; // ❌ TypeError (reassign)</code></pre>
+    </div>
+</div>
+
+<div class="bg-gray-900 p-6 rounded-lg mb-6">
+    <h2 class="text-2xl font-semibold mb-4 text-blue-300">Tipe Data Primitif</h2>
+    <p class="mb-4">JavaScript memiliki 7 tipe primitif:</p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="bg-gray-800 p-4 rounded">
+            <h4 class="font-semibold text-green-400 mb-2">Number</h4>
+            <p class="text-sm text-gray-400">Integer dan floating point. Batas: ±(2^53-1). <code>Infinity</code>, <code>NaN</code> juga number.</p>
+            <pre><code class="language-javascript">42; 3.14; -7; NaN; Infinity</code></pre>
+        </div>
+        <div class="bg-gray-800 p-4 rounded">
+            <h4 class="font-semibold text-green-400 mb-2">BigInt</h4>
+            <p class="text-sm text-gray-400">Integer dengan ukuran arbitrer (ditambahkan ES2020). Akhiri dengan <code>n</code>.</p>
+            <pre><code class="language-javascript">9007199254740991n; BigInt("12345678901234567890")</code></pre>
+        </div>
+        <div class="bg-gray-800 p-4 rounded">
+            <h4 class="font-semibold text-green-400 mb-2">String</h4>
+            <p class="text-sm text-gray-400">Teks dengan single/double/backtick quotes. Template literals dengan backtick.</p>
+            <pre><code class="language-javascript">"Hello"; 'World'; `Value: ${x}`</code></pre>
+        </div>
+        <div class="bg-gray-800 p-4 rounded">
+            <h4 class="font-semibold text-green-400 mb-2">Boolean</h4>
+            <p class="text-sm text-gray-400">Nilai logika: <code>true</code> atau <code>false</code>.</p>
+            <pre><code class="language-javascript">true; false</code></pre>
+        </div>
+        <div class="bg-gray-800 p-4 rounded">
+            <h4 class="font-semibold text-green-400 mb-2">undefined</h4>
+            <p class="text-sm text-gray-400">Nilai yang belum didefinisikan. Tipe dari <code>undefined</code> adalah <code>"undefined"</code>.</p>
+            <pre><code class="language-javascript">let x; console.log(x); // undefined</code></pre>
+        </div>
+        <div class="bg-gray-800 p-4 rounded">
+            <h4 class="font-semibold text-green-400 mb-2">null</h4>
+            <p class="text-sm text-gray-400">Nilai "tidak ada" yang sengaja dikelompokkan. Tipe <code>null</code> adalah <code>"object"</code> (bug sejarah).</p>
+            <pre><code class="language-javascript">let y = null;</code></pre>
+        </div>
+        <div class="bg-gray-800 p-4 rounded md:col-span-2">
+            <h4 class="font-semibold text-green-400 mb-2">Symbol</h4>
+            <p class="text-sm text-gray-400">Identifier unik. Berguna sebagai property key yang unik.</p>
+            <pre><code class="language-javascript">const id = Symbol("id");
+let obj = { [id]: 123 };</code></pre>
+        </div>
+    </div>
+</div>
+
+<div class="bg-gray-900 p-6 rounded-lg mb-6">
+    <h2 class="text-2xl font-semibold mb-4 text-blue-300">Tipe Referensi (Object)</h2>
+    <p class="mb-4">Semua yang bukan primitif adalah <strong>object</strong>, termasuk:</p>
+    <ul class="list-disc pl-6 space-y-2 text-gray-300">
+        <li><strong>Object</strong> - <code>{}</code> atau <code>new Object()</code></li>
+        <li><strong>Array</strong> - <code>[]</code> atau <code>new Array()</code> (ordered list)</li>
+        <li><strong>Function</strong> - <code>function() {}</code> atau arrow <code>() => {}</code></li>
+        <li><strong>Date</strong> - <code>new Date()</code></li>
+        <li><strong>RegExp</strong> - <code>/pattern/</code> atau <code>new RegExp()</code></li>
+        <li><strong>Map, Set, WeakMap, WeakSet</strong> - collections</li>
+    </ul>
+    <p class="mt-4 text-yellow-300">Catatan: Tipe referensi disimpan sebagai referensi di memory, bukan nilai copy.</p>
+    <pre><code class="language-javascript">let a = [1, 2, 3];
+let b = a;     // b merefer ke array yang sama
+b.push(4);
+console.log(a); // [1,2,3,4] - ikut berubah!</code></pre>
+</div>
+
+<div class="bg-blue-900 border border-blue-700 p-6 rounded-lg mb-6">
+    <h2 class="text-2xl font-semibold mb-4 text-blue-300">Type Checking</h2>
+    <p class="mb-4">Gunakan <code>typeof</code> untuk tipe primitif dan <code>instanceof</code> untuk object.</p>
+    <pre><code class="language-javascript">typeof 42;           // "number"
+typeof "hello";     // "string"
+typeof true;        // "boolean"
+typeof undefined;   // "undefined"
+typeof null;        // "object"  ⚠️ bug sejarah
+typeof NaN;         // "number"
+typeof [1,2];       // "object"
+typeof {a:1};       // "object"
+typeof function(){} // "function"
+
+// instanceof untuk specific object type
+[1,2] instanceof Array;      // true
+new Date() instanceof Date;  // true
+/abc/ instanceof RegExp;     // true</code></pre>
+    <p class="mt-4 text-gray-300">Untuk null check, gunakan strict equality: <code>value === null</code>.</p>
+</div>
+
+<div class="bg-yellow-900 border border-yellow-700 p-6 rounded-lg mb-6">
+    <h2 class="text-xl font-semibold mb-3 text-yellow-300"><i class="fas fa-exclamation-triangle mr-2"></i>Type Coercion & Conversion</h2>
+    <p class="mb-3 text-gray-200">JavaScript otomatis mengkonversi tipe dalam operasi tertentu. Ini bisa membingungkan.</p>
+    
+    <h4 class="font-semibold mb-2 text-green-300">Implicit Coercion (otomatis)</h4>
+    <pre><code class="language-javascript">"5" + 3;   // "53" (string concat)
+"5" - 3;   // 2 (string to number)
+"5" * "3"; // 15
+"5" == 5;  // true (type coercion)
+"5" === 5; // false (strict equality)</code></pre>
+    
+    <h4 class="font-semibold mb-2 mt-4 text-green-300">Explicit Conversion (disarankan)</h4>
+    <pre><code class="language-javascript">Number("5");      // 5
+parseInt("10");    // 10
+parseFloat("3.14");// 3.14
+String(42);        // "42"
+Boolean(0);        // false
+Boolean("");       // false
+Boolean("hello");  // true</code></pre>
+    
+    <p class="mt-4 text-red-300">Selalu gunakan <code>===</code> (strict equality) kecuali Anda tahu pasti perlu coercion.</p>
+</div>
+
+<div class="bg-gray-900 p-6 rounded-lg mb-6">
+    <h2 class="text-2xl font-semibold mb-4 text-blue-300">Truthy & Falsy</h2>
+    <p class="mb-4">Nilai berikut selalu <strong>falsy</strong> dalam konteks boolean:</p>
+    <ul class="grid grid-cols-2 md:grid-cols-3 gap-2 text-sm text-gray-300 mb-4">
+        <li><code>false</code></li>
+        <li><code>0</code></li>
+        <li><code>-0</code></li>
+        <li><code>0n</code> (BigInt zero)</li>
+        <li><code>""</code> (empty string)</li>
+        <li><code>null</code></li>
+        <li><code>undefined</code></li>
+        <li><code>NaN</code></li>
+    </ul>
+    <p class="text-gray-300">Semua nilai lain adalah <strong>truthy</strong>:</p>
+    <pre><code class="language-javascript">if ("0") console.log("truthy"); // "0" adalah truthy!
+if ([]) console.log("truthy");   // array kosong truthy
+if ({}) console.log("truthy");   // object kosong truthy
+if (42) console.log("truthy");   // angka selain 0 truthy</code></pre>
+</div>
+
+<hr class="border-gray-700 my-8">
+
+<div class="bg-blue-900 border border-blue-700 p-6 rounded-lg">
+    <h3 class="text-xl font-semibold mb-4 text-blue-300">Exercise</h3>
+    <ol class="list-decimal pl-6 space-y-3 text-gray-300">
+        <li>Deklarasikan variabel dengan <code>const</code> untuk nilai yang tidak berubah, dan <code>let</code> untuk nilai yang berubah.</li>
+        <li>Coba ketik <code>typeof null</code> di console. Apa hasilnya? Mengapa?</li>
+        <li>Buat fungsi <code>toBoolean(value)</code> yang mengembalikan boolean dari nilai apa pun menggunakan eksplisit conversion.</li>
+        <li>Tentukan apakah nilai berikut truthy atau falsy tanpa menjalankan kode: <code>"false"</code>, <code>[]</code>, <code>{}</code>, <code>"0"</code>, <code>-1</code>, <code>Infinity</code>.</li>
+    </ol>
+</div>
