@@ -1,74 +1,32 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>String Methods Lengkap - JavaScript Learning Path</title>
-    <link rel="stylesheet" href="../styles.css">
-</head>
-<body class="lesson-body">
-    <div class="container">
-        <header class="lesson-header">
-            <div class="breadcrumb">
-                <a href="../index.html">Beranda</a> / <span>General</span> / <span>String Methods Lengkap</span>
-            </div>
-            <h1>String Methods Lengkap</h1>
-            <div class="lesson-meta">
-                <span class="duration"><i class="far fa-clock"></i> 15-20 menit</span>
-                <span class="module-badge">Modul: General</span>
-            </div>
-        </header>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>String Methods Lengkap - JavaScript Learning Path</title><link rel="stylesheet" href="../styles.css"></head>
+<body class="lesson-body"><div class="container"><header class="lesson-header"><div class="breadcrumb"><a href="../index.html">Beranda</a> / <span>Data Structures</span> / <span>String Methods Lengkap</span></div><h1>String Methods Lengkap</h1><div class="lesson-meta"><span class="duration">15-20 menit</span><span class="module-badge">Data Structures</span></div></header>
+<main class="lesson-content"><section class="objectives"><h2>Tujuan Pembelajaran</h2><ul><li>String methods: slice, split, join, replace</li><li>Template literals dan tagged templates</li><li>Regular expressions dengan string</li></ul></section><section class="content"><h2>Materi</h2><h3>Common String Methods</h3><pre><code>const str = "Hello, World!";
 
-        <main class="lesson-content">
-            <section class="objectives">
-                <h2>Tujuan Pembelajaran</h2>
-                <ul>
-                    <li>Memahami konsep string methods lengkap</li>
-                    <li>Menerapkan konsep dalam kode praktis</li>
-                    <li>Memahami best practices penggunaan</li>
-                </ul>
-            </section>
+str.length;            // 13
+str.charAt(0);         // "H"
+str.indexOf("World");  // 7
+str.includes("Hello"); // true
+str.startsWith("He");  // true
+str.endsWith("!");     // true
 
-            <section class="content">
-                <h2>Pengantar</h2>
-                <p><strong>String Methods Lengkap</strong> adalah salah satu konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer. Pada modul ini, kita akan membahas secara mendalam tentang string methods lengkap dan penerapannya dalam pengembangan aplikasi web modern.</p>
+// Transformasi
+str.toUpperCase();     // "HELLO, WORLD!"
+str.toLowerCase();     // "hello, world!"
+str.trim();            // Remove whitespace
+str.padStart(20, "-"); // "-------Hello, World!"
 
-                <h2>Topik yang Dibahas</h2>
-                <ul>
-            <li>Konsep dasar dan definisi</li>
-            <li>Implementasi praktis</li>
-            <li>Contoh kode dan use case</li>
-            <li>Best practices</li>
-            <li>Latihan dan evaluasi</li>
-                </ul>
+// Extract
+str.slice(0, 5);       // "Hello"
+str.substring(0, 5);   // "Hello"
 
-                <h2>Penjelasan</h2>
-                <p>JavaScript adalah bahasa pemrograman yang sangat fleksibel dan powerful untuk pengembangan web. Memahami string methods lengkap akan membantu Anda menulis kode yang lebih efisien, mudah dibaca, dan maintainable.</p>
+// Replace
+str.replace("World", "Archon");  // "Hello, Archon!"
+str.replaceAll("l", "L");        // "HeLLo, WorLD!"
 
-                <h3>Contoh Kode</h3>
-                <pre><code>// Contoh implementasi string methods lengkap
-// Praktikkan konsep yang telah dipelajari
-
-console.log('Belajar: String Methods Lengkap');
-</code></pre>
-
-                <h2>Praktik Terbaik</h2>
-                <ul>
-                    <li>Gunakan konsep ini sesuai konteks yang tepat</li>
-                    <li>Pahami kelebihan dan kekurangan pendekatan ini</li>
-                    <li>Praktikkan dengan contoh kode yang bervariasi</li>
-                </ul>
-            </section>
-
-            <section class="summary">
-                <h2>Rangkuman</h2>
-                <p>Dalam modul ini, Anda telah mempelajari tentang string methods lengkap dalam JavaScript. Konsep ini merupakan fondasi penting yang akan sering digunakan dalam pengembangan aplikasi web.</p>
-            </section>
-
-            <nav class="lesson-nav">
-                <a href="../index.html" class="btn btn-secondary">Kembali ke Daftar Modul</a>
-            </nav>
-        </main>
-    </div>
-</body>
-</html>
+// Split
+"a,b,c".split(",");    // ["a", "b", "c"]</code></pre>
+<h3>Template Literals</h3><pre><code>const nama = "Archon";
+const pesan = \`Halo \${nama}!
+Nilai: \${2 + 3}\`;
+// Multiline dan expression support!</code></pre></section><section class="summary"><h2>Rangkuman</h2><p>Pelajari string methods lengkap dengan praktik langsung.</p></section><nav class="lesson-nav"><a href="../index.html">← Kembali</a></nav></main></div></body></html>

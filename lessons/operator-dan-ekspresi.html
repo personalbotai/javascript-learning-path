@@ -1,74 +1,25 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Operator dan Ekspresi - JavaScript Learning Path</title>
-    <link rel="stylesheet" href="../styles.css">
-</head>
-<body class="lesson-body">
-    <div class="container">
-        <header class="lesson-header">
-            <div class="breadcrumb">
-                <a href="../index.html">Beranda</a> / <span>Basics</span> / <span>Operator dan Ekspresi</span>
-            </div>
-            <h1>Operator dan Ekspresi</h1>
-            <div class="lesson-meta">
-                <span class="duration"><i class="far fa-clock"></i> 15-20 menit</span>
-                <span class="module-badge">Modul: Basics</span>
-            </div>
-        </header>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Operator dan Ekspresi - JavaScript Learning Path</title><link rel="stylesheet" href="../styles.css"></head>
+<body class="lesson-body"><div class="container"><header class="lesson-header"><div class="breadcrumb"><a href="../index.html">Beranda</a> / <span>Dasar-Dasar</span> / <span>Operator dan Ekspresi</span></div><h1>Operator dan Ekspresi</h1><div class="lesson-meta"><span class="duration">15-20 menit</span><span class="module-badge">Dasar-Dasar</span></div></header>
+<main class="lesson-content"><section class="objectives"><h2>Tujuan Pembelajaran</h2><ul><li>Menggunakan operator aritmatika, perbandingan, dan logika</li><li>Memahami strict equality (===) vs loose equality (==)</li><li>Optional chaining dan nullish coalescing</li></ul></section><section class="content"><h2>Materi</h2><h3>Operator Aritmatika</h3><pre><code>const a = 10, b = 3;
+a + b   // 13
+a - b   // 7
+a * b   // 30
+a / b   // 3.333...
+a % b   // 1 (sisa bagi)
+a ** b  // 1000 (pangkat)</code></pre>
+<h3>Perbandingan</h3><pre><code>// Strict equality (===) - TANPA type coercion (direkomendasikan)
+5 === "5"   // false
+null === undefined  // false
 
-        <main class="lesson-content">
-            <section class="objectives">
-                <h2>Tujuan Pembelajaran</h2>
-                <ul>
-                    <li>Memahami konsep operator dan ekspresi</li>
-                    <li>Menerapkan konsep dalam kode praktis</li>
-                    <li>Memahami best practices penggunaan</li>
-                </ul>
-            </section>
+// Loose equality (==) - DENGAN type coercion (hindari)
+5 == "5"    // true (bingung!)
+0 == false  // true</code></pre>
+<h3>Modern Operators</h3><pre><code>// Optional Chaining (?.)
+const user = { profile: { name: "Archon" } };
+user?.profile?.name    // "Archon"
+user?.address?.city    // undefined (tidak error!)
 
-            <section class="content">
-                <h2>Pengantar</h2>
-                <p><strong>Operator dan Ekspresi</strong> adalah salah satu konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer. Pada modul ini, kita akan membahas secara mendalam tentang operator dan ekspresi dan penerapannya dalam pengembangan aplikasi web modern.</p>
-
-                <h2>Topik yang Dibahas</h2>
-                <ul>
-            <li>Arithmetic operators</li>
-            <li>Comparison operators (== vs ===)</li>
-            <li>Logical operators (&&, ||, !)</li>
-            <li>Ternary operator</li>
-            <li>Nullish coalescing (??) dan optional chaining (?.)</li>
-                </ul>
-
-                <h2>Penjelasan</h2>
-                <p>JavaScript adalah bahasa pemrograman yang sangat fleksibel dan powerful untuk pengembangan web. Memahami operator dan ekspresi akan membantu Anda menulis kode yang lebih efisien, mudah dibaca, dan maintainable.</p>
-
-                <h3>Contoh Kode</h3>
-                <pre><code>// Contoh implementasi operator dan ekspresi
-// Praktikkan konsep yang telah dipelajari
-
-console.log('Belajar: Operator dan Ekspresi');
-</code></pre>
-
-                <h2>Praktik Terbaik</h2>
-                <ul>
-                    <li>Gunakan konsep ini sesuai konteks yang tepat</li>
-                    <li>Pahami kelebihan dan kekurangan pendekatan ini</li>
-                    <li>Praktikkan dengan contoh kode yang bervariasi</li>
-                </ul>
-            </section>
-
-            <section class="summary">
-                <h2>Rangkuman</h2>
-                <p>Dalam modul ini, Anda telah mempelajari tentang operator dan ekspresi dalam JavaScript. Konsep ini merupakan fondasi penting yang akan sering digunakan dalam pengembangan aplikasi web.</p>
-            </section>
-
-            <nav class="lesson-nav">
-                <a href="../index.html" class="btn btn-secondary">Kembali ke Daftar Modul</a>
-            </nav>
-        </main>
-    </div>
-</body>
-</html>
+// Nullish Coalescing (??)
+const val = null ?? "default";  // "default"
+const zero = 0 ?? 100;          // 0 (bukan 100)</code></pre></section><section class="summary"><h2>Rangkuman</h2><p>Pelajari operator dan ekspresi dengan praktik langsung.</p></section><nav class="lesson-nav"><a href="../index.html">← Kembali</a></nav></main></div></body></html>

@@ -1,74 +1,34 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fetch Api Http Requests - JavaScript Learning Path</title>
-    <link rel="stylesheet" href="../styles.css">
-</head>
-<body class="lesson-body">
-    <div class="container">
-        <header class="lesson-header">
-            <div class="breadcrumb">
-                <a href="../index.html">Beranda</a> / <span>General</span> / <span>Fetch Api Http Requests</span>
-            </div>
-            <h1>Fetch Api Http Requests</h1>
-            <div class="lesson-meta">
-                <span class="duration"><i class="far fa-clock"></i> 15-20 menit</span>
-                <span class="module-badge">Modul: General</span>
-            </div>
-        </header>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Fetch API dan HTTP Requests - JavaScript Learning Path</title><link rel="stylesheet" href="../styles.css"></head>
+<body class="lesson-body"><div class="container"><header class="lesson-header"><div class="breadcrumb"><a href="../index.html">Beranda</a> / <span>Async</span> / <span>Fetch API dan HTTP Requests</span></div><h1>Fetch API dan HTTP Requests</h1><div class="lesson-meta"><span class="duration">15-20 menit</span><span class="module-badge">Async</span></div></header>
+<main class="lesson-content"><section class="objectives"><h2>Tujuan Pembelajaran</h2><ul><li>Menggunakan fetch() untuk HTTP requests</li><li>Handling response dan error</li><li>CRUD operations dengan REST API</li></ul></section><section class="content"><h2>Materi</h2><h3>GET Request</h3><pre><code>async function getUsers() {
+    const res = await fetch("https://api.example.com/users");
+    if (!res.ok) throw new Error(\`HTTP \${res.status}\`);
+    const users = await res.json();
+    return users;
+}</code></pre>
+<h3>POST Request</h3><pre><code>async function createUser(userData) {
+    const res = await fetch("https://api.example.com/users", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(userData)
+    });
+    return await res.json();
+}</code></pre>
+<h3>PUT dan DELETE</h3><pre><code>// PUT (update)
+await fetch(\`/users/\${id}\`, {
+    method: "PUT",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({nama: "Baru"})
+});
 
-        <main class="lesson-content">
-            <section class="objectives">
-                <h2>Tujuan Pembelajaran</h2>
-                <ul>
-                    <li>Memahami konsep fetch api http requests</li>
-                    <li>Menerapkan konsep dalam kode praktis</li>
-                    <li>Memahami best practices penggunaan</li>
-                </ul>
-            </section>
-
-            <section class="content">
-                <h2>Pengantar</h2>
-                <p><strong>Fetch Api Http Requests</strong> adalah salah satu konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer. Pada modul ini, kita akan membahas secara mendalam tentang fetch api http requests dan penerapannya dalam pengembangan aplikasi web modern.</p>
-
-                <h2>Topik yang Dibahas</h2>
-                <ul>
-            <li>Konsep dasar dan definisi</li>
-            <li>Implementasi praktis</li>
-            <li>Contoh kode dan use case</li>
-            <li>Best practices</li>
-            <li>Latihan dan evaluasi</li>
-                </ul>
-
-                <h2>Penjelasan</h2>
-                <p>JavaScript adalah bahasa pemrograman yang sangat fleksibel dan powerful untuk pengembangan web. Memahami fetch api http requests akan membantu Anda menulis kode yang lebih efisien, mudah dibaca, dan maintainable.</p>
-
-                <h3>Contoh Kode</h3>
-                <pre><code>// Contoh implementasi fetch api http requests
-// Praktikkan konsep yang telah dipelajari
-
-console.log('Belajar: Fetch Api Http Requests');
-</code></pre>
-
-                <h2>Praktik Terbaik</h2>
-                <ul>
-                    <li>Gunakan konsep ini sesuai konteks yang tepat</li>
-                    <li>Pahami kelebihan dan kekurangan pendekatan ini</li>
-                    <li>Praktikkan dengan contoh kode yang bervariasi</li>
-                </ul>
-            </section>
-
-            <section class="summary">
-                <h2>Rangkuman</h2>
-                <p>Dalam modul ini, Anda telah mempelajari tentang fetch api http requests dalam JavaScript. Konsep ini merupakan fondasi penting yang akan sering digunakan dalam pengembangan aplikasi web.</p>
-            </section>
-
-            <nav class="lesson-nav">
-                <a href="../index.html" class="btn btn-secondary">Kembali ke Daftar Modul</a>
-            </nav>
-        </main>
-    </div>
-</body>
-</html>
+// DELETE
+await fetch(\`/users/\${id}\`, { method: "DELETE" });</code></pre>
+<h3>Error Handling</h3><pre><code>try {
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(\`HTTP \${res.status}\`);
+    const data = await res.json();
+} catch (err) {
+    if (err.name === "TypeError") console.log("Network error");
+    else console.log(err.message);
+}</code></pre></section><section class="summary"><h2>Rangkuman</h2><p>Pelajari fetch api dan http requests dengan praktik langsung.</p></section><nav class="lesson-nav"><a href="../index.html">← Kembali</a></nav></main></div></body></html>

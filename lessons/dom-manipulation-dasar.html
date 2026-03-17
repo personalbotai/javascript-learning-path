@@ -1,74 +1,38 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM Manipulation Dasar - JavaScript Learning Path</title>
-    <link rel="stylesheet" href="../styles.css">
-</head>
-<body class="lesson-body">
-    <div class="container">
-        <header class="lesson-header">
-            <div class="breadcrumb">
-                <a href="../index.html">Beranda</a> / <span>Dom</span> / <span>DOM Manipulation Dasar</span>
-            </div>
-            <h1>DOM Manipulation Dasar</h1>
-            <div class="lesson-meta">
-                <span class="duration"><i class="far fa-clock"></i> 15-20 menit</span>
-                <span class="module-badge">Modul: Dom</span>
-            </div>
-        </header>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>DOM Manipulation Dasar - JavaScript Learning Path</title><link rel="stylesheet" href="../styles.css"></head>
+<body class="lesson-body"><div class="container"><header class="lesson-header"><div class="breadcrumb"><a href="../index.html">Beranda</a> / <span>DOM</span> / <span>DOM Manipulation Dasar</span></div><h1>DOM Manipulation Dasar</h1><div class="lesson-meta"><span class="duration">15-20 menit</span><span class="module-badge">DOM</span></div></header>
+<main class="lesson-content"><section class="objectives"><h2>Tujuan Pembelajaran</h2><ul><li>Memilih dan memanipulasi elemen HTML</li><li>Mengubah style, class, dan atribut</li><li>Membuat dan menghapus elemen</li></ul></section><section class="content"><h2>Materi</h2><h3>Memilih Elemen</h3><pre><code>// Modern (direkomendasikan)
+document.querySelector('.class');
+document.querySelector('#id');
+document.querySelectorAll('div.item');
 
-        <main class="lesson-content">
-            <section class="objectives">
-                <h2>Tujuan Pembelajaran</h2>
-                <ul>
-                    <li>Memahami konsep dom manipulation dasar</li>
-                    <li>Menerapkan konsep dalam kode praktis</li>
-                    <li>Memahami best practices penggunaan</li>
-                </ul>
-            </section>
+// Legacy
+document.getElementById('id');
+document.getElementsByClassName('class');</code></pre>
+<h3>Manipulasi Konten</h3><pre><code>const el = document.querySelector('#title');
 
-            <section class="content">
-                <h2>Pengantar</h2>
-                <p><strong>DOM Manipulation Dasar</strong> adalah salah satu konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer. Pada modul ini, kita akan membahas secara mendalam tentang dom manipulation dasar dan penerapannya dalam pengembangan aplikasi web modern.</p>
+// Teks dan HTML
+el.textContent = "Teks baru";
+el.innerHTML = "&lt;strong&gt;HTML baru&lt;/strong&gt;";
 
-                <h2>Topik yang Dibahas</h2>
-                <ul>
-            <li>Document Object Model overview</li>
-            <li>createElement, appendChild, removeChild</li>
-            <li>innerHTML vs textContent</li>
-            <li>setAttribute dan getAttribute</li>
-            <li>Event listeners: addEventListener</li>
-                </ul>
+// Atribut
+el.setAttribute('data-id', '123');
+el.getAttribute('class');
 
-                <h2>Penjelasan</h2>
-                <p>JavaScript adalah bahasa pemrograman yang sangat fleksibel dan powerful untuk pengembangan web. Memahami dom manipulation dasar akan membantu Anda menulis kode yang lebih efisien, mudah dibaca, dan maintainable.</p>
+// Style
+el.style.color = 'red';
+el.style.fontSize = '20px';
 
-                <h3>Contoh Kode</h3>
-                <pre><code>// Contoh implementasi dom manipulation dasar
-// Praktikkan konsep yang telah dipelajari
+// Class
+el.classList.add('active');
+el.classList.remove('hidden');
+el.classList.toggle('dark-mode');</code></pre>
+<h3>Buat & Hapus Elemen</h3><pre><code>// Buat elemen baru
+const div = document.createElement('div');
+div.textContent = "Hello!";
+div.classList.add('card');
+document.body.appendChild(div);
 
-console.log('Belajar: DOM Manipulation Dasar');
-</code></pre>
-
-                <h2>Praktik Terbaik</h2>
-                <ul>
-                    <li>Gunakan konsep ini sesuai konteks yang tepat</li>
-                    <li>Pahami kelebihan dan kekurangan pendekatan ini</li>
-                    <li>Praktikkan dengan contoh kode yang bervariasi</li>
-                </ul>
-            </section>
-
-            <section class="summary">
-                <h2>Rangkuman</h2>
-                <p>Dalam modul ini, Anda telah mempelajari tentang dom manipulation dasar dalam JavaScript. Konsep ini merupakan fondasi penting yang akan sering digunakan dalam pengembangan aplikasi web.</p>
-            </section>
-
-            <nav class="lesson-nav">
-                <a href="../index.html" class="btn btn-secondary">Kembali ke Daftar Modul</a>
-            </nav>
-        </main>
-    </div>
-</body>
-</html>
+// Hapus elemen
+el.remove();
+// atau parent.removeChild(el);</code></pre></section><section class="summary"><h2>Rangkuman</h2><p>Pelajari dom manipulation dasar dengan praktik langsung.</p></section><nav class="lesson-nav"><a href="../index.html">← Kembali</a></nav></main></div></body></html>

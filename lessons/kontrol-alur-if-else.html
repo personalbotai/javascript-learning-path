@@ -1,74 +1,26 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontrol Alur If Else - JavaScript Learning Path</title>
-    <link rel="stylesheet" href="../styles.css">
-</head>
-<body class="lesson-body">
-    <div class="container">
-        <header class="lesson-header">
-            <div class="breadcrumb">
-                <a href="../index.html">Beranda</a> / <span>General</span> / <span>Kontrol Alur If Else</span>
-            </div>
-            <h1>Kontrol Alur If Else</h1>
-            <div class="lesson-meta">
-                <span class="duration"><i class="far fa-clock"></i> 15-20 menit</span>
-                <span class="module-badge">Modul: General</span>
-            </div>
-        </header>
-
-        <main class="lesson-content">
-            <section class="objectives">
-                <h2>Tujuan Pembelajaran</h2>
-                <ul>
-                    <li>Memahami konsep kontrol alur if else</li>
-                    <li>Menerapkan konsep dalam kode praktis</li>
-                    <li>Memahami best practices penggunaan</li>
-                </ul>
-            </section>
-
-            <section class="content">
-                <h2>Pengantar</h2>
-                <p><strong>Kontrol Alur If Else</strong> adalah salah satu konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer. Pada modul ini, kita akan membahas secara mendalam tentang kontrol alur if else dan penerapannya dalam pengembangan aplikasi web modern.</p>
-
-                <h2>Topik yang Dibahas</h2>
-                <ul>
-            <li>Konsep dasar dan definisi</li>
-            <li>Implementasi praktis</li>
-            <li>Contoh kode dan use case</li>
-            <li>Best practices</li>
-            <li>Latihan dan evaluasi</li>
-                </ul>
-
-                <h2>Penjelasan</h2>
-                <p>JavaScript adalah bahasa pemrograman yang sangat fleksibel dan powerful untuk pengembangan web. Memahami kontrol alur if else akan membantu Anda menulis kode yang lebih efisien, mudah dibaca, dan maintainable.</p>
-
-                <h3>Contoh Kode</h3>
-                <pre><code>// Contoh implementasi kontrol alur if else
-// Praktikkan konsep yang telah dipelajari
-
-console.log('Belajar: Kontrol Alur If Else');
-</code></pre>
-
-                <h2>Praktik Terbaik</h2>
-                <ul>
-                    <li>Gunakan konsep ini sesuai konteks yang tepat</li>
-                    <li>Pahami kelebihan dan kekurangan pendekatan ini</li>
-                    <li>Praktikkan dengan contoh kode yang bervariasi</li>
-                </ul>
-            </section>
-
-            <section class="summary">
-                <h2>Rangkuman</h2>
-                <p>Dalam modul ini, Anda telah mempelajari tentang kontrol alur if else dalam JavaScript. Konsep ini merupakan fondasi penting yang akan sering digunakan dalam pengembangan aplikasi web.</p>
-            </section>
-
-            <nav class="lesson-nav">
-                <a href="../index.html" class="btn btn-secondary">Kembali ke Daftar Modul</a>
-            </nav>
-        </main>
-    </div>
-</body>
-</html>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Kontrol Alur: If/Else - JavaScript Learning Path</title><link rel="stylesheet" href="../styles.css"></head>
+<body class="lesson-body"><div class="container"><header class="lesson-header"><div class="breadcrumb"><a href="../index.html">Beranda</a> / <span>Kontrol Alur</span> / <span>Kontrol Alur: If/Else</span></div><h1>Kontrol Alur: If/Else</h1><div class="lesson-meta"><span class="duration">15-20 menit</span><span class="module-badge">Kontrol Alur</span></div></header>
+<main class="lesson-content"><section class="objectives"><h2>Tujuan Pembelajaran</h2><ul><li>Menggunakan if/else if/else untuk percabangan</li><li>Ternary operator untuk kondisi singkat</li><li>Switch statement untuk multiple cases</li></ul></section><section class="content"><h2>Materi</h2><h3>If/Else</h3><pre><code>const umur = 25;
+if (umur >= 18) {
+    console.log("Dewasa");
+} else if (umur >= 13) {
+    console.log("Remaja");
+} else {
+    console.log("Anak-anak");
+}</code></pre>
+<h3>Ternary Operator</h3><pre><code>// condition ? true : false
+const status = umur >= 18 ? "Dewasa" : "Anak-anak";
+const sapaan = nama ? \`Halo \${nama}\` : "Halo tamu";</code></pre>
+<h3>Switch</h3><pre><code>const hari = "Senin";
+switch(hari) {
+    case "Senin":
+        console.log("Hari kerja");
+        break;
+    case "Sabtu":
+    case "Minggu":
+        console.log("Weekend");
+        break;
+    default:
+        console.log("Hari lain");
+}</code></pre></section><section class="summary"><h2>Rangkuman</h2><p>Pelajari kontrol alur: if/else dengan praktik langsung.</p></section><nav class="lesson-nav"><a href="../index.html">← Kembali</a></nav></main></div></body></html>

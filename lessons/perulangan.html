@@ -1,74 +1,32 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perulangan - JavaScript Learning Path</title>
-    <link rel="stylesheet" href="../styles.css">
-</head>
-<body class="lesson-body">
-    <div class="container">
-        <header class="lesson-header">
-            <div class="breadcrumb">
-                <a href="../index.html">Beranda</a> / <span>General</span> / <span>Perulangan</span>
-            </div>
-            <h1>Perulangan</h1>
-            <div class="lesson-meta">
-                <span class="duration"><i class="far fa-clock"></i> 15-20 menit</span>
-                <span class="module-badge">Modul: General</span>
-            </div>
-        </header>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Perulangan: Loop - JavaScript Learning Path</title><link rel="stylesheet" href="../styles.css"></head>
+<body class="lesson-body"><div class="container"><header class="lesson-header"><div class="breadcrumb"><a href="../index.html">Beranda</a> / <span>Kontrol Alur</span> / <span>Perulangan: Loop</span></div><h1>Perulangan: Loop</h1><div class="lesson-meta"><span class="duration">15-20 menit</span><span class="module-badge">Kontrol Alur</span></div></header>
+<main class="lesson-content"><section class="objectives"><h2>Tujuan Pembelajaran</h2><ul><li>Menggunakan for, while, do-while</li><li>for...of dan for...in untuk iterasi</li><li>break, continue, dan label</li></ul></section><section class="content"><h2>Materi</h2><h3>For Loop</h3><pre><code>// Traditional for
+for (let i = 0; i < 5; i++) {
+    console.log(i); // 0,1,2,3,4
+}
 
-        <main class="lesson-content">
-            <section class="objectives">
-                <h2>Tujuan Pembelajaran</h2>
-                <ul>
-                    <li>Memahami konsep perulangan</li>
-                    <li>Menerapkan konsep dalam kode praktis</li>
-                    <li>Memahami best practices penggunaan</li>
-                </ul>
-            </section>
+// For...of (iterasi nilai) - untuk Array, String, Map, Set
+const buah = ["apel", "jeruk", "mangga"];
+for (const item of buah) {
+    console.log(item);
+}
 
-            <section class="content">
-                <h2>Pengantar</h2>
-                <p><strong>Perulangan</strong> adalah salah satu konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer. Pada modul ini, kita akan membahas secara mendalam tentang perulangan dan penerapannya dalam pengembangan aplikasi web modern.</p>
+// For...in (iterasi key/index) - untuk Object
+const user = {nama: "Archon", umur: 25};
+for (const key in user) {
+    console.log(\`\${key}: \${user[key]}\`);
+}</code></pre>
+<h3>While</h3><pre><code>let i = 0;
+while (i < 5) {
+    console.log(i);
+    i++;
+}
 
-                <h2>Topik yang Dibahas</h2>
-                <ul>
-            <li>Konsep dasar dan definisi</li>
-            <li>Implementasi praktis</li>
-            <li>Contoh kode dan use case</li>
-            <li>Best practices</li>
-            <li>Latihan dan evaluasi</li>
-                </ul>
-
-                <h2>Penjelasan</h2>
-                <p>JavaScript adalah bahasa pemrograman yang sangat fleksibel dan powerful untuk pengembangan web. Memahami perulangan akan membantu Anda menulis kode yang lebih efisien, mudah dibaca, dan maintainable.</p>
-
-                <h3>Contoh Kode</h3>
-                <pre><code>// Contoh implementasi perulangan
-// Praktikkan konsep yang telah dipelajari
-
-console.log('Belajar: Perulangan');
-</code></pre>
-
-                <h2>Praktik Terbaik</h2>
-                <ul>
-                    <li>Gunakan konsep ini sesuai konteks yang tepat</li>
-                    <li>Pahami kelebihan dan kekurangan pendekatan ini</li>
-                    <li>Praktikkan dengan contoh kode yang bervariasi</li>
-                </ul>
-            </section>
-
-            <section class="summary">
-                <h2>Rangkuman</h2>
-                <p>Dalam modul ini, Anda telah mempelajari tentang perulangan dalam JavaScript. Konsep ini merupakan fondasi penting yang akan sering digunakan dalam pengembangan aplikasi web.</p>
-            </section>
-
-            <nav class="lesson-nav">
-                <a href="../index.html" class="btn btn-secondary">Kembali ke Daftar Modul</a>
-            </nav>
-        </main>
-    </div>
-</body>
-</html>
+// do-while (minimal 1x jalan)
+do {
+    console.log("Jalan sekali");
+} while (false);</code></pre>
+<h3>Array Methods (Lebih Modern)</h3><pre><code>buah.forEach(item => console.log(item));
+const hasil = buah.map(item => item.toUpperCase());
+const filter = buah.filter(item => item !== "jeruk");</code></pre></section><section class="summary"><h2>Rangkuman</h2><p>Pelajari perulangan: loop dengan praktik langsung.</p></section><nav class="lesson-nav"><a href="../index.html">← Kembali</a></nav></main></div></body></html>

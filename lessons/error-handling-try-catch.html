@@ -1,74 +1,38 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Error Handling Try Catch - JavaScript Learning Path</title>
-    <link rel="stylesheet" href="../styles.css">
-</head>
-<body class="lesson-body">
-    <div class="container">
-        <header class="lesson-header">
-            <div class="breadcrumb">
-                <a href="../index.html">Beranda</a> / <span>General</span> / <span>Error Handling Try Catch</span>
-            </div>
-            <h1>Error Handling Try Catch</h1>
-            <div class="lesson-meta">
-                <span class="duration"><i class="far fa-clock"></i> 15-20 menit</span>
-                <span class="module-badge">Modul: General</span>
-            </div>
-        </header>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Error Handling: try/catch/finally - JavaScript Learning Path</title><link rel="stylesheet" href="../styles.css"></head>
+<body class="lesson-body"><div class="container"><header class="lesson-header"><div class="breadcrumb"><a href="../index.html">Beranda</a> / <span>Error Handling</span> / <span>Error Handling: try/catch/finally</span></div><h1>Error Handling: try/catch/finally</h1><div class="lesson-meta"><span class="duration">15-20 menit</span><span class="module-badge">Error Handling</span></div></header>
+<main class="lesson-content"><section class="objectives"><h2>Tujuan Pembelajaran</h2><ul><li>Menggunakan try/catch/finally</li><li>Membuat custom error</li><li>Error handling di async/await</li></ul></section><section class="content"><h2>Materi</h2><h3>Try/Catch/Finally</h3><pre><code>try {
+    const data = JSON.parse(invalidJSON);
+} catch (error) {
+    console.log(error.name);    // "SyntaxError"
+    console.log(error.message); // "Unexpected token..."
+} finally {
+    console.log("Selalu jalan");
+}</code></pre>
+<h3>Throw Error</h3><pre><code>function bagi(a, b) {
+    if (b === 0) throw new Error("Pembagi tidak boleh nol");
+    return a / b;
+}
 
-        <main class="lesson-content">
-            <section class="objectives">
-                <h2>Tujuan Pembelajaran</h2>
-                <ul>
-                    <li>Memahami konsep error handling try catch</li>
-                    <li>Menerapkan konsep dalam kode praktis</li>
-                    <li>Memahami best practices penggunaan</li>
-                </ul>
-            </section>
+try {
+    bagi(10, 0);
+} catch (e) {
+    console.log(e.message); // "Pembagi tidak boleh nol"
+}</code></pre>
+<h3>Custom Error Class</h3><pre><code>class ValidationError extends Error {
+    constructor(message) {
+        super(message);
+        this.name = "ValidationError";
+    }
+}
 
-            <section class="content">
-                <h2>Pengantar</h2>
-                <p><strong>Error Handling Try Catch</strong> adalah salah satu konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer. Pada modul ini, kita akan membahas secara mendalam tentang error handling try catch dan penerapannya dalam pengembangan aplikasi web modern.</p>
-
-                <h2>Topik yang Dibahas</h2>
-                <ul>
-            <li>Konsep dasar dan definisi</li>
-            <li>Implementasi praktis</li>
-            <li>Contoh kode dan use case</li>
-            <li>Best practices</li>
-            <li>Latihan dan evaluasi</li>
-                </ul>
-
-                <h2>Penjelasan</h2>
-                <p>JavaScript adalah bahasa pemrograman yang sangat fleksibel dan powerful untuk pengembangan web. Memahami error handling try catch akan membantu Anda menulis kode yang lebih efisien, mudah dibaca, dan maintainable.</p>
-
-                <h3>Contoh Kode</h3>
-                <pre><code>// Contoh implementasi error handling try catch
-// Praktikkan konsep yang telah dipelajari
-
-console.log('Belajar: Error Handling Try Catch');
-</code></pre>
-
-                <h2>Praktik Terbaik</h2>
-                <ul>
-                    <li>Gunakan konsep ini sesuai konteks yang tepat</li>
-                    <li>Pahami kelebihan dan kekurangan pendekatan ini</li>
-                    <li>Praktikkan dengan contoh kode yang bervariasi</li>
-                </ul>
-            </section>
-
-            <section class="summary">
-                <h2>Rangkuman</h2>
-                <p>Dalam modul ini, Anda telah mempelajari tentang error handling try catch dalam JavaScript. Konsep ini merupakan fondasi penting yang akan sering digunakan dalam pengembangan aplikasi web.</p>
-            </section>
-
-            <nav class="lesson-nav">
-                <a href="../index.html" class="btn btn-secondary">Kembali ke Daftar Modul</a>
-            </nav>
-        </main>
-    </div>
-</body>
-</html>
+// Async error handling
+async function fetchData() {
+    try {
+        const res = await fetch("/api/data");
+        if (!res.ok) throw new Error(\`HTTP \${res.status}\`);
+        return await res.json();
+    } catch (e) {
+        console.log("Fetch failed:", e.message);
+    }
+}</code></pre></section><section class="summary"><h2>Rangkuman</h2><p>Pelajari error handling: try/catch/finally dengan praktik langsung.</p></section><nav class="lesson-nav"><a href="../index.html">← Kembali</a></nav></main></div></body></html>

@@ -1,74 +1,34 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Json Serialisasi Dan Parsing - JavaScript Learning Path</title>
-    <link rel="stylesheet" href="../styles.css">
-</head>
-<body class="lesson-body">
-    <div class="container">
-        <header class="lesson-header">
-            <div class="breadcrumb">
-                <a href="../index.html">Beranda</a> / <span>General</span> / <span>Json Serialisasi Dan Parsing</span>
-            </div>
-            <h1>Json Serialisasi Dan Parsing</h1>
-            <div class="lesson-meta">
-                <span class="duration"><i class="far fa-clock"></i> 15-20 menit</span>
-                <span class="module-badge">Modul: General</span>
-            </div>
-        </header>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>JSON: Serialisasi dan Parsing - JavaScript Learning Path</title><link rel="stylesheet" href="../styles.css"></head>
+<body class="lesson-body"><div class="container"><header class="lesson-header"><div class="breadcrumb"><a href="../index.html">Beranda</a> / <span>Data Structures</span> / <span>JSON: Serialisasi dan Parsing</span></div><h1>JSON: Serialisasi dan Parsing</h1><div class="lesson-meta"><span class="duration">15-20 menit</span><span class="module-badge">Data Structures</span></div></header>
+<main class="lesson-content"><section class="objectives"><h2>Tujuan Pembelajaran</h2><ul><li>Mengkonversi object ke JSON dan sebaliknya</li><li>JSON.stringify dengan replacer</li><li>JSON.parse dengan reviver</li></ul></section><section class="content"><h2>Materi</h2><h3>JSON.stringify</h3><pre><code>const user = {nama: "Archon", umur: 25, aktif: true};
 
-        <main class="lesson-content">
-            <section class="objectives">
-                <h2>Tujuan Pembelajaran</h2>
-                <ul>
-                    <li>Memahami konsep json serialisasi dan parsing</li>
-                    <li>Menerapkan konsep dalam kode praktis</li>
-                    <li>Memahami best practices penggunaan</li>
-                </ul>
-            </section>
+// Object → JSON string
+const json = JSON.stringify(user);
+// '{"nama":"Archon","umur":25,"aktif":true}'
 
-            <section class="content">
-                <h2>Pengantar</h2>
-                <p><strong>Json Serialisasi Dan Parsing</strong> adalah salah satu konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer. Pada modul ini, kita akan membahas secara mendalam tentang json serialisasi dan parsing dan penerapannya dalam pengembangan aplikasi web modern.</p>
+// Pretty print
+const pretty = JSON.stringify(user, null, 2);
+// {\n  "nama": "Archon",\n  ...\n}
 
-                <h2>Topik yang Dibahas</h2>
-                <ul>
-            <li>Konsep dasar dan definisi</li>
-            <li>Implementasi praktis</li>
-            <li>Contoh kode dan use case</li>
-            <li>Best practices</li>
-            <li>Latihan dan evaluasi</li>
-                </ul>
+// Replacer (filter fields)
+JSON.stringify(user, ["nama", "umur"]);
+// '{"nama":"Archon","umur":25}'</code></pre>
+<h3>JSON.parse</h3><pre><code>// JSON string → Object
+const parsed = JSON.parse(json);
+console.log(parsed.nama); // "Archon"
 
-                <h2>Penjelasan</h2>
-                <p>JavaScript adalah bahasa pemrograman yang sangat fleksibel dan powerful untuk pengembangan web. Memahami json serialisasi dan parsing akan membantu Anda menulis kode yang lebih efisien, mudah dibaca, dan maintainable.</p>
+// Dengan reviver
+const data = JSON.parse(json, (key, value) => {
+    if (key === "umur") return Number(value);
+    return value;
+});</code></pre>
+<h3>Fetch + JSON</h3><pre><code>const res = await fetch("/api/user");
+const user = await res.json(); // parse JSON
 
-                <h3>Contoh Kode</h3>
-                <pre><code>// Contoh implementasi json serialisasi dan parsing
-// Praktikkan konsep yang telah dipelajari
-
-console.log('Belajar: Json Serialisasi Dan Parsing');
-</code></pre>
-
-                <h2>Praktik Terbaik</h2>
-                <ul>
-                    <li>Gunakan konsep ini sesuai konteks yang tepat</li>
-                    <li>Pahami kelebihan dan kekurangan pendekatan ini</li>
-                    <li>Praktikkan dengan contoh kode yang bervariasi</li>
-                </ul>
-            </section>
-
-            <section class="summary">
-                <h2>Rangkuman</h2>
-                <p>Dalam modul ini, Anda telah mempelajari tentang json serialisasi dan parsing dalam JavaScript. Konsep ini merupakan fondasi penting yang akan sering digunakan dalam pengembangan aplikasi web.</p>
-            </section>
-
-            <nav class="lesson-nav">
-                <a href="../index.html" class="btn btn-secondary">Kembali ke Daftar Modul</a>
-            </nav>
-        </main>
-    </div>
-</body>
-</html>
+// Kirim JSON
+await fetch("/api/user", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify(user)
+});</code></pre></section><section class="summary"><h2>Rangkuman</h2><p>Pelajari json: serialisasi dan parsing dengan praktik langsung.</p></section><nav class="lesson-nav"><a href="../index.html">← Kembali</a></nav></main></div></body></html>

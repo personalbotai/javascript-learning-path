@@ -1,74 +1,19 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Array Higher-Order Functions - JavaScript Learning Path</title>
-    <link rel="stylesheet" href="../styles.css">
-</head>
-<body class="lesson-body">
-    <div class="container">
-        <header class="lesson-header">
-            <div class="breadcrumb">
-                <a href="../index.html">Beranda</a> / <span>Arrays</span> / <span>Array Higher-Order Functions</span>
-            </div>
-            <h1>Array Higher-Order Functions</h1>
-            <div class="lesson-meta">
-                <span class="duration"><i class="far fa-clock"></i> 15-20 menit</span>
-                <span class="module-badge">Modul: Arrays</span>
-            </div>
-        </header>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Array Higher-Order Functions - JavaScript Learning Path</title><link rel="stylesheet" href="../styles.css"></head>
+<body class="lesson-body"><div class="container"><header class="lesson-header"><div class="breadcrumb"><a href="../index.html">Beranda</a> / <span>Data Structures</span> / <span>Array Higher-Order Functions</span></div><h1>Array Higher-Order Functions</h1><div class="lesson-meta"><span class="duration">15-20 menit</span><span class="module-badge">Data Structures</span></div></header>
+<main class="lesson-content"><section class="objectives"><h2>Tujuan Pembelajaran</h2><ul><li>Menggunakan map, filter, reduce</li><li>Menggunakan find, some, every</li><li>Method chaining untuk transformasi data</li></ul></section><section class="content"><h2>Materi</h2><h3>Map - Transformasi setiap elemen</h3><pre><code>const angka = [1, 2, 3, 4, 5];
+const kuadrat = angka.map(x => x * x); // [1, 4, 9, 16, 25]
 
-        <main class="lesson-content">
-            <section class="objectives">
-                <h2>Tujuan Pembelajaran</h2>
-                <ul>
-                    <li>Memahami konsep array higher-order functions</li>
-                    <li>Menerapkan konsep dalam kode praktis</li>
-                    <li>Memahami best practices penggunaan</li>
-                </ul>
-            </section>
-
-            <section class="content">
-                <h2>Pengantar</h2>
-                <p><strong>Array Higher-Order Functions</strong> adalah salah satu konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer. Pada modul ini, kita akan membahas secara mendalam tentang array higher-order functions dan penerapannya dalam pengembangan aplikasi web modern.</p>
-
-                <h2>Topik yang Dibahas</h2>
-                <ul>
-            <li>map() untuk transformasi elemen</li>
-            <li>filter() untuk menyaring data</li>
-            <li>reduce() untuk akumulasi</li>
-            <li>find() dan findIndex()</li>
-            <li>some() dan every()</li>
-                </ul>
-
-                <h2>Penjelasan</h2>
-                <p>JavaScript adalah bahasa pemrograman yang sangat fleksibel dan powerful untuk pengembangan web. Memahami array higher-order functions akan membantu Anda menulis kode yang lebih efisien, mudah dibaca, dan maintainable.</p>
-
-                <h3>Contoh Kode</h3>
-                <pre><code>// Contoh implementasi array higher-order functions
-// Praktikkan konsep yang telah dipelajari
-
-console.log('Belajar: Array Higher-Order Functions');
-</code></pre>
-
-                <h2>Praktik Terbaik</h2>
-                <ul>
-                    <li>Gunakan konsep ini sesuai konteks yang tepat</li>
-                    <li>Pahami kelebihan dan kekurangan pendekatan ini</li>
-                    <li>Praktikkan dengan contoh kode yang bervariasi</li>
-                </ul>
-            </section>
-
-            <section class="summary">
-                <h2>Rangkuman</h2>
-                <p>Dalam modul ini, Anda telah mempelajari tentang array higher-order functions dalam JavaScript. Konsep ini merupakan fondasi penting yang akan sering digunakan dalam pengembangan aplikasi web.</p>
-            </section>
-
-            <nav class="lesson-nav">
-                <a href="../index.html" class="btn btn-secondary">Kembali ke Daftar Modul</a>
-            </nav>
-        </main>
-    </div>
-</body>
-</html>
+const users = [{nama: "Alice"}, {nama: "Bob"}];
+const names = users.map(u => u.nama); // ["Alice", "Bob"]</code></pre>
+<h3>Filter - Saring elemen</h3><pre><code>const genap = angka.filter(x => x % 2 === 0); // [2, 4]
+const dewasa = users.filter(u => u.umur >= 18);</code></pre>
+<h3>Reduce - Akumulasi</h3><pre><code>const total = angka.reduce((acc, curr) => acc + curr, 0); // 15
+const max = angka.reduce((a, b) => a > b ? a : b); // 5</code></pre>
+<h3>Chaining</h3><pre><code>const hasil = angka
+    .filter(x => x % 2 === 0)    // [2, 4]
+    .map(x => x * 10)             // [20, 40]
+    .reduce((a, b) => a + b, 0);  // 60</code></pre>
+<h3>Find, Some, Every</h3><pre><code>angka.find(x => x > 3);     // 4 (elemen pertama)
+angka.some(x => x > 4);     // true (ada yang > 4)
+angka.every(x => x > 0);    // true (semua > 0)</code></pre></section><section class="summary"><h2>Rangkuman</h2><p>Pelajari array higher-order functions dengan praktik langsung.</p></section><nav class="lesson-nav"><a href="../index.html">← Kembali</a></nav></main></div></body></html>

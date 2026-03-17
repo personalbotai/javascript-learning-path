@@ -1,74 +1,33 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Object Properti Dan Metode - JavaScript Learning Path</title>
-    <link rel="stylesheet" href="../styles.css">
-</head>
-<body class="lesson-body">
-    <div class="container">
-        <header class="lesson-header">
-            <div class="breadcrumb">
-                <a href="../index.html">Beranda</a> / <span>General</span> / <span>Object Properti Dan Metode</span>
-            </div>
-            <h1>Object Properti Dan Metode</h1>
-            <div class="lesson-meta">
-                <span class="duration"><i class="far fa-clock"></i> 15-20 menit</span>
-                <span class="module-badge">Modul: General</span>
-            </div>
-        </header>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Object: Properti dan Metode - JavaScript Learning Path</title><link rel="stylesheet" href="../styles.css"></head>
+<body class="lesson-body"><div class="container"><header class="lesson-header"><div class="breadcrumb"><a href="../index.html">Beranda</a> / <span>Data Structures</span> / <span>Object: Properti dan Metode</span></div><h1>Object: Properti dan Metode</h1><div class="lesson-meta"><span class="duration">15-20 menit</span><span class="module-badge">Data Structures</span></div></header>
+<main class="lesson-content"><section class="objectives"><h2>Tujuan Pembelajaran</h2><ul><li>Membuat dan memanipulasi object</li><li>Object.keys, values, entries</li><li>Destructuring dan spread</li></ul></section><section class="content"><h2>Materi</h2><h3>Object Literal</h3><pre><code>const user = {
+    nama: "Archon",
+    umur: 25,
+    "is-active": true,  // Key dengan dash perlu quotes
+    alamat: { kota: "Jakarta", kode: "10220" }
+};</code></pre>
+<h3>Akses dan Modifikasi</h3><pre><code>// Dot notation
+console.log(user.nama); // "Archon"
 
-        <main class="lesson-content">
-            <section class="objectives">
-                <h2>Tujuan Pembelajaran</h2>
-                <ul>
-                    <li>Memahami konsep object properti dan metode</li>
-                    <li>Menerapkan konsep dalam kode praktis</li>
-                    <li>Memahami best practices penggunaan</li>
-                </ul>
-            </section>
+// Bracket notation
+console.log(user["is-active"]); // true
 
-            <section class="content">
-                <h2>Pengantar</h2>
-                <p><strong>Object Properti Dan Metode</strong> adalah salah satu konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer. Pada modul ini, kita akan membahas secara mendalam tentang object properti dan metode dan penerapannya dalam pengembangan aplikasi web modern.</p>
+// Dynamic key
+const key = "nama";
+console.log(user[key]); // "Archon"
 
-                <h2>Topik yang Dibahas</h2>
-                <ul>
-            <li>Konsep dasar dan definisi</li>
-            <li>Implementasi praktis</li>
-            <li>Contoh kode dan use case</li>
-            <li>Best practices</li>
-            <li>Latihan dan evaluasi</li>
-                </ul>
+// Tambah/hapus
+user.email = "a@mail.com";
+delete user.umur;</code></pre>
+<h3>Object Methods</h3><pre><code>Object.keys(user);    // ["nama", "is-active", ...]
+Object.values(user);  // ["Archon", true, ...]
+Object.entries(user); // [["nama","Archon"], ...]
 
-                <h2>Penjelasan</h2>
-                <p>JavaScript adalah bahasa pemrograman yang sangat fleksibel dan powerful untuk pengembangan web. Memahami object properti dan metode akan membantu Anda menulis kode yang lebih efisien, mudah dibaca, dan maintainable.</p>
+// Destructuring
+const { nama, umur = 0 } = user;
+const { alamat: { kota } } = user; // Nested
 
-                <h3>Contoh Kode</h3>
-                <pre><code>// Contoh implementasi object properti dan metode
-// Praktikkan konsep yang telah dipelajari
-
-console.log('Belajar: Object Properti Dan Metode');
-</code></pre>
-
-                <h2>Praktik Terbaik</h2>
-                <ul>
-                    <li>Gunakan konsep ini sesuai konteks yang tepat</li>
-                    <li>Pahami kelebihan dan kekurangan pendekatan ini</li>
-                    <li>Praktikkan dengan contoh kode yang bervariasi</li>
-                </ul>
-            </section>
-
-            <section class="summary">
-                <h2>Rangkuman</h2>
-                <p>Dalam modul ini, Anda telah mempelajari tentang object properti dan metode dalam JavaScript. Konsep ini merupakan fondasi penting yang akan sering digunakan dalam pengembangan aplikasi web.</p>
-            </section>
-
-            <nav class="lesson-nav">
-                <a href="../index.html" class="btn btn-secondary">Kembali ke Daftar Modul</a>
-            </nav>
-        </main>
-    </div>
-</body>
-</html>
+// Spread
+const updated = { ...user, umur: 26 };
+const merged = { ...defaults, ...userSettings };</code></pre></section><section class="summary"><h2>Rangkuman</h2><p>Pelajari object: properti dan metode dengan praktik langsung.</p></section><nav class="lesson-nav"><a href="../index.html">← Kembali</a></nav></main></div></body></html>

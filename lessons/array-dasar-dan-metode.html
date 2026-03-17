@@ -1,74 +1,24 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Array: Dasar dan Metode - JavaScript Learning Path</title>
-    <link rel="stylesheet" href="../styles.css">
-</head>
-<body class="lesson-body">
-    <div class="container">
-        <header class="lesson-header">
-            <div class="breadcrumb">
-                <a href="../index.html">Beranda</a> / <span>Arrays</span> / <span>Array: Dasar dan Metode</span>
-            </div>
-            <h1>Array: Dasar dan Metode</h1>
-            <div class="lesson-meta">
-                <span class="duration"><i class="far fa-clock"></i> 15-20 menit</span>
-                <span class="module-badge">Modul: Arrays</span>
-            </div>
-        </header>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Array Dasar dan Metode - JavaScript Learning Path</title><link rel="stylesheet" href="../styles.css"></head>
+<body class="lesson-body"><div class="container"><header class="lesson-header"><div class="breadcrumb"><a href="../index.html">Beranda</a> / <span>Data Structures</span> / <span>Array Dasar dan Metode</span></div><h1>Array Dasar dan Metode</h1><div class="lesson-meta"><span class="duration">15-20 menit</span><span class="module-badge">Data Structures</span></div></header>
+<main class="lesson-content"><section class="objectives"><h2>Tujuan Pembelajaran</h2><ul><li>Membuat dan memanipulasi array</li><li>Metode: push, pop, shift, unshift, slice, splice</li><li>Memahami mutasi vs non-mutasi</li></ul></section><section class="content"><h2>Materi</h2><h3>Membuat Array</h3><pre><code>// Literal (direkomendasikan)
+const angka = [1, 2, 3, 4, 5];
+const campuran = [1, "dua", true, null, {x: 1}];
 
-        <main class="lesson-content">
-            <section class="objectives">
-                <h2>Tujuan Pembelajaran</h2>
-                <ul>
-                    <li>Memahami konsep array: dasar dan metode</li>
-                    <li>Menerapkan konsep dalam kode praktis</li>
-                    <li>Memahami best practices penggunaan</li>
-                </ul>
-            </section>
+// Constructor
+const arr = new Array(5); // [empty × 5]
+const arr2 = Array.of(1, 2, 3); // [1, 2, 3]</code></pre>
+<h3>Akses dan Modifikasi</h3><pre><code>console.log(angka[0]);      // 1
+console.log(angka.length);   // 5
+console.log(angka.at(-1));   // 5 (elemen terakhir)
 
-            <section class="content">
-                <h2>Pengantar</h2>
-                <p><strong>Array: Dasar dan Metode</strong> adalah salah satu konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer. Pada modul ini, kita akan membahas secara mendalam tentang array: dasar dan metode dan penerapannya dalam pengembangan aplikasi web modern.</p>
+// Mutasi array
+angka.push(6);      // Tambah akhir → [1,2,3,4,5,6]
+angka.pop();        // Hapus akhir → [1,2,3,4,5]
+angka.unshift(0);   // Tambah awal → [0,1,2,3,4,5]
+angka.shift();      // Hapus awal → [1,2,3,4,5]</code></pre>
+<h3>Slice vs Splice</h3><pre><code>// slice(start, end) - TIDAK mengubah array asli
+const sebagian = angka.slice(1, 3); // [2, 3]
 
-                <h2>Topik yang Dibahas</h2>
-                <ul>
-            <li>Membuat array dengan literal [] dan constructor</li>
-            <li>Metode dasar: push, pop, shift, unshift</li>
-            <li>Mengakses elemen dengan index</li>
-            <li>Panjang array dengan .length</li>
-            <li>Iterasi array dengan for loop</li>
-                </ul>
-
-                <h2>Penjelasan</h2>
-                <p>JavaScript adalah bahasa pemrograman yang sangat fleksibel dan powerful untuk pengembangan web. Memahami array: dasar dan metode akan membantu Anda menulis kode yang lebih efisien, mudah dibaca, dan maintainable.</p>
-
-                <h3>Contoh Kode</h3>
-                <pre><code>// Contoh implementasi array: dasar dan metode
-// Praktikkan konsep yang telah dipelajari
-
-console.log('Belajar: Array: Dasar dan Metode');
-</code></pre>
-
-                <h2>Praktik Terbaik</h2>
-                <ul>
-                    <li>Gunakan konsep ini sesuai konteks yang tepat</li>
-                    <li>Pahami kelebihan dan kekurangan pendekatan ini</li>
-                    <li>Praktikkan dengan contoh kode yang bervariasi</li>
-                </ul>
-            </section>
-
-            <section class="summary">
-                <h2>Rangkuman</h2>
-                <p>Dalam modul ini, Anda telah mempelajari tentang array: dasar dan metode dalam JavaScript. Konsep ini merupakan fondasi penting yang akan sering digunakan dalam pengembangan aplikasi web.</p>
-            </section>
-
-            <nav class="lesson-nav">
-                <a href="../index.html" class="btn btn-secondary">Kembali ke Daftar Modul</a>
-            </nav>
-        </main>
-    </div>
-</body>
-</html>
+// splice(start, deleteCount, ...items) - MENGUBAH array asli
+angka.splice(2, 1, 99); // Hapus 1 elemen di index 2, ganti 99</code></pre></section><section class="summary"><h2>Rangkuman</h2><p>Pelajari array dasar dan metode dengan praktik langsung.</p></section><nav class="lesson-nav"><a href="../index.html">← Kembali</a></nav></main></div></body></html>

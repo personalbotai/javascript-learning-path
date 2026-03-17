@@ -1,74 +1,38 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Class dan Object di JavaScript - JavaScript Learning Path</title>
-    <link rel="stylesheet" href="../styles.css">
-</head>
-<body class="lesson-body">
-    <div class="container">
-        <header class="lesson-header">
-            <div class="breadcrumb">
-                <a href="../index.html">Beranda</a> / <span>Oop</span> / <span>Class dan Object di JavaScript</span>
-            </div>
-            <h1>Class dan Object di JavaScript</h1>
-            <div class="lesson-meta">
-                <span class="duration"><i class="far fa-clock"></i> 15-20 menit</span>
-                <span class="module-badge">Modul: Oop</span>
-            </div>
-        </header>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Class dan Object - JavaScript Learning Path</title><link rel="stylesheet" href="../styles.css"></head>
+<body class="lesson-body"><div class="container"><header class="lesson-header"><div class="breadcrumb"><a href="../index.html">Beranda</a> / <span>OOP</span> / <span>Class dan Object</span></div><h1>Class dan Object</h1><div class="lesson-meta"><span class="duration">15-20 menit</span><span class="module-badge">OOP</span></div></header>
+<main class="lesson-content"><section class="objectives"><h2>Tujuan Pembelajaran</h2><ul><li>Membuat class dan object</li><li>Constructor dan method</li><li>Static method dan property</li></ul></section><section class="content"><h2>Materi</h2><h3>Object Literal</h3><pre><code>const user = {
+    nama: "Archon",
+    umur: 25,
+    sapa() { return \`Halo, \${this.nama}!\`; }
+};
+console.log(user.sapa()); // "Halo, Archon!"</code></pre>
+<h3>Class Syntax</h3><pre><code>class User {
+    // Constructor
+    constructor(nama, email) {
+        this.nama = nama;
+        this.email = email;
+        this.createdAt = new Date();
+    }
+    
+    // Method
+    sapa() {
+        return \`Halo, \${this.nama}!\`;
+    }
+    
+    // Static method (dipanggil tanpa instance)
+    static createGuest() {
+        return new User("Guest", "guest@example.com");
+    }
+}
 
-        <main class="lesson-content">
-            <section class="objectives">
-                <h2>Tujuan Pembelajaran</h2>
-                <ul>
-                    <li>Memahami konsep class dan object di javascript</li>
-                    <li>Menerapkan konsep dalam kode praktis</li>
-                    <li>Memahami best practices penggunaan</li>
-                </ul>
-            </section>
+const alice = new User("Alice", "alice@mail.com");
+console.log(alice.sapa()); // "Halo, Alice!"
 
-            <section class="content">
-                <h2>Pengantar</h2>
-                <p><strong>Class dan Object di JavaScript</strong> adalah salah satu konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer. Pada modul ini, kita akan membahas secara mendalam tentang class dan object di javascript dan penerapannya dalam pengembangan aplikasi web modern.</p>
-
-                <h2>Topik yang Dibahas</h2>
-                <ul>
-            <li>Object literal dan property access</li>
-            <li>Class declaration dan expression</li>
-            <li>Constructor dan instance properties</li>
-            <li>Method pada class</li>
-            <li>Perbedaan class dan object</li>
-                </ul>
-
-                <h2>Penjelasan</h2>
-                <p>JavaScript adalah bahasa pemrograman yang sangat fleksibel dan powerful untuk pengembangan web. Memahami class dan object di javascript akan membantu Anda menulis kode yang lebih efisien, mudah dibaca, dan maintainable.</p>
-
-                <h3>Contoh Kode</h3>
-                <pre><code>// Contoh implementasi class dan object di javascript
-// Praktikkan konsep yang telah dipelajari
-
-console.log('Belajar: Class dan Object di JavaScript');
-</code></pre>
-
-                <h2>Praktik Terbaik</h2>
-                <ul>
-                    <li>Gunakan konsep ini sesuai konteks yang tepat</li>
-                    <li>Pahami kelebihan dan kekurangan pendekatan ini</li>
-                    <li>Praktikkan dengan contoh kode yang bervariasi</li>
-                </ul>
-            </section>
-
-            <section class="summary">
-                <h2>Rangkuman</h2>
-                <p>Dalam modul ini, Anda telah mempelajari tentang class dan object di javascript dalam JavaScript. Konsep ini merupakan fondasi penting yang akan sering digunakan dalam pengembangan aplikasi web.</p>
-            </section>
-
-            <nav class="lesson-nav">
-                <a href="../index.html" class="btn btn-secondary">Kembali ke Daftar Modul</a>
-            </nav>
-        </main>
-    </div>
-</body>
-</html>
+const guest = User.createGuest();</code></pre>
+<h3>Private Fields (ES2022)</h3><pre><code>class BankAccount {
+    #saldo = 0;  // Private field
+    
+    setor(jumlah) { this.#saldo += jumlah; }
+    cekSaldo() { return this.#saldo; }
+}</code></pre></section><section class="summary"><h2>Rangkuman</h2><p>Pelajari class dan object dengan praktik langsung.</p></section><nav class="lesson-nav"><a href="../index.html">← Kembali</a></nav></main></div></body></html>

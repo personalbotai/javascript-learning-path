@@ -1,74 +1,26 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Variabel dan Tipe Data - JavaScript Learning Path</title>
-    <link rel="stylesheet" href="../styles.css">
-</head>
-<body class="lesson-body">
-    <div class="container">
-        <header class="lesson-header">
-            <div class="breadcrumb">
-                <a href="../index.html">Beranda</a> / <span>Basics</span> / <span>Variabel dan Tipe Data</span>
-            </div>
-            <h1>Variabel dan Tipe Data</h1>
-            <div class="lesson-meta">
-                <span class="duration"><i class="far fa-clock"></i> 15-20 menit</span>
-                <span class="module-badge">Modul: Basics</span>
-            </div>
-        </header>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Variabel dan Tipe Data - JavaScript Learning Path</title><link rel="stylesheet" href="../styles.css"></head>
+<body class="lesson-body"><div class="container"><header class="lesson-header"><div class="breadcrumb"><a href="../index.html">Beranda</a> / <span>Dasar-Dasar</span> / <span>Variabel dan Tipe Data</span></div><h1>Variabel dan Tipe Data</h1><div class="lesson-meta"><span class="duration">15-20 menit</span><span class="module-badge">Dasar-Dasar</span></div></header>
+<main class="lesson-content"><section class="objectives"><h2>Tujuan Pembelajaran</h2><ul><li>Memahami perbedaan var, let, dan const</li><li>Mengenal tipe data primitif dan reference</li><li>Memahami type coercion dan typeof</li></ul></section><section class="content"><h2>Materi</h2><h3>Deklarasi Variabel</h3><pre><code>// const - tidak bisa diubah (direkomendasikan)
+const PI = 3.14;
 
-        <main class="lesson-content">
-            <section class="objectives">
-                <h2>Tujuan Pembelajaran</h2>
-                <ul>
-                    <li>Memahami konsep variabel dan tipe data</li>
-                    <li>Menerapkan konsep dalam kode praktis</li>
-                    <li>Memahami best practices penggunaan</li>
-                </ul>
-            </section>
+// let - bisa diubah, block-scoped
+let nama = "Archon";
+nama = "Builder"; // OK
 
-            <section class="content">
-                <h2>Pengantar</h2>
-                <p><strong>Variabel dan Tipe Data</strong> adalah salah satu konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer. Pada modul ini, kita akan membahas secara mendalam tentang variabel dan tipe data dan penerapannya dalam pengembangan aplikasi web modern.</p>
-
-                <h2>Topik yang Dibahas</h2>
-                <ul>
-            <li>var, let, const declarations</li>
-            <li>Primitive types overview</li>
-            <li>Dynamic typing</li>
-            <li>Variable naming conventions</li>
-            <li>Scope pada deklarasi</li>
-                </ul>
-
-                <h2>Penjelasan</h2>
-                <p>JavaScript adalah bahasa pemrograman yang sangat fleksibel dan powerful untuk pengembangan web. Memahami variabel dan tipe data akan membantu Anda menulis kode yang lebih efisien, mudah dibaca, dan maintainable.</p>
-
-                <h3>Contoh Kode</h3>
-                <pre><code>// Contoh implementasi variabel dan tipe data
-// Praktikkan konsep yang telah dipelajari
-
-console.log('Belajar: Variabel dan Tipe Data');
-</code></pre>
-
-                <h2>Praktik Terbaik</h2>
-                <ul>
-                    <li>Gunakan konsep ini sesuai konteks yang tepat</li>
-                    <li>Pahami kelebihan dan kekurangan pendekatan ini</li>
-                    <li>Praktikkan dengan contoh kode yang bervariasi</li>
-                </ul>
-            </section>
-
-            <section class="summary">
-                <h2>Rangkuman</h2>
-                <p>Dalam modul ini, Anda telah mempelajari tentang variabel dan tipe data dalam JavaScript. Konsep ini merupakan fondasi penting yang akan sering digunakan dalam pengembangan aplikasi web.</p>
-            </section>
-
-            <nav class="lesson-nav">
-                <a href="../index.html" class="btn btn-secondary">Kembali ke Daftar Modul</a>
-            </nav>
-        </main>
-    </div>
-</body>
-</html>
+// var - jangan gunakan (function-scoped, hoisting aneh)
+var lama = "deprecated";</code></pre>
+<h3>Tipe Data Primitif</h3><pre><code>// 7 primitif: string, number, bigint, boolean, undefined, null, symbol
+const str = "Halo";
+const num = 42;
+const big = 100n;
+const bool = true;
+const und = undefined;
+const nul = null;
+const sym = Symbol("id");</code></pre>
+<h3>Typeof</h3><pre><code>typeof "Halo"     // "string"
+typeof 42         // "number"
+typeof undefined  // "undefined"
+typeof null       // "object" (bug historis!)
+typeof []         // "object"
+typeof {}         // "object"</code></pre></section><section class="summary"><h2>Rangkuman</h2><p>Pelajari variabel dan tipe data dengan praktik langsung.</p></section><nav class="lesson-nav"><a href="../index.html">← Kembali</a></nav></main></div></body></html>

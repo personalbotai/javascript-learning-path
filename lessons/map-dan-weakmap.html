@@ -1,74 +1,32 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Map Dan Weakmap - JavaScript Learning Path</title>
-    <link rel="stylesheet" href="../styles.css">
-</head>
-<body class="lesson-body">
-    <div class="container">
-        <header class="lesson-header">
-            <div class="breadcrumb">
-                <a href="../index.html">Beranda</a> / <span>General</span> / <span>Map Dan Weakmap</span>
-            </div>
-            <h1>Map Dan Weakmap</h1>
-            <div class="lesson-meta">
-                <span class="duration"><i class="far fa-clock"></i> 15-20 menit</span>
-                <span class="module-badge">Modul: General</span>
-            </div>
-        </header>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Map dan WeakMap - JavaScript Learning Path</title><link rel="stylesheet" href="../styles.css"></head>
+<body class="lesson-body"><div class="container"><header class="lesson-header"><div class="breadcrumb"><a href="../index.html">Beranda</a> / <span>Data Structures</span> / <span>Map dan WeakMap</span></div><h1>Map dan WeakMap</h1><div class="lesson-meta"><span class="duration">15-20 menit</span><span class="module-badge">Data Structures</span></div></header>
+<main class="lesson-content"><section class="objectives"><h2>Tujuan Pembelajaran</h2><ul><li>Menggunakan Map untuk key-value pairs</li><li>Perbedaan Map dan Object</li><li>WeakMap untuk memory-efficient storage</li></ul></section><section class="content"><h2>Materi</h2><h3>Map</h3><pre><code>const map = new Map();
 
-        <main class="lesson-content">
-            <section class="objectives">
-                <h2>Tujuan Pembelajaran</h2>
-                <ul>
-                    <li>Memahami konsep map dan weakmap</li>
-                    <li>Menerapkan konsep dalam kode praktis</li>
-                    <li>Memahami best practices penggunaan</li>
-                </ul>
-            </section>
+// Set & Get
+map.set("nama", "Archon");
+map.set(1, "angka");        // Key bisa tipe apa saja
+map.set({id: 1}, "object");
+console.log(map.get("nama")); // "Archon"
 
-            <section class="content">
-                <h2>Pengantar</h2>
-                <p><strong>Map Dan Weakmap</strong> adalah salah satu konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer. Pada modul ini, kita akan membahas secara mendalam tentang map dan weakmap dan penerapannya dalam pengembangan aplikasi web modern.</p>
+// Properties
+map.size;          // 3
+map.has("nama");   // true
+map.delete(1);     // true
+map.clear();       // Hapus semua</code></pre>
+<h3>Map vs Object</h3><pre><code>// Map: any key type, ordered, iterable, .size
+// Object: string/symbol keys only, tidak guaranteed order
 
-                <h2>Topik yang Dibahas</h2>
-                <ul>
-            <li>Konsep dasar dan definisi</li>
-            <li>Implementasi praktis</li>
-            <li>Contoh kode dan use case</li>
-            <li>Best practices</li>
-            <li>Latihan dan evaluasi</li>
-                </ul>
+// Iterasi Map (dijamin urutan insert)
+for (const [key, value] of map) {
+    console.log(key, value);
+}</code></pre>
+<h3>WeakMap</h3><pre><code>// Key harus object, tidak mencegah garbage collection
+const cache = new WeakMap();
 
-                <h2>Penjelasan</h2>
-                <p>JavaScript adalah bahasa pemrograman yang sangat fleksibel dan powerful untuk pengembangan web. Memahami map dan weakmap akan membantu Anda menulis kode yang lebih efisien, mudah dibaca, dan maintainable.</p>
-
-                <h3>Contoh Kode</h3>
-                <pre><code>// Contoh implementasi map dan weakmap
-// Praktikkan konsep yang telah dipelajari
-
-console.log('Belajar: Map Dan Weakmap');
-</code></pre>
-
-                <h2>Praktik Terbaik</h2>
-                <ul>
-                    <li>Gunakan konsep ini sesuai konteks yang tepat</li>
-                    <li>Pahami kelebihan dan kekurangan pendekatan ini</li>
-                    <li>Praktikkan dengan contoh kode yang bervariasi</li>
-                </ul>
-            </section>
-
-            <section class="summary">
-                <h2>Rangkuman</h2>
-                <p>Dalam modul ini, Anda telah mempelajari tentang map dan weakmap dalam JavaScript. Konsep ini merupakan fondasi penting yang akan sering digunakan dalam pengembangan aplikasi web.</p>
-            </section>
-
-            <nav class="lesson-nav">
-                <a href="../index.html" class="btn btn-secondary">Kembali ke Daftar Modul</a>
-            </nav>
-        </main>
-    </div>
-</body>
-</html>
+function process(obj) {
+    if (!cache.has(obj)) {
+        cache.set(obj, expensiveCalculation(obj));
+    }
+    return cache.get(obj);
+}</code></pre></section><section class="summary"><h2>Rangkuman</h2><p>Pelajari map dan weakmap dengan praktik langsung.</p></section><nav class="lesson-nav"><a href="../index.html">← Kembali</a></nav></main></div></body></html>
