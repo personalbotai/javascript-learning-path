@@ -1,38 +1,55 @@
-# Fetch Api Http Requests
+# Fetch API dan HTTP Requests
 
 **ID**: `fetch-api-http-requests`
 **Type**: lesson
-**Duration**: 20-25 menit
-**Tags**: javascript
+**Duration**: 25-30 menit
+**Tags**: javascript, fetch, api, http
 
 ## Tujuan Pembelajaran
-- Memahami fetch api http requests dalam JavaScript
-- Menerapkan best practices
-- Praktik dengan contoh kode
+- Menggunakan fetch() untuk HTTP requests
+- Handling response dan error
+- CRUD operations dengan REST API
 
 ## Materi
 
-### Pengantar
-
-Fetch Api Http Requests adalah konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer.
-
-### Contoh Kode
-
+### GET Request
 ```javascript
-// Contoh implementasi fetch api http requests
-// Praktikkan dengan kode sendiri
+async function getUsers() {
+    const res = await fetch("https://api.example.com/users");
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const users = await res.json();
+    return users;
+}
 ```
 
-### Best Practices
+### POST Request
+```javascript
+async function createUser(userData) {
+    const res = await fetch("https://api.example.com/users", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(userData)
+    });
+    return await res.json();
+}
+```
 
-- Pahami konsep dasar dengan baik
-- Praktikkan dengan contoh kode
-- Referensi dokumentasi resmi
+### Error Handling
+```javascript
+try {
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+} catch (err) {
+    if (err.name === "TypeError") console.log("Network error");
+    else console.log(err.message);
+}
+```
 
 ## Latihan
-Buat contoh kode yang menggunakan fetch api http requests.
+Buat fungsi yang fetch data dari JSONPlaceholder API dan tampilkan hasilnya.
 
 ## Rangkuman
-- Fetch Api Http Requests adalah konsep penting dalam JavaScript
-- Praktikkan dengan kode sendiri
-- Referensi: MDN Web Docs
+- fetch() mengembalikan Promise
+- response.json() untuk parse JSON
+- Selalu cek response.ok

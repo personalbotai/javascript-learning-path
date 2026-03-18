@@ -1,38 +1,48 @@
-# Json Serialisasi Dan Parsing
+# JSON: Serialisasi dan Parsing
 
 **ID**: `json-serialisasi-dan-parsing`
 **Type**: lesson
 **Duration**: 20-25 menit
-**Tags**: javascript
+**Tags**: javascript, json, data
 
 ## Tujuan Pembelajaran
-- Memahami json serialisasi dan parsing dalam JavaScript
-- Menerapkan best practices
-- Praktik dengan contoh kode
+- Mengkonversi object ke JSON dan sebaliknya
+- JSON.stringify dengan replacer
+- JSON.parse dengan reviver
 
 ## Materi
 
-### Pengantar
-
-Json Serialisasi Dan Parsing adalah konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer.
-
-### Contoh Kode
-
+### stringify
 ```javascript
-// Contoh implementasi json serialisasi dan parsing
-// Praktikkan dengan kode sendiri
+const user = {nama: "Archon", umur: 25};
+const json = JSON.stringify(user);
+// '{"nama":"Archon","umur":25}'
+
+// Pretty print
+const pretty = JSON.stringify(user, null, 2);
 ```
 
-### Best Practices
+### parse
+```javascript
+const parsed = JSON.parse(json);
+console.log(parsed.nama); // "Archon"
 
-- Pahami konsep dasar dengan baik
-- Praktikkan dengan contoh kode
-- Referensi dokumentasi resmi
+// Dengan reviver
+const data = JSON.parse(json, (key, value) => {
+    if (typeof value === 'string') return value.toUpperCase();
+    return value;
+});
+```
+
+### Fetch + JSON
+```javascript
+const res = await fetch("/api/user");
+const user = await res.json();
+```
 
 ## Latihan
-Buat contoh kode yang menggunakan json serialisasi dan parsing.
+Buat fungsi yang simpan dan load data dari localStorage dengan JSON.
 
 ## Rangkuman
-- Json Serialisasi Dan Parsing adalah konsep penting dalam JavaScript
-- Praktikkan dengan kode sendiri
-- Referensi: MDN Web Docs
+- stringify = object → JSON string
+- parse = JSON string → object

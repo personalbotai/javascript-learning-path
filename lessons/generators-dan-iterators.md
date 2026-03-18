@@ -1,38 +1,78 @@
-# Generators Dan Iterators
+# Generators dan Iterators
 
 **ID**: `generators-dan-iterators`
 **Type**: lesson
-**Duration**: 20-25 menit
-**Tags**: javascript
+**Duration**: 25-30 menit
+**Tags**: javascript, generators, es6, advanced
 
 ## Tujuan Pembelajaran
-- Memahami generators dan iterators dalam JavaScript
-- Menerapkan best practices
-- Praktik dengan contoh kode
+- Membuat generator function dengan function*
+- Yield untuk lazy evaluation
+- Custom iterators dengan Symbol.iterator
 
 ## Materi
 
-### Pengantar
-
-Generators Dan Iterators adalah konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer.
-
-### Contoh Kode
-
+### Generator Function
 ```javascript
-// Contoh implementasi generators dan iterators
-// Praktikkan dengan kode sendiri
+function* counter() {
+    yield 1;
+    yield 2;
+    yield 3;
+}
+
+const gen = counter();
+gen.next(); // {value: 1, done: false}
+gen.next(); // {value: 2, done: false}
+gen.next(); // {value: 3, done: false}
+gen.next(); // {value: undefined, done: true}
+
+// Iterasi
+for (const val of counter()) {
+    console.log(val); // 1, 2, 3
+}
 ```
 
-### Best Practices
+### Infinite Generator
+```javascript
+function* fibonacci() {
+    let [a, b] = [0, 1];
+    while (true) {
+        yield a;
+        [a, b] = [b, a + b];
+    }
+}
 
-- Pahami konsep dasar dengan baik
-- Praktikkan dengan contoh kode
-- Referensi dokumentasi resmi
+const fib = fibonacci();
+fib.next().value; // 0
+fib.next().value; // 1
+fib.next().value; // 1
+fib.next().value; // 2
+```
+
+### Custom Iterator
+```javascript
+const range = {
+    from: 1, to: 5,
+    [Symbol.iterator]() {
+        let current = this.from;
+        const last = this.to;
+        return {
+            next() {
+                return current <= last 
+                    ? {value: current++, done: false}
+                    : {done: true};
+            }
+        };
+    }
+};
+
+for (const n of range) console.log(n); // 1,2,3,4,5
+```
 
 ## Latihan
-Buat contoh kode yang menggunakan generators dan iterators.
+Buat generator yang menghasilkan bilangan prima tak terbatas.
 
 ## Rangkuman
-- Generators Dan Iterators adalah konsep penting dalam JavaScript
-- Praktikkan dengan kode sendiri
-- Referensi: MDN Web Docs
+- Generator = function dengan yield
+- Lazy evaluation - hasil dihitung saat diminta
+- Custom iterator dengan Symbol.iterator
