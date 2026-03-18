@@ -6,20 +6,19 @@
 ## Materi
 
 ### Penjelasan
-Web Workers Multi Threading adalah fitur penting dalam JavaScript modern.
+Web Workers Multi Threading digunakan dalam JavaScript untuk pengembangan aplikasi web yang efisien.
 
 ### Contoh Kode
 ```javascript
 // Web Workers Multi Threading
 console.log("Belajar: Web Workers Multi Threading");
-// Praktikkan kode ini dengan variasi sendiri
 ```
 
 ### Tips
-- Praktikkan kode ini
-- Eksperimen dengan variasi
-- Referensi: MDN Web Docs
+- Praktikkan dengan kode
+- Baca dokumentasi MDN
+- Bangun project kecil
 
 ## Rangkuman
 - Web Workers Multi Threading adalah fitur JavaScript yang berguna
-- Praktikkan dengan kode sendiri
+- Praktikkan dengan kode

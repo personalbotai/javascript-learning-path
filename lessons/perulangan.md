@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Perulangan dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintainability kode.
+Perulangan digunakan dalam JavaScript untuk pengembangan aplikasi web yang efisien.
 
 ### Contoh Kode
 ```javascript
@@ -14,6 +14,11 @@ Perulangan dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintaina
 console.log("Belajar: Perulangan");
 ```
 
+### Tips
+- Praktikkan dengan kode
+- Baca dokumentasi MDN
+- Bangun project kecil
+
 ## Rangkuman
-- Praktikkan perulangan
-- Referensi: MDN Web Docs
+- Perulangan adalah fitur JavaScript yang berguna
+- Praktikkan dengan kode

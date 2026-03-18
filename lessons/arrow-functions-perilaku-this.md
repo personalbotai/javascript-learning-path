@@ -7,39 +7,33 @@
 
 ### Sintaks
 ```javascript
-// Regular
-function tambah(a, b) { return a + b; }
-
-// Arrow
 const tambah = (a, b) => a + b;
 const kuadrat = x => x * x;
 const halo = () => console.log("Hi!");
 ```
 
-### Perbedaan this (PENTING!)
+### Perbedaan this
 ```javascript
 const user = {
     nama: "Archon",
-    greetRegular: function() { console.log(this.nama); }, // "Archon"
-    greetArrow: () => { console.log(this.nama); }          // undefined!
+    greetRegular: function() { console.log(this.nama); },
+    greetArrow: () => { console.log(this.nama); } // undefined!
 };
 ```
 
-### Callback Problem
+### Callback
 ```javascript
 class Timer {
     detik = 0;
     mulai() {
-        // ❌ Regular: this hilang
-        // setInterval(function() { this.detik++; }, 1000);
-        
-        // ✅ Arrow: this tetap
         setInterval(() => { this.detik++; }, 1000);
     }
 }
 ```
 
+## Latihan
+Buat class Counter dengan method start() menggunakan arrow function untuk setInterval.
+
 ## Rangkuman
-- Arrow: (params) => expression
 - Arrow tidak punya this sendiri
 - Cocok untuk callback, tidak cocok untuk object method

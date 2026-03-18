@@ -1,25 +1,24 @@
-# Pengenalan dan Sejarah JavaScript
+# Pengenalan Dan Sejarah
 
 **ID**: `pengenalan-dan-sejarah`
-**Duration**: 15-20 menit
+**Duration**: 20-25 menit
 
 ## Materi
 
-### Sejarah
-JavaScript diciptakan oleh **Brendan Eich** tahun 1995 di Netscape.
+### Penjelasan
+Pengenalan Dan Sejarah digunakan dalam JavaScript untuk pengembangan aplikasi web yang efisien.
 
-### Timeline
-- 1995 - JavaScript lahir
-- 1997 - ECMAScript 1
-- 2009 - ES5 (strict mode)
-- 2015 - ES6 (let/const, arrow, class)
-- 2016+ - Yearly releases
+### Contoh Kode
+```javascript
+// Pengenalan Dan Sejarah
+console.log("Belajar: Pengenalan Dan Sejarah");
+```
 
-### Mengapa JavaScript?
-- Bahasa web #1
-- Full-stack capability
-- npm: 2M+ packages
-- Komunitas terbesar
+### Tips
+- Praktikkan dengan kode
+- Baca dokumentasi MDN
+- Bangun project kecil
 
 ## Rangkuman
-JavaScript adalah bahasa paling populer untuk web development.
+- Pengenalan Dan Sejarah adalah fitur JavaScript yang berguna
+- Praktikkan dengan kode

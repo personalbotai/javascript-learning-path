@@ -6,20 +6,19 @@
 ## Materi
 
 ### Penjelasan
-Babel Transpiling adalah fitur penting dalam JavaScript modern.
+Babel Transpiling digunakan dalam JavaScript untuk pengembangan aplikasi web yang efisien.
 
 ### Contoh Kode
 ```javascript
 // Babel Transpiling
 console.log("Belajar: Babel Transpiling");
-// Praktikkan kode ini dengan variasi sendiri
 ```
 
 ### Tips
-- Praktikkan kode ini
-- Eksperimen dengan variasi
-- Referensi: MDN Web Docs
+- Praktikkan dengan kode
+- Baca dokumentasi MDN
+- Bangun project kecil
 
 ## Rangkuman
 - Babel Transpiling adalah fitur JavaScript yang berguna
-- Praktikkan dengan kode sendiri
+- Praktikkan dengan kode

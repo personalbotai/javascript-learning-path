@@ -6,22 +6,19 @@
 ## Materi
 
 ### Penjelasan
-Date dan Time dalam JavaScript adalah fitur penting dalam JavaScript modern.
+Project Realtime Chat App digunakan dalam JavaScript untuk pengembangan aplikasi web yang efisien.
 
 ### Contoh Kode
 ```javascript
-const now = new Date();
-console.log(now.toDateString());     // "Mon Mar 18 2026"
-console.log(now.toTimeString());     // "14:30:00"
-console.log(now.toISOString());      // "2026-03-18T14:30:00Z"
-console.log(now.toLocaleDateString()); // "3/18/2026"
+// Project Realtime Chat App
+console.log("Belajar: Project Realtime Chat App");
 ```
 
 ### Tips
-- Praktikkan kode ini
-- Eksperimen dengan variasi
-- Referensi: MDN Web Docs
+- Praktikkan dengan kode
+- Baca dokumentasi MDN
+- Bangun project kecil
 
 ## Rangkuman
 - Project Realtime Chat App adalah fitur JavaScript yang berguna
-- Praktikkan dengan kode sendiri
+- Praktikkan dengan kode

@@ -6,28 +6,19 @@
 ## Materi
 
 ### Penjelasan
-Inheritance dalam JavaScript adalah fitur penting dalam JavaScript modern.
+Inheritance Dengan Extends digunakan dalam JavaScript untuk pengembangan aplikasi web yang efisien.
 
 ### Contoh Kode
 ```javascript
-class Animal {
-    constructor(nama) { this.nama = nama; }
-    speak() { return `${this.nama} bersuara`; }
-}
-
-class Dog extends Animal {
-    speak() { return `${this.nama} menggonggong!`; }
-}
-
-const dog = new Dog("Buddy");
-console.log(dog.speak()); // "Buddy menggonggong!"
+// Inheritance Dengan Extends
+console.log("Belajar: Inheritance Dengan Extends");
 ```
 
 ### Tips
-- Praktikkan kode ini
-- Eksperimen dengan variasi
-- Referensi: MDN Web Docs
+- Praktikkan dengan kode
+- Baca dokumentasi MDN
+- Bangun project kecil
 
 ## Rangkuman
 - Inheritance Dengan Extends adalah fitur JavaScript yang berguna
-- Praktikkan dengan kode sendiri
+- Praktikkan dengan kode

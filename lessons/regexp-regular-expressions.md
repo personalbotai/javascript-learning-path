@@ -6,23 +6,19 @@
 ## Materi
 
 ### Penjelasan
-Regular Expressions dalam JavaScript adalah fitur penting dalam JavaScript modern.
+Regexp Regular Expressions digunakan dalam JavaScript untuk pengembangan aplikasi web yang efisien.
 
 ### Contoh Kode
 ```javascript
-const regex = /\d+/g;
-console.log("abc123def".match(regex)); // ["123"]
-console.log(regex.test("hello123"));   // true
-
-const emailRegex = /^[\w.-]+@[\w.-]+\.[a-z]{2,}$/i;
-console.log(emailRegex.test("user@mail.com")); // true
+// Regexp Regular Expressions
+console.log("Belajar: Regexp Regular Expressions");
 ```
 
 ### Tips
-- Praktikkan kode ini
-- Eksperimen dengan variasi
-- Referensi: MDN Web Docs
+- Praktikkan dengan kode
+- Baca dokumentasi MDN
+- Bangun project kecil
 
 ## Rangkuman
 - Regexp Regular Expressions adalah fitur JavaScript yang berguna
-- Praktikkan dengan kode sendiri
+- Praktikkan dengan kode

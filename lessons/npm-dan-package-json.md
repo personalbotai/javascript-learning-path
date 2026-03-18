@@ -6,23 +6,19 @@
 ## Materi
 
 ### Penjelasan
-JSON dalam JavaScript adalah fitur penting dalam JavaScript modern.
+Npm Dan Package Json digunakan dalam JavaScript untuk pengembangan aplikasi web yang efisien.
 
 ### Contoh Kode
 ```javascript
-const user = {nama: "Archon", umur: 25};
-const json = JSON.stringify(user, null, 2);
-console.log(json);
-
-const parsed = JSON.parse(json);
-console.log(parsed.nama); // "Archon"
+// Npm Dan Package Json
+console.log("Belajar: Npm Dan Package Json");
 ```
 
 ### Tips
-- Praktikkan kode ini
-- Eksperimen dengan variasi
-- Referensi: MDN Web Docs
+- Praktikkan dengan kode
+- Baca dokumentasi MDN
+- Bangun project kecil
 
 ## Rangkuman
 - Npm Dan Package Json adalah fitur JavaScript yang berguna
-- Praktikkan dengan kode sendiri
+- Praktikkan dengan kode

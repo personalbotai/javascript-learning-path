@@ -6,25 +6,19 @@
 ## Materi
 
 ### Penjelasan
-Error Handling dalam JavaScript adalah fitur penting dalam JavaScript modern.
+Error Handling Try Catch digunakan dalam JavaScript untuk pengembangan aplikasi web yang efisien.
 
 ### Contoh Kode
 ```javascript
-try {
-    const data = JSON.parse(invalidJSON);
-} catch (error) {
-    console.log("Error:", error.name);
-    console.log("Message:", error.message);
-} finally {
-    console.log("Selalu jalan");
-}
+// Error Handling Try Catch
+console.log("Belajar: Error Handling Try Catch");
 ```
 
 ### Tips
-- Praktikkan kode ini
-- Eksperimen dengan variasi
-- Referensi: MDN Web Docs
+- Praktikkan dengan kode
+- Baca dokumentasi MDN
+- Bangun project kecil
 
 ## Rangkuman
 - Error Handling Try Catch adalah fitur JavaScript yang berguna
-- Praktikkan dengan kode sendiri
+- Praktikkan dengan kode

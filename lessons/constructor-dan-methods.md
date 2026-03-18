@@ -6,20 +6,19 @@
 ## Materi
 
 ### Penjelasan
-Constructor Dan Methods adalah fitur penting dalam JavaScript modern.
+Constructor Dan Methods digunakan dalam JavaScript untuk pengembangan aplikasi web yang efisien.
 
 ### Contoh Kode
 ```javascript
 // Constructor Dan Methods
 console.log("Belajar: Constructor Dan Methods");
-// Praktikkan kode ini dengan variasi sendiri
 ```
 
 ### Tips
-- Praktikkan kode ini
-- Eksperimen dengan variasi
-- Referensi: MDN Web Docs
+- Praktikkan dengan kode
+- Baca dokumentasi MDN
+- Bangun project kecil
 
 ## Rangkuman
 - Constructor Dan Methods adalah fitur JavaScript yang berguna
-- Praktikkan dengan kode sendiri
+- Praktikkan dengan kode

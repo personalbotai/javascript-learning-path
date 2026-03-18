@@ -6,22 +6,19 @@
 ## Materi
 
 ### Penjelasan
-Date dan Time dalam JavaScript adalah fitur penting dalam JavaScript modern.
+Date Dan Time digunakan dalam JavaScript untuk pengembangan aplikasi web yang efisien.
 
 ### Contoh Kode
 ```javascript
-const now = new Date();
-console.log(now.toDateString());     // "Mon Mar 18 2026"
-console.log(now.toTimeString());     // "14:30:00"
-console.log(now.toISOString());      // "2026-03-18T14:30:00Z"
-console.log(now.toLocaleDateString()); // "3/18/2026"
+// Date Dan Time
+console.log("Belajar: Date Dan Time");
 ```
 
 ### Tips
-- Praktikkan kode ini
-- Eksperimen dengan variasi
-- Referensi: MDN Web Docs
+- Praktikkan dengan kode
+- Baca dokumentasi MDN
+- Bangun project kecil
 
 ## Rangkuman
 - Date Dan Time adalah fitur JavaScript yang berguna
-- Praktikkan dengan kode sendiri
+- Praktikkan dengan kode

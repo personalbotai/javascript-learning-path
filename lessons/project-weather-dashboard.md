@@ -6,20 +6,19 @@
 ## Materi
 
 ### Penjelasan
-Project Weather Dashboard adalah fitur penting dalam JavaScript modern.
+Project Weather Dashboard digunakan dalam JavaScript untuk pengembangan aplikasi web yang efisien.
 
 ### Contoh Kode
 ```javascript
 // Project Weather Dashboard
 console.log("Belajar: Project Weather Dashboard");
-// Praktikkan kode ini dengan variasi sendiri
 ```
 
 ### Tips
-- Praktikkan kode ini
-- Eksperimen dengan variasi
-- Referensi: MDN Web Docs
+- Praktikkan dengan kode
+- Baca dokumentasi MDN
+- Bangun project kecil
 
 ## Rangkuman
 - Project Weather Dashboard adalah fitur JavaScript yang berguna
-- Praktikkan dengan kode sendiri
+- Praktikkan dengan kode

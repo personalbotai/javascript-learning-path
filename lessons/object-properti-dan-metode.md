@@ -6,29 +6,19 @@
 ## Materi
 
 ### Penjelasan
-Class dan Object dalam JavaScript adalah fitur penting dalam JavaScript modern.
+Object Properti Dan Metode digunakan dalam JavaScript untuk pengembangan aplikasi web yang efisien.
 
 ### Contoh Kode
 ```javascript
-class User {
-    constructor(nama, email) {
-        this.nama = nama;
-        this.email = email;
-    }
-    sapa() {
-        return `Halo, ${this.nama}!`;
-    }
-}
-
-const user = new User("Archon", "a@mail.com");
-console.log(user.sapa()); // "Halo, Archon!"
+// Object Properti Dan Metode
+console.log("Belajar: Object Properti Dan Metode");
 ```
 
 ### Tips
-- Praktikkan kode ini
-- Eksperimen dengan variasi
-- Referensi: MDN Web Docs
+- Praktikkan dengan kode
+- Baca dokumentasi MDN
+- Bangun project kecil
 
 ## Rangkuman
 - Object Properti Dan Metode adalah fitur JavaScript yang berguna
-- Praktikkan dengan kode sendiri
+- Praktikkan dengan kode

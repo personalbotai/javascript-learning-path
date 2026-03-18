@@ -6,22 +6,19 @@
 ## Materi
 
 ### Penjelasan
-String Methods dalam JavaScript adalah fitur penting dalam JavaScript modern.
+String Methods Lengkap digunakan dalam JavaScript untuk pengembangan aplikasi web yang efisien.
 
 ### Contoh Kode
 ```javascript
-const str = "Hello, World!";
-console.log(str.length);        // 13
-console.log(str.slice(0, 5));   // "Hello"
-console.log(str.toUpperCase()); // "HELLO, WORLD!"
-console.log(str.split(", "));   // ["Hello", "World!"]
+// String Methods Lengkap
+console.log("Belajar: String Methods Lengkap");
 ```
 
 ### Tips
-- Praktikkan kode ini
-- Eksperimen dengan variasi
-- Referensi: MDN Web Docs
+- Praktikkan dengan kode
+- Baca dokumentasi MDN
+- Bangun project kecil
 
 ## Rangkuman
 - String Methods Lengkap adalah fitur JavaScript yang berguna
-- Praktikkan dengan kode sendiri
+- Praktikkan dengan kode
