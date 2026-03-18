@@ -1,9 +1,7 @@
 ## Tujuan Pembelajaran
 
 - Memilih dan memanipulasi elemen HTML
-
 - Mengubah style, class, dan atribut
-
 - Membuat dan menghapus elemen
 
 ## Materi
@@ -28,7 +26,7 @@ const el = document.querySelector('#title');
 
 // Teks dan HTML
 el.textContent = "Teks baru";
-el.innerHTML = "<strong>HTML baru</strong>";
+el.innerHTML = "**HTML baru**";
 
 // Atribut
 el.setAttribute('data-id', '123');
@@ -59,6 +57,5 @@ el.remove();
 ```
 
 ## Rangkuman
-
 Pelajari dom manipulation dasar dengan praktik langsung.
 ← Kembali

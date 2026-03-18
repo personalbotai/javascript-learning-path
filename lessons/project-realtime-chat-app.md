@@ -1,17 +1,13 @@
 ## Tujuan Pembelajaran
 
 - Memahami konsep project: realtime chat app
-
 - Penerapan praktis dalam pengembangan
-
 - Best practices dan tips
 
 ## Materi
-
 **Project: Realtime Chat App** adalah topik penting dalam JavaScript.
 
 ### Pengantar
-
 Aplikasi chat real-time dengan WebSocket.
 
 ### Konsep Dasar
@@ -22,10 +18,8 @@ Aplikasi chat real-time dengan WebSocket.
 ```
 
 ### Praktik
-
 Praktikkan konsep ini dengan membuat contoh kode dan project kecil.
 
 ## Rangkuman
-
 Pelajari project: realtime chat app dengan praktik langsung.
 ← Kembali

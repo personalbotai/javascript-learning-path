@@ -1,9 +1,7 @@
 ## Tujuan Pembelajaran
 
 - Memahami perbedaan var, let, dan const
-
 - Mengenal tipe data primitif dan reference
-
 - Memahami type coercion dan typeof
 
 ## Materi
@@ -38,15 +36,14 @@ const sym = Symbol("id");
 ### Typeof
 
 ```
-typeof "Halo"     // "string"
-typeof 42         // "number"
-typeof undefined  // "undefined"
-typeof null       // "object" (bug historis!)
-typeof []         // "object"
-typeof {}         // "object"
+typeof "Halo" // "string"
+typeof 42 // "number"
+typeof undefined // "undefined"
+typeof null // "object" (bug historis!)
+typeof [] // "object"
+typeof {} // "object"
 ```
 
 ## Rangkuman
-
 Pelajari variabel dan tipe data dengan praktik langsung.
 ← Kembali

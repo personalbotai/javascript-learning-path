@@ -1,9 +1,7 @@
 ## Tujuan Pembelajaran
 
 - Membuat generator function dengan function*
-
 - Yield untuk lazy evaluation
-
 - Custom iterators dengan Symbol.iterator
 
 ## Materi
@@ -12,9 +10,9 @@
 
 ```
 function* counter() {
-    yield 1;
-    yield 2;
-    yield 3;
+ yield 1;
+ yield 2;
+ yield 3;
 }
 
 const gen = counter();
@@ -25,7 +23,7 @@ gen.next(); // {value: undefined, done: true}
 
 // Iterasi
 for (const val of counter()) {
-    console.log(val); // 1, 2, 3
+ console.log(val); // 1, 2, 3
 }
 ```
 
@@ -33,11 +31,11 @@ for (const val of counter()) {
 
 ```
 function* fibonacci() {
-    let [a, b] = [0, 1];
-    while (true) {
-        yield a;
-        [a, b] = [b, a + b];
-    }
+ let [a, b] = [0, 1];
+ while (true) {
+ yield a;
+ [a, b] = [b, a + b];
+ }
 }
 
 const fib = fibonacci();
@@ -51,24 +49,13 @@ fib.next().value; // 2
 
 ```
 const range = {
-    from: 1, to: 5,
-    [Symbol.iterator]() {
-        let current = this.from;
-        const last = this.to;
-        return {
-            next() {
-                return current <= last 
-                    ? {value: current++, done: false}
-                    : {done: true};
-            }
-        };
-    }
-};
-
-for (const n of range) console.log(n); // 1,2,3,4,5
-```
-
+ from: 1, to: 5,
+ [Symbol.iterator]() {
+ let current = this.from;
+ const last = this.to;
+ return {
+ next() {
+ return current 
 ## Rangkuman
-
 Pelajari generators dan iterators dengan praktik langsung.
 ← Kembali

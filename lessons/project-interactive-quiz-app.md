@@ -1,17 +1,13 @@
 ## Tujuan Pembelajaran
 
 - Memahami konsep project: interactive quiz app
-
 - Penerapan praktis dalam pengembangan
-
 - Best practices dan tips
 
 ## Materi
-
 **Project: Interactive Quiz App** adalah topik penting dalam JavaScript.
 
 ### Pengantar
-
 Aplikasi kuis interaktif dengan timer dan skor.
 
 ### Konsep Dasar
@@ -22,10 +18,8 @@ Aplikasi kuis interaktif dengan timer dan skor.
 ```
 
 ### Praktik
-
 Praktikkan konsep ini dengan membuat contoh kode dan project kecil.
 
 ## Rangkuman
-
 Pelajari project: interactive quiz app dengan praktik langsung.
 ← Kembali

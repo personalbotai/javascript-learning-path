@@ -1,9 +1,7 @@
 ## Tujuan Pembelajaran
 
 - Memahami polymorphism
-
 - Method overriding di subclass
-
 - Aplikasi praktis polymorphism
 
 ## Materi
@@ -12,18 +10,18 @@
 
 ```
 class Shape {
-    area() { return 0; }
-    describe() { return \`Luas: \${this.area()}\`; }
+ area() { return 0; }
+ describe() { return \`Luas: \${this.area()}\`; }
 }
 
 class Circle extends Shape {
-    constructor(r) { super(); this.r = r; }
-    area() { return Math.PI * this.r ** 2; }
+ constructor(r) { super(); this.r = r; }
+ area() { return Math.PI * this.r ** 2; }
 }
 
 class Square extends Shape {
-    constructor(s) { super(); this.s = s; }
-    area() { return this.s * this.s; }
+ constructor(s) { super(); this.s = s; }
+ area() { return this.s * this.s; }
 }
 
 // Polymorphic behavior
@@ -36,18 +34,17 @@ shapes.forEach(s => console.log(s.describe()));
 
 ```
 class Employee extends User {
-    constructor(nama, jabatan) {
-        super(nama);
-        this.jabatan = jabatan;
-    }
-    
-    sapa() {
-        return super.sapa() + \` Saya \${this.jabatan}\`;
-    }
+ constructor(nama, jabatan) {
+ super(nama);
+ this.jabatan = jabatan;
+ }
+ 
+ sapa() {
+ return super.sapa() + \` Saya \${this.jabatan}\`;
+ }
 }
 ```
 
 ## Rangkuman
-
 Pelajari polymorphism dan method overriding dengan praktik langsung.
 ← Kembali

@@ -1,17 +1,13 @@
 ## Tujuan Pembelajaran
 
 - Memahami konsep final project: fullstack app
-
 - Penerapan praktis dalam pengembangan
-
 - Best practices dan tips
 
 ## Materi
-
 **Final Project: Fullstack App** adalah topik penting dalam JavaScript.
 
 ### Pengantar
-
 Membangun aplikasi fullstack sebagai proyek akhir.
 
 ### Konsep Dasar
@@ -22,10 +18,8 @@ Membangun aplikasi fullstack sebagai proyek akhir.
 ```
 
 ### Praktik
-
 Praktikkan konsep ini dengan membuat contoh kode dan project kecil.
 
 ## Rangkuman
-
 Pelajari final project: fullstack app dengan praktik langsung.
 ← Kembali

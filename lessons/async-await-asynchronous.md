@@ -1,9 +1,7 @@
 ## Tujuan Pembelajaran
 
 - Memahami JavaScript single-threaded dan event loop
-
 - Menggunakan Promise dan async/await
-
 - Error handling di asynchronous code
 
 ## Materi
@@ -24,25 +22,25 @@ console.log("3");
 
 ```
 const promise = new Promise((resolve, reject) => {
-    setTimeout(() => resolve("Berhasil!"), 1000);
+ setTimeout(() => resolve("Berhasil!"), 1000);
 });
 
 promise.then(result => console.log(result))
-       .catch(err => console.log(err))
-       .finally(() => console.log("Selesai"));
+ .catch(err => console.log(err))
+ .finally(() => console.log("Selesai"));
 ```
 
 ### Async/Await (Lebih Bersih)
 
 ```
 async function getData() {
-    try {
-        const response = await fetch("https://api.example.com/data");
-        const data = await response.json();
-        return data;
-    } catch (error) {
-        console.log("Error:", error.message);
-    }
+ try {
+ const response = await fetch("https://api.example.com/data");
+ const data = await response.json();
+ return data;
+ } catch (error) {
+ console.log("Error:", error.message);
+ }
 }
 ```
 
@@ -51,12 +49,11 @@ async function getData() {
 ```
 // Jalankan beberapa promise bersamaan
 const [users, posts] = await Promise.all([
-    fetch("/api/users").then(r => r.json()),
-    fetch("/api/posts").then(r => r.json())
+ fetch("/api/users").then(r => r.json()),
+ fetch("/api/posts").then(r => r.json())
 ]);
 ```
 
 ## Rangkuman
-
 Pelajari async/await: asynchronous programming dengan praktik langsung.
 ← Kembali

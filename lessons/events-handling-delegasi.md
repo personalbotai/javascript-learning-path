@@ -1,9 +1,7 @@
 ## Tujuan Pembelajaran
 
 - Menambahkan event listener
-
 - Event object dan properties
-
 - Event delegation untuk efisiensi
 
 ## Materi
@@ -14,10 +12,10 @@
 const btn = document.querySelector('#myBtn');
 
 btn.addEventListener('click', function(event) {
-    console.log('Diklik!');
-    console.log(event.target);     // Elemen yang diklik
-    console.log(event.type);       // "click"
-    console.log(event.clientX);    // Posisi mouse X
+ console.log('Diklik!');
+ console.log(event.target); // Elemen yang diklik
+ console.log(event.type); // "click"
+ console.log(event.clientX); // Posisi mouse X
 });
 ```
 
@@ -31,15 +29,15 @@ element.addEventListener('dblclick', handler);
 
 // Keyboard
 document.addEventListener('keydown', (e) => {
-    console.log(e.key);    // "Enter", "a", etc.
-    console.log(e.code);   // "KeyA", "Enter"
-    console.log(e.ctrlKey); // true/false
+ console.log(e.key); // "Enter", "a", etc.
+ console.log(e.code); // "KeyA", "Enter"
+ console.log(e.ctrlKey); // true/false
 });
 
 // Form
 form.addEventListener('submit', (e) => {
-    e.preventDefault(); // Prevent page reload
-    const data = new FormData(form);
+ e.preventDefault(); // Prevent page reload
+ const data = new FormData(form);
 });
 ```
 
@@ -51,13 +49,12 @@ form.addEventListener('submit', (e) => {
 
 // ✅ Delegation: 1 listener di parent
 list.addEventListener('click', (e) => {
-    if (e.target.matches('li.item')) {
-        console.log(e.target.textContent);
-    }
+ if (e.target.matches('li.item')) {
+ console.log(e.target.textContent);
+ }
 });
 ```
 
 ## Rangkuman
-
 Pelajari events: handling dan delegasi dengan praktik langsung.
 ← Kembali

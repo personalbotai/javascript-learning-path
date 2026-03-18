@@ -1,9 +1,7 @@
 ## Tujuan Pembelajaran
 
 - Membuat class dan object
-
 - Constructor dan method
-
 - Static method dan property
 
 ## Materi
@@ -12,9 +10,9 @@
 
 ```
 const user = {
-    nama: "Archon",
-    umur: 25,
-    sapa() { return \`Halo, \${this.nama}!\`; }
+ nama: "Archon",
+ umur: 25,
+ sapa() { return \`Halo, \${this.nama}!\`; }
 };
 console.log(user.sapa()); // "Halo, Archon!"
 ```
@@ -23,22 +21,22 @@ console.log(user.sapa()); // "Halo, Archon!"
 
 ```
 class User {
-    // Constructor
-    constructor(nama, email) {
-        this.nama = nama;
-        this.email = email;
-        this.createdAt = new Date();
-    }
-    
-    // Method
-    sapa() {
-        return \`Halo, \${this.nama}!\`;
-    }
-    
-    // Static method (dipanggil tanpa instance)
-    static createGuest() {
-        return new User("Guest", "guest@example.com");
-    }
+ // Constructor
+ constructor(nama, email) {
+ this.nama = nama;
+ this.email = email;
+ this.createdAt = new Date();
+ }
+ 
+ // Method
+ sapa() {
+ return \`Halo, \${this.nama}!\`;
+ }
+ 
+ // Static method (dipanggil tanpa instance)
+ static createGuest() {
+ return new User("Guest", "guest@example.com");
+ }
 }
 
 const alice = new User("Alice", "alice@mail.com");
@@ -51,14 +49,13 @@ const guest = User.createGuest();
 
 ```
 class BankAccount {
-    #saldo = 0;  // Private field
-    
-    setor(jumlah) { this.#saldo += jumlah; }
-    cekSaldo() { return this.#saldo; }
+ #saldo = 0; // Private field
+ 
+ setor(jumlah) { this.#saldo += jumlah; }
+ cekSaldo() { return this.#saldo; }
 }
 ```
 
 ## Rangkuman
-
 Pelajari class dan object dengan praktik langsung.
 ← Kembali

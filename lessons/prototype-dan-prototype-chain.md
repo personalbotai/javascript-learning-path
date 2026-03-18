@@ -1,9 +1,7 @@
 ## Tujuan Pembelajaran
 
 - Memahami prototypal inheritance
-
 - Prototype chain lookup
-
 - Object.create dan __proto__
 
 ## Materi
@@ -25,16 +23,16 @@ alice.sapa(); // "Hi Alice"
 
 ```
 // Lookup: alice → User.prototype → Object.prototype → null
-alice.hasOwnProperty("nama");  // Found di Object.prototype
-alice.toString();              // Found di Object.prototype
-alice.xyz;                     // undefined (not found in chain)
+alice.hasOwnProperty("nama"); // Found di Object.prototype
+alice.toString(); // Found di Object.prototype
+alice.xyz; // undefined (not found in chain)
 ```
 
 ### Object.create
 
 ```
 const animal = {
-    speak() { return \`\${this.name} bersuara\`; }
+ speak() { return \`\${this.name} bersuara\`; }
 };
 
 const dog = Object.create(animal);
@@ -53,6 +51,5 @@ User.prototype.sapa = function() {};
 ```
 
 ## Rangkuman
-
 Pelajari prototype dan prototype chain dengan praktik langsung.
 ← Kembali

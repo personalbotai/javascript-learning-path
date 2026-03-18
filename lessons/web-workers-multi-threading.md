@@ -1,17 +1,13 @@
 ## Tujuan Pembelajaran
 
 - Memahami konsep web workers: multi-threading
-
 - Penerapan praktis dalam pengembangan
-
 - Best practices dan tips
 
 ## Materi
-
 **Web Workers: Multi-threading** adalah topik penting dalam JavaScript.
 
 ### Pengantar
-
 Web Workers untuk background processing.
 
 ### Konsep Dasar
@@ -22,10 +18,8 @@ Web Workers untuk background processing.
 ```
 
 ### Praktik
-
 Praktikkan konsep ini dengan membuat contoh kode dan project kecil.
 
 ## Rangkuman
-
 Pelajari web workers: multi-threading dengan praktik langsung.
 ← Kembali

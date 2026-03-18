@@ -1,17 +1,13 @@
 ## Tujuan Pembelajaran
 
 - Memahami konsep project: expense tracker
-
 - Penerapan praktis dalam pengembangan
-
 - Best practices dan tips
 
 ## Materi
-
 **Project: Expense Tracker** adalah topik penting dalam JavaScript.
 
 ### Pengantar
-
 Aplikasi pencatat pengeluaran dengan localStorage.
 
 ### Konsep Dasar
@@ -22,10 +18,8 @@ Aplikasi pencatat pengeluaran dengan localStorage.
 ```
 
 ### Praktik
-
 Praktikkan konsep ini dengan membuat contoh kode dan project kecil.
 
 ## Rangkuman
-
 Pelajari project: expense tracker dengan praktik langsung.
 ← Kembali

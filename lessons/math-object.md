@@ -1,17 +1,13 @@
 ## Tujuan Pembelajaran
 
 - Memahami konsep math object
-
 - Penerapan praktis dalam pengembangan
-
 - Best practices dan tips
 
 ## Materi
-
 **Math Object** adalah topik penting dalam JavaScript.
 
 ### Pengantar
-
 Metode Math: random, floor, ceil, round, max, min, abs.
 
 ### Konsep Dasar
@@ -22,10 +18,8 @@ Metode Math: random, floor, ceil, round, max, min, abs.
 ```
 
 ### Praktik
-
 Praktikkan konsep ini dengan membuat contoh kode dan project kecil.
 
 ## Rangkuman
-
 Pelajari math object dengan praktik langsung.
 ← Kembali

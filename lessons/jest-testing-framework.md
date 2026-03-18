@@ -1,17 +1,13 @@
 ## Tujuan Pembelajaran
 
 - Memahami konsep jest testing framework
-
 - Penerapan praktis dalam pengembangan
-
 - Best practices dan tips
 
 ## Materi
-
 **Jest Testing Framework** adalah topik penting dalam JavaScript.
 
 ### Pengantar
-
 Unit testing dengan Jest: test, expect, mock.
 
 ### Konsep Dasar
@@ -22,10 +18,8 @@ Unit testing dengan Jest: test, expect, mock.
 ```
 
 ### Praktik
-
 Praktikkan konsep ini dengan membuat contoh kode dan project kecil.
 
 ## Rangkuman
-
 Pelajari jest testing framework dengan praktik langsung.
 ← Kembali

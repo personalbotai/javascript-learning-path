@@ -1,9 +1,7 @@
 ## Tujuan Pembelajaran
 
 - Menggunakan Set untuk unique values
-
 - Operasi set: union, intersection, difference
-
 - WeakSet untuk object tracking
 
 ## Materi
@@ -12,13 +10,13 @@
 
 ```
 const set = new Set([1, 2, 3, 3, 3]);
-console.log(set);        // Set {1, 2, 3}
-console.log(set.size);   // 3 (duplikat dihapus!)
+console.log(set); // Set {1, 2, 3}
+console.log(set.size); // 3 (duplikat dihapus!)
 
 // Tambah/hapus/cek
 set.add(4);
 set.delete(2);
-set.has(1);    // true
+set.has(1); // true
 set.clear();
 
 // Hapus duplikat dari array
@@ -53,6 +51,5 @@ visited.has(obj); // true
 ```
 
 ## Rangkuman
-
 Pelajari set dan weakset dengan praktik langsung.
 ← Kembali

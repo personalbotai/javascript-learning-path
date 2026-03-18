@@ -1,17 +1,13 @@
 ## Tujuan Pembelajaran
 
 - Memahami konsep project: weather dashboard
-
 - Penerapan praktis dalam pengembangan
-
 - Best practices dan tips
 
 ## Materi
-
 **Project: Weather Dashboard** adalah topik penting dalam JavaScript.
 
 ### Pengantar
-
 Dashboard cuaca dengan API integration.
 
 ### Konsep Dasar
@@ -22,10 +18,8 @@ Dashboard cuaca dengan API integration.
 ```
 
 ### Praktik
-
 Praktikkan konsep ini dengan membuat contoh kode dan project kecil.
 
 ## Rangkuman
-
 Pelajari project: weather dashboard dengan praktik langsung.
 ← Kembali

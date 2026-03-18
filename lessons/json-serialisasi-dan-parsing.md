@@ -1,9 +1,7 @@
 ## Tujuan Pembelajaran
 
 - Mengkonversi object ke JSON dan sebaliknya
-
 - JSON.stringify dengan replacer
-
 - JSON.parse dengan reviver
 
 ## Materi
@@ -19,7 +17,7 @@ const json = JSON.stringify(user);
 
 // Pretty print
 const pretty = JSON.stringify(user, null, 2);
-// {\n  "nama": "Archon",\n  ...\n}
+// {\n "nama": "Archon",\n ...\n}
 
 // Replacer (filter fields)
 JSON.stringify(user, ["nama", "umur"]);
@@ -35,8 +33,8 @@ console.log(parsed.nama); // "Archon"
 
 // Dengan reviver
 const data = JSON.parse(json, (key, value) => {
-    if (key === "umur") return Number(value);
-    return value;
+ if (key === "umur") return Number(value);
+ return value;
 });
 ```
 
@@ -48,13 +46,12 @@ const user = await res.json(); // parse JSON
 
 // Kirim JSON
 await fetch("/api/user", {
-    method: "POST",
-    headers: {"Content-Type": "application/json"},
-    body: JSON.stringify(user)
+ method: "POST",
+ headers: {"Content-Type": "application/json"},
+ body: JSON.stringify(user)
 });
 ```
 
 ## Rangkuman
-
 Pelajari json: serialisasi dan parsing dengan praktik langsung.
 ← Kembali

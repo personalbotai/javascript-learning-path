@@ -1,9 +1,7 @@
 ## Tujuan Pembelajaran
 
 - Menggunakan if/else if/else untuk percabangan
-
 - Ternary operator untuk kondisi singkat
-
 - Switch statement untuk multiple cases
 
 ## Materi
@@ -13,11 +11,11 @@
 ```
 const umur = 25;
 if (umur >= 18) {
-    console.log("Dewasa");
+ console.log("Dewasa");
 } else if (umur >= 13) {
-    console.log("Remaja");
+ console.log("Remaja");
 } else {
-    console.log("Anak-anak");
+ console.log("Anak-anak");
 }
 ```
 
@@ -34,19 +32,18 @@ const sapaan = nama ? \`Halo \${nama}\` : "Halo tamu";
 ```
 const hari = "Senin";
 switch(hari) {
-    case "Senin":
-        console.log("Hari kerja");
-        break;
-    case "Sabtu":
-    case "Minggu":
-        console.log("Weekend");
-        break;
-    default:
-        console.log("Hari lain");
+ case "Senin":
+ console.log("Hari kerja");
+ break;
+ case "Sabtu":
+ case "Minggu":
+ console.log("Weekend");
+ break;
+ default:
+ console.log("Hari lain");
 }
 ```
 
 ## Rangkuman
-
 Pelajari kontrol alur: if/else dengan praktik langsung.
 ← Kembali

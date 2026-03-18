@@ -1,9 +1,7 @@
 ## Tujuan Pembelajaran
 
 - Membuat dan memanipulasi object
-
 - Object.keys, values, entries
-
 - Destructuring dan spread
 
 ## Materi
@@ -12,10 +10,10 @@
 
 ```
 const user = {
-    nama: "Archon",
-    umur: 25,
-    "is-active": true,  // Key dengan dash perlu quotes
-    alamat: { kota: "Jakarta", kode: "10220" }
+ nama: "Archon",
+ umur: 25,
+ "is-active": true, // Key dengan dash perlu quotes
+ alamat: { kota: "Jakarta", kode: "10220" }
 };
 ```
 
@@ -40,8 +38,8 @@ delete user.umur;
 ### Object Methods
 
 ```
-Object.keys(user);    // ["nama", "is-active", ...]
-Object.values(user);  // ["Archon", true, ...]
+Object.keys(user); // ["nama", "is-active", ...]
+Object.values(user); // ["Archon", true, ...]
 Object.entries(user); // [["nama","Archon"], ...]
 
 // Destructuring
@@ -54,6 +52,5 @@ const merged = { ...defaults, ...userSettings };
 ```
 
 ## Rangkuman
-
 Pelajari object: properti dan metode dengan praktik langsung.
 ← Kembali
