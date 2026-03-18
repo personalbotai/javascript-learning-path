@@ -1,5 +1,11 @@
-## Tujuan Pembelajaran
+# DOM Manipulation Dasar
 
+**ID**: `dom-manipulation-dasar`
+**Type**: lesson
+**Duration**: 25-30 menit
+**Tags**: javascript, dom, browser, html
+
+## Tujuan Pembelajaran
 - Memilih dan memanipulasi elemen HTML
 - Mengubah style, class, dan atribut
 - Membuat dan menghapus elemen
@@ -7,8 +13,7 @@
 ## Materi
 
 ### Memilih Elemen
-
-```
+```javascript
 // Modern (direkomendasikan)
 document.querySelector('.class');
 document.querySelector('#id');
@@ -20,42 +25,29 @@ document.getElementsByClassName('class');
 ```
 
 ### Manipulasi Konten
-
-```
+```javascript
 const el = document.querySelector('#title');
-
-// Teks dan HTML
 el.textContent = "Teks baru";
-el.innerHTML = "**HTML baru**";
-
-// Atribut
-el.setAttribute('data-id', '123');
-el.getAttribute('class');
-
-// Style
-el.style.color = 'red';
-el.style.fontSize = '20px';
-
-// Class
+el.innerHTML = "<strong>Bold</strong>";
+el.style.color = "red";
 el.classList.add('active');
-el.classList.remove('hidden');
-el.classList.toggle('dark-mode');
+el.classList.toggle('hidden');
 ```
 
-### Buat & Hapus Elemen
-
-```
-// Buat elemen baru
+### Membuat & Menghapus
+```javascript
 const div = document.createElement('div');
 div.textContent = "Hello!";
 div.classList.add('card');
 document.body.appendChild(div);
 
-// Hapus elemen
-el.remove();
-// atau parent.removeChild(el);
+div.remove(); // Hapus
 ```
 
+## Latihan
+Buat script yang membuat card element dengan title dan description, lalu tambahkan ke halaman.
+
 ## Rangkuman
-Pelajari dom manipulation dasar dengan praktik langsung.
-← Kembali
+- querySelector untuk memilih elemen
+- classList untuk manipulasi class
+- createElement/appendChild untuk menambah elemen
