@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Eslint Dan Prettier digunakan untuk pengembangan JavaScript yang efisien.
+Eslint Dan Prettier dalam JavaScript digunakan untuk pengembangan aplikasi web modern.
 
 ### Contoh
 ```javascript

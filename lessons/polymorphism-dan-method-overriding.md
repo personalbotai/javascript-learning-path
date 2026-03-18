@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Polymorphism Dan Method Overriding digunakan untuk pengembangan JavaScript yang efisien.
+Polymorphism Dan Method Overriding dalam JavaScript digunakan untuk pengembangan aplikasi web modern.
 
 ### Contoh
 ```javascript

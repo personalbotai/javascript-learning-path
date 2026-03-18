@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Setup Environment digunakan untuk pengembangan JavaScript yang efisien.
+Setup Environment dalam JavaScript digunakan untuk pengembangan aplikasi web modern.
 
 ### Contoh
 ```javascript

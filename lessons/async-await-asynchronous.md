@@ -1,9 +1,17 @@
 # Async/Await
 
 **ID**: `async-await-asynchronous`
-**Duration**: 25 menit
+**Duration**: 25-30 menit
 
 ## Materi
+
+### Event Loop
+```javascript
+console.log("1");
+setTimeout(() => console.log("2"), 0);
+console.log("3");
+// 1, 3, 2
+```
 
 ### Promise
 ```javascript

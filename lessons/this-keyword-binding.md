@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-This Keyword Binding digunakan untuk pengembangan JavaScript yang efisien.
+This Keyword Binding dalam JavaScript digunakan untuk pengembangan aplikasi web modern.
 
 ### Contoh
 ```javascript

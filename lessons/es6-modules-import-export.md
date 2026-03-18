@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Es6 Modules Import Export digunakan untuk pengembangan JavaScript yang efisien.
+Es6 Modules Import Export dalam JavaScript digunakan untuk pengembangan aplikasi web modern.
 
 ### Contoh
 ```javascript

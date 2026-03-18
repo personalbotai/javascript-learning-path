@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Encapsulation Getter Setter digunakan untuk pengembangan JavaScript yang efisien.
+Encapsulation Getter Setter dalam JavaScript digunakan untuk pengembangan aplikasi web modern.
 
 ### Contoh
 ```javascript

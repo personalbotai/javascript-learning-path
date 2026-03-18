@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Project Weather Dashboard digunakan untuk pengembangan JavaScript yang efisien.
+Project Weather Dashboard dalam JavaScript digunakan untuk pengembangan aplikasi web modern.
 
 ### Contoh
 ```javascript

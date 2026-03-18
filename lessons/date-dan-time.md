@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Date Dan Time digunakan untuk pengembangan JavaScript yang efisien.
+Date Dan Time dalam JavaScript digunakan untuk pengembangan aplikasi web modern.
 
 ### Contoh
 ```javascript

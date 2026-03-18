@@ -1,30 +1,19 @@
-# Array Higher-Order Functions
+# Array Higher Order Functions
 
 **ID**: `array-higher-order-functions`
-**Duration**: 25 menit
+**Duration**: 20-25 menit
 
 ## Materi
 
-### map
-```javascript
-const angka = [1, 2, 3];
-const kuadrat = angka.map(x => x * x); // [1, 4, 9]
-```
+### Penjelasan
+Array Higher Order Functions dalam JavaScript digunakan untuk pengembangan aplikasi web modern.
 
-### filter
+### Contoh
 ```javascript
-const genap = angka.filter(x => x % 2 === 0); // [2]
-```
-
-### reduce
-```javascript
-const total = angka.reduce((a, b) => a + b, 0); // 6
-```
-
-### Chaining
-```javascript
-angka.filter(x => x > 1).map(x => x * 10); // [20, 30]
+// Array Higher Order Functions
+console.log("Belajar: Array Higher Order Functions");
 ```
 
 ## Rangkuman
-- map = transform, filter = saring, reduce = akumulasi
+- Praktikkan array higher order functions
+- Referensi: MDN Web Docs

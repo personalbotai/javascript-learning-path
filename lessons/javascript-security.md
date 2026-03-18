@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Javascript Security digunakan untuk pengembangan JavaScript yang efisien.
+Javascript Security dalam JavaScript digunakan untuk pengembangan aplikasi web modern.
 
 ### Contoh
 ```javascript

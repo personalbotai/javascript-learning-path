@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Project Interactive Quiz App digunakan untuk pengembangan JavaScript yang efisien.
+Project Interactive Quiz App dalam JavaScript digunakan untuk pengembangan aplikasi web modern.
 
 ### Contoh
 ```javascript

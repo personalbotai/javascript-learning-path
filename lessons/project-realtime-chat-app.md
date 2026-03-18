@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Project Realtime Chat App digunakan untuk pengembangan JavaScript yang efisien.
+Project Realtime Chat App dalam JavaScript digunakan untuk pengembangan aplikasi web modern.
 
 ### Contoh
 ```javascript

@@ -1,29 +1,19 @@
-# Kontrol Alur: If/Else
+# Iife Dan Module Pattern
 
-**ID**: `kontrol-alur-if-else`
-**Duration**: 20 menit
+**ID**: `iife-dan-module-pattern`
+**Duration**: 20-25 menit
 
 ## Materi
 
-### If/Else
-```javascript
-if (nilai >= 80) { console.log("B"); }
-else { console.log("C"); }
-```
+### Penjelasan
+Iife Dan Module Pattern dalam JavaScript digunakan untuk pengembangan aplikasi web modern.
 
-### Ternary
+### Contoh
 ```javascript
-const status = nilai >= 70 ? "Lulus" : "Gagal";
-```
-
-### Switch
-```javascript
-switch(hari) {
-    case "Senin": console.log("Kerja"); break;
-    default: console.log("Lain");
-}
+// Iife Dan Module Pattern
+console.log("Belajar: Iife Dan Module Pattern");
 ```
 
 ## Rangkuman
-- if/else untuk percabangan
-- Ternary untuk assignment sederhana
+- Praktikkan iife dan module pattern
+- Referensi: MDN Web Docs

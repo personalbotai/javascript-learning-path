@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Map Dan Weakmap digunakan untuk pengembangan JavaScript yang efisien.
+Map Dan Weakmap dalam JavaScript digunakan untuk pengembangan aplikasi web modern.
 
 ### Contoh
 ```javascript

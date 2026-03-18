@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Constructor Dan Methods digunakan untuk pengembangan JavaScript yang efisien.
+Constructor Dan Methods dalam JavaScript digunakan untuk pengembangan aplikasi web modern.
 
 ### Contoh
 ```javascript

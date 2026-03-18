@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Npm Dan Package Json digunakan untuk pengembangan JavaScript yang efisien.
+Npm Dan Package Json dalam JavaScript digunakan untuk pengembangan aplikasi web modern.
 
 ### Contoh
 ```javascript

@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Pengenalan Dan Sejarah digunakan untuk pengembangan JavaScript yang efisien.
+Pengenalan Dan Sejarah dalam JavaScript digunakan untuk pengembangan aplikasi web modern.
 
 ### Contoh
 ```javascript

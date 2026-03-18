@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Jest Testing Framework digunakan untuk pengembangan JavaScript yang efisien.
+Jest Testing Framework dalam JavaScript digunakan untuk pengembangan aplikasi web modern.
 
 ### Contoh
 ```javascript

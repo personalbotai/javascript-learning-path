@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Set Dan Weakset digunakan untuk pengembangan JavaScript yang efisien.
+Set Dan Weakset dalam JavaScript digunakan untuk pengembangan aplikasi web modern.
 
 ### Contoh
 ```javascript

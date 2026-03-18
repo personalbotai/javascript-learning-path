@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Performance Optimization digunakan untuk pengembangan JavaScript yang efisien.
+Performance Optimization dalam JavaScript digunakan untuk pengembangan aplikasi web modern.
 
 ### Contoh
 ```javascript

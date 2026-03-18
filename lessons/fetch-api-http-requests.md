@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Fetch Api Http Requests digunakan untuk pengembangan JavaScript yang efisien.
+Fetch Api Http Requests dalam JavaScript digunakan untuk pengembangan aplikasi web modern.
 
 ### Contoh
 ```javascript

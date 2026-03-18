@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Proxy Dan Reflection Api digunakan untuk pengembangan JavaScript yang efisien.
+Proxy Dan Reflection Api dalam JavaScript digunakan untuk pengembangan aplikasi web modern.
 
 ### Contoh
 ```javascript

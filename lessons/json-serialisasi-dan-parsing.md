@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Json Serialisasi Dan Parsing digunakan untuk pengembangan JavaScript yang efisien.
+Json Serialisasi Dan Parsing dalam JavaScript digunakan untuk pengembangan aplikasi web modern.
 
 ### Contoh
 ```javascript

@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Events Handling Delegasi digunakan untuk pengembangan JavaScript yang efisien.
+Events Handling Delegasi dalam JavaScript digunakan untuk pengembangan aplikasi web modern.
 
 ### Contoh
 ```javascript

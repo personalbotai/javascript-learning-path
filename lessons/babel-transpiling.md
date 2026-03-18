@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Babel Transpiling digunakan untuk pengembangan JavaScript yang efisien.
+Babel Transpiling dalam JavaScript digunakan untuk pengembangan aplikasi web modern.
 
 ### Contoh
 ```javascript

@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Project Todo List App digunakan untuk pengembangan JavaScript yang efisien.
+Project Todo List App dalam JavaScript digunakan untuk pengembangan aplikasi web modern.
 
 ### Contoh
 ```javascript

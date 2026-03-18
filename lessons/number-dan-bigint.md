@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Number Dan Bigint digunakan untuk pengembangan JavaScript yang efisien.
+Number Dan Bigint dalam JavaScript digunakan untuk pengembangan aplikasi web modern.
 
 ### Contoh
 ```javascript

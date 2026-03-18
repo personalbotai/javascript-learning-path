@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Design Patterns Javascript digunakan untuk pengembangan JavaScript yang efisien.
+Design Patterns Javascript dalam JavaScript digunakan untuk pengembangan aplikasi web modern.
 
 ### Contoh
 ```javascript

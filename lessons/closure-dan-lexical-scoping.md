@@ -1,11 +1,13 @@
 # Closure dan Lexical Scoping
 
 **ID**: `closure-dan-lexical-scoping`
-**Duration**: 25 menit
+**Duration**: 25-30 menit
 
 ## Materi
 
-### Closure
+Closure = function yang mengingat variabel dari scope parent.
+
+### Contoh
 ```javascript
 function counter() {
     let count = 0;

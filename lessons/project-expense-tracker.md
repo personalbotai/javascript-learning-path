@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Project Expense Tracker digunakan untuk pengembangan JavaScript yang efisien.
+Project Expense Tracker dalam JavaScript digunakan untuk pengembangan aplikasi web modern.
 
 ### Contoh
 ```javascript

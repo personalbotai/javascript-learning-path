@@ -1,26 +1,19 @@
-# Perulangan: Loop
+# Perulangan
 
 **ID**: `perulangan`
-**Duration**: 20 menit
+**Duration**: 20-25 menit
 
 ## Materi
 
-### For Loop
-```javascript
-for (let i = 0; i < 5; i++) { console.log(i); }
-```
+### Penjelasan
+Perulangan dalam JavaScript digunakan untuk pengembangan aplikasi web modern.
 
-### For...of
+### Contoh
 ```javascript
-for (const item of buah) { console.log(item); }
-```
-
-### While
-```javascript
-let i = 0;
-while (i < 3) { console.log(i++); }
+// Perulangan
+console.log("Belajar: Perulangan");
 ```
 
 ## Rangkuman
-- for = kontrol penuh
-- for...of = iterasi nilai
+- Praktikkan perulangan
+- Referensi: MDN Web Docs

@@ -18,11 +18,12 @@ el.style.color = "red";
 el.classList.add('active');
 ```
 
-### Buat Elemen
+### Buat & Hapus
 ```javascript
 const div = document.createElement('div');
 div.textContent = "Hello!";
 document.body.appendChild(div);
+div.remove();
 ```
 
 ## Rangkuman

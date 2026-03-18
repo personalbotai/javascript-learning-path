@@ -1,23 +1,19 @@
-# Regular Expressions
+# Regexp Regular Expressions
 
 **ID**: `regexp-regular-expressions`
-**Duration**: 25 menit
+**Duration**: 20-25 menit
 
 ## Materi
 
-### Dasar
-```javascript
-const regex = /\d+/g;
-"abc123".match(regex); // ["123"]
-regex.test("hello");   // false
-```
+### Penjelasan
+Regexp Regular Expressions dalam JavaScript digunakan untuk pengembangan aplikasi web modern.
 
-### Pattern
+### Contoh
 ```javascript
-/^[a-z]+$/i  // Hanya huruf
-/^\d{4}$/    // 4 digit
+// Regexp Regular Expressions
+console.log("Belajar: Regexp Regular Expressions");
 ```
 
 ## Rangkuman
-- /pattern/flags untuk regex
-- test() untuk validasi, match() untuk cari
+- Praktikkan regexp regular expressions
+- Referensi: MDN Web Docs

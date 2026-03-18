@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Code Review Checklist digunakan untuk pengembangan JavaScript yang efisien.
+Code Review Checklist dalam JavaScript digunakan untuk pengembangan aplikasi web modern.
 
 ### Contoh
 ```javascript

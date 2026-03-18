@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Webpack Bundling Assets digunakan untuk pengembangan JavaScript yang efisien.
+Webpack Bundling Assets dalam JavaScript digunakan untuk pengembangan aplikasi web modern.
 
 ### Contoh
 ```javascript

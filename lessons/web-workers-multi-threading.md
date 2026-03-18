@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Web Workers Multi Threading digunakan untuk pengembangan JavaScript yang efisien.
+Web Workers Multi Threading dalam JavaScript digunakan untuk pengembangan aplikasi web modern.
 
 ### Contoh
 ```javascript
