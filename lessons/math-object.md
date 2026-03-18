@@ -1,24 +1,29 @@
-# Math Object
+# Object: Properti dan Metode
 
-**ID**: `math-object`
-**Duration**: 20-25 menit
+**ID**: `object-properti-dan-metode`
+**Duration**: 20 menit
 
 ## Materi
 
-### Penjelasan
-Math Object digunakan dalam JavaScript untuk pengembangan aplikasi web yang efisien.
-
-### Contoh Kode
+### Object Literal
 ```javascript
-// Math Object
-console.log("Belajar: Math Object");
+const user = {
+    nama: "Archon",
+    umur: 25,
+    sapa() { return `Halo, ${this.nama}!`; }
+};
 ```
 
-### Tips
-- Praktikkan dengan kode
-- Baca dokumentasi MDN
-- Bangun project kecil
+### Destructuring
+```javascript
+const { nama, umur } = user;
+```
+
+### Spread
+```javascript
+const updated = { ...user, umur: 26 };
+```
 
 ## Rangkuman
-- Math Object adalah fitur JavaScript yang berguna
-- Praktikkan dengan kode
+- Object = kumpulan key-value
+- Destructuring untuk ekstraksi

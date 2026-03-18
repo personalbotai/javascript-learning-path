@@ -6,19 +6,14 @@
 ## Materi
 
 ### Penjelasan
-Javascript Security digunakan dalam JavaScript untuk pengembangan aplikasi web yang efisien.
+Javascript Security digunakan untuk pengembangan JavaScript yang efisien.
 
-### Contoh Kode
+### Contoh
 ```javascript
 // Javascript Security
 console.log("Belajar: Javascript Security");
 ```
 
-### Tips
-- Praktikkan dengan kode
-- Baca dokumentasi MDN
-- Bangun project kecil
-
 ## Rangkuman
-- Javascript Security adalah fitur JavaScript yang berguna
-- Praktikkan dengan kode
+- Praktikkan javascript security
+- Referensi: MDN Web Docs

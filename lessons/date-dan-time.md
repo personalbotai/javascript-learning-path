@@ -6,19 +6,14 @@
 ## Materi
 
 ### Penjelasan
-Date Dan Time digunakan dalam JavaScript untuk pengembangan aplikasi web yang efisien.
+Date Dan Time digunakan untuk pengembangan JavaScript yang efisien.
 
-### Contoh Kode
+### Contoh
 ```javascript
 // Date Dan Time
 console.log("Belajar: Date Dan Time");
 ```
 
-### Tips
-- Praktikkan dengan kode
-- Baca dokumentasi MDN
-- Bangun project kecil
-
 ## Rangkuman
-- Date Dan Time adalah fitur JavaScript yang berguna
-- Praktikkan dengan kode
+- Praktikkan date dan time
+- Referensi: MDN Web Docs

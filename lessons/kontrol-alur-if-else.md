@@ -1,24 +1,29 @@
-# Kontrol Alur If Else
+# Kontrol Alur: If/Else
 
 **ID**: `kontrol-alur-if-else`
-**Duration**: 20-25 menit
+**Duration**: 20 menit
 
 ## Materi
 
-### Penjelasan
-Kontrol Alur If Else digunakan dalam JavaScript untuk pengembangan aplikasi web yang efisien.
-
-### Contoh Kode
+### If/Else
 ```javascript
-// Kontrol Alur If Else
-console.log("Belajar: Kontrol Alur If Else");
+if (nilai >= 80) { console.log("B"); }
+else { console.log("C"); }
 ```
 
-### Tips
-- Praktikkan dengan kode
-- Baca dokumentasi MDN
-- Bangun project kecil
+### Ternary
+```javascript
+const status = nilai >= 70 ? "Lulus" : "Gagal";
+```
+
+### Switch
+```javascript
+switch(hari) {
+    case "Senin": console.log("Kerja"); break;
+    default: console.log("Lain");
+}
+```
 
 ## Rangkuman
-- Kontrol Alur If Else adalah fitur JavaScript yang berguna
-- Praktikkan dengan kode
+- if/else untuk percabangan
+- Ternary untuk assignment sederhana

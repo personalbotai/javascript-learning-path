@@ -6,19 +6,14 @@
 ## Materi
 
 ### Penjelasan
-Project Todo List App digunakan dalam JavaScript untuk pengembangan aplikasi web yang efisien.
+Project Todo List App digunakan untuk pengembangan JavaScript yang efisien.
 
-### Contoh Kode
+### Contoh
 ```javascript
 // Project Todo List App
 console.log("Belajar: Project Todo List App");
 ```
 
-### Tips
-- Praktikkan dengan kode
-- Baca dokumentasi MDN
-- Bangun project kecil
-
 ## Rangkuman
-- Project Todo List App adalah fitur JavaScript yang berguna
-- Praktikkan dengan kode
+- Praktikkan project todo list app
+- Referensi: MDN Web Docs

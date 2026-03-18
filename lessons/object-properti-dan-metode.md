@@ -1,24 +1,29 @@
-# Object Properti Dan Metode
+# Object: Properti dan Metode
 
 **ID**: `object-properti-dan-metode`
-**Duration**: 20-25 menit
+**Duration**: 20 menit
 
 ## Materi
 
-### Penjelasan
-Object Properti Dan Metode digunakan dalam JavaScript untuk pengembangan aplikasi web yang efisien.
-
-### Contoh Kode
+### Object Literal
 ```javascript
-// Object Properti Dan Metode
-console.log("Belajar: Object Properti Dan Metode");
+const user = {
+    nama: "Archon",
+    umur: 25,
+    sapa() { return `Halo, ${this.nama}!`; }
+};
 ```
 
-### Tips
-- Praktikkan dengan kode
-- Baca dokumentasi MDN
-- Bangun project kecil
+### Destructuring
+```javascript
+const { nama, umur } = user;
+```
+
+### Spread
+```javascript
+const updated = { ...user, umur: 26 };
+```
 
 ## Rangkuman
-- Object Properti Dan Metode adalah fitur JavaScript yang berguna
-- Praktikkan dengan kode
+- Object = kumpulan key-value
+- Destructuring untuk ekstraksi

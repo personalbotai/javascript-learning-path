@@ -1,24 +1,30 @@
-# Dom Manipulation Dasar
+# DOM Manipulation
 
 **ID**: `dom-manipulation-dasar`
-**Duration**: 20-25 menit
+**Duration**: 25 menit
 
 ## Materi
 
-### Penjelasan
-Dom Manipulation Dasar digunakan dalam JavaScript untuk pengembangan aplikasi web yang efisien.
-
-### Contoh Kode
+### Pilih Elemen
 ```javascript
-// Dom Manipulation Dasar
-console.log("Belajar: Dom Manipulation Dasar");
+document.querySelector('#id');
+document.querySelectorAll('.class');
 ```
 
-### Tips
-- Praktikkan dengan kode
-- Baca dokumentasi MDN
-- Bangun project kecil
+### Manipulasi
+```javascript
+el.textContent = "Teks baru";
+el.style.color = "red";
+el.classList.add('active');
+```
+
+### Buat Elemen
+```javascript
+const div = document.createElement('div');
+div.textContent = "Hello!";
+document.body.appendChild(div);
+```
 
 ## Rangkuman
-- Dom Manipulation Dasar adalah fitur JavaScript yang berguna
-- Praktikkan dengan kode
+- querySelector = pilih elemen
+- classList = manipulasi class

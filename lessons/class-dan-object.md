@@ -1,24 +1,30 @@
-# Class Dan Object
+# Class dan Object
 
 **ID**: `class-dan-object`
-**Duration**: 20-25 menit
+**Duration**: 20 menit
 
 ## Materi
 
-### Penjelasan
-Class Dan Object digunakan dalam JavaScript untuk pengembangan aplikasi web yang efisien.
-
-### Contoh Kode
+### Class
 ```javascript
-// Class Dan Object
-console.log("Belajar: Class Dan Object");
+class User {
+    constructor(nama) {
+        this.nama = nama;
+    }
+    sapa() {
+        return `Halo, ${this.nama}!`;
+    }
+}
 ```
 
-### Tips
-- Praktikkan dengan kode
-- Baca dokumentasi MDN
-- Bangun project kecil
+### Private Field
+```javascript
+class Bank {
+    #saldo = 0;
+    setor(j) { this.#saldo += j; }
+}
+```
 
 ## Rangkuman
-- Class Dan Object adalah fitur JavaScript yang berguna
-- Praktikkan dengan kode
+- Class = blueprint untuk object
+- # = private field

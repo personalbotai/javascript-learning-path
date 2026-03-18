@@ -1,24 +1,31 @@
-# Closure Dan Lexical Scoping
+# Closure dan Lexical Scoping
 
 **ID**: `closure-dan-lexical-scoping`
-**Duration**: 20-25 menit
+**Duration**: 25 menit
 
 ## Materi
 
-### Penjelasan
-Closure Dan Lexical Scoping digunakan dalam JavaScript untuk pengembangan aplikasi web yang efisien.
-
-### Contoh Kode
+### Closure
 ```javascript
-// Closure Dan Lexical Scoping
-console.log("Belajar: Closure Dan Lexical Scoping");
+function counter() {
+    let count = 0;
+    return () => ++count;
+}
+const hitung = counter();
+console.log(hitung()); // 1
+console.log(hitung()); // 2
 ```
 
-### Tips
-- Praktikkan dengan kode
-- Baca dokumentasi MDN
-- Bangun project kecil
+### Privacy
+```javascript
+function buatAkun(saldo) {
+    return {
+        cekSaldo: () => saldo,
+        setor: (j) => saldo += j
+    };
+}
+```
 
 ## Rangkuman
-- Closure Dan Lexical Scoping adalah fitur JavaScript yang berguna
-- Praktikkan dengan kode
+- Closure = function + lexical environment
+- Variabel tetap hidup setelah parent selesai

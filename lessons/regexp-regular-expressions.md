@@ -1,24 +1,23 @@
-# Regexp Regular Expressions
+# Regular Expressions
 
 **ID**: `regexp-regular-expressions`
-**Duration**: 20-25 menit
+**Duration**: 25 menit
 
 ## Materi
 
-### Penjelasan
-Regexp Regular Expressions digunakan dalam JavaScript untuk pengembangan aplikasi web yang efisien.
-
-### Contoh Kode
+### Dasar
 ```javascript
-// Regexp Regular Expressions
-console.log("Belajar: Regexp Regular Expressions");
+const regex = /\d+/g;
+"abc123".match(regex); // ["123"]
+regex.test("hello");   // false
 ```
 
-### Tips
-- Praktikkan dengan kode
-- Baca dokumentasi MDN
-- Bangun project kecil
+### Pattern
+```javascript
+/^[a-z]+$/i  // Hanya huruf
+/^\d{4}$/    // 4 digit
+```
 
 ## Rangkuman
-- Regexp Regular Expressions adalah fitur JavaScript yang berguna
-- Praktikkan dengan kode
+- /pattern/flags untuk regex
+- test() untuk validasi, match() untuk cari

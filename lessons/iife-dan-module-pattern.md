@@ -1,24 +1,29 @@
-# Iife Dan Module Pattern
+# Kontrol Alur: If/Else
 
-**ID**: `iife-dan-module-pattern`
-**Duration**: 20-25 menit
+**ID**: `kontrol-alur-if-else`
+**Duration**: 20 menit
 
 ## Materi
 
-### Penjelasan
-Iife Dan Module Pattern digunakan dalam JavaScript untuk pengembangan aplikasi web yang efisien.
-
-### Contoh Kode
+### If/Else
 ```javascript
-// Iife Dan Module Pattern
-console.log("Belajar: Iife Dan Module Pattern");
+if (nilai >= 80) { console.log("B"); }
+else { console.log("C"); }
 ```
 
-### Tips
-- Praktikkan dengan kode
-- Baca dokumentasi MDN
-- Bangun project kecil
+### Ternary
+```javascript
+const status = nilai >= 70 ? "Lulus" : "Gagal";
+```
+
+### Switch
+```javascript
+switch(hari) {
+    case "Senin": console.log("Kerja"); break;
+    default: console.log("Lain");
+}
+```
 
 ## Rangkuman
-- Iife Dan Module Pattern adalah fitur JavaScript yang berguna
-- Praktikkan dengan kode
+- if/else untuk percabangan
+- Ternary untuk assignment sederhana

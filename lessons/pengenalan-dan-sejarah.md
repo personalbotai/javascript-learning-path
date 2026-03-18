@@ -6,19 +6,14 @@
 ## Materi
 
 ### Penjelasan
-Pengenalan Dan Sejarah digunakan dalam JavaScript untuk pengembangan aplikasi web yang efisien.
+Pengenalan Dan Sejarah digunakan untuk pengembangan JavaScript yang efisien.
 
-### Contoh Kode
+### Contoh
 ```javascript
 // Pengenalan Dan Sejarah
 console.log("Belajar: Pengenalan Dan Sejarah");
 ```
 
-### Tips
-- Praktikkan dengan kode
-- Baca dokumentasi MDN
-- Bangun project kecil
-
 ## Rangkuman
-- Pengenalan Dan Sejarah adalah fitur JavaScript yang berguna
-- Praktikkan dengan kode
+- Praktikkan pengenalan dan sejarah
+- Referensi: MDN Web Docs

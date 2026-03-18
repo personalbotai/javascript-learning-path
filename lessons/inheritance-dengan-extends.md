@@ -1,24 +1,28 @@
-# Inheritance Dengan Extends
+# Inheritance
 
 **ID**: `inheritance-dengan-extends`
-**Duration**: 20-25 menit
+**Duration**: 25 menit
 
 ## Materi
 
-### Penjelasan
-Inheritance Dengan Extends digunakan dalam JavaScript untuk pengembangan aplikasi web yang efisien.
-
-### Contoh Kode
+### Extends
 ```javascript
-// Inheritance Dengan Extends
-console.log("Belajar: Inheritance Dengan Extends");
+class Animal {
+    constructor(nama) { this.nama = nama; }
+    speak() { return `${this.nama} bersuara`; }
+}
+class Dog extends Animal {
+    speak() { return `${this.nama} menggonggong!`; }
+}
 ```
 
-### Tips
-- Praktikkan dengan kode
-- Baca dokumentasi MDN
-- Bangun project kecil
+### Super
+```javascript
+class Dog extends Animal {
+    constructor(nama) { super(nama); }
+}
+```
 
 ## Rangkuman
-- Inheritance Dengan Extends adalah fitur JavaScript yang berguna
-- Praktikkan dengan kode
+- extends = inheritance
+- super() = panggil parent

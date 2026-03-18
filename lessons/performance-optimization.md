@@ -6,19 +6,14 @@
 ## Materi
 
 ### Penjelasan
-Performance Optimization digunakan dalam JavaScript untuk pengembangan aplikasi web yang efisien.
+Performance Optimization digunakan untuk pengembangan JavaScript yang efisien.
 
-### Contoh Kode
+### Contoh
 ```javascript
 // Performance Optimization
 console.log("Belajar: Performance Optimization");
 ```
 
-### Tips
-- Praktikkan dengan kode
-- Baca dokumentasi MDN
-- Bangun project kecil
-
 ## Rangkuman
-- Performance Optimization adalah fitur JavaScript yang berguna
-- Praktikkan dengan kode
+- Praktikkan performance optimization
+- Referensi: MDN Web Docs

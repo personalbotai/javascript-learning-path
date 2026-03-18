@@ -1,36 +1,30 @@
 # Array Higher-Order Functions
 
 **ID**: `array-higher-order-functions`
-**Duration**: 25-30 menit
+**Duration**: 25 menit
 
 ## Materi
 
-### map - Transformasi
+### map
 ```javascript
-const angka = [1, 2, 3, 4, 5];
-const kuadrat = angka.map(x => x * x); // [1, 4, 9, 16, 25]
+const angka = [1, 2, 3];
+const kuadrat = angka.map(x => x * x); // [1, 4, 9]
 ```
 
-### filter - Saring
+### filter
 ```javascript
-const genap = angka.filter(x => x % 2 === 0); // [2, 4]
+const genap = angka.filter(x => x % 2 === 0); // [2]
 ```
 
-### reduce - Akumulasi
+### reduce
 ```javascript
-const total = angka.reduce((acc, curr) => acc + curr, 0); // 15
+const total = angka.reduce((a, b) => a + b, 0); // 6
 ```
 
 ### Chaining
 ```javascript
-const hasil = angka
-    .filter(x => x > 2)
-    .map(x => x * 10)
-    .reduce((a, b) => a + b, 0); // 120
+angka.filter(x => x > 1).map(x => x * 10); // [20, 30]
 ```
-
-## Latihan
-Buat fungsi yang menghitung rata-rata dari array angka menggunakan reduce.
 
 ## Rangkuman
 - map = transform, filter = saring, reduce = akumulasi

@@ -6,19 +6,14 @@
 ## Materi
 
 ### Penjelasan
-Debugging Chrome Devtools digunakan dalam JavaScript untuk pengembangan aplikasi web yang efisien.
+Debugging Chrome Devtools digunakan untuk pengembangan JavaScript yang efisien.
 
-### Contoh Kode
+### Contoh
 ```javascript
 // Debugging Chrome Devtools
 console.log("Belajar: Debugging Chrome Devtools");
 ```
 
-### Tips
-- Praktikkan dengan kode
-- Baca dokumentasi MDN
-- Bangun project kecil
-
 ## Rangkuman
-- Debugging Chrome Devtools adalah fitur JavaScript yang berguna
-- Praktikkan dengan kode
+- Praktikkan debugging chrome devtools
+- Referensi: MDN Web Docs

@@ -6,19 +6,14 @@
 ## Materi
 
 ### Penjelasan
-Project Ecommerce Filter digunakan dalam JavaScript untuk pengembangan aplikasi web yang efisien.
+Project Ecommerce Filter digunakan untuk pengembangan JavaScript yang efisien.
 
-### Contoh Kode
+### Contoh
 ```javascript
 // Project Ecommerce Filter
 console.log("Belajar: Project Ecommerce Filter");
 ```
 
-### Tips
-- Praktikkan dengan kode
-- Baca dokumentasi MDN
-- Bangun project kecil
-
 ## Rangkuman
-- Project Ecommerce Filter adalah fitur JavaScript yang berguna
-- Praktikkan dengan kode
+- Praktikkan project ecommerce filter
+- Referensi: MDN Web Docs

@@ -6,19 +6,14 @@
 ## Materi
 
 ### Penjelasan
-Setup Environment digunakan dalam JavaScript untuk pengembangan aplikasi web yang efisien.
+Setup Environment digunakan untuk pengembangan JavaScript yang efisien.
 
-### Contoh Kode
+### Contoh
 ```javascript
 // Setup Environment
 console.log("Belajar: Setup Environment");
 ```
 
-### Tips
-- Praktikkan dengan kode
-- Baca dokumentasi MDN
-- Bangun project kecil
-
 ## Rangkuman
-- Setup Environment adalah fitur JavaScript yang berguna
-- Praktikkan dengan kode
+- Praktikkan setup environment
+- Referensi: MDN Web Docs

@@ -1,24 +1,22 @@
-# Prototype Dan Prototype Chain
+# Prototype
 
 **ID**: `prototype-dan-prototype-chain`
-**Duration**: 20-25 menit
+**Duration**: 25 menit
 
 ## Materi
 
-### Penjelasan
-Prototype Dan Prototype Chain digunakan dalam JavaScript untuk pengembangan aplikasi web yang efisien.
-
-### Contoh Kode
+### Prototype
 ```javascript
-// Prototype Dan Prototype Chain
-console.log("Belajar: Prototype Dan Prototype Chain");
+function User(nama) { this.nama = nama; }
+User.prototype.sapa = function() { return `Hi ${this.nama}`; };
 ```
 
-### Tips
-- Praktikkan dengan kode
-- Baca dokumentasi MDN
-- Bangun project kecil
+### Chain
+```javascript
+user.sapa(); // Found di prototype
+user.toString(); // Found di Object.prototype
+```
 
 ## Rangkuman
-- Prototype Dan Prototype Chain adalah fitur JavaScript yang berguna
-- Praktikkan dengan kode
+- Prototype = inheritance mechanism
+- Lookup: instance → prototype → Object.prototype → null

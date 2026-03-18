@@ -1,24 +1,24 @@
-# String Methods Lengkap
+# String Methods
 
 **ID**: `string-methods-lengkap`
-**Duration**: 20-25 menit
+**Duration**: 20 menit
 
 ## Materi
 
-### Penjelasan
-String Methods Lengkap digunakan dalam JavaScript untuk pengembangan aplikasi web yang efisien.
-
-### Contoh Kode
+### Dasar
 ```javascript
-// String Methods Lengkap
-console.log("Belajar: String Methods Lengkap");
+str.length;         // 13
+str.slice(0, 5);    // "Hello"
+str.split(", ");    // ["Hello", "World"]
+str.replace("A", "B");
 ```
 
-### Tips
-- Praktikkan dengan kode
-- Baca dokumentasi MDN
-- Bangun project kecil
+### Template Literals
+```javascript
+const nama = "Archon";
+console.log(`Halo, ${nama}!`);
+```
 
 ## Rangkuman
-- String Methods Lengkap adalah fitur JavaScript yang berguna
-- Praktikkan dengan kode
+- String immutable
+- Template literals untuk interpolation

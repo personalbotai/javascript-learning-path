@@ -6,19 +6,14 @@
 ## Materi
 
 ### Penjelasan
-Npm Dan Package Json digunakan dalam JavaScript untuk pengembangan aplikasi web yang efisien.
+Npm Dan Package Json digunakan untuk pengembangan JavaScript yang efisien.
 
-### Contoh Kode
+### Contoh
 ```javascript
 // Npm Dan Package Json
 console.log("Belajar: Npm Dan Package Json");
 ```
 
-### Tips
-- Praktikkan dengan kode
-- Baca dokumentasi MDN
-- Bangun project kecil
-
 ## Rangkuman
-- Npm Dan Package Json adalah fitur JavaScript yang berguna
-- Praktikkan dengan kode
+- Praktikkan npm dan package json
+- Referensi: MDN Web Docs

@@ -6,19 +6,14 @@
 ## Materi
 
 ### Penjelasan
-Jest Testing Framework digunakan dalam JavaScript untuk pengembangan aplikasi web yang efisien.
+Jest Testing Framework digunakan untuk pengembangan JavaScript yang efisien.
 
-### Contoh Kode
+### Contoh
 ```javascript
 // Jest Testing Framework
 console.log("Belajar: Jest Testing Framework");
 ```
 
-### Tips
-- Praktikkan dengan kode
-- Baca dokumentasi MDN
-- Bangun project kecil
-
 ## Rangkuman
-- Jest Testing Framework adalah fitur JavaScript yang berguna
-- Praktikkan dengan kode
+- Praktikkan jest testing framework
+- Referensi: MDN Web Docs

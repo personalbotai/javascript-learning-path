@@ -1,24 +1,28 @@
-# Operator Dan Ekspresi
+# Operator dan Ekspresi
 
 **ID**: `operator-dan-ekspresi`
-**Duration**: 20-25 menit
+**Duration**: 15 menit
 
 ## Materi
 
-### Penjelasan
-Operator Dan Ekspresi digunakan dalam JavaScript untuk pengembangan aplikasi web yang efisien.
-
-### Contoh Kode
+### Aritmatika
 ```javascript
-// Operator Dan Ekspresi
-console.log("Belajar: Operator Dan Ekspresi");
+10 + 3   // 13
+10 % 3   // 1
+10 ** 3  // 1000
 ```
 
-### Tips
-- Praktikkan dengan kode
-- Baca dokumentasi MDN
-- Bangun project kecil
+### Perbandingan
+```javascript
+5 === "5" // false (strict)
+5 == "5"  // true (coercion)
+```
+
+### Nullish
+```javascript
+null ?? "default" // "default"
+```
 
 ## Rangkuman
-- Operator Dan Ekspresi adalah fitur JavaScript yang berguna
-- Praktikkan dengan kode
+- Selalu gunakan ===
+- ?? untuk nullish coalescing

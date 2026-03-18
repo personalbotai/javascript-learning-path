@@ -1,24 +1,30 @@
-# Async Await Asynchronous
+# Async/Await
 
 **ID**: `async-await-asynchronous`
-**Duration**: 20-25 menit
+**Duration**: 25 menit
 
 ## Materi
 
-### Penjelasan
-Async Await Asynchronous digunakan dalam JavaScript untuk pengembangan aplikasi web yang efisien.
-
-### Contoh Kode
+### Promise
 ```javascript
-// Async Await Asynchronous
-console.log("Belajar: Async Await Asynchronous");
+const p = new Promise((resolve) => {
+    setTimeout(() => resolve("OK"), 1000);
+});
 ```
 
-### Tips
-- Praktikkan dengan kode
-- Baca dokumentasi MDN
-- Bangun project kecil
+### Async/Await
+```javascript
+async function getData() {
+    const res = await fetch("/api/data");
+    return await res.json();
+}
+```
+
+### Promise.all
+```javascript
+const [a, b] = await Promise.all([fetch("/a"), fetch("/b")]);
+```
 
 ## Rangkuman
-- Async Await Asynchronous adalah fitur JavaScript yang berguna
-- Praktikkan dengan kode
+- async = function return Promise
+- await = tunggu Promise selesai

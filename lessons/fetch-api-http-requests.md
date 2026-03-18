@@ -6,19 +6,14 @@
 ## Materi
 
 ### Penjelasan
-Fetch Api Http Requests digunakan dalam JavaScript untuk pengembangan aplikasi web yang efisien.
+Fetch Api Http Requests digunakan untuk pengembangan JavaScript yang efisien.
 
-### Contoh Kode
+### Contoh
 ```javascript
 // Fetch Api Http Requests
 console.log("Belajar: Fetch Api Http Requests");
 ```
 
-### Tips
-- Praktikkan dengan kode
-- Baca dokumentasi MDN
-- Bangun project kecil
-
 ## Rangkuman
-- Fetch Api Http Requests adalah fitur JavaScript yang berguna
-- Praktikkan dengan kode
+- Praktikkan fetch api http requests
+- Referensi: MDN Web Docs

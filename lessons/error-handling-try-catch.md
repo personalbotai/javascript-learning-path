@@ -1,24 +1,27 @@
-# Error Handling Try Catch
+# Error Handling
 
 **ID**: `error-handling-try-catch`
-**Duration**: 20-25 menit
+**Duration**: 20 menit
 
 ## Materi
 
-### Penjelasan
-Error Handling Try Catch digunakan dalam JavaScript untuk pengembangan aplikasi web yang efisien.
-
-### Contoh Kode
+### Try/Catch
 ```javascript
-// Error Handling Try Catch
-console.log("Belajar: Error Handling Try Catch");
+try {
+    JSON.parse("invalid");
+} catch (e) {
+    console.log(e.message);
+}
 ```
 
-### Tips
-- Praktikkan dengan kode
-- Baca dokumentasi MDN
-- Bangun project kecil
+### Throw
+```javascript
+function bagi(a, b) {
+    if (b === 0) throw new Error("Div by zero!");
+    return a / b;
+}
+```
 
 ## Rangkuman
-- Error Handling Try Catch adalah fitur JavaScript yang berguna
-- Praktikkan dengan kode
+- try/catch untuk error handling
+- throw untuk custom error

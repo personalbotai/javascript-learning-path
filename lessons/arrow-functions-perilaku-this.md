@@ -1,7 +1,7 @@
-# Arrow Functions: Perilaku this
+# Arrow Functions
 
 **ID**: `arrow-functions-perilaku-this`
-**Duration**: 20-25 menit
+**Duration**: 20 menit
 
 ## Materi
 
@@ -9,31 +9,20 @@
 ```javascript
 const tambah = (a, b) => a + b;
 const kuadrat = x => x * x;
-const halo = () => console.log("Hi!");
 ```
 
 ### Perbedaan this
 ```javascript
 const user = {
-    nama: "Archon",
-    greetRegular: function() { console.log(this.nama); },
-    greetArrow: () => { console.log(this.nama); } // undefined!
+    greet: () => { console.log(this); } // undefined (bukan user!)
 };
 ```
 
 ### Callback
 ```javascript
-class Timer {
-    detik = 0;
-    mulai() {
-        setInterval(() => { this.detik++; }, 1000);
-    }
-}
+setInterval(() => { this.detik++; }, 1000); // this tetap!
 ```
-
-## Latihan
-Buat class Counter dengan method start() menggunakan arrow function untuk setInterval.
 
 ## Rangkuman
 - Arrow tidak punya this sendiri
-- Cocok untuk callback, tidak cocok untuk object method
+- Cocok untuk callback
