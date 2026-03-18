@@ -1,4 +1,4 @@
-# Kontrol Alur: if/else
+# Kontrol Alur If Else
 
 **ID**: `kontrol-alur-if-else`
 **Type**: lesson
@@ -6,63 +6,23 @@
 **Tags**: javascript
 
 ## Tujuan Pembelajaran
-- Memahami kontrol alur: if/else dalam JavaScript
+- Memahami kontrol alur if else dalam JavaScript
 - Menerapkan best practices
-- Praktik dengan contoh kode
 
 ## Materi
 
-Percabangan memungkinkan kode mengambil jalur berbeda berdasarkan kondisi.
+### Pengantar
+Kontrol Alur If Else adalah konsep penting dalam JavaScript.
 
-### if/else
+### Contoh Kode
 ```javascript
-const umur = 25;
-
-if (umur >= 18) {
-    console.log("Dewasa");
-} else if (umur >= 13) {
-    console.log("Remaja");
-} else {
-    console.log("Anak-anak");
-}
+// Contoh: Kontrol Alur If Else
+console.log("Belajar Kontrol Alur If Else");
 ```
 
-### Ternary Operator
-```javascript
-// condition ? true : false
-const status = umur >= 18 ? "Dewasa" : "Anak-anak";
-
-// Nested (hindari, sulit dibaca)
-const kategori = umur >= 18 ? "Dewasa" : umur >= 13 ? "Remaja" : "Anak";
-```
-
-### Switch
-```javascript
-const hari = "Senin";
-switch(hari) {
-    case "Senin":
-        console.log("Hari kerja");
-        break;  // WAJIB!
-    case "Sabtu":
-    case "Minggu":
-        console.log("Weekend");
-        break;
-    default:
-        console.log("Hari lain");
-}
-```
-
-### Nullish Coalescing
-```javascript
-const nama = user.nama ?? "Guest";  // Hanya null/undefined
-const alamat = user.alamat || "Default";  // Semua falsy
-```
-
-
-## Latihan
-Buat contoh kode yang menggunakan kontrol alur: if/else.
+### Praktik
+Buat kode yang menggunakan kontrol alur if else.
 
 ## Rangkuman
-- Kontrol Alur: if/else adalah konsep penting dalam JavaScript
-- Praktikkan dengan kode sendiri
+- Praktikkan kontrol alur if else dengan kode
 - Referensi: MDN Web Docs

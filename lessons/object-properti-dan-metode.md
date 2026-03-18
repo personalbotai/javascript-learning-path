@@ -1,71 +1,28 @@
-# Object: Properti dan Metode
+# Object Properti Dan Metode
 
 **ID**: `object-properti-dan-metode`
 **Type**: lesson
 **Duration**: 20-25 menit
-**Tags**: javascript, object, oop, destructuring
+**Tags**: javascript
 
 ## Tujuan Pembelajaran
-- Membuat dan memanipulasi object JavaScript
-- Memahami destructuring dan spread operator
-- Object methods: keys, values, entries, assign
+- Memahami object properti dan metode dalam JavaScript
+- Menerapkan best practices
 
 ## Materi
 
-### Membuat Object
-```javascript
-const user = {
-    nama: "Archon",
-    umur: 25,
-    email: "archon@mail.com",
-    sapa() {
-        return `Halo, ${this.nama}!`;
-    }
-};
+### Pengantar
+Object Properti Dan Metode adalah konsep penting dalam JavaScript.
 
-// Akses
-console.log(user.nama);        // "Archon"
-console.log(user["email"]);    // "archon@mail.com"
-console.log(user.sapa());      // "Halo, Archon!"
+### Contoh Kode
+```javascript
+// Contoh: Object Properti Dan Metode
+console.log("Belajar Object Properti Dan Metode");
 ```
 
-### Destructuring
-```javascript
-const { nama, umur, kota = "Jakarta" } = user;
-console.log(nama); // "Archon"
-console.log(kota); // "Jakarta" (default value)
-
-// Nested destructuring
-const config = { db: { host: "localhost", port: 5432 } };
-const { db: { host, port } } = config;
-```
-
-### Spread & Rest
-```javascript
-// Spread - copy/merge
-const updated = { ...user, umur: 26 };
-const merged = { ...defaults, ...userSettings };
-
-// Rest - collect remaining
-const { nama, ...rest } = user;
-console.log(rest); // {umur: 25, email: "..."}
-```
-
-### Object Methods
-```javascript
-Object.keys(user);    // ["nama", "umur", "email", "sapa"]
-Object.values(user);  // ["Archon", 25, "archon@mail.com", ƒ]
-Object.entries(user); // [["nama","Archon"], ...]
-Object.assign(target, source); // Merge objects
-Object.freeze(user);  // Prevent changes
-Object.seal(user);    // Prevent add/delete
-```
-
-## Latihan
-Buat fungsi yang merge dua object dengan deep merge (nested objects juga merge).
+### Praktik
+Buat kode yang menggunakan object properti dan metode.
 
 ## Rangkuman
-- Object = kumpulan key-value pairs
-- Destructuring untuk ekstraksi
-- Spread untuk copy/merge
-- Object methods untuk manipulasi
+- Praktikkan object properti dan metode dengan kode
+- Referensi: MDN Web Docs

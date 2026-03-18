@@ -8,31 +8,21 @@
 ## Tujuan Pembelajaran
 - Memahami project realtime chat app dalam JavaScript
 - Menerapkan best practices
-- Praktik dengan contoh kode
 
 ## Materi
 
 ### Pengantar
-
-Project Realtime Chat App adalah konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer.
+Project Realtime Chat App adalah konsep penting dalam JavaScript.
 
 ### Contoh Kode
-
 ```javascript
-// Contoh implementasi project realtime chat app
-// Praktikkan dengan kode sendiri
+// Contoh: Project Realtime Chat App
+console.log("Belajar Project Realtime Chat App");
 ```
 
-### Best Practices
-
-- Pahami konsep dasar dengan baik
-- Praktikkan dengan contoh kode
-- Referensi dokumentasi resmi
-
-## Latihan
-Buat contoh kode yang menggunakan project realtime chat app.
+### Praktik
+Buat kode yang menggunakan project realtime chat app.
 
 ## Rangkuman
-- Project Realtime Chat App adalah konsep penting dalam JavaScript
-- Praktikkan dengan kode sendiri
+- Praktikkan project realtime chat app dengan kode
 - Referensi: MDN Web Docs

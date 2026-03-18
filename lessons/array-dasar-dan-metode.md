@@ -3,68 +3,55 @@
 **ID**: `array-dasar-dan-metode`
 **Type**: lesson
 **Duration**: 20-25 menit
-**Tags**: javascript
+**Tags**: javascript, array, data-structures
 
 ## Tujuan Pembelajaran
-- Memahami konsep array dasar dan metode dalam JavaScript
-- Menerapkan best practices
-- Praktik dengan contoh kode
+- Membuat dan memanipulasi array JavaScript
+- Memahami mutasi vs non-mutasi methods
+- Menggunakan slice, splice, dan searching methods
 
 ## Materi
 
-Array adalah struktur data paling fundamental untuk menyimpan kumpulan nilai.
-
+### Membuat Array
 ```javascript
-// Membuat array
 const buah = ["apel", "jeruk", "mangga"];
 const angka = [1, 2, 3, 4, 5];
-const campuran = [1, "dua", true, {x: 1}];
-
-// Akses
-buah[0];            // "apel"
-buah[buah.length - 1]; // "mangga" (elemen terakhir)
-buah.at(-1);        // "mangga" (ES2022)
+const campuran = [1, "dua", true, null, {x: 1}];
 ```
 
 ### Mutasi Array
 ```javascript
-// Tambah/hapus di AKHIR
-buah.push("durian");   // ["apel", "jeruk", "mangga", "durian"]
-buah.pop();            // "durian" → ["apel", "jeruk", "mangga"]
+buah.push("pisang");    // Tambah akhir
+buah.pop();             // Hapus akhir
+buah.unshift("semangka"); // Tambah awal
+buah.shift();           // Hapus awal
 
-// Tambah/hapus di AWAL
-buah.unshift("semangka"); // ["semangka", "apel", "jeruk", "mangga"]
-buah.shift();             // "semangka" → ["apel", "jeruk", "mangga"]
-```
-
-### Searching
-```javascript
-buah.indexOf("jeruk");    // 1
-buah.includes("apel");    // true
-buah.find(x => x.length > 4);     // "jeruk" (first match)
-buah.findIndex(x => x === "mangga"); // 2
+console.log(buah.length); // 3
+console.log(buah.at(-1)); // "mangga" (ES2022)
 ```
 
 ### Slice vs Splice
 ```javascript
-// slice - TIDAK ubah array asli
+// slice - tidak ubah asli
 const sebagian = angka.slice(1, 3); // [2, 3]
 
-// splice - UBAH array asli
+// splice - ubah asli
 angka.splice(2, 1, 99); // Hapus 1 elemen di index 2, ganti 99
+// angka = [1, 2, 99, 4, 5]
 ```
 
-### Sorting
+### Cari Elemen
 ```javascript
-const nums = [3, 1, 4, 1, 5, 9];
-nums.sort((a, b) => a - b); // Ascending: [1, 1, 3, 4, 5, 9]
-nums.reverse(); // Descending
+angka.indexOf(99);       // 2
+angka.includes(99);      // true
+angka.find(x => x > 3); // 99
+angka.findIndex(x => x > 3); // 2
 ```
 
 ## Latihan
-Buat kode yang menggunakan array dasar dan metode.
+Buat fungsi `removeDuplicates(arr)` yang menghapus duplikat dari array.
 
 ## Rangkuman
-- Array Dasar dan Metode adalah konsep penting dalam JavaScript
-- Praktikkan dengan kode sendiri
-- Referensi: MDN Web Docs
+- push/pop = akhir, shift/unshift = awal
+- slice = tidak ubah, splice = ubah
+- find/includes untuk pencarian

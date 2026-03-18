@@ -8,31 +8,21 @@
 ## Tujuan Pembelajaran
 - Memahami jest testing framework dalam JavaScript
 - Menerapkan best practices
-- Praktik dengan contoh kode
 
 ## Materi
 
 ### Pengantar
-
-Jest Testing Framework adalah konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer.
+Jest Testing Framework adalah konsep penting dalam JavaScript.
 
 ### Contoh Kode
-
 ```javascript
-// Contoh implementasi jest testing framework
-// Praktikkan dengan kode sendiri
+// Contoh: Jest Testing Framework
+console.log("Belajar Jest Testing Framework");
 ```
 
-### Best Practices
-
-- Pahami konsep dasar dengan baik
-- Praktikkan dengan contoh kode
-- Referensi dokumentasi resmi
-
-## Latihan
-Buat contoh kode yang menggunakan jest testing framework.
+### Praktik
+Buat kode yang menggunakan jest testing framework.
 
 ## Rangkuman
-- Jest Testing Framework adalah konsep penting dalam JavaScript
-- Praktikkan dengan kode sendiri
+- Praktikkan jest testing framework dengan kode
 - Referensi: MDN Web Docs

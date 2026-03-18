@@ -1,4 +1,4 @@
-# DOM Manipulation Dasar
+# Dom Manipulation Dasar
 
 **ID**: `dom-manipulation-dasar`
 **Type**: lesson
@@ -6,63 +6,23 @@
 **Tags**: javascript
 
 ## Tujuan Pembelajaran
-- Memahami konsep dom manipulation dasar dalam JavaScript
+- Memahami dom manipulation dasar dalam JavaScript
 - Menerapkan best practices
-- Praktik dengan contoh kode
 
 ## Materi
 
-DOM (Document Object Model) adalah representasi tree dari HTML yang bisa dimanipulasi JavaScript.
+### Pengantar
+Dom Manipulation Dasar adalah konsep penting dalam JavaScript.
 
-### Memilih Elemen
+### Contoh Kode
 ```javascript
-// Modern (direkomendasikan)
-document.querySelector('.class');
-document.querySelector('#id');
-document.querySelectorAll('div.item');
-
-// Legacy
-document.getElementById('id');
+// Contoh: Dom Manipulation Dasar
+console.log("Belajar Dom Manipulation Dasar");
 ```
 
-### Mengubah Elemen
-```javascript
-const el = document.querySelector('#title');
-el.textContent = "Teks baru";       // Aman dari XSS
-el.innerHTML = "<strong>Bold</strong>"; // Hati-hati XSS!
-el.style.color = "red";
-el.style.fontSize = "20px";
-```
-
-### Class Manipulation
-```javascript
-el.classList.add('active');
-el.classList.remove('hidden');
-el.classList.toggle('dark-mode');
-el.classList.contains('active'); // true/false
-```
-
-### Attribute
-```javascript
-el.setAttribute('data-id', '123');
-el.getAttribute('class');
-el.removeAttribute('hidden');
-```
-
-### Buat & Hapus
-```javascript
-const div = document.createElement('div');
-div.textContent = "Hello!";
-div.classList.add('card');
-document.body.appendChild(div);
-
-div.remove(); // Hapus
-```
-
-## Latihan
+### Praktik
 Buat kode yang menggunakan dom manipulation dasar.
 
 ## Rangkuman
-- DOM Manipulation Dasar adalah konsep penting dalam JavaScript
-- Praktikkan dengan kode sendiri
+- Praktikkan dom manipulation dasar dengan kode
 - Referensi: MDN Web Docs

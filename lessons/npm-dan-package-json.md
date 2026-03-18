@@ -8,31 +8,21 @@
 ## Tujuan Pembelajaran
 - Memahami npm dan package json dalam JavaScript
 - Menerapkan best practices
-- Praktik dengan contoh kode
 
 ## Materi
 
 ### Pengantar
-
-Npm Dan Package Json adalah konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer.
+Npm Dan Package Json adalah konsep penting dalam JavaScript.
 
 ### Contoh Kode
-
 ```javascript
-// Contoh implementasi npm dan package json
-// Praktikkan dengan kode sendiri
+// Contoh: Npm Dan Package Json
+console.log("Belajar Npm Dan Package Json");
 ```
 
-### Best Practices
-
-- Pahami konsep dasar dengan baik
-- Praktikkan dengan contoh kode
-- Referensi dokumentasi resmi
-
-## Latihan
-Buat contoh kode yang menggunakan npm dan package json.
+### Praktik
+Buat kode yang menggunakan npm dan package json.
 
 ## Rangkuman
-- Npm Dan Package Json adalah konsep penting dalam JavaScript
-- Praktikkan dengan kode sendiri
+- Praktikkan npm dan package json dengan kode
 - Referensi: MDN Web Docs

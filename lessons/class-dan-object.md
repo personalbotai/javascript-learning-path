@@ -8,31 +8,21 @@
 ## Tujuan Pembelajaran
 - Memahami class dan object dalam JavaScript
 - Menerapkan best practices
-- Praktik dengan contoh kode
 
 ## Materi
 
 ### Pengantar
-
-Class Dan Object adalah konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer.
+Class Dan Object adalah konsep penting dalam JavaScript.
 
 ### Contoh Kode
-
 ```javascript
-// Contoh implementasi class dan object
-// Praktikkan dengan kode sendiri
+// Contoh: Class Dan Object
+console.log("Belajar Class Dan Object");
 ```
 
-### Best Practices
-
-- Pahami konsep dasar dengan baik
-- Praktikkan dengan contoh kode
-- Referensi dokumentasi resmi
-
-## Latihan
-Buat contoh kode yang menggunakan class dan object.
+### Praktik
+Buat kode yang menggunakan class dan object.
 
 ## Rangkuman
-- Class Dan Object adalah konsep penting dalam JavaScript
-- Praktikkan dengan kode sendiri
+- Praktikkan class dan object dengan kode
 - Referensi: MDN Web Docs

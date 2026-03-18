@@ -1,55 +1,28 @@
-# Fetch API dan HTTP Requests
+# Fetch Api Http Requests
 
 **ID**: `fetch-api-http-requests`
 **Type**: lesson
-**Duration**: 25-30 menit
-**Tags**: javascript, fetch, api, http
+**Duration**: 20-25 menit
+**Tags**: javascript
 
 ## Tujuan Pembelajaran
-- Menggunakan fetch() untuk HTTP requests
-- Handling response dan error
-- CRUD operations dengan REST API
+- Memahami fetch api http requests dalam JavaScript
+- Menerapkan best practices
 
 ## Materi
 
-### GET Request
+### Pengantar
+Fetch Api Http Requests adalah konsep penting dalam JavaScript.
+
+### Contoh Kode
 ```javascript
-async function getUsers() {
-    const res = await fetch("https://api.example.com/users");
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const users = await res.json();
-    return users;
-}
+// Contoh: Fetch Api Http Requests
+console.log("Belajar Fetch Api Http Requests");
 ```
 
-### POST Request
-```javascript
-async function createUser(userData) {
-    const res = await fetch("https://api.example.com/users", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(userData)
-    });
-    return await res.json();
-}
-```
-
-### Error Handling
-```javascript
-try {
-    const res = await fetch(url);
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const data = await res.json();
-} catch (err) {
-    if (err.name === "TypeError") console.log("Network error");
-    else console.log(err.message);
-}
-```
-
-## Latihan
-Buat fungsi yang fetch data dari JSONPlaceholder API dan tampilkan hasilnya.
+### Praktik
+Buat kode yang menggunakan fetch api http requests.
 
 ## Rangkuman
-- fetch() mengembalikan Promise
-- response.json() untuk parse JSON
-- Selalu cek response.ok
+- Praktikkan fetch api http requests dengan kode
+- Referensi: MDN Web Docs

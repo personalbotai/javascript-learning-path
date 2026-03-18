@@ -8,31 +8,21 @@
 ## Tujuan Pembelajaran
 - Memahami iife dan module pattern dalam JavaScript
 - Menerapkan best practices
-- Praktik dengan contoh kode
 
 ## Materi
 
 ### Pengantar
-
-Iife Dan Module Pattern adalah konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer.
+Iife Dan Module Pattern adalah konsep penting dalam JavaScript.
 
 ### Contoh Kode
-
 ```javascript
-// Contoh implementasi iife dan module pattern
-// Praktikkan dengan kode sendiri
+// Contoh: Iife Dan Module Pattern
+console.log("Belajar Iife Dan Module Pattern");
 ```
 
-### Best Practices
-
-- Pahami konsep dasar dengan baik
-- Praktikkan dengan contoh kode
-- Referensi dokumentasi resmi
-
-## Latihan
-Buat contoh kode yang menggunakan iife dan module pattern.
+### Praktik
+Buat kode yang menggunakan iife dan module pattern.
 
 ## Rangkuman
-- Iife Dan Module Pattern adalah konsep penting dalam JavaScript
-- Praktikkan dengan kode sendiri
+- Praktikkan iife dan module pattern dengan kode
 - Referensi: MDN Web Docs

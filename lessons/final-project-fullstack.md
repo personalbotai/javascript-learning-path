@@ -8,31 +8,21 @@
 ## Tujuan Pembelajaran
 - Memahami final project fullstack dalam JavaScript
 - Menerapkan best practices
-- Praktik dengan contoh kode
 
 ## Materi
 
 ### Pengantar
-
-Final Project Fullstack adalah konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer.
+Final Project Fullstack adalah konsep penting dalam JavaScript.
 
 ### Contoh Kode
-
 ```javascript
-// Contoh implementasi final project fullstack
-// Praktikkan dengan kode sendiri
+// Contoh: Final Project Fullstack
+console.log("Belajar Final Project Fullstack");
 ```
 
-### Best Practices
-
-- Pahami konsep dasar dengan baik
-- Praktikkan dengan contoh kode
-- Referensi dokumentasi resmi
-
-## Latihan
-Buat contoh kode yang menggunakan final project fullstack.
+### Praktik
+Buat kode yang menggunakan final project fullstack.
 
 ## Rangkuman
-- Final Project Fullstack adalah konsep penting dalam JavaScript
-- Praktikkan dengan kode sendiri
+- Praktikkan final project fullstack dengan kode
 - Referensi: MDN Web Docs

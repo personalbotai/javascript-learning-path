@@ -8,31 +8,21 @@
 ## Tujuan Pembelajaran
 - Memahami set dan weakset dalam JavaScript
 - Menerapkan best practices
-- Praktik dengan contoh kode
 
 ## Materi
 
 ### Pengantar
-
-Set Dan Weakset adalah konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer.
+Set Dan Weakset adalah konsep penting dalam JavaScript.
 
 ### Contoh Kode
-
 ```javascript
-// Contoh implementasi set dan weakset
-// Praktikkan dengan kode sendiri
+// Contoh: Set Dan Weakset
+console.log("Belajar Set Dan Weakset");
 ```
 
-### Best Practices
-
-- Pahami konsep dasar dengan baik
-- Praktikkan dengan contoh kode
-- Referensi dokumentasi resmi
-
-## Latihan
-Buat contoh kode yang menggunakan set dan weakset.
+### Praktik
+Buat kode yang menggunakan set dan weakset.
 
 ## Rangkuman
-- Set Dan Weakset adalah konsep penting dalam JavaScript
-- Praktikkan dengan kode sendiri
+- Praktikkan set dan weakset dengan kode
 - Referensi: MDN Web Docs

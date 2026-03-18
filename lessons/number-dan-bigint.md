@@ -8,31 +8,21 @@
 ## Tujuan Pembelajaran
 - Memahami number dan bigint dalam JavaScript
 - Menerapkan best practices
-- Praktik dengan contoh kode
 
 ## Materi
 
 ### Pengantar
-
-Number Dan Bigint adalah konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer.
+Number Dan Bigint adalah konsep penting dalam JavaScript.
 
 ### Contoh Kode
-
 ```javascript
-// Contoh implementasi number dan bigint
-// Praktikkan dengan kode sendiri
+// Contoh: Number Dan Bigint
+console.log("Belajar Number Dan Bigint");
 ```
 
-### Best Practices
-
-- Pahami konsep dasar dengan baik
-- Praktikkan dengan contoh kode
-- Referensi dokumentasi resmi
-
-## Latihan
-Buat contoh kode yang menggunakan number dan bigint.
+### Praktik
+Buat kode yang menggunakan number dan bigint.
 
 ## Rangkuman
-- Number Dan Bigint adalah konsep penting dalam JavaScript
-- Praktikkan dengan kode sendiri
+- Praktikkan number dan bigint dengan kode
 - Referensi: MDN Web Docs

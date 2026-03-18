@@ -8,31 +8,21 @@
 ## Tujuan Pembelajaran
 - Memahami math object dalam JavaScript
 - Menerapkan best practices
-- Praktik dengan contoh kode
 
 ## Materi
 
 ### Pengantar
-
-Math Object adalah konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer.
+Math Object adalah konsep penting dalam JavaScript.
 
 ### Contoh Kode
-
 ```javascript
-// Contoh implementasi math object
-// Praktikkan dengan kode sendiri
+// Contoh: Math Object
+console.log("Belajar Math Object");
 ```
 
-### Best Practices
-
-- Pahami konsep dasar dengan baik
-- Praktikkan dengan contoh kode
-- Referensi dokumentasi resmi
-
-## Latihan
-Buat contoh kode yang menggunakan math object.
+### Praktik
+Buat kode yang menggunakan math object.
 
 ## Rangkuman
-- Math Object adalah konsep penting dalam JavaScript
-- Praktikkan dengan kode sendiri
+- Praktikkan math object dengan kode
 - Referensi: MDN Web Docs

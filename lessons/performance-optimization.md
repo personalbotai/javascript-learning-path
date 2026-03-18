@@ -2,69 +2,27 @@
 
 **ID**: `performance-optimization`
 **Type**: lesson
-**Duration**: 25-30 menit
-**Tags**: javascript, performance, optimization
+**Duration**: 20-25 menit
+**Tags**: javascript
 
 ## Tujuan Pembelajaran
-- Memahami teknik optimasi JavaScript
-- Debouncing dan throttling
-- Lazy loading dan code splitting
+- Memahami performance optimization dalam JavaScript
+- Menerapkan best practices
 
 ## Materi
 
-### Debouncing
+### Pengantar
+Performance Optimization adalah konsep penting dalam JavaScript.
+
+### Contoh Kode
 ```javascript
-// Tunggu user berhenti mengetik sebelum search
-function debounce(fn, delay) {
-    let timer;
-    return function(...args) {
-        clearTimeout(timer);
-        timer = setTimeout(() => fn.apply(this, args), delay);
-    };
-}
-
-const search = debounce((query) => {
-    console.log('Searching:', query);
-}, 300);
-
-input.addEventListener('input', (e) => search(e.target.value));
+// Contoh: Performance Optimization
+console.log("Belajar Performance Optimization");
 ```
 
-### Throttling
-```javascript
-// Batasi frekuensi eksekusi
-function throttle(fn, limit) {
-    let inThrottle;
-    return function(...args) {
-        if (!inThrottle) {
-            fn.apply(this, args);
-            inThrottle = true;
-            setTimeout(() => inThrottle = false, limit);
-        }
-    };
-}
-
-window.addEventListener('scroll', throttle(() => {
-    console.log('Scroll position:', window.scrollY);
-}, 100));
-```
-
-### Lazy Loading
-```javascript
-// Load module hanya saat dibutuhkan
-button.addEventListener('click', async () => {
-    const module = await import('./heavy-module.js');
-    module.doWork();
-});
-```
-
-### Virtual Scrolling
-Untuk list besar, render hanya elemen yang visible.
-
-## Latihan
-Implementasikan debounce untuk search input dengan API call.
+### Praktik
+Buat kode yang menggunakan performance optimization.
 
 ## Rangkuman
-- Debounce: tunggu user selesai
-- Throttle: batasi frekuensi
-- Lazy loading: load saat dibutuhkan
+- Praktikkan performance optimization dengan kode
+- Referensi: MDN Web Docs

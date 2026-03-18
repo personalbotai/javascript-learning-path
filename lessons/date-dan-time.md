@@ -8,31 +8,21 @@
 ## Tujuan Pembelajaran
 - Memahami date dan time dalam JavaScript
 - Menerapkan best practices
-- Praktik dengan contoh kode
 
 ## Materi
 
 ### Pengantar
-
-Date Dan Time adalah konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer.
+Date Dan Time adalah konsep penting dalam JavaScript.
 
 ### Contoh Kode
-
 ```javascript
-// Contoh implementasi date dan time
-// Praktikkan dengan kode sendiri
+// Contoh: Date Dan Time
+console.log("Belajar Date Dan Time");
 ```
 
-### Best Practices
-
-- Pahami konsep dasar dengan baik
-- Praktikkan dengan contoh kode
-- Referensi dokumentasi resmi
-
-## Latihan
-Buat contoh kode yang menggunakan date dan time.
+### Praktik
+Buat kode yang menggunakan date dan time.
 
 ## Rangkuman
-- Date Dan Time adalah konsep penting dalam JavaScript
-- Praktikkan dengan kode sendiri
+- Praktikkan date dan time dengan kode
 - Referensi: MDN Web Docs

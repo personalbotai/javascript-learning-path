@@ -8,31 +8,21 @@
 ## Tujuan Pembelajaran
 - Memahami es6 modules import export dalam JavaScript
 - Menerapkan best practices
-- Praktik dengan contoh kode
 
 ## Materi
 
 ### Pengantar
-
-Es6 Modules Import Export adalah konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer.
+Es6 Modules Import Export adalah konsep penting dalam JavaScript.
 
 ### Contoh Kode
-
 ```javascript
-// Contoh implementasi es6 modules import export
-// Praktikkan dengan kode sendiri
+// Contoh: Es6 Modules Import Export
+console.log("Belajar Es6 Modules Import Export");
 ```
 
-### Best Practices
-
-- Pahami konsep dasar dengan baik
-- Praktikkan dengan contoh kode
-- Referensi dokumentasi resmi
-
-## Latihan
-Buat contoh kode yang menggunakan es6 modules import export.
+### Praktik
+Buat kode yang menggunakan es6 modules import export.
 
 ## Rangkuman
-- Es6 Modules Import Export adalah konsep penting dalam JavaScript
-- Praktikkan dengan kode sendiri
+- Praktikkan es6 modules import export dengan kode
 - Referensi: MDN Web Docs

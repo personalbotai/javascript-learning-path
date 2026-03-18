@@ -8,31 +8,21 @@
 ## Tujuan Pembelajaran
 - Memahami project ecommerce filter dalam JavaScript
 - Menerapkan best practices
-- Praktik dengan contoh kode
 
 ## Materi
 
 ### Pengantar
-
-Project Ecommerce Filter adalah konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer.
+Project Ecommerce Filter adalah konsep penting dalam JavaScript.
 
 ### Contoh Kode
-
 ```javascript
-// Contoh implementasi project ecommerce filter
-// Praktikkan dengan kode sendiri
+// Contoh: Project Ecommerce Filter
+console.log("Belajar Project Ecommerce Filter");
 ```
 
-### Best Practices
-
-- Pahami konsep dasar dengan baik
-- Praktikkan dengan contoh kode
-- Referensi dokumentasi resmi
-
-## Latihan
-Buat contoh kode yang menggunakan project ecommerce filter.
+### Praktik
+Buat kode yang menggunakan project ecommerce filter.
 
 ## Rangkuman
-- Project Ecommerce Filter adalah konsep penting dalam JavaScript
-- Praktikkan dengan kode sendiri
+- Praktikkan project ecommerce filter dengan kode
 - Referensi: MDN Web Docs

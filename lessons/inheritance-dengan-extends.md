@@ -1,4 +1,4 @@
-# Inheritance dengan extends
+# Inheritance Dengan Extends
 
 **ID**: `inheritance-dengan-extends`
 **Type**: lesson
@@ -7,65 +7,22 @@
 
 ## Tujuan Pembelajaran
 - Memahami inheritance dengan extends dalam JavaScript
-- Menerapkan konsep dalam kode
-- Best practices dan common pitfalls
+- Menerapkan best practices
 
 ## Materi
 
 ### Pengantar
-Inheritance (pewarisan) memungkinkan class mewarisi property dan method dari class lain.
+Inheritance Dengan Extends adalah konsep penting dalam JavaScript.
 
+### Contoh Kode
 ```javascript
-class Animal {
-    constructor(nama) { this.nama = nama; }
-    speak() { return `${this.nama} bersuara`; }
-}
-
-class Dog extends Animal {
-    constructor(nama, breed) {
-        super(nama);  // Call parent constructor
-        this.breed = breed;
-    }
-    
-    // Override method
-    speak() { return `${this.nama} menggonggong!`; }
-    
-    // New method
-    fetch() { return `${this.nama} mengambil bola`; }
-}
-
-const dog = new Dog("Buddy", "Golden");
-console.log(dog.speak()); // "Buddy menggonggong!"
-console.log(dog.fetch()); // "Buddy mengambil bola"
-console.log(dog instanceof Dog);    // true
-console.log(dog instanceof Animal); // true
+// Contoh: Inheritance Dengan Extends
+console.log("Belajar Inheritance Dengan Extends");
 ```
 
-### Polymorphism
-```javascript
-class Shape {
-    area() { return 0; }
-}
-
-class Circle extends Shape {
-    constructor(r) { super(); this.r = r; }
-    area() { return Math.PI * this.r ** 2; }
-}
-
-class Square extends Shape {
-    constructor(s) { super(); this.s = s; }
-    area() { return this.s * this.s; }
-}
-
-const shapes = [new Circle(5), new Square(4)];
-shapes.forEach(s => console.log(s.area())); // Different implementations
-```
-
-
-## Latihan
-Buat contoh kode yang menerapkan inheritance dengan extends.
+### Praktik
+Buat kode yang menggunakan inheritance dengan extends.
 
 ## Rangkuman
-- Inheritance dengan extends adalah konsep penting dalam JavaScript
-- Praktikkan dengan kode sendiri
+- Praktikkan inheritance dengan extends dengan kode
 - Referensi: MDN Web Docs

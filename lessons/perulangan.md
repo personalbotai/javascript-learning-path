@@ -8,31 +8,21 @@
 ## Tujuan Pembelajaran
 - Memahami perulangan dalam JavaScript
 - Menerapkan best practices
-- Praktik dengan contoh kode
 
 ## Materi
 
 ### Pengantar
-
-Perulangan adalah konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer.
+Perulangan adalah konsep penting dalam JavaScript.
 
 ### Contoh Kode
-
 ```javascript
-// Contoh implementasi perulangan
-// Praktikkan dengan kode sendiri
+// Contoh: Perulangan
+console.log("Belajar Perulangan");
 ```
 
-### Best Practices
-
-- Pahami konsep dasar dengan baik
-- Praktikkan dengan contoh kode
-- Referensi dokumentasi resmi
-
-## Latihan
-Buat contoh kode yang menggunakan perulangan.
+### Praktik
+Buat kode yang menggunakan perulangan.
 
 ## Rangkuman
-- Perulangan adalah konsep penting dalam JavaScript
-- Praktikkan dengan kode sendiri
+- Praktikkan perulangan dengan kode
 - Referensi: MDN Web Docs

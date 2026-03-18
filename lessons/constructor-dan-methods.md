@@ -8,31 +8,21 @@
 ## Tujuan Pembelajaran
 - Memahami constructor dan methods dalam JavaScript
 - Menerapkan best practices
-- Praktik dengan contoh kode
 
 ## Materi
 
 ### Pengantar
-
-Constructor Dan Methods adalah konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer.
+Constructor Dan Methods adalah konsep penting dalam JavaScript.
 
 ### Contoh Kode
-
 ```javascript
-// Contoh implementasi constructor dan methods
-// Praktikkan dengan kode sendiri
+// Contoh: Constructor Dan Methods
+console.log("Belajar Constructor Dan Methods");
 ```
 
-### Best Practices
-
-- Pahami konsep dasar dengan baik
-- Praktikkan dengan contoh kode
-- Referensi dokumentasi resmi
-
-## Latihan
-Buat contoh kode yang menggunakan constructor dan methods.
+### Praktik
+Buat kode yang menggunakan constructor dan methods.
 
 ## Rangkuman
-- Constructor Dan Methods adalah konsep penting dalam JavaScript
-- Praktikkan dengan kode sendiri
+- Praktikkan constructor dan methods dengan kode
 - Referensi: MDN Web Docs

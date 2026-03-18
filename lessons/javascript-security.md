@@ -8,31 +8,21 @@
 ## Tujuan Pembelajaran
 - Memahami javascript security dalam JavaScript
 - Menerapkan best practices
-- Praktik dengan contoh kode
 
 ## Materi
 
 ### Pengantar
-
-Javascript Security adalah konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer.
+Javascript Security adalah konsep penting dalam JavaScript.
 
 ### Contoh Kode
-
 ```javascript
-// Contoh implementasi javascript security
-// Praktikkan dengan kode sendiri
+// Contoh: Javascript Security
+console.log("Belajar Javascript Security");
 ```
 
-### Best Practices
-
-- Pahami konsep dasar dengan baik
-- Praktikkan dengan contoh kode
-- Referensi dokumentasi resmi
-
-## Latihan
-Buat contoh kode yang menggunakan javascript security.
+### Praktik
+Buat kode yang menggunakan javascript security.
 
 ## Rangkuman
-- Javascript Security adalah konsep penting dalam JavaScript
-- Praktikkan dengan kode sendiri
+- Praktikkan javascript security dengan kode
 - Referensi: MDN Web Docs

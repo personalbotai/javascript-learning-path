@@ -8,31 +8,21 @@
 ## Tujuan Pembelajaran
 - Memahami this keyword binding dalam JavaScript
 - Menerapkan best practices
-- Praktik dengan contoh kode
 
 ## Materi
 
 ### Pengantar
-
-This Keyword Binding adalah konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer.
+This Keyword Binding adalah konsep penting dalam JavaScript.
 
 ### Contoh Kode
-
 ```javascript
-// Contoh implementasi this keyword binding
-// Praktikkan dengan kode sendiri
+// Contoh: This Keyword Binding
+console.log("Belajar This Keyword Binding");
 ```
 
-### Best Practices
-
-- Pahami konsep dasar dengan baik
-- Praktikkan dengan contoh kode
-- Referensi dokumentasi resmi
-
-## Latihan
-Buat contoh kode yang menggunakan this keyword binding.
+### Praktik
+Buat kode yang menggunakan this keyword binding.
 
 ## Rangkuman
-- This Keyword Binding adalah konsep penting dalam JavaScript
-- Praktikkan dengan kode sendiri
+- Praktikkan this keyword binding dengan kode
 - Referensi: MDN Web Docs

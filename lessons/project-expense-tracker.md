@@ -8,31 +8,21 @@
 ## Tujuan Pembelajaran
 - Memahami project expense tracker dalam JavaScript
 - Menerapkan best practices
-- Praktik dengan contoh kode
 
 ## Materi
 
 ### Pengantar
-
-Project Expense Tracker adalah konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer.
+Project Expense Tracker adalah konsep penting dalam JavaScript.
 
 ### Contoh Kode
-
 ```javascript
-// Contoh implementasi project expense tracker
-// Praktikkan dengan kode sendiri
+// Contoh: Project Expense Tracker
+console.log("Belajar Project Expense Tracker");
 ```
 
-### Best Practices
-
-- Pahami konsep dasar dengan baik
-- Praktikkan dengan contoh kode
-- Referensi dokumentasi resmi
-
-## Latihan
-Buat contoh kode yang menggunakan project expense tracker.
+### Praktik
+Buat kode yang menggunakan project expense tracker.
 
 ## Rangkuman
-- Project Expense Tracker adalah konsep penting dalam JavaScript
-- Praktikkan dengan kode sendiri
+- Praktikkan project expense tracker dengan kode
 - Referensi: MDN Web Docs
