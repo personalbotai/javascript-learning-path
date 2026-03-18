@@ -1,49 +1,69 @@
-## Tujuan Pembelajaran
+# Variabel dan Tipe Data
 
+**ID**: `variabel-dan-tipe-data`
+**Type**: lesson
+**Duration**: 20-25 menit
+**Tags**: javascript, variables, types, let, const
+
+## Tujuan Pembelajaran
 - Memahami perbedaan var, let, dan const
-- Mengenal tipe data primitif dan reference
-- Memahami type coercion dan typeof
+- Memahami tipe data primitif dan reference
+- Memahami type coercion dan typeof operator
 
 ## Materi
 
 ### Deklarasi Variabel
-
+```javascript
+const nama = "Archon";   // Konstan, tidak bisa diubah
+let umur = 25;           // Bisa diubah
+var lama = "jangan dipakai"; // Legacy, hindari!
 ```
-// const - tidak bisa diubah (direkomendasikan)
-const PI = 3.14;
 
-// let - bisa diubah, block-scoped
-let nama = "Archon";
-nama = "Builder"; // OK
+### Primitif vs Reference
+```javascript
+// Primitif (immutable, by value)
+let a = 5;
+let b = a;
+b = 10;
+console.log(a); // 5 (tidak berubah)
 
-// var - jangan gunakan (function-scoped, hoisting aneh)
-var lama = "deprecated";
+// Reference (mutable, by reference)
+let arr1 = [1, 2, 3];
+let arr2 = arr1;
+arr2.push(4);
+console.log(arr1); // [1, 2, 3, 4] (berubah!)
 ```
 
 ### Tipe Data Primitif
+```javascript
+const str = "Halo";           // string
+const num = 42;               // number
+const big = 9007199254740991n; // bigint
+const bool = true;            // boolean
+const und = undefined;        // undefined
+const nul = null;             // null
+const sym = Symbol("id");     // symbol
 
-```
-// 7 primitif: string, number, bigint, boolean, undefined, null, symbol
-const str = "Halo";
-const num = 42;
-const big = 100n;
-const bool = true;
-const und = undefined;
-const nul = null;
-const sym = Symbol("id");
+// typeof
+console.log(typeof str);   // "string"
+console.log(typeof nul);   // "object" (bug historis!)
+console.log(typeof []);    // "object"
 ```
 
-### Typeof
+### Type Coercion
+```javascript
+"5" + 3      // "53" (string concatenation)
+"5" - 3      // 2 (numeric subtraction)
+true + 1     // 2
+"" == false  // true (coercion)
+"" === false // false (strict - TIDAK ada coercion)
+```
 
-```
-typeof "Halo" // "string"
-typeof 42 // "number"
-typeof undefined // "undefined"
-typeof null // "object" (bug historis!)
-typeof [] // "object"
-typeof {} // "object"
-```
+## Latihan
+Buat script yang mendeteksi tipe data dari berbagai variabel dan menampilkan informasi lengkap.
 
 ## Rangkuman
-Pelajari variabel dan tipe data dengan praktik langsung.
-← Kembali
+- Gunakan `const` default, `let` jika perlu ubah, hindari `var`
+- 7 tipe primitif: string, number, bigint, boolean, undefined, null, symbol
+- Primitif = immutable, Reference = mutable
+- Selalu gunakan `===` untuk perbandingan

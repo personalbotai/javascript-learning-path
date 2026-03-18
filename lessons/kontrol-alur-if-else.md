@@ -1,49 +1,44 @@
-## Tujuan Pembelajaran
+# Kontrol Alur: if/else
 
-- Menggunakan if/else if/else untuk percabangan
-- Ternary operator untuk kondisi singkat
-- Switch statement untuk multiple cases
+**ID**: `kontrol-alur-if-else`
+**Type**: lesson
+**Duration**: 20-25 menit
+**Tags**: javascript
+
+## Tujuan Pembelajaran
+- Memahami konsep kontrol alur: if/else dalam JavaScript
+- Menerapkan best practices
+- Praktik dengan contoh kode
 
 ## Materi
 
-### If/Else
+JavaScript mendukung percabangan dengan if/else, ternary operator, dan switch.
 
-```
-const umur = 25;
-if (umur >= 18) {
- console.log("Dewasa");
-} else if (umur >= 13) {
- console.log("Remaja");
+```javascript
+const nilai = 85;
+
+if (nilai >= 90) {
+    console.log("A");
+} else if (nilai >= 80) {
+    console.log("B");
 } else {
- console.log("Anak-anak");
+    console.log("C");
+}
+
+// Ternary
+const grade = nilai >= 70 ? "Lulus" : "Gagal";
+
+// Switch
+switch(Math.floor(nilai/10)) {
+    case 10: case 9: console.log("A"); break;
+    case 8: console.log("B"); break;
+    default: console.log("C");
 }
 ```
 
-### Ternary Operator
-
-```
-// condition ? true : false
-const status = umur >= 18 ? "Dewasa" : "Anak-anak";
-const sapaan = nama ? \`Halo \${nama}\` : "Halo tamu";
-```
-
-### Switch
-
-```
-const hari = "Senin";
-switch(hari) {
- case "Senin":
- console.log("Hari kerja");
- break;
- case "Sabtu":
- case "Minggu":
- console.log("Weekend");
- break;
- default:
- console.log("Hari lain");
-}
-```
+## Latihan
+Buat fungsi yang menentukan kategori berat badan berdasarkan BMI.
 
 ## Rangkuman
-Pelajari kontrol alur: if/else dengan praktik langsung.
-← Kembali
+- Praktikkan kontrol alur: if/else dengan kode sendiri
+- Referensi: MDN Web Docs untuk dokumentasi lengkap

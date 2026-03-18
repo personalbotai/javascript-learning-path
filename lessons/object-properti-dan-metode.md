@@ -1,56 +1,71 @@
-## Tujuan Pembelajaran
+# Object: Properti dan Metode
 
-- Membuat dan memanipulasi object
-- Object.keys, values, entries
-- Destructuring dan spread
+**ID**: `object-properti-dan-metode`
+**Type**: lesson
+**Duration**: 20-25 menit
+**Tags**: javascript, object, oop, destructuring
+
+## Tujuan Pembelajaran
+- Membuat dan memanipulasi object JavaScript
+- Memahami destructuring dan spread operator
+- Object methods: keys, values, entries, assign
 
 ## Materi
 
-### Object Literal
-
-```
+### Membuat Object
+```javascript
 const user = {
- nama: "Archon",
- umur: 25,
- "is-active": true, // Key dengan dash perlu quotes
- alamat: { kota: "Jakarta", kode: "10220" }
+    nama: "Archon",
+    umur: 25,
+    email: "archon@mail.com",
+    sapa() {
+        return `Halo, ${this.nama}!`;
+    }
 };
+
+// Akses
+console.log(user.nama);        // "Archon"
+console.log(user["email"]);    // "archon@mail.com"
+console.log(user.sapa());      // "Halo, Archon!"
 ```
 
-### Akses dan Modifikasi
+### Destructuring
+```javascript
+const { nama, umur, kota = "Jakarta" } = user;
+console.log(nama); // "Archon"
+console.log(kota); // "Jakarta" (default value)
 
+// Nested destructuring
+const config = { db: { host: "localhost", port: 5432 } };
+const { db: { host, port } } = config;
 ```
-// Dot notation
-console.log(user.nama); // "Archon"
 
-// Bracket notation
-console.log(user["is-active"]); // true
+### Spread & Rest
+```javascript
+// Spread - copy/merge
+const updated = { ...user, umur: 26 };
+const merged = { ...defaults, ...userSettings };
 
-// Dynamic key
-const key = "nama";
-console.log(user[key]); // "Archon"
-
-// Tambah/hapus
-user.email = "a@mail.com";
-delete user.umur;
+// Rest - collect remaining
+const { nama, ...rest } = user;
+console.log(rest); // {umur: 25, email: "..."}
 ```
 
 ### Object Methods
-
-```
-Object.keys(user); // ["nama", "is-active", ...]
-Object.values(user); // ["Archon", true, ...]
+```javascript
+Object.keys(user);    // ["nama", "umur", "email", "sapa"]
+Object.values(user);  // ["Archon", 25, "archon@mail.com", ƒ]
 Object.entries(user); // [["nama","Archon"], ...]
-
-// Destructuring
-const { nama, umur = 0 } = user;
-const { alamat: { kota } } = user; // Nested
-
-// Spread
-const updated = { ...user, umur: 26 };
-const merged = { ...defaults, ...userSettings };
+Object.assign(target, source); // Merge objects
+Object.freeze(user);  // Prevent changes
+Object.seal(user);    // Prevent add/delete
 ```
+
+## Latihan
+Buat fungsi yang merge dua object dengan deep merge (nested objects juga merge).
 
 ## Rangkuman
-Pelajari object: properti dan metode dengan praktik langsung.
-← Kembali
+- Object = kumpulan key-value pairs
+- Destructuring untuk ekstraksi
+- Spread untuk copy/merge
+- Object methods untuk manipulasi
