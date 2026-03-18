@@ -6,14 +6,20 @@
 ## Materi
 
 ### Penjelasan
-Es6 Modules Import Export dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintainability kode.
+Es6 Modules Import Export adalah fitur penting dalam JavaScript modern.
 
 ### Contoh Kode
 ```javascript
 // Es6 Modules Import Export
 console.log("Belajar: Es6 Modules Import Export");
+// Praktikkan kode ini dengan variasi sendiri
 ```
 
-## Rangkuman
-- Praktikkan es6 modules import export
+### Tips
+- Praktikkan kode ini
+- Eksperimen dengan variasi
 - Referensi: MDN Web Docs
+
+## Rangkuman
+- Es6 Modules Import Export adalah fitur JavaScript yang berguna
+- Praktikkan dengan kode sendiri

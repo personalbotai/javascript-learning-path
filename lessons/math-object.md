@@ -6,14 +6,29 @@
 ## Materi
 
 ### Penjelasan
-Math Object dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintainability kode.
+Class dan Object dalam JavaScript adalah fitur penting dalam JavaScript modern.
 
 ### Contoh Kode
 ```javascript
-// Math Object
-console.log("Belajar: Math Object");
+class User {
+    constructor(nama, email) {
+        this.nama = nama;
+        this.email = email;
+    }
+    sapa() {
+        return `Halo, ${this.nama}!`;
+    }
+}
+
+const user = new User("Archon", "a@mail.com");
+console.log(user.sapa()); // "Halo, Archon!"
 ```
 
-## Rangkuman
-- Praktikkan math object
+### Tips
+- Praktikkan kode ini
+- Eksperimen dengan variasi
 - Referensi: MDN Web Docs
+
+## Rangkuman
+- Math Object adalah fitur JavaScript yang berguna
+- Praktikkan dengan kode sendiri

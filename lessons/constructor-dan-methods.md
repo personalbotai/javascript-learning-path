@@ -6,14 +6,20 @@
 ## Materi
 
 ### Penjelasan
-Constructor Dan Methods dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintainability kode.
+Constructor Dan Methods adalah fitur penting dalam JavaScript modern.
 
 ### Contoh Kode
 ```javascript
 // Constructor Dan Methods
 console.log("Belajar: Constructor Dan Methods");
+// Praktikkan kode ini dengan variasi sendiri
 ```
 
-## Rangkuman
-- Praktikkan constructor dan methods
+### Tips
+- Praktikkan kode ini
+- Eksperimen dengan variasi
 - Referensi: MDN Web Docs
+
+## Rangkuman
+- Constructor Dan Methods adalah fitur JavaScript yang berguna
+- Praktikkan dengan kode sendiri

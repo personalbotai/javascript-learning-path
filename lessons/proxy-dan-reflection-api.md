@@ -6,14 +6,27 @@
 ## Materi
 
 ### Penjelasan
-Proxy Dan Reflection Api dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintainability kode.
+HTTP Requests dalam JavaScript adalah fitur penting dalam JavaScript modern.
 
 ### Contoh Kode
 ```javascript
-// Proxy Dan Reflection Api
-console.log("Belajar: Proxy Dan Reflection Api");
+async function getData() {
+    try {
+        const res = await fetch("https://api.example.com/data");
+        const data = await res.json();
+        console.log(data);
+    } catch (error) {
+        console.log("Error:", error.message);
+    }
+}
+getData();
 ```
 
-## Rangkuman
-- Praktikkan proxy dan reflection api
+### Tips
+- Praktikkan kode ini
+- Eksperimen dengan variasi
 - Referensi: MDN Web Docs
+
+## Rangkuman
+- Proxy Dan Reflection Api adalah fitur JavaScript yang berguna
+- Praktikkan dengan kode sendiri

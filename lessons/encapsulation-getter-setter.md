@@ -6,14 +6,20 @@
 ## Materi
 
 ### Penjelasan
-Encapsulation Getter Setter dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintainability kode.
+Encapsulation Getter Setter adalah fitur penting dalam JavaScript modern.
 
 ### Contoh Kode
 ```javascript
 // Encapsulation Getter Setter
 console.log("Belajar: Encapsulation Getter Setter");
+// Praktikkan kode ini dengan variasi sendiri
 ```
 
-## Rangkuman
-- Praktikkan encapsulation getter setter
+### Tips
+- Praktikkan kode ini
+- Eksperimen dengan variasi
 - Referensi: MDN Web Docs
+
+## Rangkuman
+- Encapsulation Getter Setter adalah fitur JavaScript yang berguna
+- Praktikkan dengan kode sendiri

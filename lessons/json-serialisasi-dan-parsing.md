@@ -6,14 +6,23 @@
 ## Materi
 
 ### Penjelasan
-Json Serialisasi Dan Parsing dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintainability kode.
+JSON dalam JavaScript adalah fitur penting dalam JavaScript modern.
 
 ### Contoh Kode
 ```javascript
-// Json Serialisasi Dan Parsing
-console.log("Belajar: Json Serialisasi Dan Parsing");
+const user = {nama: "Archon", umur: 25};
+const json = JSON.stringify(user, null, 2);
+console.log(json);
+
+const parsed = JSON.parse(json);
+console.log(parsed.nama); // "Archon"
 ```
 
-## Rangkuman
-- Praktikkan json serialisasi dan parsing
+### Tips
+- Praktikkan kode ini
+- Eksperimen dengan variasi
 - Referensi: MDN Web Docs
+
+## Rangkuman
+- Json Serialisasi Dan Parsing adalah fitur JavaScript yang berguna
+- Praktikkan dengan kode sendiri

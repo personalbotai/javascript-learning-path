@@ -6,14 +6,20 @@
 ## Materi
 
 ### Penjelasan
-Set Dan Weakset dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintainability kode.
+Set Dan Weakset adalah fitur penting dalam JavaScript modern.
 
 ### Contoh Kode
 ```javascript
 // Set Dan Weakset
 console.log("Belajar: Set Dan Weakset");
+// Praktikkan kode ini dengan variasi sendiri
 ```
 
-## Rangkuman
-- Praktikkan set dan weakset
+### Tips
+- Praktikkan kode ini
+- Eksperimen dengan variasi
 - Referensi: MDN Web Docs
+
+## Rangkuman
+- Set Dan Weakset adalah fitur JavaScript yang berguna
+- Praktikkan dengan kode sendiri

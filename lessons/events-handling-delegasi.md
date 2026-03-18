@@ -6,14 +6,20 @@
 ## Materi
 
 ### Penjelasan
-Events Handling Delegasi dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintainability kode.
+Events Handling Delegasi adalah fitur penting dalam JavaScript modern.
 
 ### Contoh Kode
 ```javascript
 // Events Handling Delegasi
 console.log("Belajar: Events Handling Delegasi");
+// Praktikkan kode ini dengan variasi sendiri
 ```
 
-## Rangkuman
-- Praktikkan events handling delegasi
+### Tips
+- Praktikkan kode ini
+- Eksperimen dengan variasi
 - Referensi: MDN Web Docs
+
+## Rangkuman
+- Events Handling Delegasi adalah fitur JavaScript yang berguna
+- Praktikkan dengan kode sendiri

@@ -6,14 +6,20 @@
 ## Materi
 
 ### Penjelasan
-Clean Code Principles dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintainability kode.
+Clean Code Principles adalah fitur penting dalam JavaScript modern.
 
 ### Contoh Kode
 ```javascript
 // Clean Code Principles
 console.log("Belajar: Clean Code Principles");
+// Praktikkan kode ini dengan variasi sendiri
 ```
 
-## Rangkuman
-- Praktikkan clean code principles
+### Tips
+- Praktikkan kode ini
+- Eksperimen dengan variasi
 - Referensi: MDN Web Docs
+
+## Rangkuman
+- Clean Code Principles adalah fitur JavaScript yang berguna
+- Praktikkan dengan kode sendiri

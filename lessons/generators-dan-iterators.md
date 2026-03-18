@@ -6,14 +6,20 @@
 ## Materi
 
 ### Penjelasan
-Generators Dan Iterators dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintainability kode.
+Generators Dan Iterators adalah fitur penting dalam JavaScript modern.
 
 ### Contoh Kode
 ```javascript
 // Generators Dan Iterators
 console.log("Belajar: Generators Dan Iterators");
+// Praktikkan kode ini dengan variasi sendiri
 ```
 
-## Rangkuman
-- Praktikkan generators dan iterators
+### Tips
+- Praktikkan kode ini
+- Eksperimen dengan variasi
 - Referensi: MDN Web Docs
+
+## Rangkuman
+- Generators Dan Iterators adalah fitur JavaScript yang berguna
+- Praktikkan dengan kode sendiri

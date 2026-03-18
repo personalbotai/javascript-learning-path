@@ -6,14 +6,20 @@
 ## Materi
 
 ### Penjelasan
-Map Dan Weakmap dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintainability kode.
+Map Dan Weakmap adalah fitur penting dalam JavaScript modern.
 
 ### Contoh Kode
 ```javascript
 // Map Dan Weakmap
 console.log("Belajar: Map Dan Weakmap");
+// Praktikkan kode ini dengan variasi sendiri
 ```
 
-## Rangkuman
-- Praktikkan map dan weakmap
+### Tips
+- Praktikkan kode ini
+- Eksperimen dengan variasi
 - Referensi: MDN Web Docs
+
+## Rangkuman
+- Map Dan Weakmap adalah fitur JavaScript yang berguna
+- Praktikkan dengan kode sendiri

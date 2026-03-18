@@ -6,14 +6,20 @@
 ## Materi
 
 ### Penjelasan
-Prototype Dan Prototype Chain dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintainability kode.
+Prototype Dan Prototype Chain adalah fitur penting dalam JavaScript modern.
 
 ### Contoh Kode
 ```javascript
 // Prototype Dan Prototype Chain
 console.log("Belajar: Prototype Dan Prototype Chain");
+// Praktikkan kode ini dengan variasi sendiri
 ```
 
-## Rangkuman
-- Praktikkan prototype dan prototype chain
+### Tips
+- Praktikkan kode ini
+- Eksperimen dengan variasi
 - Referensi: MDN Web Docs
+
+## Rangkuman
+- Prototype Dan Prototype Chain adalah fitur JavaScript yang berguna
+- Praktikkan dengan kode sendiri
