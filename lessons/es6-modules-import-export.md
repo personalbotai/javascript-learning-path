@@ -1,25 +1,48 @@
-## Tujuan Pembelajaran
+# ES6 Modules: Import/Export
 
-- Memahami konsep es6 modules: import dan export
-- Penerapan praktis dalam pengembangan
-- Best practices dan tips
+**ID**: `es6-modules-import-export`
+**Type**: lesson
+**Duration**: 20-25 menit
+**Tags**: javascript
+
+## Tujuan Pembelajaran
+- Memahami es6 modules: import/export dalam JavaScript
+- Menerapkan best practices
+- Praktik dengan contoh kode
 
 ## Materi
-**ES6 Modules: Import dan Export** adalah topik penting dalam JavaScript.
 
-### Pengantar
-Mengorganisir kode dengan ES6 modules, import/export.
+Modules memungkinkan memecah kode menjadi file terpisah yang bisa saling mengimpor.
 
-### Konsep Dasar
+```javascript
+// math.js - Export
+export const PI = 3.14159;
+export function tambah(a, b) { return a + b; }
+export default class Calculator { }
 
+// app.js - Import
+import Calculator, { PI, tambah } from './math.js';
+import * as math from './math.js';
+
+console.log(tambah(2, 3));
+console.log(math.PI);
 ```
-// Contoh implementasi es6 modules: import dan export
-// Pelajari dokumentasi MDN untuk detail lengkap
+
+### Export Types
+- Named export: `export const x = 1`
+- Default export: `export default class X`
+- Re-export: `export { x } from './other'`
+
+### Dynamic Import
+```javascript
+const module = await import('./math.js');
+module.tambah(2, 3);
 ```
 
-### Praktik
-Praktikkan konsep ini dengan membuat contoh kode dan project kecil.
+## Latihan
+Buat contoh kode yang menggunakan es6 modules: import/export.
 
 ## Rangkuman
-Pelajari es6 modules: import dan export dengan praktik langsung.
-← Kembali
+- ES6 Modules: Import/Export adalah konsep penting dalam JavaScript
+- Praktikkan dengan kode sendiri
+- Referensi: MDN Web Docs

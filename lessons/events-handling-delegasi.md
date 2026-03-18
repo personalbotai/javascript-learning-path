@@ -1,60 +1,55 @@
-## Tujuan Pembelajaran
+# Events: Handling dan Delegasi
 
-- Menambahkan event listener
-- Event object dan properties
-- Event delegation untuk efisiensi
+**ID**: `events-handling-delegasi`
+**Type**: lesson
+**Duration**: 20-25 menit
+**Tags**: javascript
+
+## Tujuan Pembelajaran
+- Memahami events: handling dan delegasi dalam JavaScript
+- Menerapkan best practices
+- Praktik dengan contoh kode
 
 ## Materi
 
-### Event Listener
+Event handling adalah cara JavaScript merespons interaksi user seperti klik, scroll, dan input.
 
-```
-const btn = document.querySelector('#myBtn');
+```javascript
+const btn = document.querySelector('#submit');
 
+// Add event listener
 btn.addEventListener('click', function(event) {
- console.log('Diklik!');
- console.log(event.target); // Elemen yang diklik
- console.log(event.type); // "click"
- console.log(event.clientX); // Posisi mouse X
-});
-```
-
-### Common Events
-
-```
-// Mouse
-element.addEventListener('click', handler);
-element.addEventListener('mouseover', handler);
-element.addEventListener('dblclick', handler);
-
-// Keyboard
-document.addEventListener('keydown', (e) => {
- console.log(e.key); // "Enter", "a", etc.
- console.log(e.code); // "KeyA", "Enter"
- console.log(e.ctrlKey); // true/false
+    console.log('Clicked!');
+    console.log(event.target);
 });
 
-// Form
+// Common events
+el.addEventListener('mouseover', handler);
+el.addEventListener('keydown', (e) => {
+    console.log(e.key); // 'Enter', 'a', etc.
+});
+
+// Form submission
 form.addEventListener('submit', (e) => {
- e.preventDefault(); // Prevent page reload
- const data = new FormData(form);
+    e.preventDefault();
+    const data = new FormData(form);
 });
 ```
 
 ### Event Delegation
-
-```
-// ❌ Pasang listener ke setiap item (tidak efisien)
-// items.forEach(item => item.addEventListener('click', handler));
-
-// ✅ Delegation: 1 listener di parent
-list.addEventListener('click', (e) => {
- if (e.target.matches('li.item')) {
- console.log(e.target.textContent);
- }
+```javascript
+// 1 listener untuk semua children
+document.querySelector('#list').addEventListener('click', (e) => {
+    if (e.target.matches('li.item')) {
+        console.log(e.target.textContent);
+    }
 });
 ```
 
+## Latihan
+Buat contoh kode yang menggunakan events: handling dan delegasi.
+
 ## Rangkuman
-Pelajari events: handling dan delegasi dengan praktik langsung.
-← Kembali
+- Events: Handling dan Delegasi adalah konsep penting dalam JavaScript
+- Praktikkan dengan kode sendiri
+- Referensi: MDN Web Docs

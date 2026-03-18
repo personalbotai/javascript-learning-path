@@ -1,25 +1,70 @@
-## Tujuan Pembelajaran
+# Performance Optimization
 
-- Memahami konsep performance optimization
-- Penerapan praktis dalam pengembangan
-- Best practices dan tips
+**ID**: `performance-optimization`
+**Type**: lesson
+**Duration**: 25-30 menit
+**Tags**: javascript, performance, optimization
+
+## Tujuan Pembelajaran
+- Memahami teknik optimasi JavaScript
+- Debouncing dan throttling
+- Lazy loading dan code splitting
 
 ## Materi
-**Performance Optimization** adalah topik penting dalam JavaScript.
 
-### Pengantar
-Optimasi performa JavaScript: debouncing, throttling, lazy loading.
+### Debouncing
+```javascript
+// Tunggu user berhenti mengetik sebelum search
+function debounce(fn, delay) {
+    let timer;
+    return function(...args) {
+        clearTimeout(timer);
+        timer = setTimeout(() => fn.apply(this, args), delay);
+    };
+}
 
-### Konsep Dasar
+const search = debounce((query) => {
+    console.log('Searching:', query);
+}, 300);
 
+input.addEventListener('input', (e) => search(e.target.value));
 ```
-// Contoh implementasi performance optimization
-// Pelajari dokumentasi MDN untuk detail lengkap
+
+### Throttling
+```javascript
+// Batasi frekuensi eksekusi
+function throttle(fn, limit) {
+    let inThrottle;
+    return function(...args) {
+        if (!inThrottle) {
+            fn.apply(this, args);
+            inThrottle = true;
+            setTimeout(() => inThrottle = false, limit);
+        }
+    };
+}
+
+window.addEventListener('scroll', throttle(() => {
+    console.log('Scroll position:', window.scrollY);
+}, 100));
 ```
 
-### Praktik
-Praktikkan konsep ini dengan membuat contoh kode dan project kecil.
+### Lazy Loading
+```javascript
+// Load module hanya saat dibutuhkan
+button.addEventListener('click', async () => {
+    const module = await import('./heavy-module.js');
+    module.doWork();
+});
+```
+
+### Virtual Scrolling
+Untuk list besar, render hanya elemen yang visible.
+
+## Latihan
+Implementasikan debounce untuk search input dengan API call.
 
 ## Rangkuman
-Pelajari performance optimization dengan praktik langsung.
-← Kembali
+- Debounce: tunggu user selesai
+- Throttle: batasi frekuensi
+- Lazy loading: load saat dibutuhkan
