@@ -5,19 +5,18 @@
 
 ## Materi
 
-### Pengantar
-Project Expense Tracker dalam JavaScript memungkinkan developer untuk menulis kode yang lebih efisien dan maintainable.
+### Penjelasan
+Project Expense Tracker adalah fitur penting dalam JavaScript untuk pengembangan web modern.
 
 ### Contoh Kode
 ```javascript
-// Project Expense Tracker - praktik
+// Project Expense Tracker
 console.log("Belajar: Project Expense Tracker");
-
-// Contoh implementasi
-// Eksperimen dengan kode ini
 ```
 
-### Tips
-- Praktikkan dengan kode sendiri
-- Baca dokumentasi MDN untuk detail lengkap
-- Bangun project kecil yang menggunakan konsep ini
+### Praktik
+Buat kode yang menggunakan project expense tracker.
+
+## Rangkuman
+- Praktikkan project expense tracker dengan kode
+- Referensi: MDN Web Docs

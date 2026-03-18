@@ -5,19 +5,18 @@
 
 ## Materi
 
-### Pengantar
-Pengenalan Dan Sejarah dalam JavaScript memungkinkan developer untuk menulis kode yang lebih efisien dan maintainable.
+### Penjelasan
+Pengenalan Dan Sejarah adalah fitur penting dalam JavaScript untuk pengembangan web modern.
 
 ### Contoh Kode
 ```javascript
-// Pengenalan Dan Sejarah - praktik
+// Pengenalan Dan Sejarah
 console.log("Belajar: Pengenalan Dan Sejarah");
-
-// Contoh implementasi
-// Eksperimen dengan kode ini
 ```
 
-### Tips
-- Praktikkan dengan kode sendiri
-- Baca dokumentasi MDN untuk detail lengkap
-- Bangun project kecil yang menggunakan konsep ini
+### Praktik
+Buat kode yang menggunakan pengenalan dan sejarah.
+
+## Rangkuman
+- Praktikkan pengenalan dan sejarah dengan kode
+- Referensi: MDN Web Docs

@@ -1,36 +1,22 @@
-# Error Handling
+# Error Handling Try Catch
 
 **ID**: `error-handling-try-catch`
 **Duration**: 20-25 menit
 
 ## Materi
 
-### Try/Catch/Finally
+### Penjelasan
+Error Handling Try Catch adalah fitur penting dalam JavaScript untuk pengembangan web modern.
+
+### Contoh Kode
 ```javascript
-try {
-    const data = JSON.parse(invalidJSON);
-} catch (error) {
-    console.log(error.name);    // "SyntaxError"
-    console.log(error.message);
-} finally {
-    console.log("Selalu jalan");
-}
+// Error Handling Try Catch
+console.log("Belajar: Error Handling Try Catch");
 ```
 
-### Throw
-```javascript
-function bagi(a, b) {
-    if (b === 0) throw new Error("Div by zero!");
-    return a / b;
-}
-```
+### Praktik
+Buat kode yang menggunakan error handling try catch.
 
-### Custom Error
-```javascript
-class ValidationError extends Error {
-    constructor(msg) {
-        super(msg);
-        this.name = "ValidationError";
-    }
-}
-```
+## Rangkuman
+- Praktikkan error handling try catch dengan kode
+- Referensi: MDN Web Docs

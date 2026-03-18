@@ -5,19 +5,18 @@
 
 ## Materi
 
-### Pengantar
-Operator Dan Ekspresi dalam JavaScript memungkinkan developer untuk menulis kode yang lebih efisien dan maintainable.
+### Penjelasan
+Operator Dan Ekspresi adalah fitur penting dalam JavaScript untuk pengembangan web modern.
 
 ### Contoh Kode
 ```javascript
-// Operator Dan Ekspresi - praktik
+// Operator Dan Ekspresi
 console.log("Belajar: Operator Dan Ekspresi");
-
-// Contoh implementasi
-// Eksperimen dengan kode ini
 ```
 
-### Tips
-- Praktikkan dengan kode sendiri
-- Baca dokumentasi MDN untuk detail lengkap
-- Bangun project kecil yang menggunakan konsep ini
+### Praktik
+Buat kode yang menggunakan operator dan ekspresi.
+
+## Rangkuman
+- Praktikkan operator dan ekspresi dengan kode
+- Referensi: MDN Web Docs

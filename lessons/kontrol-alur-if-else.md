@@ -1,39 +1,22 @@
-# Kontrol Alur: if/else
+# Kontrol Alur If Else
 
 **ID**: `kontrol-alur-if-else`
 **Duration**: 20-25 menit
 
 ## Materi
 
-### If/Else
-```javascript
-const nilai = 85;
+### Penjelasan
+Kontrol Alur If Else adalah fitur penting dalam JavaScript untuk pengembangan web modern.
 
-if (nilai >= 90) {
-    console.log("A");
-} else if (nilai >= 80) {
-    console.log("B");
-} else {
-    console.log("C");
-}
+### Contoh Kode
+```javascript
+// Kontrol Alur If Else
+console.log("Belajar: Kontrol Alur If Else");
 ```
 
-### Ternary
-```javascript
-const status = nilai >= 70 ? "Lulus" : "Gagal";
-```
+### Praktik
+Buat kode yang menggunakan kontrol alur if else.
 
-### Switch
-```javascript
-const hari = "Senin";
-switch(hari) {
-    case "Senin": console.log("Kerja"); break;
-    case "Minggu": console.log("Libur"); break;
-    default: console.log("Biasa");
-}
-```
-
-### Nullish
-```javascript
-const nama = user.nama ?? "Guest";
-```
+## Rangkuman
+- Praktikkan kontrol alur if else dengan kode
+- Referensi: MDN Web Docs

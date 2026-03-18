@@ -1,43 +1,22 @@
-# Perulangan: Loop
+# Perulangan
 
 **ID**: `perulangan`
 **Duration**: 20-25 menit
 
 ## Materi
 
-### For Loop
+### Penjelasan
+Perulangan adalah fitur penting dalam JavaScript untuk pengembangan web modern.
+
+### Contoh Kode
 ```javascript
-for (let i = 0; i < 5; i++) {
-    console.log(i);
-}
+// Perulangan
+console.log("Belajar: Perulangan");
 ```
 
-### For...of (values)
-```javascript
-const buah = ["apel", "jeruk", "mangga"];
-for (const item of buah) {
-    console.log(item);
-}
-```
+### Praktik
+Buat kode yang menggunakan perulangan.
 
-### For...in (keys)
-```javascript
-const user = {nama: "Archon", umur: 25};
-for (const key in user) {
-    console.log(`${key}: ${user[key]}`);
-}
-```
-
-### While
-```javascript
-let i = 0;
-while (i < 3) {
-    console.log(i++);
-}
-```
-
-### Array Methods
-```javascript
-buah.forEach(x => console.log(x));
-buah.map(x => x.toUpperCase());
-```
+## Rangkuman
+- Praktikkan perulangan dengan kode
+- Referensi: MDN Web Docs

@@ -5,19 +5,18 @@
 
 ## Materi
 
-### Pengantar
-Project Realtime Chat App dalam JavaScript memungkinkan developer untuk menulis kode yang lebih efisien dan maintainable.
+### Penjelasan
+Project Realtime Chat App adalah fitur penting dalam JavaScript untuk pengembangan web modern.
 
 ### Contoh Kode
 ```javascript
-// Project Realtime Chat App - praktik
+// Project Realtime Chat App
 console.log("Belajar: Project Realtime Chat App");
-
-// Contoh implementasi
-// Eksperimen dengan kode ini
 ```
 
-### Tips
-- Praktikkan dengan kode sendiri
-- Baca dokumentasi MDN untuk detail lengkap
-- Bangun project kecil yang menggunakan konsep ini
+### Praktik
+Buat kode yang menggunakan project realtime chat app.
+
+## Rangkuman
+- Praktikkan project realtime chat app dengan kode
+- Referensi: MDN Web Docs

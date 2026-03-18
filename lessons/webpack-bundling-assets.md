@@ -5,19 +5,18 @@
 
 ## Materi
 
-### Pengantar
-Webpack Bundling Assets dalam JavaScript memungkinkan developer untuk menulis kode yang lebih efisien dan maintainable.
+### Penjelasan
+Webpack Bundling Assets adalah fitur penting dalam JavaScript untuk pengembangan web modern.
 
 ### Contoh Kode
 ```javascript
-// Webpack Bundling Assets - praktik
+// Webpack Bundling Assets
 console.log("Belajar: Webpack Bundling Assets");
-
-// Contoh implementasi
-// Eksperimen dengan kode ini
 ```
 
-### Tips
-- Praktikkan dengan kode sendiri
-- Baca dokumentasi MDN untuk detail lengkap
-- Bangun project kecil yang menggunakan konsep ini
+### Praktik
+Buat kode yang menggunakan webpack bundling assets.
+
+## Rangkuman
+- Praktikkan webpack bundling assets dengan kode
+- Referensi: MDN Web Docs

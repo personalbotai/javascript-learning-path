@@ -5,19 +5,18 @@
 
 ## Materi
 
-### Pengantar
-Regexp Regular Expressions dalam JavaScript memungkinkan developer untuk menulis kode yang lebih efisien dan maintainable.
+### Penjelasan
+Regexp Regular Expressions adalah fitur penting dalam JavaScript untuk pengembangan web modern.
 
 ### Contoh Kode
 ```javascript
-// Regexp Regular Expressions - praktik
+// Regexp Regular Expressions
 console.log("Belajar: Regexp Regular Expressions");
-
-// Contoh implementasi
-// Eksperimen dengan kode ini
 ```
 
-### Tips
-- Praktikkan dengan kode sendiri
-- Baca dokumentasi MDN untuk detail lengkap
-- Bangun project kecil yang menggunakan konsep ini
+### Praktik
+Buat kode yang menggunakan regexp regular expressions.
+
+## Rangkuman
+- Praktikkan regexp regular expressions dengan kode
+- Referensi: MDN Web Docs

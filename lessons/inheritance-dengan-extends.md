@@ -5,19 +5,18 @@
 
 ## Materi
 
-### Pengantar
-Inheritance Dengan Extends dalam JavaScript memungkinkan developer untuk menulis kode yang lebih efisien dan maintainable.
+### Penjelasan
+Inheritance Dengan Extends adalah fitur penting dalam JavaScript untuk pengembangan web modern.
 
 ### Contoh Kode
 ```javascript
-// Inheritance Dengan Extends - praktik
+// Inheritance Dengan Extends
 console.log("Belajar: Inheritance Dengan Extends");
-
-// Contoh implementasi
-// Eksperimen dengan kode ini
 ```
 
-### Tips
-- Praktikkan dengan kode sendiri
-- Baca dokumentasi MDN untuk detail lengkap
-- Bangun project kecil yang menggunakan konsep ini
+### Praktik
+Buat kode yang menggunakan inheritance dengan extends.
+
+## Rangkuman
+- Praktikkan inheritance dengan extends dengan kode
+- Referensi: MDN Web Docs

@@ -5,19 +5,18 @@
 
 ## Materi
 
-### Pengantar
-Design Patterns Javascript dalam JavaScript memungkinkan developer untuk menulis kode yang lebih efisien dan maintainable.
+### Penjelasan
+Design Patterns Javascript adalah fitur penting dalam JavaScript untuk pengembangan web modern.
 
 ### Contoh Kode
 ```javascript
-// Design Patterns Javascript - praktik
+// Design Patterns Javascript
 console.log("Belajar: Design Patterns Javascript");
-
-// Contoh implementasi
-// Eksperimen dengan kode ini
 ```
 
-### Tips
-- Praktikkan dengan kode sendiri
-- Baca dokumentasi MDN untuk detail lengkap
-- Bangun project kecil yang menggunakan konsep ini
+### Praktik
+Buat kode yang menggunakan design patterns javascript.
+
+## Rangkuman
+- Praktikkan design patterns javascript dengan kode
+- Referensi: MDN Web Docs

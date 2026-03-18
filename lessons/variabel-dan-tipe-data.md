@@ -5,19 +5,18 @@
 
 ## Materi
 
-### Pengantar
-Variabel Dan Tipe Data dalam JavaScript memungkinkan developer untuk menulis kode yang lebih efisien dan maintainable.
+### Penjelasan
+Variabel Dan Tipe Data adalah fitur penting dalam JavaScript untuk pengembangan web modern.
 
 ### Contoh Kode
 ```javascript
-// Variabel Dan Tipe Data - praktik
+// Variabel Dan Tipe Data
 console.log("Belajar: Variabel Dan Tipe Data");
-
-// Contoh implementasi
-// Eksperimen dengan kode ini
 ```
 
-### Tips
-- Praktikkan dengan kode sendiri
-- Baca dokumentasi MDN untuk detail lengkap
-- Bangun project kecil yang menggunakan konsep ini
+### Praktik
+Buat kode yang menggunakan variabel dan tipe data.
+
+## Rangkuman
+- Praktikkan variabel dan tipe data dengan kode
+- Referensi: MDN Web Docs

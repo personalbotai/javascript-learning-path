@@ -5,19 +5,18 @@
 
 ## Materi
 
-### Pengantar
-Number Dan Bigint dalam JavaScript memungkinkan developer untuk menulis kode yang lebih efisien dan maintainable.
+### Penjelasan
+Number Dan Bigint adalah fitur penting dalam JavaScript untuk pengembangan web modern.
 
 ### Contoh Kode
 ```javascript
-// Number Dan Bigint - praktik
+// Number Dan Bigint
 console.log("Belajar: Number Dan Bigint");
-
-// Contoh implementasi
-// Eksperimen dengan kode ini
 ```
 
-### Tips
-- Praktikkan dengan kode sendiri
-- Baca dokumentasi MDN untuk detail lengkap
-- Bangun project kecil yang menggunakan konsep ini
+### Praktik
+Buat kode yang menggunakan number dan bigint.
+
+## Rangkuman
+- Praktikkan number dan bigint dengan kode
+- Referensi: MDN Web Docs

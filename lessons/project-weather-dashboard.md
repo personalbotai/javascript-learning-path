@@ -5,19 +5,18 @@
 
 ## Materi
 
-### Pengantar
-Project Weather Dashboard dalam JavaScript memungkinkan developer untuk menulis kode yang lebih efisien dan maintainable.
+### Penjelasan
+Project Weather Dashboard adalah fitur penting dalam JavaScript untuk pengembangan web modern.
 
 ### Contoh Kode
 ```javascript
-// Project Weather Dashboard - praktik
+// Project Weather Dashboard
 console.log("Belajar: Project Weather Dashboard");
-
-// Contoh implementasi
-// Eksperimen dengan kode ini
 ```
 
-### Tips
-- Praktikkan dengan kode sendiri
-- Baca dokumentasi MDN untuk detail lengkap
-- Bangun project kecil yang menggunakan konsep ini
+### Praktik
+Buat kode yang menggunakan project weather dashboard.
+
+## Rangkuman
+- Praktikkan project weather dashboard dengan kode
+- Referensi: MDN Web Docs

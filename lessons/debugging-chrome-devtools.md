@@ -5,19 +5,18 @@
 
 ## Materi
 
-### Pengantar
-Debugging Chrome Devtools dalam JavaScript memungkinkan developer untuk menulis kode yang lebih efisien dan maintainable.
+### Penjelasan
+Debugging Chrome Devtools adalah fitur penting dalam JavaScript untuk pengembangan web modern.
 
 ### Contoh Kode
 ```javascript
-// Debugging Chrome Devtools - praktik
+// Debugging Chrome Devtools
 console.log("Belajar: Debugging Chrome Devtools");
-
-// Contoh implementasi
-// Eksperimen dengan kode ini
 ```
 
-### Tips
-- Praktikkan dengan kode sendiri
-- Baca dokumentasi MDN untuk detail lengkap
-- Bangun project kecil yang menggunakan konsep ini
+### Praktik
+Buat kode yang menggunakan debugging chrome devtools.
+
+## Rangkuman
+- Praktikkan debugging chrome devtools dengan kode
+- Referensi: MDN Web Docs

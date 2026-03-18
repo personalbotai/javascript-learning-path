@@ -5,19 +5,18 @@
 
 ## Materi
 
-### Pengantar
-Eslint Dan Prettier dalam JavaScript memungkinkan developer untuk menulis kode yang lebih efisien dan maintainable.
+### Penjelasan
+Eslint Dan Prettier adalah fitur penting dalam JavaScript untuk pengembangan web modern.
 
 ### Contoh Kode
 ```javascript
-// Eslint Dan Prettier - praktik
+// Eslint Dan Prettier
 console.log("Belajar: Eslint Dan Prettier");
-
-// Contoh implementasi
-// Eksperimen dengan kode ini
 ```
 
-### Tips
-- Praktikkan dengan kode sendiri
-- Baca dokumentasi MDN untuk detail lengkap
-- Bangun project kecil yang menggunakan konsep ini
+### Praktik
+Buat kode yang menggunakan eslint dan prettier.
+
+## Rangkuman
+- Praktikkan eslint dan prettier dengan kode
+- Referensi: MDN Web Docs

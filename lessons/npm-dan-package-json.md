@@ -5,19 +5,18 @@
 
 ## Materi
 
-### Pengantar
-Npm Dan Package Json dalam JavaScript memungkinkan developer untuk menulis kode yang lebih efisien dan maintainable.
+### Penjelasan
+Npm Dan Package Json adalah fitur penting dalam JavaScript untuk pengembangan web modern.
 
 ### Contoh Kode
 ```javascript
-// Npm Dan Package Json - praktik
+// Npm Dan Package Json
 console.log("Belajar: Npm Dan Package Json");
-
-// Contoh implementasi
-// Eksperimen dengan kode ini
 ```
 
-### Tips
-- Praktikkan dengan kode sendiri
-- Baca dokumentasi MDN untuk detail lengkap
-- Bangun project kecil yang menggunakan konsep ini
+### Praktik
+Buat kode yang menggunakan npm dan package json.
+
+## Rangkuman
+- Praktikkan npm dan package json dengan kode
+- Referensi: MDN Web Docs
