@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Regexp Regular Expressions adalah fitur penting dalam JavaScript untuk pengembangan web modern.
+Regexp Regular Expressions dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintainability kode.
 
 ### Contoh Kode
 ```javascript
@@ -14,9 +14,6 @@ Regexp Regular Expressions adalah fitur penting dalam JavaScript untuk pengemban
 console.log("Belajar: Regexp Regular Expressions");
 ```
 
-### Praktik
-Buat kode yang menggunakan regexp regular expressions.
-
 ## Rangkuman
-- Praktikkan regexp regular expressions dengan kode
+- Praktikkan regexp regular expressions
 - Referensi: MDN Web Docs

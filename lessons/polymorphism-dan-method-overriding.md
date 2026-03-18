@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Polymorphism Dan Method Overriding adalah fitur penting dalam JavaScript untuk pengembangan web modern.
+Polymorphism Dan Method Overriding dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintainability kode.
 
 ### Contoh Kode
 ```javascript
@@ -14,9 +14,6 @@ Polymorphism Dan Method Overriding adalah fitur penting dalam JavaScript untuk p
 console.log("Belajar: Polymorphism Dan Method Overriding");
 ```
 
-### Praktik
-Buat kode yang menggunakan polymorphism dan method overriding.
-
 ## Rangkuman
-- Praktikkan polymorphism dan method overriding dengan kode
+- Praktikkan polymorphism dan method overriding
 - Referensi: MDN Web Docs

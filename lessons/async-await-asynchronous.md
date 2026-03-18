@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Async Await Asynchronous adalah fitur penting dalam JavaScript untuk pengembangan web modern.
+Async Await Asynchronous dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintainability kode.
 
 ### Contoh Kode
 ```javascript
@@ -14,9 +14,6 @@ Async Await Asynchronous adalah fitur penting dalam JavaScript untuk pengembanga
 console.log("Belajar: Async Await Asynchronous");
 ```
 
-### Praktik
-Buat kode yang menggunakan async await asynchronous.
-
 ## Rangkuman
-- Praktikkan async await asynchronous dengan kode
+- Praktikkan async await asynchronous
 - Referensi: MDN Web Docs

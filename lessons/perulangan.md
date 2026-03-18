@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Perulangan adalah fitur penting dalam JavaScript untuk pengembangan web modern.
+Perulangan dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintainability kode.
 
 ### Contoh Kode
 ```javascript
@@ -14,9 +14,6 @@ Perulangan adalah fitur penting dalam JavaScript untuk pengembangan web modern.
 console.log("Belajar: Perulangan");
 ```
 
-### Praktik
-Buat kode yang menggunakan perulangan.
-
 ## Rangkuman
-- Praktikkan perulangan dengan kode
+- Praktikkan perulangan
 - Referensi: MDN Web Docs

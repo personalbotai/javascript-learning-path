@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Inheritance Dengan Extends adalah fitur penting dalam JavaScript untuk pengembangan web modern.
+Inheritance Dengan Extends dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintainability kode.
 
 ### Contoh Kode
 ```javascript
@@ -14,9 +14,6 @@ Inheritance Dengan Extends adalah fitur penting dalam JavaScript untuk pengemban
 console.log("Belajar: Inheritance Dengan Extends");
 ```
 
-### Praktik
-Buat kode yang menggunakan inheritance dengan extends.
-
 ## Rangkuman
-- Praktikkan inheritance dengan extends dengan kode
+- Praktikkan inheritance dengan extends
 - Referensi: MDN Web Docs

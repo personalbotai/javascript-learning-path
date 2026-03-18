@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Set Dan Weakset adalah fitur penting dalam JavaScript untuk pengembangan web modern.
+Set Dan Weakset dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintainability kode.
 
 ### Contoh Kode
 ```javascript
@@ -14,9 +14,6 @@ Set Dan Weakset adalah fitur penting dalam JavaScript untuk pengembangan web mod
 console.log("Belajar: Set Dan Weakset");
 ```
 
-### Praktik
-Buat kode yang menggunakan set dan weakset.
-
 ## Rangkuman
-- Praktikkan set dan weakset dengan kode
+- Praktikkan set dan weakset
 - Referensi: MDN Web Docs

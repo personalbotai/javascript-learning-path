@@ -1,22 +1,39 @@
-# Variabel Dan Tipe Data
+# Variabel dan Tipe Data
 
 **ID**: `variabel-dan-tipe-data`
 **Duration**: 20-25 menit
 
 ## Materi
 
-### Penjelasan
-Variabel Dan Tipe Data adalah fitur penting dalam JavaScript untuk pengembangan web modern.
-
-### Contoh Kode
+### Deklarasi
 ```javascript
-// Variabel Dan Tipe Data
-console.log("Belajar: Variabel Dan Tipe Data");
+const nama = "Archon";   // Konstan
+let umur = 25;           // Bisa diubah
+var lama = "deprecated"; // Jangan pakai
 ```
 
-### Praktik
-Buat kode yang menggunakan variabel dan tipe data.
+### Tipe Primitif
+```javascript
+const str = "Halo";           // string
+const num = 42;               // number
+const bool = true;            // boolean
+const und = undefined;        // undefined
+const nul = null;             // null
+```
+
+### Typeof
+```javascript
+typeof "Halo"      // "string"
+typeof 42          // "number"
+typeof null        // "object" (bug!)
+```
+
+### Perbandingan
+```javascript
+5 === "5"    // false (strict)
+5 == "5"     // true (coercion - hindari!)
+```
 
 ## Rangkuman
-- Praktikkan variabel dan tipe data dengan kode
-- Referensi: MDN Web Docs
+- const = tetap, let = berubah
+- Selalu gunakan === untuk perbandingan

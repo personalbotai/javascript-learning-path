@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Project Expense Tracker adalah fitur penting dalam JavaScript untuk pengembangan web modern.
+Project Expense Tracker dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintainability kode.
 
 ### Contoh Kode
 ```javascript
@@ -14,9 +14,6 @@ Project Expense Tracker adalah fitur penting dalam JavaScript untuk pengembangan
 console.log("Belajar: Project Expense Tracker");
 ```
 
-### Praktik
-Buat kode yang menggunakan project expense tracker.
-
 ## Rangkuman
-- Praktikkan project expense tracker dengan kode
+- Praktikkan project expense tracker
 - Referensi: MDN Web Docs

@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Proxy Dan Reflection Api adalah fitur penting dalam JavaScript untuk pengembangan web modern.
+Proxy Dan Reflection Api dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintainability kode.
 
 ### Contoh Kode
 ```javascript
@@ -14,9 +14,6 @@ Proxy Dan Reflection Api adalah fitur penting dalam JavaScript untuk pengembanga
 console.log("Belajar: Proxy Dan Reflection Api");
 ```
 
-### Praktik
-Buat kode yang menggunakan proxy dan reflection api.
-
 ## Rangkuman
-- Praktikkan proxy dan reflection api dengan kode
+- Praktikkan proxy dan reflection api
 - Referensi: MDN Web Docs

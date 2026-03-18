@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Math Object adalah fitur penting dalam JavaScript untuk pengembangan web modern.
+Math Object dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintainability kode.
 
 ### Contoh Kode
 ```javascript
@@ -14,9 +14,6 @@ Math Object adalah fitur penting dalam JavaScript untuk pengembangan web modern.
 console.log("Belajar: Math Object");
 ```
 
-### Praktik
-Buat kode yang menggunakan math object.
-
 ## Rangkuman
-- Praktikkan math object dengan kode
+- Praktikkan math object
 - Referensi: MDN Web Docs

@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Project Interactive Quiz App adalah fitur penting dalam JavaScript untuk pengembangan web modern.
+Project Interactive Quiz App dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintainability kode.
 
 ### Contoh Kode
 ```javascript
@@ -14,9 +14,6 @@ Project Interactive Quiz App adalah fitur penting dalam JavaScript untuk pengemb
 console.log("Belajar: Project Interactive Quiz App");
 ```
 
-### Praktik
-Buat kode yang menggunakan project interactive quiz app.
-
 ## Rangkuman
-- Praktikkan project interactive quiz app dengan kode
+- Praktikkan project interactive quiz app
 - Referensi: MDN Web Docs

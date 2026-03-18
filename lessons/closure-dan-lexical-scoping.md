@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Closure Dan Lexical Scoping adalah fitur penting dalam JavaScript untuk pengembangan web modern.
+Closure Dan Lexical Scoping dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintainability kode.
 
 ### Contoh Kode
 ```javascript
@@ -14,9 +14,6 @@ Closure Dan Lexical Scoping adalah fitur penting dalam JavaScript untuk pengemba
 console.log("Belajar: Closure Dan Lexical Scoping");
 ```
 
-### Praktik
-Buat kode yang menggunakan closure dan lexical scoping.
-
 ## Rangkuman
-- Praktikkan closure dan lexical scoping dengan kode
+- Praktikkan closure dan lexical scoping
 - Referensi: MDN Web Docs

@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Kontrol Alur If Else adalah fitur penting dalam JavaScript untuk pengembangan web modern.
+Kontrol Alur If Else dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintainability kode.
 
 ### Contoh Kode
 ```javascript
@@ -14,9 +14,6 @@ Kontrol Alur If Else adalah fitur penting dalam JavaScript untuk pengembangan we
 console.log("Belajar: Kontrol Alur If Else");
 ```
 
-### Praktik
-Buat kode yang menggunakan kontrol alur if else.
-
 ## Rangkuman
-- Praktikkan kontrol alur if else dengan kode
+- Praktikkan kontrol alur if else
 - Referensi: MDN Web Docs

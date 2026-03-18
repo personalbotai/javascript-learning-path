@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Number Dan Bigint adalah fitur penting dalam JavaScript untuk pengembangan web modern.
+Number Dan Bigint dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintainability kode.
 
 ### Contoh Kode
 ```javascript
@@ -14,9 +14,6 @@ Number Dan Bigint adalah fitur penting dalam JavaScript untuk pengembangan web m
 console.log("Belajar: Number Dan Bigint");
 ```
 
-### Praktik
-Buat kode yang menggunakan number dan bigint.
-
 ## Rangkuman
-- Praktikkan number dan bigint dengan kode
+- Praktikkan number dan bigint
 - Referensi: MDN Web Docs

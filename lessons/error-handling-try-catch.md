@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Error Handling Try Catch adalah fitur penting dalam JavaScript untuk pengembangan web modern.
+Error Handling Try Catch dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintainability kode.
 
 ### Contoh Kode
 ```javascript
@@ -14,9 +14,6 @@ Error Handling Try Catch adalah fitur penting dalam JavaScript untuk pengembanga
 console.log("Belajar: Error Handling Try Catch");
 ```
 
-### Praktik
-Buat kode yang menggunakan error handling try catch.
-
 ## Rangkuman
-- Praktikkan error handling try catch dengan kode
+- Praktikkan error handling try catch
 - Referensi: MDN Web Docs

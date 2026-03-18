@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Date Dan Time adalah fitur penting dalam JavaScript untuk pengembangan web modern.
+Date Dan Time dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintainability kode.
 
 ### Contoh Kode
 ```javascript
@@ -14,9 +14,6 @@ Date Dan Time adalah fitur penting dalam JavaScript untuk pengembangan web moder
 console.log("Belajar: Date Dan Time");
 ```
 
-### Praktik
-Buat kode yang menggunakan date dan time.
-
 ## Rangkuman
-- Praktikkan date dan time dengan kode
+- Praktikkan date dan time
 - Referensi: MDN Web Docs

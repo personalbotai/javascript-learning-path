@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Array Higher Order Functions adalah fitur penting dalam JavaScript untuk pengembangan web modern.
+Array Higher Order Functions dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintainability kode.
 
 ### Contoh Kode
 ```javascript
@@ -14,9 +14,6 @@ Array Higher Order Functions adalah fitur penting dalam JavaScript untuk pengemb
 console.log("Belajar: Array Higher Order Functions");
 ```
 
-### Praktik
-Buat kode yang menggunakan array higher order functions.
-
 ## Rangkuman
-- Praktikkan array higher order functions dengan kode
+- Praktikkan array higher order functions
 - Referensi: MDN Web Docs

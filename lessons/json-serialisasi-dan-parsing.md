@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Json Serialisasi Dan Parsing adalah fitur penting dalam JavaScript untuk pengembangan web modern.
+Json Serialisasi Dan Parsing dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintainability kode.
 
 ### Contoh Kode
 ```javascript
@@ -14,9 +14,6 @@ Json Serialisasi Dan Parsing adalah fitur penting dalam JavaScript untuk pengemb
 console.log("Belajar: Json Serialisasi Dan Parsing");
 ```
 
-### Praktik
-Buat kode yang menggunakan json serialisasi dan parsing.
-
 ## Rangkuman
-- Praktikkan json serialisasi dan parsing dengan kode
+- Praktikkan json serialisasi dan parsing
 - Referensi: MDN Web Docs

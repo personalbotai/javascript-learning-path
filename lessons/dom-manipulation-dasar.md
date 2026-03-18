@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Dom Manipulation Dasar adalah fitur penting dalam JavaScript untuk pengembangan web modern.
+Dom Manipulation Dasar dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintainability kode.
 
 ### Contoh Kode
 ```javascript
@@ -14,9 +14,6 @@ Dom Manipulation Dasar adalah fitur penting dalam JavaScript untuk pengembangan 
 console.log("Belajar: Dom Manipulation Dasar");
 ```
 
-### Praktik
-Buat kode yang menggunakan dom manipulation dasar.
-
 ## Rangkuman
-- Praktikkan dom manipulation dasar dengan kode
+- Praktikkan dom manipulation dasar
 - Referensi: MDN Web Docs

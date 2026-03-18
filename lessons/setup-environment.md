@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Setup Environment adalah fitur penting dalam JavaScript untuk pengembangan web modern.
+Setup Environment dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintainability kode.
 
 ### Contoh Kode
 ```javascript
@@ -14,9 +14,6 @@ Setup Environment adalah fitur penting dalam JavaScript untuk pengembangan web m
 console.log("Belajar: Setup Environment");
 ```
 
-### Praktik
-Buat kode yang menggunakan setup environment.
-
 ## Rangkuman
-- Praktikkan setup environment dengan kode
+- Praktikkan setup environment
 - Referensi: MDN Web Docs

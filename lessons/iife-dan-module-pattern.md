@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Iife Dan Module Pattern adalah fitur penting dalam JavaScript untuk pengembangan web modern.
+Iife Dan Module Pattern dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintainability kode.
 
 ### Contoh Kode
 ```javascript
@@ -14,9 +14,6 @@ Iife Dan Module Pattern adalah fitur penting dalam JavaScript untuk pengembangan
 console.log("Belajar: Iife Dan Module Pattern");
 ```
 
-### Praktik
-Buat kode yang menggunakan iife dan module pattern.
-
 ## Rangkuman
-- Praktikkan iife dan module pattern dengan kode
+- Praktikkan iife dan module pattern
 - Referensi: MDN Web Docs

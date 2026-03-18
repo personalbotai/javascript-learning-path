@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Arrow Functions Perilaku This adalah fitur penting dalam JavaScript untuk pengembangan web modern.
+Arrow Functions Perilaku This dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintainability kode.
 
 ### Contoh Kode
 ```javascript
@@ -14,9 +14,6 @@ Arrow Functions Perilaku This adalah fitur penting dalam JavaScript untuk pengem
 console.log("Belajar: Arrow Functions Perilaku This");
 ```
 
-### Praktik
-Buat kode yang menggunakan arrow functions perilaku this.
-
 ## Rangkuman
-- Praktikkan arrow functions perilaku this dengan kode
+- Praktikkan arrow functions perilaku this
 - Referensi: MDN Web Docs

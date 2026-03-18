@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Code Review Checklist adalah fitur penting dalam JavaScript untuk pengembangan web modern.
+Code Review Checklist dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintainability kode.
 
 ### Contoh Kode
 ```javascript
@@ -14,9 +14,6 @@ Code Review Checklist adalah fitur penting dalam JavaScript untuk pengembangan w
 console.log("Belajar: Code Review Checklist");
 ```
 
-### Praktik
-Buat kode yang menggunakan code review checklist.
-
 ## Rangkuman
-- Praktikkan code review checklist dengan kode
+- Praktikkan code review checklist
 - Referensi: MDN Web Docs

@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Performance Optimization adalah fitur penting dalam JavaScript untuk pengembangan web modern.
+Performance Optimization dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintainability kode.
 
 ### Contoh Kode
 ```javascript
@@ -14,9 +14,6 @@ Performance Optimization adalah fitur penting dalam JavaScript untuk pengembanga
 console.log("Belajar: Performance Optimization");
 ```
 
-### Praktik
-Buat kode yang menggunakan performance optimization.
-
 ## Rangkuman
-- Praktikkan performance optimization dengan kode
+- Praktikkan performance optimization
 - Referensi: MDN Web Docs

@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Array Dasar Dan Metode adalah fitur penting dalam JavaScript untuk pengembangan web modern.
+Array Dasar Dan Metode dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintainability kode.
 
 ### Contoh Kode
 ```javascript
@@ -14,9 +14,6 @@ Array Dasar Dan Metode adalah fitur penting dalam JavaScript untuk pengembangan 
 console.log("Belajar: Array Dasar Dan Metode");
 ```
 
-### Praktik
-Buat kode yang menggunakan array dasar dan metode.
-
 ## Rangkuman
-- Praktikkan array dasar dan metode dengan kode
+- Praktikkan array dasar dan metode
 - Referensi: MDN Web Docs

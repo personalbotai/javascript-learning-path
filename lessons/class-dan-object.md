@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Class Dan Object adalah fitur penting dalam JavaScript untuk pengembangan web modern.
+Class Dan Object dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintainability kode.
 
 ### Contoh Kode
 ```javascript
@@ -14,9 +14,6 @@ Class Dan Object adalah fitur penting dalam JavaScript untuk pengembangan web mo
 console.log("Belajar: Class Dan Object");
 ```
 
-### Praktik
-Buat kode yang menggunakan class dan object.
-
 ## Rangkuman
-- Praktikkan class dan object dengan kode
+- Praktikkan class dan object
 - Referensi: MDN Web Docs

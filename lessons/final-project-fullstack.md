@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Final Project Fullstack adalah fitur penting dalam JavaScript untuk pengembangan web modern.
+Final Project Fullstack dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintainability kode.
 
 ### Contoh Kode
 ```javascript
@@ -14,9 +14,6 @@ Final Project Fullstack adalah fitur penting dalam JavaScript untuk pengembangan
 console.log("Belajar: Final Project Fullstack");
 ```
 
-### Praktik
-Buat kode yang menggunakan final project fullstack.
-
 ## Rangkuman
-- Praktikkan final project fullstack dengan kode
+- Praktikkan final project fullstack
 - Referensi: MDN Web Docs

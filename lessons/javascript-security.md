@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Javascript Security adalah fitur penting dalam JavaScript untuk pengembangan web modern.
+Javascript Security dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintainability kode.
 
 ### Contoh Kode
 ```javascript
@@ -14,9 +14,6 @@ Javascript Security adalah fitur penting dalam JavaScript untuk pengembangan web
 console.log("Belajar: Javascript Security");
 ```
 
-### Praktik
-Buat kode yang menggunakan javascript security.
-
 ## Rangkuman
-- Praktikkan javascript security dengan kode
+- Praktikkan javascript security
 - Referensi: MDN Web Docs

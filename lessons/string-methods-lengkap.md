@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-String Methods Lengkap adalah fitur penting dalam JavaScript untuk pengembangan web modern.
+String Methods Lengkap dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintainability kode.
 
 ### Contoh Kode
 ```javascript
@@ -14,9 +14,6 @@ String Methods Lengkap adalah fitur penting dalam JavaScript untuk pengembangan 
 console.log("Belajar: String Methods Lengkap");
 ```
 
-### Praktik
-Buat kode yang menggunakan string methods lengkap.
-
 ## Rangkuman
-- Praktikkan string methods lengkap dengan kode
+- Praktikkan string methods lengkap
 - Referensi: MDN Web Docs

@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-Encapsulation Getter Setter adalah fitur penting dalam JavaScript untuk pengembangan web modern.
+Encapsulation Getter Setter dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintainability kode.
 
 ### Contoh Kode
 ```javascript
@@ -14,9 +14,6 @@ Encapsulation Getter Setter adalah fitur penting dalam JavaScript untuk pengemba
 console.log("Belajar: Encapsulation Getter Setter");
 ```
 
-### Praktik
-Buat kode yang menggunakan encapsulation getter setter.
-
 ## Rangkuman
-- Praktikkan encapsulation getter setter dengan kode
+- Praktikkan encapsulation getter setter
 - Referensi: MDN Web Docs

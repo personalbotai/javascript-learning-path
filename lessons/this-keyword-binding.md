@@ -6,7 +6,7 @@
 ## Materi
 
 ### Penjelasan
-This Keyword Binding adalah fitur penting dalam JavaScript untuk pengembangan web modern.
+This Keyword Binding dalam JavaScript digunakan untuk meningkatkan efisiensi dan maintainability kode.
 
 ### Contoh Kode
 ```javascript
@@ -14,9 +14,6 @@ This Keyword Binding adalah fitur penting dalam JavaScript untuk pengembangan we
 console.log("Belajar: This Keyword Binding");
 ```
 
-### Praktik
-Buat kode yang menggunakan this keyword binding.
-
 ## Rangkuman
-- Praktikkan this keyword binding dengan kode
+- Praktikkan this keyword binding
 - Referensi: MDN Web Docs
