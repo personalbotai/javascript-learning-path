@@ -1,36 +1,23 @@
 # Number Dan Bigint
 
 **ID**: `number-dan-bigint`
-**Type**: lesson
 **Duration**: 20-25 menit
-**Tags**: javascript
-
-## Tujuan Pembelajaran
-- Memahami number dan bigint dalam JavaScript
-- Menerapkan best practices
-- Praktik dengan contoh kode
 
 ## Materi
 
-### Penjelasan
-Number Dan Bigint adalah konsep penting yang digunakan dalam pengembangan JavaScript modern.
+### Pengantar
+Number Dan Bigint dalam JavaScript memungkinkan developer untuk menulis kode yang lebih efisien dan maintainable.
 
 ### Contoh Kode
 ```javascript
-// Contoh implementasi Number Dan Bigint
-// Praktikkan kode ini dengan variasi sendiri
-console.log("Belajar Number Dan Bigint");
+// Number Dan Bigint - praktik
+console.log("Belajar: Number Dan Bigint");
+
+// Contoh implementasi
+// Eksperimen dengan kode ini
 ```
 
 ### Tips
 - Praktikkan dengan kode sendiri
-- Eksperimen dengan variasi berbeda
-- Referensi: MDN Web Docs
-
-## Latihan
-Buat kode yang menggunakan number dan bigint.
-
-## Rangkuman
-- Number Dan Bigint penting untuk JavaScript development
-- Praktikkan dengan kode sendiri
-- Referensi: MDN Web Docs untuk dokumentasi lengkap
+- Baca dokumentasi MDN untuk detail lengkap
+- Bangun project kecil yang menggunakan konsep ini

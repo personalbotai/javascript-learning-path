@@ -1,36 +1,23 @@
 # Project Ecommerce Filter
 
 **ID**: `project-ecommerce-filter`
-**Type**: lesson
 **Duration**: 20-25 menit
-**Tags**: javascript
-
-## Tujuan Pembelajaran
-- Memahami project ecommerce filter dalam JavaScript
-- Menerapkan best practices
-- Praktik dengan contoh kode
 
 ## Materi
 
-### Penjelasan
-Project Ecommerce Filter adalah konsep penting yang digunakan dalam pengembangan JavaScript modern.
+### Pengantar
+Project Ecommerce Filter dalam JavaScript memungkinkan developer untuk menulis kode yang lebih efisien dan maintainable.
 
 ### Contoh Kode
 ```javascript
-// Contoh implementasi Project Ecommerce Filter
-// Praktikkan kode ini dengan variasi sendiri
-console.log("Belajar Project Ecommerce Filter");
+// Project Ecommerce Filter - praktik
+console.log("Belajar: Project Ecommerce Filter");
+
+// Contoh implementasi
+// Eksperimen dengan kode ini
 ```
 
 ### Tips
 - Praktikkan dengan kode sendiri
-- Eksperimen dengan variasi berbeda
-- Referensi: MDN Web Docs
-
-## Latihan
-Buat kode yang menggunakan project ecommerce filter.
-
-## Rangkuman
-- Project Ecommerce Filter penting untuk JavaScript development
-- Praktikkan dengan kode sendiri
-- Referensi: MDN Web Docs untuk dokumentasi lengkap
+- Baca dokumentasi MDN untuk detail lengkap
+- Bangun project kecil yang menggunakan konsep ini

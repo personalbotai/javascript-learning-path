@@ -1,36 +1,23 @@
 # Json Serialisasi Dan Parsing
 
 **ID**: `json-serialisasi-dan-parsing`
-**Type**: lesson
 **Duration**: 20-25 menit
-**Tags**: javascript
-
-## Tujuan Pembelajaran
-- Memahami json serialisasi dan parsing dalam JavaScript
-- Menerapkan best practices
-- Praktik dengan contoh kode
 
 ## Materi
 
-### Penjelasan
-Json Serialisasi Dan Parsing adalah konsep penting yang digunakan dalam pengembangan JavaScript modern.
+### Pengantar
+Json Serialisasi Dan Parsing dalam JavaScript memungkinkan developer untuk menulis kode yang lebih efisien dan maintainable.
 
 ### Contoh Kode
 ```javascript
-// Contoh implementasi Json Serialisasi Dan Parsing
-// Praktikkan kode ini dengan variasi sendiri
-console.log("Belajar Json Serialisasi Dan Parsing");
+// Json Serialisasi Dan Parsing - praktik
+console.log("Belajar: Json Serialisasi Dan Parsing");
+
+// Contoh implementasi
+// Eksperimen dengan kode ini
 ```
 
 ### Tips
 - Praktikkan dengan kode sendiri
-- Eksperimen dengan variasi berbeda
-- Referensi: MDN Web Docs
-
-## Latihan
-Buat kode yang menggunakan json serialisasi dan parsing.
-
-## Rangkuman
-- Json Serialisasi Dan Parsing penting untuk JavaScript development
-- Praktikkan dengan kode sendiri
-- Referensi: MDN Web Docs untuk dokumentasi lengkap
+- Baca dokumentasi MDN untuk detail lengkap
+- Bangun project kecil yang menggunakan konsep ini

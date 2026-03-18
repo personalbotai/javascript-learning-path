@@ -1,36 +1,36 @@
-# Error Handling Try Catch
+# Error Handling
 
 **ID**: `error-handling-try-catch`
-**Type**: lesson
 **Duration**: 20-25 menit
-**Tags**: javascript
-
-## Tujuan Pembelajaran
-- Memahami error handling try catch dalam JavaScript
-- Menerapkan best practices
-- Praktik dengan contoh kode
 
 ## Materi
 
-### Penjelasan
-Error Handling Try Catch adalah konsep penting yang digunakan dalam pengembangan JavaScript modern.
-
-### Contoh Kode
+### Try/Catch/Finally
 ```javascript
-// Contoh implementasi Error Handling Try Catch
-// Praktikkan kode ini dengan variasi sendiri
-console.log("Belajar Error Handling Try Catch");
+try {
+    const data = JSON.parse(invalidJSON);
+} catch (error) {
+    console.log(error.name);    // "SyntaxError"
+    console.log(error.message);
+} finally {
+    console.log("Selalu jalan");
+}
 ```
 
-### Tips
-- Praktikkan dengan kode sendiri
-- Eksperimen dengan variasi berbeda
-- Referensi: MDN Web Docs
+### Throw
+```javascript
+function bagi(a, b) {
+    if (b === 0) throw new Error("Div by zero!");
+    return a / b;
+}
+```
 
-## Latihan
-Buat kode yang menggunakan error handling try catch.
-
-## Rangkuman
-- Error Handling Try Catch penting untuk JavaScript development
-- Praktikkan dengan kode sendiri
-- Referensi: MDN Web Docs untuk dokumentasi lengkap
+### Custom Error
+```javascript
+class ValidationError extends Error {
+    constructor(msg) {
+        super(msg);
+        this.name = "ValidationError";
+    }
+}
+```

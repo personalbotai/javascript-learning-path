@@ -1,36 +1,23 @@
 # Encapsulation Getter Setter
 
 **ID**: `encapsulation-getter-setter`
-**Type**: lesson
 **Duration**: 20-25 menit
-**Tags**: javascript
-
-## Tujuan Pembelajaran
-- Memahami encapsulation getter setter dalam JavaScript
-- Menerapkan best practices
-- Praktik dengan contoh kode
 
 ## Materi
 
-### Penjelasan
-Encapsulation Getter Setter adalah konsep penting yang digunakan dalam pengembangan JavaScript modern.
+### Pengantar
+Encapsulation Getter Setter dalam JavaScript memungkinkan developer untuk menulis kode yang lebih efisien dan maintainable.
 
 ### Contoh Kode
 ```javascript
-// Contoh implementasi Encapsulation Getter Setter
-// Praktikkan kode ini dengan variasi sendiri
-console.log("Belajar Encapsulation Getter Setter");
+// Encapsulation Getter Setter - praktik
+console.log("Belajar: Encapsulation Getter Setter");
+
+// Contoh implementasi
+// Eksperimen dengan kode ini
 ```
 
 ### Tips
 - Praktikkan dengan kode sendiri
-- Eksperimen dengan variasi berbeda
-- Referensi: MDN Web Docs
-
-## Latihan
-Buat kode yang menggunakan encapsulation getter setter.
-
-## Rangkuman
-- Encapsulation Getter Setter penting untuk JavaScript development
-- Praktikkan dengan kode sendiri
-- Referensi: MDN Web Docs untuk dokumentasi lengkap
+- Baca dokumentasi MDN untuk detail lengkap
+- Bangun project kecil yang menggunakan konsep ini

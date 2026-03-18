@@ -1,36 +1,43 @@
-# Perulangan
+# Perulangan: Loop
 
 **ID**: `perulangan`
-**Type**: lesson
 **Duration**: 20-25 menit
-**Tags**: javascript
-
-## Tujuan Pembelajaran
-- Memahami perulangan dalam JavaScript
-- Menerapkan best practices
-- Praktik dengan contoh kode
 
 ## Materi
 
-### Penjelasan
-Perulangan adalah konsep penting yang digunakan dalam pengembangan JavaScript modern.
-
-### Contoh Kode
+### For Loop
 ```javascript
-// Contoh implementasi Perulangan
-// Praktikkan kode ini dengan variasi sendiri
-console.log("Belajar Perulangan");
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
 ```
 
-### Tips
-- Praktikkan dengan kode sendiri
-- Eksperimen dengan variasi berbeda
-- Referensi: MDN Web Docs
+### For...of (values)
+```javascript
+const buah = ["apel", "jeruk", "mangga"];
+for (const item of buah) {
+    console.log(item);
+}
+```
 
-## Latihan
-Buat kode yang menggunakan perulangan.
+### For...in (keys)
+```javascript
+const user = {nama: "Archon", umur: 25};
+for (const key in user) {
+    console.log(`${key}: ${user[key]}`);
+}
+```
 
-## Rangkuman
-- Perulangan penting untuk JavaScript development
-- Praktikkan dengan kode sendiri
-- Referensi: MDN Web Docs untuk dokumentasi lengkap
+### While
+```javascript
+let i = 0;
+while (i < 3) {
+    console.log(i++);
+}
+```
+
+### Array Methods
+```javascript
+buah.forEach(x => console.log(x));
+buah.map(x => x.toUpperCase());
+```

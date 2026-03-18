@@ -1,54 +1,44 @@
-# Async/Await
+# Async/Await: Asynchronous Programming
 
 **ID**: `async-await-asynchronous`
-**Type**: lesson
-**Duration**: 20-25 menit
-**Tags**: javascript
-
-## Tujuan Pembelajaran
-- Memahami async/await dalam JavaScript
-- Menerapkan best practices
-- Praktik dengan contoh kode
+**Duration**: 25-30 menit
 
 ## Materi
 
-### Penjelasan
-Async/Await adalah konsep penting yang digunakan dalam pengembangan JavaScript modern.
-
-### Contoh Kode
+### JavaScript Single-Threaded
+JavaScript punya 1 thread tapi bisa handle banyak tugas dengan event loop:
 ```javascript
-// Promise
+console.log("1");
+setTimeout(() => console.log("2"), 0);
+console.log("3");
+// Output: 1, 3, 2
+```
+
+### Promise
+```javascript
 const promise = new Promise((resolve, reject) => {
     setTimeout(() => resolve("Berhasil!"), 1000);
 });
+promise.then(r => console.log(r)).catch(e => console.log(e));
+```
 
-// Async/Await
+### Async/Await
+```javascript
 async function getData() {
     try {
-        const response = await fetch("https://api.example.com/data");
-        const data = await response.json();
+        const res = await fetch("https://api.example.com/data");
+        const data = await res.json();
         return data;
     } catch (error) {
         console.log("Error:", error.message);
     }
 }
+```
 
-// Promise.all (parallel)
+### Promise.all
+```javascript
 const [users, posts] = await Promise.all([
     fetch("/api/users").then(r => r.json()),
     fetch("/api/posts").then(r => r.json())
 ]);
 ```
-
-### Tips
-- Praktikkan dengan kode sendiri
-- Eksperimen dengan variasi berbeda
-- Referensi: MDN Web Docs
-
-## Latihan
-Buat kode yang menggunakan async/await.
-
-## Rangkuman
-- Async/Await penting untuk JavaScript development
-- Praktikkan dengan kode sendiri
-- Referensi: MDN Web Docs untuk dokumentasi lengkap
