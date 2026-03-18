@@ -1,4 +1,4 @@
-# Dom Manipulation Dasar
+# DOM Manipulation Dasar
 
 **ID**: `dom-manipulation-dasar`
 **Type**: lesson
@@ -6,33 +6,63 @@
 **Tags**: javascript
 
 ## Tujuan Pembelajaran
-- Memahami dom manipulation dasar dalam JavaScript
+- Memahami konsep dom manipulation dasar dalam JavaScript
 - Menerapkan best practices
 - Praktik dengan contoh kode
 
 ## Materi
 
-### Pengantar
+DOM (Document Object Model) adalah representasi tree dari HTML yang bisa dimanipulasi JavaScript.
 
-Dom Manipulation Dasar adalah konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer.
-
-### Contoh Kode
-
+### Memilih Elemen
 ```javascript
-// Contoh implementasi dom manipulation dasar
-// Praktikkan dengan kode sendiri
+// Modern (direkomendasikan)
+document.querySelector('.class');
+document.querySelector('#id');
+document.querySelectorAll('div.item');
+
+// Legacy
+document.getElementById('id');
 ```
 
-### Best Practices
+### Mengubah Elemen
+```javascript
+const el = document.querySelector('#title');
+el.textContent = "Teks baru";       // Aman dari XSS
+el.innerHTML = "<strong>Bold</strong>"; // Hati-hati XSS!
+el.style.color = "red";
+el.style.fontSize = "20px";
+```
 
-- Pahami konsep dasar dengan baik
-- Praktikkan dengan contoh kode
-- Referensi dokumentasi resmi
+### Class Manipulation
+```javascript
+el.classList.add('active');
+el.classList.remove('hidden');
+el.classList.toggle('dark-mode');
+el.classList.contains('active'); // true/false
+```
+
+### Attribute
+```javascript
+el.setAttribute('data-id', '123');
+el.getAttribute('class');
+el.removeAttribute('hidden');
+```
+
+### Buat & Hapus
+```javascript
+const div = document.createElement('div');
+div.textContent = "Hello!";
+div.classList.add('card');
+document.body.appendChild(div);
+
+div.remove(); // Hapus
+```
 
 ## Latihan
-Buat contoh kode yang menggunakan dom manipulation dasar.
+Buat kode yang menggunakan dom manipulation dasar.
 
 ## Rangkuman
-- Dom Manipulation Dasar adalah konsep penting dalam JavaScript
+- DOM Manipulation Dasar adalah konsep penting dalam JavaScript
 - Praktikkan dengan kode sendiri
 - Referensi: MDN Web Docs
