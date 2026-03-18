@@ -1,25 +1,38 @@
-## Tujuan Pembelajaran
+# Math Object
 
-- Memahami konsep math object
-- Penerapan praktis dalam pengembangan
-- Best practices dan tips
+**ID**: `math-object`
+**Type**: lesson
+**Duration**: 20-25 menit
+**Tags**: javascript
+
+## Tujuan Pembelajaran
+- Memahami math object dalam JavaScript
+- Menerapkan best practices
+- Praktik dengan contoh kode
 
 ## Materi
-**Math Object** adalah topik penting dalam JavaScript.
 
 ### Pengantar
-Metode Math: random, floor, ceil, round, max, min, abs.
 
-### Konsep Dasar
+Math Object adalah konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer.
 
-```
+### Contoh Kode
+
+```javascript
 // Contoh implementasi math object
-// Pelajari dokumentasi MDN untuk detail lengkap
+// Praktikkan dengan kode sendiri
 ```
 
-### Praktik
-Praktikkan konsep ini dengan membuat contoh kode dan project kecil.
+### Best Practices
+
+- Pahami konsep dasar dengan baik
+- Praktikkan dengan contoh kode
+- Referensi dokumentasi resmi
+
+## Latihan
+Buat contoh kode yang menggunakan math object.
 
 ## Rangkuman
-Pelajari math object dengan praktik langsung.
-← Kembali
+- Math Object adalah konsep penting dalam JavaScript
+- Praktikkan dengan kode sendiri
+- Referensi: MDN Web Docs

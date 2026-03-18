@@ -1,4 +1,4 @@
-# NPM dan package.json
+# Npm Dan Package Json
 
 **ID**: `npm-dan-package-json`
 **Type**: lesson
@@ -6,45 +6,33 @@
 **Tags**: javascript
 
 ## Tujuan Pembelajaran
-- Memahami npm dan package.json dalam JavaScript
+- Memahami npm dan package json dalam JavaScript
 - Menerapkan best practices
 - Praktik dengan contoh kode
 
 ## Materi
 
-NPM (Node Package Manager) mengelola dependency JavaScript project.
+### Pengantar
 
-```json
-// package.json
-{
-  "name": "my-project",
-  "version": "1.0.0",
-  "scripts": {
-    "start": "node index.js",
-    "test": "jest"
-  },
-  "dependencies": {
-    "express": "^4.18.0"
-  },
-  "devDependencies": {
-    "jest": "^29.0.0"
-  }
-}
+Npm Dan Package Json adalah konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer.
+
+### Contoh Kode
+
+```javascript
+// Contoh implementasi npm dan package json
+// Praktikkan dengan kode sendiri
 ```
 
-### Commands
-```bash
-npm init -y           # Inisialisasi project
-npm install express   # Install dependency
-npm install -D jest   # Install dev dependency
-npm run start         # Jalankan script
-npm update            # Update dependencies
-```
+### Best Practices
+
+- Pahami konsep dasar dengan baik
+- Praktikkan dengan contoh kode
+- Referensi dokumentasi resmi
 
 ## Latihan
-Buat contoh kode yang menggunakan npm dan package.json.
+Buat contoh kode yang menggunakan npm dan package json.
 
 ## Rangkuman
-- NPM dan package.json adalah konsep penting dalam JavaScript
+- Npm Dan Package Json adalah konsep penting dalam JavaScript
 - Praktikkan dengan kode sendiri
 - Referensi: MDN Web Docs

@@ -1,50 +1,38 @@
-## Tujuan Pembelajaran
+# Constructor Dan Methods
 
-- Memahami constructor function
-- Method definition dan shorthand
-- Getters dan setters
+**ID**: `constructor-dan-methods`
+**Type**: lesson
+**Duration**: 20-25 menit
+**Tags**: javascript
+
+## Tujuan Pembelajaran
+- Memahami constructor dan methods dalam JavaScript
+- Menerapkan best practices
+- Praktik dengan contoh kode
 
 ## Materi
 
-### Constructor Function (Legacy)
+### Pengantar
 
-```
-// Sebelum ES6 class
-function User(nama, email) {
- this.nama = nama;
- this.email = email;
- this.sapa = function() {
- return \`Halo, \${this.nama}\`;
- };
-}
+Constructor Dan Methods adalah konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer.
 
-const user = new User("Alice", "alice@mail.com");
+### Contoh Kode
+
+```javascript
+// Contoh implementasi constructor dan methods
+// Praktikkan dengan kode sendiri
 ```
 
-### Class dengan Method
+### Best Practices
 
-```
-class Calculator {
- constructor() {
- this.result = 0;
- }
- 
- // Method shorthand
- tambah(n) { this.result += n; return this; }
- kali(n) { this.result *= n; return this; }
- 
- // Getter
- get hasil() { return this.result; }
- 
- // Setter
- set hasil(val) { this.result = val; }
-}
+- Pahami konsep dasar dengan baik
+- Praktikkan dengan contoh kode
+- Referensi dokumentasi resmi
 
-const calc = new Calculator();
-calc.tambah(5).kali(2);
-console.log(calc.hasil); // 10
-```
+## Latihan
+Buat contoh kode yang menggunakan constructor dan methods.
 
 ## Rangkuman
-Pelajari constructor dan methods dengan praktik langsung.
-← Kembali
+- Constructor Dan Methods adalah konsep penting dalam JavaScript
+- Praktikkan dengan kode sendiri
+- Referensi: MDN Web Docs

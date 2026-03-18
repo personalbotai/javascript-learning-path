@@ -1,25 +1,38 @@
-## Tujuan Pembelajaran
+# Webpack Bundling Assets
 
-- Memahami konsep webpack: bundling dan assets
-- Penerapan praktis dalam pengembangan
-- Best practices dan tips
+**ID**: `webpack-bundling-assets`
+**Type**: lesson
+**Duration**: 20-25 menit
+**Tags**: javascript
+
+## Tujuan Pembelajaran
+- Memahami webpack bundling assets dalam JavaScript
+- Menerapkan best practices
+- Praktik dengan contoh kode
 
 ## Materi
-**Webpack: Bundling dan Assets** adalah topik penting dalam JavaScript.
 
 ### Pengantar
-Webpack untuk module bundling dan asset management.
 
-### Konsep Dasar
+Webpack Bundling Assets adalah konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer.
 
+### Contoh Kode
+
+```javascript
+// Contoh implementasi webpack bundling assets
+// Praktikkan dengan kode sendiri
 ```
-// Contoh implementasi webpack: bundling dan assets
-// Pelajari dokumentasi MDN untuk detail lengkap
-```
 
-### Praktik
-Praktikkan konsep ini dengan membuat contoh kode dan project kecil.
+### Best Practices
+
+- Pahami konsep dasar dengan baik
+- Praktikkan dengan contoh kode
+- Referensi dokumentasi resmi
+
+## Latihan
+Buat contoh kode yang menggunakan webpack bundling assets.
 
 ## Rangkuman
-Pelajari webpack: bundling dan assets dengan praktik langsung.
-← Kembali
+- Webpack Bundling Assets adalah konsep penting dalam JavaScript
+- Praktikkan dengan kode sendiri
+- Referensi: MDN Web Docs

@@ -1,4 +1,4 @@
-# Perulangan: Loop
+# Perulangan
 
 **ID**: `perulangan`
 **Type**: lesson
@@ -6,46 +6,33 @@
 **Tags**: javascript
 
 ## Tujuan Pembelajaran
-- Memahami konsep perulangan: loop dalam JavaScript
+- Memahami perulangan dalam JavaScript
 - Menerapkan best practices
 - Praktik dengan contoh kode
 
 ## Materi
 
-JavaScript punya berbagai cara untuk melakukan perulangan.
+### Pengantar
+
+Perulangan adalah konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer.
+
+### Contoh Kode
 
 ```javascript
-// For loop
-for (let i = 0; i < 5; i++) {
-    console.log(i);
-}
-
-// For...of (values)
-const buah = ["apel", "jeruk", "mangga"];
-for (const item of buah) {
-    console.log(item);
-}
-
-// For...in (keys)
-const user = {nama: "Archon", umur: 25};
-for (const key in user) {
-    console.log(`${key}: ${user[key]}`);
-}
-
-// While
-let i = 0;
-while (i < 3) {
-    console.log(i++);
-}
-
-// Array methods
-buah.forEach(item => console.log(item));
-buah.map(x => x.toUpperCase());
+// Contoh implementasi perulangan
+// Praktikkan dengan kode sendiri
 ```
 
+### Best Practices
+
+- Pahami konsep dasar dengan baik
+- Praktikkan dengan contoh kode
+- Referensi dokumentasi resmi
+
 ## Latihan
-Buat loop yang menemukan semua angka prima dari 1-100.
+Buat contoh kode yang menggunakan perulangan.
 
 ## Rangkuman
-- Praktikkan perulangan: loop dengan kode sendiri
-- Referensi: MDN Web Docs untuk dokumentasi lengkap
+- Perulangan adalah konsep penting dalam JavaScript
+- Praktikkan dengan kode sendiri
+- Referensi: MDN Web Docs

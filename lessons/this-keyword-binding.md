@@ -1,47 +1,38 @@
-## Tujuan Pembelajaran
+# This Keyword Binding
 
-- Memahami 4 aturan binding this
-- call, apply, bind untuk mengubah konteks
-- Best practice penggunaan this
+**ID**: `this-keyword-binding`
+**Type**: lesson
+**Duration**: 20-25 menit
+**Tags**: javascript
+
+## Tujuan Pembelajaran
+- Memahami this keyword binding dalam JavaScript
+- Menerapkan best practices
+- Praktik dengan contoh kode
 
 ## Materi
 
-### 4 Aturan this Binding
+### Pengantar
 
-```
-// 1. Default Binding (strict: undefined, non-strict: global)
-function greet() { console.log(this); }
-greet(); // Window/undefined
+This Keyword Binding adalah konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer.
 
-// 2. Implicit Binding (obj.method())
-const user = {
- nama: "Alice",
- greet() { console.log(this.nama); }
-};
-user.greet(); // "Alice"
+### Contoh Kode
 
-// 3. Explicit Binding (call, apply, bind)
-function sapa(greeting) { console.log(\`\${greeting}, \${this.nama}\`); }
-sapa.call({nama: "Bob"}, "Halo"); // "Halo, Bob"
-sapa.apply({nama: "Bob"}, ["Halo"]); // "Halo, Bob"
-const bound = sapa.bind({nama: "Bob"});
-bound("Halo"); // "Halo, Bob"
-
-// 4. New Binding
-function User(nama) { this.nama = nama; }
-const alice = new User("Alice");
+```javascript
+// Contoh implementasi this keyword binding
+// Praktikkan dengan kode sendiri
 ```
 
-### Arrow Function: No Binding
+### Best Practices
 
-```
-const obj = {
- nama: "Test",
- regular: function() { return this.nama; }, // "Test"
- arrow: () => this.nama // undefined
-};
-```
+- Pahami konsep dasar dengan baik
+- Praktikkan dengan contoh kode
+- Referensi dokumentasi resmi
+
+## Latihan
+Buat contoh kode yang menggunakan this keyword binding.
 
 ## Rangkuman
-Pelajari this keyword dan binding dengan praktik langsung.
-← Kembali
+- This Keyword Binding adalah konsep penting dalam JavaScript
+- Praktikkan dengan kode sendiri
+- Referensi: MDN Web Docs

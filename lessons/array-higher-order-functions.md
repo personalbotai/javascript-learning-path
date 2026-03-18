@@ -1,52 +1,64 @@
-## Tujuan Pembelajaran
+# Array Higher-Order Functions
 
-- Menggunakan map, filter, reduce
-- Menggunakan find, some, every
-- Method chaining untuk transformasi data
+**ID**: `array-higher-order-functions`
+**Type**: lesson
+**Duration**: 20-25 menit
+**Tags**: javascript
+
+## Tujuan Pembelajaran
+- Memahami array higher-order functions dalam JavaScript
+- Menerapkan best practices
+- Praktik dengan contoh kode
 
 ## Materi
 
-### Map - Transformasi setiap elemen
+Higher-Order Functions menerima fungsi sebagai parameter. Modern JavaScript sangat bergantung pada pola ini.
 
-```
+### map - Transformasi
+```javascript
 const angka = [1, 2, 3, 4, 5];
-const kuadrat = angka.map(x => x * x); // [1, 4, 9, 16, 25]
-
-const users = [{nama: "Alice"}, {nama: "Bob"}];
-const names = users.map(u => u.nama); // ["Alice", "Bob"]
+const kuadrat = angka.map(x => x * x);  // [1, 4, 9, 16, 25]
+const nama = users.map(u => u.nama);
 ```
 
-### Filter - Saring elemen
-
-```
-const genap = angka.filter(x => x % 2 === 0); // [2, 4]
+### filter - Saring
+```javascript
+const genap = angka.filter(x => x % 2 === 0);  // [2, 4]
 const dewasa = users.filter(u => u.umur >= 18);
 ```
 
-### Reduce - Akumulasi
+### reduce - Akumulasi
+```javascript
+const total = angka.reduce((acc, curr) => acc + curr, 0);  // 15
+const max = angka.reduce((a, b) => a > b ? a : b);  // 5
 
-```
-const total = angka.reduce((acc, curr) => acc + curr, 0); // 15
-const max = angka.reduce((a, b) => a > b ? a : b); // 5
+// Frekuensi
+const freq = data.reduce((acc, item) => {
+    acc[item] = (acc[item] || 0) + 1;
+    return acc;
+}, {});
 ```
 
 ### Chaining
-
-```
+```javascript
 const hasil = angka
- .filter(x => x % 2 === 0) // [2, 4]
- .map(x => x * 10) // [20, 40]
- .reduce((a, b) => a + b, 0); // 60
+    .filter(x => x > 2)
+    .map(x => x * 10)
+    .reduce((a, b) => a + b, 0);  // 120
 ```
 
-### Find, Some, Every
+### find, some, every
+```javascript
+angka.find(x => x > 3);    // 4
+angka.some(x => x > 4);    // true
+angka.every(x => x > 0);   // true
+```
 
-```
-angka.find(x => x > 3); // 4 (elemen pertama)
-angka.some(x => x > 4); // true (ada yang > 4)
-angka.every(x => x > 0); // true (semua > 0)
-```
+
+## Latihan
+Buat contoh kode yang menggunakan array higher-order functions.
 
 ## Rangkuman
-Pelajari array higher-order functions dengan praktik langsung.
-← Kembali
+- Array Higher-Order Functions adalah konsep penting dalam JavaScript
+- Praktikkan dengan kode sendiri
+- Referensi: MDN Web Docs

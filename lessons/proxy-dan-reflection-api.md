@@ -1,25 +1,38 @@
-## Tujuan Pembelajaran
+# Proxy Dan Reflection Api
 
-- Memahami konsep proxy dan reflection api
-- Penerapan praktis dalam pengembangan
-- Best practices dan tips
+**ID**: `proxy-dan-reflection-api`
+**Type**: lesson
+**Duration**: 20-25 menit
+**Tags**: javascript
+
+## Tujuan Pembelajaran
+- Memahami proxy dan reflection api dalam JavaScript
+- Menerapkan best practices
+- Praktik dengan contoh kode
 
 ## Materi
-**Proxy dan Reflection API** adalah topik penting dalam JavaScript.
 
 ### Pengantar
-Proxy untuk intercept object operations.
 
-### Konsep Dasar
+Proxy Dan Reflection Api adalah konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer.
 
-```
+### Contoh Kode
+
+```javascript
 // Contoh implementasi proxy dan reflection api
-// Pelajari dokumentasi MDN untuk detail lengkap
+// Praktikkan dengan kode sendiri
 ```
 
-### Praktik
-Praktikkan konsep ini dengan membuat contoh kode dan project kecil.
+### Best Practices
+
+- Pahami konsep dasar dengan baik
+- Praktikkan dengan contoh kode
+- Referensi dokumentasi resmi
+
+## Latihan
+Buat contoh kode yang menggunakan proxy dan reflection api.
 
 ## Rangkuman
-Pelajari proxy dan reflection api dengan praktik langsung.
-← Kembali
+- Proxy Dan Reflection Api adalah konsep penting dalam JavaScript
+- Praktikkan dengan kode sendiri
+- Referensi: MDN Web Docs

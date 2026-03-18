@@ -1,53 +1,38 @@
-# DOM Manipulation Dasar
+# Dom Manipulation Dasar
 
 **ID**: `dom-manipulation-dasar`
 **Type**: lesson
-**Duration**: 25-30 menit
-**Tags**: javascript, dom, browser, html
+**Duration**: 20-25 menit
+**Tags**: javascript
 
 ## Tujuan Pembelajaran
-- Memilih dan memanipulasi elemen HTML
-- Mengubah style, class, dan atribut
-- Membuat dan menghapus elemen
+- Memahami dom manipulation dasar dalam JavaScript
+- Menerapkan best practices
+- Praktik dengan contoh kode
 
 ## Materi
 
-### Memilih Elemen
-```javascript
-// Modern (direkomendasikan)
-document.querySelector('.class');
-document.querySelector('#id');
-document.querySelectorAll('div.item');
+### Pengantar
 
-// Legacy
-document.getElementById('id');
-document.getElementsByClassName('class');
+Dom Manipulation Dasar adalah konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer.
+
+### Contoh Kode
+
+```javascript
+// Contoh implementasi dom manipulation dasar
+// Praktikkan dengan kode sendiri
 ```
 
-### Manipulasi Konten
-```javascript
-const el = document.querySelector('#title');
-el.textContent = "Teks baru";
-el.innerHTML = "<strong>Bold</strong>";
-el.style.color = "red";
-el.classList.add('active');
-el.classList.toggle('hidden');
-```
+### Best Practices
 
-### Membuat & Menghapus
-```javascript
-const div = document.createElement('div');
-div.textContent = "Hello!";
-div.classList.add('card');
-document.body.appendChild(div);
-
-div.remove(); // Hapus
-```
+- Pahami konsep dasar dengan baik
+- Praktikkan dengan contoh kode
+- Referensi dokumentasi resmi
 
 ## Latihan
-Buat script yang membuat card element dengan title dan description, lalu tambahkan ke halaman.
+Buat contoh kode yang menggunakan dom manipulation dasar.
 
 ## Rangkuman
-- querySelector untuk memilih elemen
-- classList untuk manipulasi class
-- createElement/appendChild untuk menambah elemen
+- Dom Manipulation Dasar adalah konsep penting dalam JavaScript
+- Praktikkan dengan kode sendiri
+- Referensi: MDN Web Docs

@@ -1,61 +1,38 @@
-## Tujuan Pembelajaran
+# Generators Dan Iterators
 
-- Membuat generator function dengan function*
-- Yield untuk lazy evaluation
-- Custom iterators dengan Symbol.iterator
+**ID**: `generators-dan-iterators`
+**Type**: lesson
+**Duration**: 20-25 menit
+**Tags**: javascript
+
+## Tujuan Pembelajaran
+- Memahami generators dan iterators dalam JavaScript
+- Menerapkan best practices
+- Praktik dengan contoh kode
 
 ## Materi
 
-### Generator Function
+### Pengantar
 
-```
-function* counter() {
- yield 1;
- yield 2;
- yield 3;
-}
+Generators Dan Iterators adalah konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer.
 
-const gen = counter();
-gen.next(); // {value: 1, done: false}
-gen.next(); // {value: 2, done: false}
-gen.next(); // {value: 3, done: false}
-gen.next(); // {value: undefined, done: true}
+### Contoh Kode
 
-// Iterasi
-for (const val of counter()) {
- console.log(val); // 1, 2, 3
-}
+```javascript
+// Contoh implementasi generators dan iterators
+// Praktikkan dengan kode sendiri
 ```
 
-### Infinite Generator
+### Best Practices
 
-```
-function* fibonacci() {
- let [a, b] = [0, 1];
- while (true) {
- yield a;
- [a, b] = [b, a + b];
- }
-}
+- Pahami konsep dasar dengan baik
+- Praktikkan dengan contoh kode
+- Referensi dokumentasi resmi
 
-const fib = fibonacci();
-fib.next().value; // 0
-fib.next().value; // 1
-fib.next().value; // 1
-fib.next().value; // 2
-```
+## Latihan
+Buat contoh kode yang menggunakan generators dan iterators.
 
-### Custom Iterator
-
-```
-const range = {
- from: 1, to: 5,
- [Symbol.iterator]() {
- let current = this.from;
- const last = this.to;
- return {
- next() {
- return current 
 ## Rangkuman
-Pelajari generators dan iterators dengan praktik langsung.
-← Kembali
+- Generators Dan Iterators adalah konsep penting dalam JavaScript
+- Praktikkan dengan kode sendiri
+- Referensi: MDN Web Docs

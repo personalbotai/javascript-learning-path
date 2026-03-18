@@ -1,30 +1,38 @@
-## Tujuan Pembelajaran
+# Encapsulation Getter Setter
 
-- Menggunakan get dan set keywords
-- Private fields dengan #
-- Validasi data dengan setter
+**ID**: `encapsulation-getter-setter`
+**Type**: lesson
+**Duration**: 20-25 menit
+**Tags**: javascript
+
+## Tujuan Pembelajaran
+- Memahami encapsulation getter setter dalam JavaScript
+- Menerapkan best practices
+- Praktik dengan contoh kode
 
 ## Materi
 
-### Getter dan Setter
+### Pengantar
 
+Encapsulation Getter Setter adalah konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer.
+
+### Contoh Kode
+
+```javascript
+// Contoh implementasi encapsulation getter setter
+// Praktikkan dengan kode sendiri
 ```
-class Temperature {
- constructor(celsius) {
- this._celsius = celsius; // Convention: _ = private
- }
- 
- get fahrenheit() {
- return this._celsius * 9/5 + 32;
- }
- 
- set fahrenheit(f) {
- this._celsius = (f - 32) * 5/9;
- }
- 
- get celsius() { return this._celsius; }
- set celsius(c) {
- if (c 
+
+### Best Practices
+
+- Pahami konsep dasar dengan baik
+- Praktikkan dengan contoh kode
+- Referensi dokumentasi resmi
+
+## Latihan
+Buat contoh kode yang menggunakan encapsulation getter setter.
+
 ## Rangkuman
-Pelajari encapsulation: getter dan setter dengan praktik langsung.
-← Kembali
+- Encapsulation Getter Setter adalah konsep penting dalam JavaScript
+- Praktikkan dengan kode sendiri
+- Referensi: MDN Web Docs

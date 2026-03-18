@@ -1,50 +1,38 @@
-## Tujuan Pembelajaran
+# Polymorphism Dan Method Overriding
 
-- Memahami polymorphism
-- Method overriding di subclass
-- Aplikasi praktis polymorphism
+**ID**: `polymorphism-dan-method-overriding`
+**Type**: lesson
+**Duration**: 20-25 menit
+**Tags**: javascript
+
+## Tujuan Pembelajaran
+- Memahami polymorphism dan method overriding dalam JavaScript
+- Menerapkan best practices
+- Praktik dengan contoh kode
 
 ## Materi
 
-### Polymorphism
+### Pengantar
 
-```
-class Shape {
- area() { return 0; }
- describe() { return \`Luas: \${this.area()}\`; }
-}
+Polymorphism Dan Method Overriding adalah konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer.
 
-class Circle extends Shape {
- constructor(r) { super(); this.r = r; }
- area() { return Math.PI * this.r ** 2; }
-}
+### Contoh Kode
 
-class Square extends Shape {
- constructor(s) { super(); this.s = s; }
- area() { return this.s * this.s; }
-}
-
-// Polymorphic behavior
-const shapes = [new Circle(5), new Square(4)];
-shapes.forEach(s => console.log(s.describe()));
-// "Luas: 78.5..." dan "Luas: 16"
+```javascript
+// Contoh implementasi polymorphism dan method overriding
+// Praktikkan dengan kode sendiri
 ```
 
-### Super untuk Extended Logic
+### Best Practices
 
-```
-class Employee extends User {
- constructor(nama, jabatan) {
- super(nama);
- this.jabatan = jabatan;
- }
- 
- sapa() {
- return super.sapa() + \` Saya \${this.jabatan}\`;
- }
-}
-```
+- Pahami konsep dasar dengan baik
+- Praktikkan dengan contoh kode
+- Referensi dokumentasi resmi
+
+## Latihan
+Buat contoh kode yang menggunakan polymorphism dan method overriding.
 
 ## Rangkuman
-Pelajari polymorphism dan method overriding dengan praktik langsung.
-← Kembali
+- Polymorphism Dan Method Overriding adalah konsep penting dalam JavaScript
+- Praktikkan dengan kode sendiri
+- Referensi: MDN Web Docs

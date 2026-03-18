@@ -6,39 +6,63 @@
 **Tags**: javascript
 
 ## Tujuan Pembelajaran
-- Memahami konsep kontrol alur: if/else dalam JavaScript
+- Memahami kontrol alur: if/else dalam JavaScript
 - Menerapkan best practices
 - Praktik dengan contoh kode
 
 ## Materi
 
-JavaScript mendukung percabangan dengan if/else, ternary operator, dan switch.
+Percabangan memungkinkan kode mengambil jalur berbeda berdasarkan kondisi.
 
+### if/else
 ```javascript
-const nilai = 85;
+const umur = 25;
 
-if (nilai >= 90) {
-    console.log("A");
-} else if (nilai >= 80) {
-    console.log("B");
+if (umur >= 18) {
+    console.log("Dewasa");
+} else if (umur >= 13) {
+    console.log("Remaja");
 } else {
-    console.log("C");
-}
-
-// Ternary
-const grade = nilai >= 70 ? "Lulus" : "Gagal";
-
-// Switch
-switch(Math.floor(nilai/10)) {
-    case 10: case 9: console.log("A"); break;
-    case 8: console.log("B"); break;
-    default: console.log("C");
+    console.log("Anak-anak");
 }
 ```
 
+### Ternary Operator
+```javascript
+// condition ? true : false
+const status = umur >= 18 ? "Dewasa" : "Anak-anak";
+
+// Nested (hindari, sulit dibaca)
+const kategori = umur >= 18 ? "Dewasa" : umur >= 13 ? "Remaja" : "Anak";
+```
+
+### Switch
+```javascript
+const hari = "Senin";
+switch(hari) {
+    case "Senin":
+        console.log("Hari kerja");
+        break;  // WAJIB!
+    case "Sabtu":
+    case "Minggu":
+        console.log("Weekend");
+        break;
+    default:
+        console.log("Hari lain");
+}
+```
+
+### Nullish Coalescing
+```javascript
+const nama = user.nama ?? "Guest";  // Hanya null/undefined
+const alamat = user.alamat || "Default";  // Semua falsy
+```
+
+
 ## Latihan
-Buat fungsi yang menentukan kategori berat badan berdasarkan BMI.
+Buat contoh kode yang menggunakan kontrol alur: if/else.
 
 ## Rangkuman
-- Praktikkan kontrol alur: if/else dengan kode sendiri
-- Referensi: MDN Web Docs untuk dokumentasi lengkap
+- Kontrol Alur: if/else adalah konsep penting dalam JavaScript
+- Praktikkan dengan kode sendiri
+- Referensi: MDN Web Docs

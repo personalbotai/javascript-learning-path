@@ -1,62 +1,38 @@
-## Tujuan Pembelajaran
+# Fetch Api Http Requests
 
-- Menggunakan fetch() untuk HTTP requests
-- Handling response dan error
-- CRUD operations dengan REST API
+**ID**: `fetch-api-http-requests`
+**Type**: lesson
+**Duration**: 20-25 menit
+**Tags**: javascript
+
+## Tujuan Pembelajaran
+- Memahami fetch api http requests dalam JavaScript
+- Menerapkan best practices
+- Praktik dengan contoh kode
 
 ## Materi
 
-### GET Request
+### Pengantar
 
-```
-async function getUsers() {
- const res = await fetch("https://api.example.com/users");
- if (!res.ok) throw new Error(\`HTTP \${res.status}\`);
- const users = await res.json();
- return users;
-}
-```
+Fetch Api Http Requests adalah konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer.
 
-### POST Request
+### Contoh Kode
 
-```
-async function createUser(userData) {
- const res = await fetch("https://api.example.com/users", {
- method: "POST",
- headers: { "Content-Type": "application/json" },
- body: JSON.stringify(userData)
- });
- return await res.json();
-}
+```javascript
+// Contoh implementasi fetch api http requests
+// Praktikkan dengan kode sendiri
 ```
 
-### PUT dan DELETE
+### Best Practices
 
-```
-// PUT (update)
-await fetch(\`/users/\${id}\`, {
- method: "PUT",
- headers: { "Content-Type": "application/json" },
- body: JSON.stringify({nama: "Baru"})
-});
+- Pahami konsep dasar dengan baik
+- Praktikkan dengan contoh kode
+- Referensi dokumentasi resmi
 
-// DELETE
-await fetch(\`/users/\${id}\`, { method: "DELETE" });
-```
-
-### Error Handling
-
-```
-try {
- const res = await fetch(url);
- if (!res.ok) throw new Error(\`HTTP \${res.status}\`);
- const data = await res.json();
-} catch (err) {
- if (err.name === "TypeError") console.log("Network error");
- else console.log(err.message);
-}
-```
+## Latihan
+Buat contoh kode yang menggunakan fetch api http requests.
 
 ## Rangkuman
-Pelajari fetch api dan http requests dengan praktik langsung.
-← Kembali
+- Fetch Api Http Requests adalah konsep penting dalam JavaScript
+- Praktikkan dengan kode sendiri
+- Referensi: MDN Web Docs

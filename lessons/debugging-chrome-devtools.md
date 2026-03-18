@@ -1,25 +1,38 @@
-## Tujuan Pembelajaran
+# Debugging Chrome Devtools
 
-- Memahami konsep debugging dengan chrome devtools
-- Penerapan praktis dalam pengembangan
-- Best practices dan tips
+**ID**: `debugging-chrome-devtools`
+**Type**: lesson
+**Duration**: 20-25 menit
+**Tags**: javascript
+
+## Tujuan Pembelajaran
+- Memahami debugging chrome devtools dalam JavaScript
+- Menerapkan best practices
+- Praktik dengan contoh kode
 
 ## Materi
-**Debugging dengan Chrome DevTools** adalah topik penting dalam JavaScript.
 
 ### Pengantar
-Teknik debugging JavaScript menggunakan Chrome DevTools.
 
-### Konsep Dasar
+Debugging Chrome Devtools adalah konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer.
 
+### Contoh Kode
+
+```javascript
+// Contoh implementasi debugging chrome devtools
+// Praktikkan dengan kode sendiri
 ```
-// Contoh implementasi debugging dengan chrome devtools
-// Pelajari dokumentasi MDN untuk detail lengkap
-```
 
-### Praktik
-Praktikkan konsep ini dengan membuat contoh kode dan project kecil.
+### Best Practices
+
+- Pahami konsep dasar dengan baik
+- Praktikkan dengan contoh kode
+- Referensi dokumentasi resmi
+
+## Latihan
+Buat contoh kode yang menggunakan debugging chrome devtools.
 
 ## Rangkuman
-Pelajari debugging dengan chrome devtools dengan praktik langsung.
-← Kembali
+- Debugging Chrome Devtools adalah konsep penting dalam JavaScript
+- Praktikkan dengan kode sendiri
+- Referensi: MDN Web Docs

@@ -1,4 +1,4 @@
-# Class dan Object
+# Class Dan Object
 
 **ID**: `class-dan-object`
 **Type**: lesson
@@ -6,54 +6,33 @@
 **Tags**: javascript
 
 ## Tujuan Pembelajaran
-- Memahami konsep class dan object dalam JavaScript
+- Memahami class dan object dalam JavaScript
 - Menerapkan best practices
 - Praktik dengan contoh kode
 
 ## Materi
 
-Class adalah blueprint untuk membuat object. JavaScript menggunakan prototypal inheritance di balik class syntax.
+### Pengantar
+
+Class Dan Object adalah konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer.
+
+### Contoh Kode
 
 ```javascript
-class User {
-    constructor(nama, email) {
-        this.nama = nama;
-        this.email = email;
-        this.createdAt = new Date();
-    }
-    
-    sapa() {
-        return `Halo, ${this.nama}!`;
-    }
-    
-    static createGuest() {
-        return new User("Guest", "guest@mail.com");
-    }
-}
-
-const user = new User("Archon", "archon@mail.com");
-console.log(user.sapa()); // "Halo, Archon!"
-const guest = User.createGuest();
+// Contoh implementasi class dan object
+// Praktikkan dengan kode sendiri
 ```
 
-### Private Fields (ES2022)
-```javascript
-class BankAccount {
-    #saldo = 0;
-    
-    setor(jumlah) { this.#saldo += jumlah; }
-    cekSaldo() { return this.#saldo; }
-}
+### Best Practices
 
-const akun = new BankAccount();
-akun.setor(100000);
-console.log(akun.cekSaldo()); // 100000
-akun.#saldo; // SyntaxError!
-```
+- Pahami konsep dasar dengan baik
+- Praktikkan dengan contoh kode
+- Referensi dokumentasi resmi
 
 ## Latihan
-Buat class Product dengan name, price, dan method untuk menghitung diskon.
+Buat contoh kode yang menggunakan class dan object.
 
 ## Rangkuman
-- Praktikkan class dan object dengan kode sendiri
-- Referensi: MDN Web Docs untuk dokumentasi lengkap
+- Class Dan Object adalah konsep penting dalam JavaScript
+- Praktikkan dengan kode sendiri
+- Referensi: MDN Web Docs

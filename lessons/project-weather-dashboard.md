@@ -1,25 +1,38 @@
-## Tujuan Pembelajaran
+# Project Weather Dashboard
 
-- Memahami konsep project: weather dashboard
-- Penerapan praktis dalam pengembangan
-- Best practices dan tips
+**ID**: `project-weather-dashboard`
+**Type**: lesson
+**Duration**: 20-25 menit
+**Tags**: javascript
+
+## Tujuan Pembelajaran
+- Memahami project weather dashboard dalam JavaScript
+- Menerapkan best practices
+- Praktik dengan contoh kode
 
 ## Materi
-**Project: Weather Dashboard** adalah topik penting dalam JavaScript.
 
 ### Pengantar
-Dashboard cuaca dengan API integration.
 
-### Konsep Dasar
+Project Weather Dashboard adalah konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer.
 
+### Contoh Kode
+
+```javascript
+// Contoh implementasi project weather dashboard
+// Praktikkan dengan kode sendiri
 ```
-// Contoh implementasi project: weather dashboard
-// Pelajari dokumentasi MDN untuk detail lengkap
-```
 
-### Praktik
-Praktikkan konsep ini dengan membuat contoh kode dan project kecil.
+### Best Practices
+
+- Pahami konsep dasar dengan baik
+- Praktikkan dengan contoh kode
+- Referensi dokumentasi resmi
+
+## Latihan
+Buat contoh kode yang menggunakan project weather dashboard.
 
 ## Rangkuman
-Pelajari project: weather dashboard dengan praktik langsung.
-← Kembali
+- Project Weather Dashboard adalah konsep penting dalam JavaScript
+- Praktikkan dengan kode sendiri
+- Referensi: MDN Web Docs

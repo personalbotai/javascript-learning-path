@@ -1,40 +1,38 @@
-## Tujuan Pembelajaran
+# Setup Environment
 
-- Menginstal Node.js dan npm
-- Mengkonfigurasi VS Code untuk JavaScript
-- Menjalankan JavaScript di browser dan terminal
+**ID**: `setup-environment`
+**Type**: lesson
+**Duration**: 20-25 menit
+**Tags**: javascript
+
+## Tujuan Pembelajaran
+- Memahami setup environment dalam JavaScript
+- Menerapkan best practices
+- Praktik dengan contoh kode
 
 ## Materi
 
-### Instalasi Node.js
+### Pengantar
 
-```
-# Download dari nodejs.org atau gunakan nvm
-nvm install --lts
-node --version # v20.x.x
-npm --version # 10.x.x
-```
+Setup Environment adalah konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer.
 
-### Menjalankan JavaScript
+### Contoh Kode
 
-```
-// Cara 1: Browser Console (F12)
-console.log("Hello!");
-
-// Cara 2: Node.js REPL
-$ node
-> console.log("Hello!")
-
-// Cara 3: File .js
-$ node script.js
+```javascript
+// Contoh implementasi setup environment
+// Praktikkan dengan kode sendiri
 ```
 
-### VS Code Extensions
+### Best Practices
 
-- ESLint - linting otomatis
-- Prettier - format kode
-- Live Server - local server untuk browser
+- Pahami konsep dasar dengan baik
+- Praktikkan dengan contoh kode
+- Referensi dokumentasi resmi
+
+## Latihan
+Buat contoh kode yang menggunakan setup environment.
 
 ## Rangkuman
-Pelajari setup environment javascript dengan praktik langsung.
-← Kembali
+- Setup Environment adalah konsep penting dalam JavaScript
+- Praktikkan dengan kode sendiri
+- Referensi: MDN Web Docs

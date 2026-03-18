@@ -1,28 +1,38 @@
-## Tujuan Pembelajaran
+# Pengenalan Dan Sejarah
 
-- Memahami sejarah JavaScript dari tahun 1995 hingga ES6+
-- Mengenal perbedaan JavaScript, ECMAScript, dan runtime
+**ID**: `pengenalan-dan-sejarah`
+**Type**: lesson
+**Duration**: 20-25 menit
+**Tags**: javascript
+
+## Tujuan Pembelajaran
+- Memahami pengenalan dan sejarah dalam JavaScript
+- Menerapkan best practices
+- Praktik dengan contoh kode
 
 ## Materi
-**JavaScript** diciptakan oleh **Brendan Eich** pada tahun 1995 di Netscape dalam waktu hanya **10 hari**. Awalnya bernama Mocha, lalu LiveScript, akhirnya JavaScript.
 
-### Timeline Penting
+### Pengantar
 
-- **1995** - JavaScript lahir di Netscape
-- **1997** - ECMAScript 1 standarisasi
-- **2009** - ES5 (strict mode, JSON)
-- **2015** - ES6/ES2015 (let/const, arrow function, class, module)
-- **2016+** - Yearly releases (async/await, optional chaining, dll)
+Pengenalan Dan Sejarah adalah konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer.
 
-### JavaScript vs ECMAScript
+### Contoh Kode
 
+```javascript
+// Contoh implementasi pengenalan dan sejarah
+// Praktikkan dengan kode sendiri
 ```
-// ECMAScript = spesifikasi (aturan bahasa)
-// JavaScript = implementasi (runtime engine seperti V8)
-// Node.js = runtime JavaScript di server
-// Browser = runtime JavaScript di client
-```
+
+### Best Practices
+
+- Pahami konsep dasar dengan baik
+- Praktikkan dengan contoh kode
+- Referensi dokumentasi resmi
+
+## Latihan
+Buat contoh kode yang menggunakan pengenalan dan sejarah.
 
 ## Rangkuman
-Pelajari pengenalan dan sejarah javascript dengan praktik langsung.
-← Kembali
+- Pengenalan Dan Sejarah adalah konsep penting dalam JavaScript
+- Praktikkan dengan kode sendiri
+- Referensi: MDN Web Docs

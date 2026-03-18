@@ -1,61 +1,38 @@
-## Tujuan Pembelajaran
+# Error Handling Try Catch
 
-- Menggunakan try/catch/finally
-- Membuat custom error
-- Error handling di async/await
+**ID**: `error-handling-try-catch`
+**Type**: lesson
+**Duration**: 20-25 menit
+**Tags**: javascript
+
+## Tujuan Pembelajaran
+- Memahami error handling try catch dalam JavaScript
+- Menerapkan best practices
+- Praktik dengan contoh kode
 
 ## Materi
 
-### Try/Catch/Finally
+### Pengantar
 
-```
-try {
- const data = JSON.parse(invalidJSON);
-} catch (error) {
- console.log(error.name); // "SyntaxError"
- console.log(error.message); // "Unexpected token..."
-} finally {
- console.log("Selalu jalan");
-}
+Error Handling Try Catch adalah konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer.
+
+### Contoh Kode
+
+```javascript
+// Contoh implementasi error handling try catch
+// Praktikkan dengan kode sendiri
 ```
 
-### Throw Error
+### Best Practices
 
-```
-function bagi(a, b) {
- if (b === 0) throw new Error("Pembagi tidak boleh nol");
- return a / b;
-}
+- Pahami konsep dasar dengan baik
+- Praktikkan dengan contoh kode
+- Referensi dokumentasi resmi
 
-try {
- bagi(10, 0);
-} catch (e) {
- console.log(e.message); // "Pembagi tidak boleh nol"
-}
-```
-
-### Custom Error Class
-
-```
-class ValidationError extends Error {
- constructor(message) {
- super(message);
- this.name = "ValidationError";
- }
-}
-
-// Async error handling
-async function fetchData() {
- try {
- const res = await fetch("/api/data");
- if (!res.ok) throw new Error(\`HTTP \${res.status}\`);
- return await res.json();
- } catch (e) {
- console.log("Fetch failed:", e.message);
- }
-}
-```
+## Latihan
+Buat contoh kode yang menggunakan error handling try catch.
 
 ## Rangkuman
-Pelajari error handling: try/catch/finally dengan praktik langsung.
-← Kembali
+- Error Handling Try Catch adalah konsep penting dalam JavaScript
+- Praktikkan dengan kode sendiri
+- Referensi: MDN Web Docs

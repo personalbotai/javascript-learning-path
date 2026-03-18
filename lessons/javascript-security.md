@@ -1,25 +1,38 @@
-## Tujuan Pembelajaran
+# Javascript Security
 
-- Memahami konsep javascript security
-- Penerapan praktis dalam pengembangan
-- Best practices dan tips
+**ID**: `javascript-security`
+**Type**: lesson
+**Duration**: 20-25 menit
+**Tags**: javascript
+
+## Tujuan Pembelajaran
+- Memahami javascript security dalam JavaScript
+- Menerapkan best practices
+- Praktik dengan contoh kode
 
 ## Materi
-**JavaScript Security** adalah topik penting dalam JavaScript.
 
 ### Pengantar
-XSS, CSRF, CSP, dan best practices keamanan JavaScript.
 
-### Konsep Dasar
+Javascript Security adalah konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer.
 
-```
+### Contoh Kode
+
+```javascript
 // Contoh implementasi javascript security
-// Pelajari dokumentasi MDN untuk detail lengkap
+// Praktikkan dengan kode sendiri
 ```
 
-### Praktik
-Praktikkan konsep ini dengan membuat contoh kode dan project kecil.
+### Best Practices
+
+- Pahami konsep dasar dengan baik
+- Praktikkan dengan contoh kode
+- Referensi dokumentasi resmi
+
+## Latihan
+Buat contoh kode yang menggunakan javascript security.
 
 ## Rangkuman
-Pelajari javascript security dengan praktik langsung.
-← Kembali
+- Javascript Security adalah konsep penting dalam JavaScript
+- Praktikkan dengan kode sendiri
+- Referensi: MDN Web Docs

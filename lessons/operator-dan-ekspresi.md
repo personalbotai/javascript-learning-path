@@ -1,48 +1,38 @@
-## Tujuan Pembelajaran
+# Operator Dan Ekspresi
 
-- Menggunakan operator aritmatika, perbandingan, dan logika
-- Memahami strict equality (===) vs loose equality (==)
-- Optional chaining dan nullish coalescing
+**ID**: `operator-dan-ekspresi`
+**Type**: lesson
+**Duration**: 20-25 menit
+**Tags**: javascript
+
+## Tujuan Pembelajaran
+- Memahami operator dan ekspresi dalam JavaScript
+- Menerapkan best practices
+- Praktik dengan contoh kode
 
 ## Materi
 
-### Operator Aritmatika
+### Pengantar
 
-```
-const a = 10, b = 3;
-a + b // 13
-a - b // 7
-a * b // 30
-a / b // 3.333...
-a % b // 1 (sisa bagi)
-a ** b // 1000 (pangkat)
-```
+Operator Dan Ekspresi adalah konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer.
 
-### Perbandingan
+### Contoh Kode
 
-```
-// Strict equality (===) - TANPA type coercion (direkomendasikan)
-5 === "5" // false
-null === undefined // false
-
-// Loose equality (==) - DENGAN type coercion (hindari)
-5 == "5" // true (bingung!)
-0 == false // true
+```javascript
+// Contoh implementasi operator dan ekspresi
+// Praktikkan dengan kode sendiri
 ```
 
-### Modern Operators
+### Best Practices
 
-```
-// Optional Chaining (?.)
-const user = { profile: { name: "Archon" } };
-user?.profile?.name // "Archon"
-user?.address?.city // undefined (tidak error!)
+- Pahami konsep dasar dengan baik
+- Praktikkan dengan contoh kode
+- Referensi dokumentasi resmi
 
-// Nullish Coalescing (??)
-const val = null ?? "default"; // "default"
-const zero = 0 ?? 100; // 0 (bukan 100)
-```
+## Latihan
+Buat contoh kode yang menggunakan operator dan ekspresi.
 
 ## Rangkuman
-Pelajari operator dan ekspresi dengan praktik langsung.
-← Kembali
+- Operator Dan Ekspresi adalah konsep penting dalam JavaScript
+- Praktikkan dengan kode sendiri
+- Referensi: MDN Web Docs

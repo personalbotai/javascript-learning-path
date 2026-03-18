@@ -1,57 +1,38 @@
-## Tujuan Pembelajaran
+# Json Serialisasi Dan Parsing
 
-- Mengkonversi object ke JSON dan sebaliknya
-- JSON.stringify dengan replacer
-- JSON.parse dengan reviver
+**ID**: `json-serialisasi-dan-parsing`
+**Type**: lesson
+**Duration**: 20-25 menit
+**Tags**: javascript
+
+## Tujuan Pembelajaran
+- Memahami json serialisasi dan parsing dalam JavaScript
+- Menerapkan best practices
+- Praktik dengan contoh kode
 
 ## Materi
 
-### JSON.stringify
+### Pengantar
 
-```
-const user = {nama: "Archon", umur: 25, aktif: true};
+Json Serialisasi Dan Parsing adalah konsep penting dalam JavaScript yang perlu dipahami oleh setiap developer.
 
-// Object → JSON string
-const json = JSON.stringify(user);
-// '{"nama":"Archon","umur":25,"aktif":true}'
+### Contoh Kode
 
-// Pretty print
-const pretty = JSON.stringify(user, null, 2);
-// {\n "nama": "Archon",\n ...\n}
-
-// Replacer (filter fields)
-JSON.stringify(user, ["nama", "umur"]);
-// '{"nama":"Archon","umur":25}'
+```javascript
+// Contoh implementasi json serialisasi dan parsing
+// Praktikkan dengan kode sendiri
 ```
 
-### JSON.parse
+### Best Practices
 
-```
-// JSON string → Object
-const parsed = JSON.parse(json);
-console.log(parsed.nama); // "Archon"
+- Pahami konsep dasar dengan baik
+- Praktikkan dengan contoh kode
+- Referensi dokumentasi resmi
 
-// Dengan reviver
-const data = JSON.parse(json, (key, value) => {
- if (key === "umur") return Number(value);
- return value;
-});
-```
-
-### Fetch + JSON
-
-```
-const res = await fetch("/api/user");
-const user = await res.json(); // parse JSON
-
-// Kirim JSON
-await fetch("/api/user", {
- method: "POST",
- headers: {"Content-Type": "application/json"},
- body: JSON.stringify(user)
-});
-```
+## Latihan
+Buat contoh kode yang menggunakan json serialisasi dan parsing.
 
 ## Rangkuman
-Pelajari json: serialisasi dan parsing dengan praktik langsung.
-← Kembali
+- Json Serialisasi Dan Parsing adalah konsep penting dalam JavaScript
+- Praktikkan dengan kode sendiri
+- Referensi: MDN Web Docs

@@ -1,47 +1,60 @@
-## Tujuan Pembelajaran
+# Array Dasar dan Metode
 
-- Membuat dan memanipulasi array
-- Metode: push, pop, shift, unshift, slice, splice
-- Memahami mutasi vs non-mutasi
+**ID**: `array-dasar-dan-metode`
+**Type**: lesson
+**Duration**: 20-25 menit
+**Tags**: javascript
+
+## Tujuan Pembelajaran
+- Memahami array dasar dan metode dalam JavaScript
+- Menerapkan best practices
+- Praktik dengan contoh kode
 
 ## Materi
 
-### Membuat Array
+Array adalah struktur data fundamental untuk menyimpan kumpulan nilai.
 
-```
-// Literal (direkomendasikan)
+### Membuat Array
+```javascript
+const buah = ["apel", "jeruk", "mangga"];
 const angka = [1, 2, 3, 4, 5];
 const campuran = [1, "dua", true, null, {x: 1}];
-
-// Constructor
-const arr = new Array(5); // [empty × 5]
-const arr2 = Array.of(1, 2, 3); // [1, 2, 3]
 ```
 
-### Akses dan Modifikasi
+### Akses & Modifikasi
+```javascript
+buah[0];              // "apel"
+buah.length;          // 3
+buah.at(-1);          // "mangga" (ES2022)
 
-```
-console.log(angka[0]); // 1
-console.log(angka.length); // 5
-console.log(angka.at(-1)); // 5 (elemen terakhir)
-
-// Mutasi array
-angka.push(6); // Tambah akhir → [1,2,3,4,5,6]
-angka.pop(); // Hapus akhir → [1,2,3,4,5]
-angka.unshift(0); // Tambah awal → [0,1,2,3,4,5]
-angka.shift(); // Hapus awal → [1,2,3,4,5]
+// Mutasi
+buah.push("pisang");  // Tambah akhir
+buah.pop();           // Hapus akhir
+buah.unshift("mangga"); // Tambah awal
+buah.shift();         // Hapus awal
 ```
 
 ### Slice vs Splice
+```javascript
+// slice - tidak ubah asli
+const sebagian = angka.slice(1, 3);  // [2, 3]
 
-```
-// slice(start, end) - TIDAK mengubah array asli
-const sebagian = angka.slice(1, 3); // [2, 3]
-
-// splice(start, deleteCount, ...items) - MENGUBAH array asli
+// splice - ubah asli
 angka.splice(2, 1, 99); // Hapus 1 elemen di index 2, ganti 99
 ```
 
+### Cari Elemen
+```javascript
+angka.indexOf(99);       // 2
+angka.includes(99);      // true
+angka.find(x => x > 3); // 99
+```
+
+
+## Latihan
+Buat contoh kode yang menggunakan array dasar dan metode.
+
 ## Rangkuman
-Pelajari array dasar dan metode dengan praktik langsung.
-← Kembali
+- Array Dasar dan Metode adalah konsep penting dalam JavaScript
+- Praktikkan dengan kode sendiri
+- Referensi: MDN Web Docs
