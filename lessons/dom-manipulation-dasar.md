@@ -8,21 +8,29 @@
 ## Tujuan Pembelajaran
 - Memahami dom manipulation dasar dalam JavaScript
 - Menerapkan best practices
+- Praktik dengan contoh kode
 
 ## Materi
 
-### Pengantar
-Dom Manipulation Dasar adalah konsep penting dalam JavaScript.
+### Penjelasan
+Dom Manipulation Dasar adalah konsep penting yang digunakan dalam pengembangan JavaScript modern.
 
 ### Contoh Kode
 ```javascript
-// Contoh: Dom Manipulation Dasar
+// Contoh implementasi Dom Manipulation Dasar
+// Praktikkan kode ini dengan variasi sendiri
 console.log("Belajar Dom Manipulation Dasar");
 ```
 
-### Praktik
+### Tips
+- Praktikkan dengan kode sendiri
+- Eksperimen dengan variasi berbeda
+- Referensi: MDN Web Docs
+
+## Latihan
 Buat kode yang menggunakan dom manipulation dasar.
 
 ## Rangkuman
-- Praktikkan dom manipulation dasar dengan kode
-- Referensi: MDN Web Docs
+- Dom Manipulation Dasar penting untuk JavaScript development
+- Praktikkan dengan kode sendiri
+- Referensi: MDN Web Docs untuk dokumentasi lengkap

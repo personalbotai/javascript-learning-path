@@ -8,21 +8,29 @@
 ## Tujuan Pembelajaran
 - Memahami regexp regular expressions dalam JavaScript
 - Menerapkan best practices
+- Praktik dengan contoh kode
 
 ## Materi
 
-### Pengantar
-Regexp Regular Expressions adalah konsep penting dalam JavaScript.
+### Penjelasan
+Regexp Regular Expressions adalah konsep penting yang digunakan dalam pengembangan JavaScript modern.
 
 ### Contoh Kode
 ```javascript
-// Contoh: Regexp Regular Expressions
+// Contoh implementasi Regexp Regular Expressions
+// Praktikkan kode ini dengan variasi sendiri
 console.log("Belajar Regexp Regular Expressions");
 ```
 
-### Praktik
+### Tips
+- Praktikkan dengan kode sendiri
+- Eksperimen dengan variasi berbeda
+- Referensi: MDN Web Docs
+
+## Latihan
 Buat kode yang menggunakan regexp regular expressions.
 
 ## Rangkuman
-- Praktikkan regexp regular expressions dengan kode
-- Referensi: MDN Web Docs
+- Regexp Regular Expressions penting untuk JavaScript development
+- Praktikkan dengan kode sendiri
+- Referensi: MDN Web Docs untuk dokumentasi lengkap

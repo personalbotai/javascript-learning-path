@@ -8,21 +8,29 @@
 ## Tujuan Pembelajaran
 - Memahami generators dan iterators dalam JavaScript
 - Menerapkan best practices
+- Praktik dengan contoh kode
 
 ## Materi
 
-### Pengantar
-Generators Dan Iterators adalah konsep penting dalam JavaScript.
+### Penjelasan
+Generators Dan Iterators adalah konsep penting yang digunakan dalam pengembangan JavaScript modern.
 
 ### Contoh Kode
 ```javascript
-// Contoh: Generators Dan Iterators
+// Contoh implementasi Generators Dan Iterators
+// Praktikkan kode ini dengan variasi sendiri
 console.log("Belajar Generators Dan Iterators");
 ```
 
-### Praktik
+### Tips
+- Praktikkan dengan kode sendiri
+- Eksperimen dengan variasi berbeda
+- Referensi: MDN Web Docs
+
+## Latihan
 Buat kode yang menggunakan generators dan iterators.
 
 ## Rangkuman
-- Praktikkan generators dan iterators dengan kode
-- Referensi: MDN Web Docs
+- Generators Dan Iterators penting untuk JavaScript development
+- Praktikkan dengan kode sendiri
+- Referensi: MDN Web Docs untuk dokumentasi lengkap

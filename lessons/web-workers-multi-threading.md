@@ -8,21 +8,29 @@
 ## Tujuan Pembelajaran
 - Memahami web workers multi threading dalam JavaScript
 - Menerapkan best practices
+- Praktik dengan contoh kode
 
 ## Materi
 
-### Pengantar
-Web Workers Multi Threading adalah konsep penting dalam JavaScript.
+### Penjelasan
+Web Workers Multi Threading adalah konsep penting yang digunakan dalam pengembangan JavaScript modern.
 
 ### Contoh Kode
 ```javascript
-// Contoh: Web Workers Multi Threading
+// Contoh implementasi Web Workers Multi Threading
+// Praktikkan kode ini dengan variasi sendiri
 console.log("Belajar Web Workers Multi Threading");
 ```
 
-### Praktik
+### Tips
+- Praktikkan dengan kode sendiri
+- Eksperimen dengan variasi berbeda
+- Referensi: MDN Web Docs
+
+## Latihan
 Buat kode yang menggunakan web workers multi threading.
 
 ## Rangkuman
-- Praktikkan web workers multi threading dengan kode
-- Referensi: MDN Web Docs
+- Web Workers Multi Threading penting untuk JavaScript development
+- Praktikkan dengan kode sendiri
+- Referensi: MDN Web Docs untuk dokumentasi lengkap

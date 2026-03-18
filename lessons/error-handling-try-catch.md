@@ -8,21 +8,29 @@
 ## Tujuan Pembelajaran
 - Memahami error handling try catch dalam JavaScript
 - Menerapkan best practices
+- Praktik dengan contoh kode
 
 ## Materi
 
-### Pengantar
-Error Handling Try Catch adalah konsep penting dalam JavaScript.
+### Penjelasan
+Error Handling Try Catch adalah konsep penting yang digunakan dalam pengembangan JavaScript modern.
 
 ### Contoh Kode
 ```javascript
-// Contoh: Error Handling Try Catch
+// Contoh implementasi Error Handling Try Catch
+// Praktikkan kode ini dengan variasi sendiri
 console.log("Belajar Error Handling Try Catch");
 ```
 
-### Praktik
+### Tips
+- Praktikkan dengan kode sendiri
+- Eksperimen dengan variasi berbeda
+- Referensi: MDN Web Docs
+
+## Latihan
 Buat kode yang menggunakan error handling try catch.
 
 ## Rangkuman
-- Praktikkan error handling try catch dengan kode
-- Referensi: MDN Web Docs
+- Error Handling Try Catch penting untuk JavaScript development
+- Praktikkan dengan kode sendiri
+- Referensi: MDN Web Docs untuk dokumentasi lengkap

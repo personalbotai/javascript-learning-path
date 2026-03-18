@@ -8,21 +8,29 @@
 ## Tujuan Pembelajaran
 - Memahami kontrol alur if else dalam JavaScript
 - Menerapkan best practices
+- Praktik dengan contoh kode
 
 ## Materi
 
-### Pengantar
-Kontrol Alur If Else adalah konsep penting dalam JavaScript.
+### Penjelasan
+Kontrol Alur If Else adalah konsep penting yang digunakan dalam pengembangan JavaScript modern.
 
 ### Contoh Kode
 ```javascript
-// Contoh: Kontrol Alur If Else
+// Contoh implementasi Kontrol Alur If Else
+// Praktikkan kode ini dengan variasi sendiri
 console.log("Belajar Kontrol Alur If Else");
 ```
 
-### Praktik
+### Tips
+- Praktikkan dengan kode sendiri
+- Eksperimen dengan variasi berbeda
+- Referensi: MDN Web Docs
+
+## Latihan
 Buat kode yang menggunakan kontrol alur if else.
 
 ## Rangkuman
-- Praktikkan kontrol alur if else dengan kode
-- Referensi: MDN Web Docs
+- Kontrol Alur If Else penting untuk JavaScript development
+- Praktikkan dengan kode sendiri
+- Referensi: MDN Web Docs untuk dokumentasi lengkap

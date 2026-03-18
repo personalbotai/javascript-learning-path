@@ -8,21 +8,29 @@
 ## Tujuan Pembelajaran
 - Memahami babel transpiling dalam JavaScript
 - Menerapkan best practices
+- Praktik dengan contoh kode
 
 ## Materi
 
-### Pengantar
-Babel Transpiling adalah konsep penting dalam JavaScript.
+### Penjelasan
+Babel Transpiling adalah konsep penting yang digunakan dalam pengembangan JavaScript modern.
 
 ### Contoh Kode
 ```javascript
-// Contoh: Babel Transpiling
+// Contoh implementasi Babel Transpiling
+// Praktikkan kode ini dengan variasi sendiri
 console.log("Belajar Babel Transpiling");
 ```
 
-### Praktik
+### Tips
+- Praktikkan dengan kode sendiri
+- Eksperimen dengan variasi berbeda
+- Referensi: MDN Web Docs
+
+## Latihan
 Buat kode yang menggunakan babel transpiling.
 
 ## Rangkuman
-- Praktikkan babel transpiling dengan kode
-- Referensi: MDN Web Docs
+- Babel Transpiling penting untuk JavaScript development
+- Praktikkan dengan kode sendiri
+- Referensi: MDN Web Docs untuk dokumentasi lengkap

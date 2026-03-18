@@ -8,21 +8,29 @@
 ## Tujuan Pembelajaran
 - Memahami project todo list app dalam JavaScript
 - Menerapkan best practices
+- Praktik dengan contoh kode
 
 ## Materi
 
-### Pengantar
-Project Todo List App adalah konsep penting dalam JavaScript.
+### Penjelasan
+Project Todo List App adalah konsep penting yang digunakan dalam pengembangan JavaScript modern.
 
 ### Contoh Kode
 ```javascript
-// Contoh: Project Todo List App
+// Contoh implementasi Project Todo List App
+// Praktikkan kode ini dengan variasi sendiri
 console.log("Belajar Project Todo List App");
 ```
 
-### Praktik
+### Tips
+- Praktikkan dengan kode sendiri
+- Eksperimen dengan variasi berbeda
+- Referensi: MDN Web Docs
+
+## Latihan
 Buat kode yang menggunakan project todo list app.
 
 ## Rangkuman
-- Praktikkan project todo list app dengan kode
-- Referensi: MDN Web Docs
+- Project Todo List App penting untuk JavaScript development
+- Praktikkan dengan kode sendiri
+- Referensi: MDN Web Docs untuk dokumentasi lengkap

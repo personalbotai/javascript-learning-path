@@ -8,21 +8,29 @@
 ## Tujuan Pembelajaran
 - Memahami prototype dan prototype chain dalam JavaScript
 - Menerapkan best practices
+- Praktik dengan contoh kode
 
 ## Materi
 
-### Pengantar
-Prototype Dan Prototype Chain adalah konsep penting dalam JavaScript.
+### Penjelasan
+Prototype Dan Prototype Chain adalah konsep penting yang digunakan dalam pengembangan JavaScript modern.
 
 ### Contoh Kode
 ```javascript
-// Contoh: Prototype Dan Prototype Chain
+// Contoh implementasi Prototype Dan Prototype Chain
+// Praktikkan kode ini dengan variasi sendiri
 console.log("Belajar Prototype Dan Prototype Chain");
 ```
 
-### Praktik
+### Tips
+- Praktikkan dengan kode sendiri
+- Eksperimen dengan variasi berbeda
+- Referensi: MDN Web Docs
+
+## Latihan
 Buat kode yang menggunakan prototype dan prototype chain.
 
 ## Rangkuman
-- Praktikkan prototype dan prototype chain dengan kode
-- Referensi: MDN Web Docs
+- Prototype Dan Prototype Chain penting untuk JavaScript development
+- Praktikkan dengan kode sendiri
+- Referensi: MDN Web Docs untuk dokumentasi lengkap

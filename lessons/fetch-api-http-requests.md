@@ -8,21 +8,29 @@
 ## Tujuan Pembelajaran
 - Memahami fetch api http requests dalam JavaScript
 - Menerapkan best practices
+- Praktik dengan contoh kode
 
 ## Materi
 
-### Pengantar
-Fetch Api Http Requests adalah konsep penting dalam JavaScript.
+### Penjelasan
+Fetch Api Http Requests adalah konsep penting yang digunakan dalam pengembangan JavaScript modern.
 
 ### Contoh Kode
 ```javascript
-// Contoh: Fetch Api Http Requests
+// Contoh implementasi Fetch Api Http Requests
+// Praktikkan kode ini dengan variasi sendiri
 console.log("Belajar Fetch Api Http Requests");
 ```
 
-### Praktik
+### Tips
+- Praktikkan dengan kode sendiri
+- Eksperimen dengan variasi berbeda
+- Referensi: MDN Web Docs
+
+## Latihan
 Buat kode yang menggunakan fetch api http requests.
 
 ## Rangkuman
-- Praktikkan fetch api http requests dengan kode
-- Referensi: MDN Web Docs
+- Fetch Api Http Requests penting untuk JavaScript development
+- Praktikkan dengan kode sendiri
+- Referensi: MDN Web Docs untuk dokumentasi lengkap

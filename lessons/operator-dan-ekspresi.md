@@ -8,21 +8,29 @@
 ## Tujuan Pembelajaran
 - Memahami operator dan ekspresi dalam JavaScript
 - Menerapkan best practices
+- Praktik dengan contoh kode
 
 ## Materi
 
-### Pengantar
-Operator Dan Ekspresi adalah konsep penting dalam JavaScript.
+### Penjelasan
+Operator Dan Ekspresi adalah konsep penting yang digunakan dalam pengembangan JavaScript modern.
 
 ### Contoh Kode
 ```javascript
-// Contoh: Operator Dan Ekspresi
+// Contoh implementasi Operator Dan Ekspresi
+// Praktikkan kode ini dengan variasi sendiri
 console.log("Belajar Operator Dan Ekspresi");
 ```
 
-### Praktik
+### Tips
+- Praktikkan dengan kode sendiri
+- Eksperimen dengan variasi berbeda
+- Referensi: MDN Web Docs
+
+## Latihan
 Buat kode yang menggunakan operator dan ekspresi.
 
 ## Rangkuman
-- Praktikkan operator dan ekspresi dengan kode
-- Referensi: MDN Web Docs
+- Operator Dan Ekspresi penting untuk JavaScript development
+- Praktikkan dengan kode sendiri
+- Referensi: MDN Web Docs untuk dokumentasi lengkap

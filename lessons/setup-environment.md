@@ -8,21 +8,29 @@
 ## Tujuan Pembelajaran
 - Memahami setup environment dalam JavaScript
 - Menerapkan best practices
+- Praktik dengan contoh kode
 
 ## Materi
 
-### Pengantar
-Setup Environment adalah konsep penting dalam JavaScript.
+### Penjelasan
+Setup Environment adalah konsep penting yang digunakan dalam pengembangan JavaScript modern.
 
 ### Contoh Kode
 ```javascript
-// Contoh: Setup Environment
+// Contoh implementasi Setup Environment
+// Praktikkan kode ini dengan variasi sendiri
 console.log("Belajar Setup Environment");
 ```
 
-### Praktik
+### Tips
+- Praktikkan dengan kode sendiri
+- Eksperimen dengan variasi berbeda
+- Referensi: MDN Web Docs
+
+## Latihan
 Buat kode yang menggunakan setup environment.
 
 ## Rangkuman
-- Praktikkan setup environment dengan kode
-- Referensi: MDN Web Docs
+- Setup Environment penting untuk JavaScript development
+- Praktikkan dengan kode sendiri
+- Referensi: MDN Web Docs untuk dokumentasi lengkap

@@ -8,21 +8,29 @@
 ## Tujuan Pembelajaran
 - Memahami design patterns javascript dalam JavaScript
 - Menerapkan best practices
+- Praktik dengan contoh kode
 
 ## Materi
 
-### Pengantar
-Design Patterns Javascript adalah konsep penting dalam JavaScript.
+### Penjelasan
+Design Patterns Javascript adalah konsep penting yang digunakan dalam pengembangan JavaScript modern.
 
 ### Contoh Kode
 ```javascript
-// Contoh: Design Patterns Javascript
+// Contoh implementasi Design Patterns Javascript
+// Praktikkan kode ini dengan variasi sendiri
 console.log("Belajar Design Patterns Javascript");
 ```
 
-### Praktik
+### Tips
+- Praktikkan dengan kode sendiri
+- Eksperimen dengan variasi berbeda
+- Referensi: MDN Web Docs
+
+## Latihan
 Buat kode yang menggunakan design patterns javascript.
 
 ## Rangkuman
-- Praktikkan design patterns javascript dengan kode
-- Referensi: MDN Web Docs
+- Design Patterns Javascript penting untuk JavaScript development
+- Praktikkan dengan kode sendiri
+- Referensi: MDN Web Docs untuk dokumentasi lengkap

@@ -8,21 +8,29 @@
 ## Tujuan Pembelajaran
 - Memahami pengenalan dan sejarah dalam JavaScript
 - Menerapkan best practices
+- Praktik dengan contoh kode
 
 ## Materi
 
-### Pengantar
-Pengenalan Dan Sejarah adalah konsep penting dalam JavaScript.
+### Penjelasan
+Pengenalan Dan Sejarah adalah konsep penting yang digunakan dalam pengembangan JavaScript modern.
 
 ### Contoh Kode
 ```javascript
-// Contoh: Pengenalan Dan Sejarah
+// Contoh implementasi Pengenalan Dan Sejarah
+// Praktikkan kode ini dengan variasi sendiri
 console.log("Belajar Pengenalan Dan Sejarah");
 ```
 
-### Praktik
+### Tips
+- Praktikkan dengan kode sendiri
+- Eksperimen dengan variasi berbeda
+- Referensi: MDN Web Docs
+
+## Latihan
 Buat kode yang menggunakan pengenalan dan sejarah.
 
 ## Rangkuman
-- Praktikkan pengenalan dan sejarah dengan kode
-- Referensi: MDN Web Docs
+- Pengenalan Dan Sejarah penting untuk JavaScript development
+- Praktikkan dengan kode sendiri
+- Referensi: MDN Web Docs untuk dokumentasi lengkap

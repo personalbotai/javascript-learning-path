@@ -8,21 +8,29 @@
 ## Tujuan Pembelajaran
 - Memahami code review checklist dalam JavaScript
 - Menerapkan best practices
+- Praktik dengan contoh kode
 
 ## Materi
 
-### Pengantar
-Code Review Checklist adalah konsep penting dalam JavaScript.
+### Penjelasan
+Code Review Checklist adalah konsep penting yang digunakan dalam pengembangan JavaScript modern.
 
 ### Contoh Kode
 ```javascript
-// Contoh: Code Review Checklist
+// Contoh implementasi Code Review Checklist
+// Praktikkan kode ini dengan variasi sendiri
 console.log("Belajar Code Review Checklist");
 ```
 
-### Praktik
+### Tips
+- Praktikkan dengan kode sendiri
+- Eksperimen dengan variasi berbeda
+- Referensi: MDN Web Docs
+
+## Latihan
 Buat kode yang menggunakan code review checklist.
 
 ## Rangkuman
-- Praktikkan code review checklist dengan kode
-- Referensi: MDN Web Docs
+- Code Review Checklist penting untuk JavaScript development
+- Praktikkan dengan kode sendiri
+- Referensi: MDN Web Docs untuk dokumentasi lengkap

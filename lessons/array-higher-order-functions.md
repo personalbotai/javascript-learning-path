@@ -1,4 +1,4 @@
-# Array Higher Order Functions
+# Array Higher-Order Functions
 
 **ID**: `array-higher-order-functions`
 **Type**: lesson
@@ -6,23 +6,51 @@
 **Tags**: javascript
 
 ## Tujuan Pembelajaran
-- Memahami array higher order functions dalam JavaScript
+- Memahami array higher-order functions dalam JavaScript
 - Menerapkan best practices
+- Praktik dengan contoh kode
 
 ## Materi
 
-### Pengantar
-Array Higher Order Functions adalah konsep penting dalam JavaScript.
+### Penjelasan
+Array Higher-Order Functions adalah konsep penting yang digunakan dalam pengembangan JavaScript modern.
 
 ### Contoh Kode
 ```javascript
-// Contoh: Array Higher Order Functions
-console.log("Belajar Array Higher Order Functions");
+const angka = [1, 2, 3, 4, 5];
+
+// map - transformasi
+const kuadrat = angka.map(x => x * x); // [1, 4, 9, 16, 25]
+
+// filter - saring
+const genap = angka.filter(x => x % 2 === 0); // [2, 4]
+
+// reduce - akumulasi
+const total = angka.reduce((acc, curr) => acc + curr, 0); // 15
+
+// Chaining
+const hasil = angka
+    .filter(x => x > 2)
+    .map(x => x * 10)
+    .reduce((a, b) => a + b, 0); // 120
 ```
 
-### Praktik
-Buat kode yang menggunakan array higher order functions.
+### find, some, every
+```javascript
+angka.find(x => x > 3);    // 4
+angka.some(x => x > 4);    // true
+angka.every(x => x > 0);   // true
+```
+
+### Tips
+- Praktikkan dengan kode sendiri
+- Eksperimen dengan variasi berbeda
+- Referensi: MDN Web Docs
+
+## Latihan
+Buat kode yang menggunakan array higher-order functions.
 
 ## Rangkuman
-- Praktikkan array higher order functions dengan kode
-- Referensi: MDN Web Docs
+- Array Higher-Order Functions penting untuk JavaScript development
+- Praktikkan dengan kode sendiri
+- Referensi: MDN Web Docs untuk dokumentasi lengkap

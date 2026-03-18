@@ -8,21 +8,29 @@
 ## Tujuan Pembelajaran
 - Memahami map dan weakmap dalam JavaScript
 - Menerapkan best practices
+- Praktik dengan contoh kode
 
 ## Materi
 
-### Pengantar
-Map Dan Weakmap adalah konsep penting dalam JavaScript.
+### Penjelasan
+Map Dan Weakmap adalah konsep penting yang digunakan dalam pengembangan JavaScript modern.
 
 ### Contoh Kode
 ```javascript
-// Contoh: Map Dan Weakmap
+// Contoh implementasi Map Dan Weakmap
+// Praktikkan kode ini dengan variasi sendiri
 console.log("Belajar Map Dan Weakmap");
 ```
 
-### Praktik
+### Tips
+- Praktikkan dengan kode sendiri
+- Eksperimen dengan variasi berbeda
+- Referensi: MDN Web Docs
+
+## Latihan
 Buat kode yang menggunakan map dan weakmap.
 
 ## Rangkuman
-- Praktikkan map dan weakmap dengan kode
-- Referensi: MDN Web Docs
+- Map Dan Weakmap penting untuk JavaScript development
+- Praktikkan dengan kode sendiri
+- Referensi: MDN Web Docs untuk dokumentasi lengkap
