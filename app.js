@@ -1289,20 +1289,35 @@ async function runCode() {
     const output = document.getElementById('output');
     const validation = document.getElementById('validation-msg');
     let logs = [];
-    const orig = console.log;
-    console.log = (...a) => logs.push(a.map(x => typeof x === 'object' ? JSON.stringify(x) : String(x)).join(' '));
+    const origLog = console.log;
+    console.log = (...args) => {
+        logs.push(args.map(a => typeof a === 'object' ? JSON.stringify(a) : String(a)).join(' '));
+    };
     try {
         eval(code);
         const result = logs.join('\n');
         output.innerHTML = '<span class="text-green-400">' + escapeHtml(result) + '</span>';
-        const expected = lessons[currentLesson].expectedOutput;
+        
+        // Validate against expected output
+        const expected = lessons[currentLesson]?.expectedOutput;
         if (expected && result.trim() === expected.trim()) {
             validation.className = 'mt-4 p-3 rounded bg-green-900/50 border border-green-500 text-green-300';
-            validation.innerHTML = '✅ Benar!';
-            progress[lessons[currentLesson].id] = true;
-            localStorage.setItem('javascript_progress', JSON.stringify(progress));
-            updateProgress(); renderNav();
+            validation.innerHTML = '<i class="fas fa-check-circle mr-2"></i>Benar! ✅';
+            if (lessons[currentLesson].id) {
+                progress[lessons[currentLesson].id] = true;
+                localStorage.setItem('javascript_progress', JSON.stringify(progress));
+                updateProgress();
+                renderNav();
+            }
         } else if (expected) {
+            validation.className = 'mt-4 p-3 rounded bg-yellow-900/50 border border-yellow-500 text-yellow-300';
+            validation.innerHTML = '<i class="fas fa-lightbulb mr-2"></i>' + (lessons[currentLesson]?.hint || '');
+        }
+    } catch (e) {
+        output.innerHTML = '<span class="text-red-400">❌ ' + escapeHtml(e.message) + '</span>';
+    }
+    console.log = origLog;
+} else if (expected) {
             validation.className = 'mt-4 p-3 rounded bg-yellow-900/50 border border-yellow-500 text-yellow-300';
             validation.innerHTML = '💡 ' + (lessons[currentLesson].hint || '');
         }
