@@ -58,28 +58,6 @@ function debounce(fn, ms) {
   let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); };
 }
 
-/* ============ Theme ============ */
-function initTheme() {
-  const saved = localStorage.getItem('js-lp-theme');
-  if (saved === 'light') {
-    document.documentElement.classList.remove('dark');
-    updateThemeIcon();
-  }
-}
-function toggleTheme() {
-  const html = document.documentElement;
-  html.classList.toggle('dark');
-  localStorage.setItem('js-lp-theme', html.classList.contains('dark') ? 'dark' : 'light');
-  updateThemeIcon();
-}
-function updateThemeIcon() {
-  const icon = document.getElementById('theme-icon');
-  if (!icon) return;
-  const isDark = document.documentElement.classList.contains('dark');
-  icon.className = isDark ? 'fas fa-moon text-sm' : 'fas fa-sun text-sm';
-}
-window.toggleTheme = toggleTheme;
-
 /* ============ Progress ============ */
 function updateProgress() {
   const total = totalLessons(), done = doneCount();
@@ -1946,7 +1924,7 @@ function preserveSearch() {
 
 /* ============ Boot ============ */
 document.addEventListener('DOMContentLoaded', () => {
-  initTheme();
+  // initTheme removed
   renderNav();
   updateProgress();
 
