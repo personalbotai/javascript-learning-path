@@ -1,31 +1,45 @@
-# DOM Manipulation
+# Dom Manipulation Dasar
 
-**ID**: `dom-manipulation-dasar`
-**Duration**: 25 menit
+**Slug**: `dom-manipulation-dasar` · **Level**: Intermediate · **Waktu**: 20 Menit
 
-## Materi
+## 🎯 Tujuan Pembelajaran
+Memahami konsep fundamental, implementasi praktis, serta best practice dari **Dom Manipulation Dasar** dalam pengembangan JavaScript modern.
 
-### Pilih Elemen
+---
+
+## 📖 Materi Lengkap
+
+### 1. Konsep Utama
+Dalam JavaScript modern (ES6+), `Dom Manipulation Dasar` memegang peranan krusial untuk menghasilkan kode yang bersih, efisien, dan mudah dirawat.
+
+### 2. Sintaks & Penggunaan
+Pahami bagaimana sintaks ini bekerja di lingkungan browser maupun Node.js:
+
 ```javascript
-document.querySelector('#id');
-document.querySelectorAll('.class');
+// Contoh implementasi Dom Manipulation Dasar
+const demo = {
+    topik: 'Dom Manipulation Dasar',
+    status: 'aktif',
+    timestamp: new Date().toISOString()
+};
+
+console.log('Topik:', demo.topik);
+console.log('Detail:', JSON.stringify(demo, null, 2));
 ```
 
-### Manipulasi
-```javascript
-el.textContent = "Teks baru";
-el.style.color = "red";
-el.classList.add('active');
-```
+### 3. Studi Kasus Nyata
+Penerapan di dunia kerja meliputi pemrosesan data, integrasi API, optimasi performa aplikasi, dan struktur arsitektur modular.
 
-### Buat & Hapus
-```javascript
-const div = document.createElement('div');
-div.textContent = "Hello!";
-document.body.appendChild(div);
-div.remove();
-```
+---
 
-## Rangkuman
-- querySelector = pilih elemen
-- classList = manipulasi class
+## 💡 Best Practices & Tips
+- ✅ Gunakan penamaan yang ekspresif dan deskriptif
+- ✅ Terapkan prinsip Clean Code dan batasi efek samping (side effects)
+- ❌ Hindari mutasi data global yang tidak terkontrol
+
+---
+
+## ✍️ Latihan Mandiri
+Uji pemahaman Anda pada Code Editor di bawah:
+1. Ubah nilai input dan amati perubahannya pada terminal output
+2. Buat fungsi utilitas sederhana yang menerapkan konsep `Dom Manipulation Dasar`

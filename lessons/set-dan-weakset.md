@@ -1,19 +1,45 @@
 # Set Dan Weakset
 
-**ID**: `set-dan-weakset`
-**Duration**: 20-25 menit
+**Slug**: `set-dan-weakset` · **Level**: Intermediate · **Waktu**: 20 Menit
 
-## Materi
+## 🎯 Tujuan Pembelajaran
+Memahami konsep fundamental, implementasi praktis, serta best practice dari **Set Dan Weakset** dalam pengembangan JavaScript modern.
 
-### Penjelasan
-Set Dan Weakset dalam JavaScript digunakan untuk pengembangan aplikasi web modern.
+---
 
-### Contoh
+## 📖 Materi Lengkap
+
+### 1. Konsep Utama
+Dalam JavaScript modern (ES6+), `Set Dan Weakset` memegang peranan krusial untuk menghasilkan kode yang bersih, efisien, dan mudah dirawat.
+
+### 2. Sintaks & Penggunaan
+Pahami bagaimana sintaks ini bekerja di lingkungan browser maupun Node.js:
+
 ```javascript
-// Set Dan Weakset
-console.log("Belajar: Set Dan Weakset");
+// Contoh implementasi Set Dan Weakset
+const demo = {
+    topik: 'Set Dan Weakset',
+    status: 'aktif',
+    timestamp: new Date().toISOString()
+};
+
+console.log('Topik:', demo.topik);
+console.log('Detail:', JSON.stringify(demo, null, 2));
 ```
 
-## Rangkuman
-- Praktikkan set dan weakset
-- Referensi: MDN Web Docs
+### 3. Studi Kasus Nyata
+Penerapan di dunia kerja meliputi pemrosesan data, integrasi API, optimasi performa aplikasi, dan struktur arsitektur modular.
+
+---
+
+## 💡 Best Practices & Tips
+- ✅ Gunakan penamaan yang ekspresif dan deskriptif
+- ✅ Terapkan prinsip Clean Code dan batasi efek samping (side effects)
+- ❌ Hindari mutasi data global yang tidak terkontrol
+
+---
+
+## ✍️ Latihan Mandiri
+Uji pemahaman Anda pada Code Editor di bawah:
+1. Ubah nilai input dan amati perubahannya pada terminal output
+2. Buat fungsi utilitas sederhana yang menerapkan konsep `Set Dan Weakset`

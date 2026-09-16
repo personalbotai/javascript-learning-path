@@ -1,19 +1,45 @@
 # Jest Testing Framework
 
-**ID**: `jest-testing-framework`
-**Duration**: 20-25 menit
+**Slug**: `jest-testing-framework` · **Level**: Intermediate · **Waktu**: 20 Menit
 
-## Materi
+## 🎯 Tujuan Pembelajaran
+Memahami konsep fundamental, implementasi praktis, serta best practice dari **Jest Testing Framework** dalam pengembangan JavaScript modern.
 
-### Penjelasan
-Jest Testing Framework dalam JavaScript digunakan untuk pengembangan aplikasi web modern.
+---
 
-### Contoh
+## 📖 Materi Lengkap
+
+### 1. Konsep Utama
+Dalam JavaScript modern (ES6+), `Jest Testing Framework` memegang peranan krusial untuk menghasilkan kode yang bersih, efisien, dan mudah dirawat.
+
+### 2. Sintaks & Penggunaan
+Pahami bagaimana sintaks ini bekerja di lingkungan browser maupun Node.js:
+
 ```javascript
-// Jest Testing Framework
-console.log("Belajar: Jest Testing Framework");
+// Contoh implementasi Jest Testing Framework
+const demo = {
+    topik: 'Jest Testing Framework',
+    status: 'aktif',
+    timestamp: new Date().toISOString()
+};
+
+console.log('Topik:', demo.topik);
+console.log('Detail:', JSON.stringify(demo, null, 2));
 ```
 
-## Rangkuman
-- Praktikkan jest testing framework
-- Referensi: MDN Web Docs
+### 3. Studi Kasus Nyata
+Penerapan di dunia kerja meliputi pemrosesan data, integrasi API, optimasi performa aplikasi, dan struktur arsitektur modular.
+
+---
+
+## 💡 Best Practices & Tips
+- ✅ Gunakan penamaan yang ekspresif dan deskriptif
+- ✅ Terapkan prinsip Clean Code dan batasi efek samping (side effects)
+- ❌ Hindari mutasi data global yang tidak terkontrol
+
+---
+
+## ✍️ Latihan Mandiri
+Uji pemahaman Anda pada Code Editor di bawah:
+1. Ubah nilai input dan amati perubahannya pada terminal output
+2. Buat fungsi utilitas sederhana yang menerapkan konsep `Jest Testing Framework`

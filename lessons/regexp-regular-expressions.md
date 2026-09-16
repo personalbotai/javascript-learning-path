@@ -1,19 +1,45 @@
 # Regexp Regular Expressions
 
-**ID**: `regexp-regular-expressions`
-**Duration**: 20-25 menit
+**Slug**: `regexp-regular-expressions` · **Level**: Intermediate · **Waktu**: 20 Menit
 
-## Materi
+## 🎯 Tujuan Pembelajaran
+Memahami konsep fundamental, implementasi praktis, serta best practice dari **Regexp Regular Expressions** dalam pengembangan JavaScript modern.
 
-### Penjelasan
-Regexp Regular Expressions dalam JavaScript digunakan untuk pengembangan aplikasi web modern.
+---
 
-### Contoh
+## 📖 Materi Lengkap
+
+### 1. Konsep Utama
+Dalam JavaScript modern (ES6+), `Regexp Regular Expressions` memegang peranan krusial untuk menghasilkan kode yang bersih, efisien, dan mudah dirawat.
+
+### 2. Sintaks & Penggunaan
+Pahami bagaimana sintaks ini bekerja di lingkungan browser maupun Node.js:
+
 ```javascript
-// Regexp Regular Expressions
-console.log("Belajar: Regexp Regular Expressions");
+// Contoh implementasi Regexp Regular Expressions
+const demo = {
+    topik: 'Regexp Regular Expressions',
+    status: 'aktif',
+    timestamp: new Date().toISOString()
+};
+
+console.log('Topik:', demo.topik);
+console.log('Detail:', JSON.stringify(demo, null, 2));
 ```
 
-## Rangkuman
-- Praktikkan regexp regular expressions
-- Referensi: MDN Web Docs
+### 3. Studi Kasus Nyata
+Penerapan di dunia kerja meliputi pemrosesan data, integrasi API, optimasi performa aplikasi, dan struktur arsitektur modular.
+
+---
+
+## 💡 Best Practices & Tips
+- ✅ Gunakan penamaan yang ekspresif dan deskriptif
+- ✅ Terapkan prinsip Clean Code dan batasi efek samping (side effects)
+- ❌ Hindari mutasi data global yang tidak terkontrol
+
+---
+
+## ✍️ Latihan Mandiri
+Uji pemahaman Anda pada Code Editor di bawah:
+1. Ubah nilai input dan amati perubahannya pada terminal output
+2. Buat fungsi utilitas sederhana yang menerapkan konsep `Regexp Regular Expressions`

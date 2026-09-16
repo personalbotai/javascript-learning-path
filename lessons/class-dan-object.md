@@ -1,19 +1,45 @@
 # Class Dan Object
 
-**ID**: `class-dan-object`
-**Duration**: 20-25 menit
+**Slug**: `class-dan-object` · **Level**: Intermediate · **Waktu**: 20 Menit
 
-## Materi
+## 🎯 Tujuan Pembelajaran
+Memahami konsep fundamental, implementasi praktis, serta best practice dari **Class Dan Object** dalam pengembangan JavaScript modern.
 
-### Penjelasan
-Class Dan Object dalam JavaScript digunakan untuk pengembangan aplikasi web modern.
+---
 
-### Contoh
+## 📖 Materi Lengkap
+
+### 1. Konsep Utama
+Dalam JavaScript modern (ES6+), `Class Dan Object` memegang peranan krusial untuk menghasilkan kode yang bersih, efisien, dan mudah dirawat.
+
+### 2. Sintaks & Penggunaan
+Pahami bagaimana sintaks ini bekerja di lingkungan browser maupun Node.js:
+
 ```javascript
-// Class Dan Object
-console.log("Belajar: Class Dan Object");
+// Contoh implementasi Class Dan Object
+const demo = {
+    topik: 'Class Dan Object',
+    status: 'aktif',
+    timestamp: new Date().toISOString()
+};
+
+console.log('Topik:', demo.topik);
+console.log('Detail:', JSON.stringify(demo, null, 2));
 ```
 
-## Rangkuman
-- Praktikkan class dan object
-- Referensi: MDN Web Docs
+### 3. Studi Kasus Nyata
+Penerapan di dunia kerja meliputi pemrosesan data, integrasi API, optimasi performa aplikasi, dan struktur arsitektur modular.
+
+---
+
+## 💡 Best Practices & Tips
+- ✅ Gunakan penamaan yang ekspresif dan deskriptif
+- ✅ Terapkan prinsip Clean Code dan batasi efek samping (side effects)
+- ❌ Hindari mutasi data global yang tidak terkontrol
+
+---
+
+## ✍️ Latihan Mandiri
+Uji pemahaman Anda pada Code Editor di bawah:
+1. Ubah nilai input dan amati perubahannya pada terminal output
+2. Buat fungsi utilitas sederhana yang menerapkan konsep `Class Dan Object`

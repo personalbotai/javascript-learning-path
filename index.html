@@ -3,138 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Learning Path - Course</title>
+    <title>JavaScript Learning Path — Master JavaScript dari Nol</title>
+    <meta name="description" content="Kursus interaktif JavaScript lengkap: modul terstruktur, code editor interaktif, quiz per modul. Gratis dan open source.">
+    <meta name="theme-color" content="#6366f1">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        * { box-sizing: border-box; }
-        body { background: #1c1d1f; color: #d1d7dc; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
-        .sidebar { width: 340px; background: #1c1d1f; border-right: 1px solid #3e4143; height: 100vh; overflow-y: auto; }
-        .section-header { background: #2d2f31; padding: 12px 16px; cursor: pointer; border-bottom: 1px solid #3e4143; }
-        .section-header:hover { background: #3e4143; }
-        .section-title { font-weight: 600; font-size: 14px; color: #f7f9fa; }
-        .section-meta { font-size: 12px; color: #9da5b1; margin-top: 2px; }
-        .lesson-item { display: flex; align-items: center; padding: 10px 16px 10px 24px; border-bottom: 1px solid #2d2f31; cursor: pointer; transition: background 0.1s; }
-        .lesson-item:hover { background: #2d2f31; }
-        .lesson-item.active { background: #3e4143; border-left: 3px solid #f7df1e; }
-        .lesson-item.completed { opacity: 0.7; }
-        .lesson-icon { width: 20px; margin-right: 12px; text-align: center; flex-shrink: 0; }
-        .lesson-icon.playing { color: #f7df1e; }
-        .lesson-icon.completed { color: #e8a400; }
-        .lesson-title { font-size: 13px; flex: 1; line-height: 1.4; }
-        .lesson-duration { font-size: 11px; color: #9da5b1; margin-left: 8px; }
-        .content-area { flex: 1; overflow-y: auto; height: 100vh; }
-        .video-placeholder { background: #000; aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; position: relative; }
-        .lesson-content { max-width: 800px; margin: 0 auto; padding: 32px 24px; }
-        .lesson-content h1 { font-size: 28px; font-weight: 700; color: #f7f9fa; margin-bottom: 16px; }
-        .lesson-content h2 { font-size: 22px; font-weight: 600; color: #f7f9fa; margin: 32px 0 12px; border-bottom: 1px solid #3e4143; padding-bottom: 8px; }
-        .lesson-content h3 { font-size: 18px; font-weight: 600; color: #f7f9fa; margin: 24px 0 8px; }
-        .lesson-content h4 { font-size: 16px; font-weight: 600; color: #e0e0e0; margin: 16px 0 8px; }
-        .lesson-content p { font-size: 15px; line-height: 1.7; margin-bottom: 12px; color: #b0b0b0; }
-        .lesson-content ul, .lesson-content ol { margin: 12px 0; padding-left: 24px; }
-        .lesson-content li { font-size: 14px; line-height: 1.6; margin-bottom: 6px; color: #c0c0c0; }
-        .lesson-content code { background: #2d2f31; padding: 2px 6px; border-radius: 3px; font-size: 13px; color: #e06c75; }
-        .lesson-content pre { background: #2d2f31; padding: 16px; border-radius: 6px; overflow-x: auto; margin: 16px 0; border: 1px solid #3e4143; }
-        .lesson-content pre code { background: none; padding: 0; color: #d1d7dc; }
-        .lesson-content strong { color: #f7f9fa; }
-        .lesson-content a { color: #f7df1e; text-decoration: none; }
-        .lesson-content a:hover { text-decoration: underline; }
-        .lesson-content img { max-width: 100%; border-radius: 6px; margin: 12px 0; }
-        .code-section { background: #1c1d1f; border-top: 1px solid #3e4143; padding: 16px; }
-        .code-editor { width: 100%; height: 200px; background: #1e1e1e; color: #d4d4d4; border: 1px solid #3e4143; border-radius: 6px; padding: 12px; font-family: 'Fira Code', 'Consolas', monospace; font-size: 13px; resize: vertical; }
-        .code-editor:focus { outline: none; border-color: #f7df1e; }
-        .output-area { width: 100%; height: 120px; background: #0a0a0a; color: #22c55e; border: 1px solid #3e4143; border-radius: 6px; padding: 12px; font-family: 'Fira Code', monospace; font-size: 13px; overflow: auto; margin-top: 8px; }
-        .btn-run { background: #f7df1e; color: white; border: none; padding: 8px 20px; border-radius: 6px; font-weight: 600; cursor: pointer; font-size: 14px; }
-        .btn-run:hover { background: #9130d9; }
-        .btn-reset { background: #3e4143; color: #d1d7dc; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-size: 14px; margin-left: 8px; }
-        .btn-reset:hover { background: #4e5153; }
-        .quiz-section { background: #2d2f31; border-radius: 8px; padding: 20px; margin: 24px 0; }
-        .quiz-title { font-size: 16px; font-weight: 600; color: #f7f9fa; margin-bottom: 12px; }
-        .quiz-option { display: flex; align-items: flex-start; padding: 10px 12px; margin: 6px 0; background: #1c1d1f; border: 1px solid #3e4143; border-radius: 6px; cursor: pointer; }
-        .quiz-option:hover { border-color: #f7df1e; }
-        .quiz-option input { margin-right: 10px; margin-top: 3px; }
-        .quiz-option label { font-size: 14px; cursor: pointer; }
-        .progress-bar { height: 4px; background: #3e4143; border-radius: 2px; overflow: hidden; margin-top: 8px; }
-        .progress-fill { height: 100%; background: #f7df1e; transition: width 0.3s; }
-        .header-bar { background: #2d2f31; border-bottom: 1px solid #3e4143; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; }
-        .course-title { font-size: 16px; font-weight: 600; color: #f7f9fa; }
-        .course-progress { font-size: 13px; color: #9da5b1; }
-        .nav-buttons { display: flex; gap: 8px; margin-top: 24px; padding-top: 16px; border-top: 1px solid #3e4143; }
-        .btn-nav { padding: 10px 20px; border-radius: 6px; font-size: 14px; cursor: pointer; border: none; }
-        .btn-prev { background: #3e4143; color: #d1d7dc; }
-        .btn-next { background: #f7df1e; color: white; font-weight: 600; }
-        .btn-complete { background: #e8a400; color: white; padding: 10px 20px; border-radius: 6px; border: none; cursor: pointer; font-weight: 600; margin-left: auto; }
-        .btn-complete:hover { background: #6b3ae0; }
-        .btn-completed { background: #1e7e34; color: white; padding: 10px 20px; border-radius: 6px; border: none; cursor: default; margin-left: auto; }
-    </style>
-<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="search.css">
 </head>
 <body>
-    <div class="flex h-screen">
+    <!-- Mobile Header -->
+    <header class="mobile-header" id="mobile-header">
+        <button class="hamburger" id="menuToggle" aria-label="Toggle navigation menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="mobile-title">
+            <i class="fab fa-js-square text-yellow-400"></i>
+            <span>JS Learning Path</span>
+        </div>
+        <div class="mobile-progress" id="mobile-progress">0%</div>
+    </header>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="app-layout" id="app">
         <!-- Sidebar -->
-        <aside class="sidebar flex-shrink-0">
-            <div class="header-bar">
-                <div>
-                    <div class="course-title"><i class="fab fa-js mr-2 text-yellow-400"></i>JavaScript Learning Path</div>
-                    <div class="course-progress" id="course-progress">0% complete</div>
-                    <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width: 0%"></div></div>
+        <aside class="sidebar" id="sidebar" aria-label="Course navigation">
+            <div class="sidebar-header">
+                <div class="brand">
+                    <div class="brand-icon"><i class="fab fa-js-square"></i></div>
+                    <div>
+                        <div class="brand-title">JavaScript Learning Path</div>
+                        <div class="brand-sub">10 Modul &middot; 54 Pelajaran</div>
+                    </div>
+                </div>
+                <div class="overall-progress">
+                    <div class="progress-info">
+                        <span>Progress Keseluruhan</span>
+                        <span class="course-progress" id="course-progress-text">0%</span>
+                    </div>
+                    <div class="progress-track">
+                        <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+                    </div>
+                </div>
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="lesson-search" placeholder="Cari pelajaran..." aria-label="Search lessons">
                 </div>
             </div>
-            <div id="lessons-nav">
-                <!-- Modules rendered here -->
+            <nav class="sidebar-nav" id="lessons-nav" aria-label="Lessons"></nav>
+            <div class="sidebar-footer">
+                <button class="reset-btn" onclick="resetProgress()" title="Reset semua progress">
+                    <i class="fas fa-redo-alt"></i> Reset Progress
+                </button>
             </div>
         </aside>
 
         <!-- Main Content -->
-        <main class="content-area">
-            <div id="lesson-header" style="background: #2d2f31; padding: 16px 24px; border-bottom: 1px solid #3e4143;">
-                <div class="text-xs text-gray-500 mb-1" id="breadcrumb">Module 1</div>
-                <h1 id="lesson-title" style="font-size: 20px; font-weight: 600; color: #f7f9fa; margin: 0;">Select a lesson</h1>
-            </div>
-            
-            <!-- Lesson Content -->
-            <div class="lesson-content" id="lesson-content">
-                <p class="text-gray-500">Select a lesson from the sidebar to begin.</p>
+        <main class="main-content" id="main-content">
+            <div class="lesson-header" id="lesson-header">
+                <div class="lesson-header-inner">
+                    <div>
+                        <div class="breadcrumb" id="breadcrumb">
+                            <i class="fas fa-home"></i> Mulai Belajar
+                        </div>
+                        <h1 class="lesson-title" id="lesson-title">Pilih pelajaran untuk memulai</h1>
+                    </div>
+                    <div class="lesson-meta" id="lesson-meta"></div>
+                </div>
             </div>
 
-            <!-- Code Editor -->
-            <div class="code-section" id="code-section" style="max-width: 800px; margin: 0 auto;">
-                <div class="flex items-center justify-between mb-3">
-                    <span class="text-sm font-semibold text-gray-300"><i class="fas fa-code mr-2"></i>Code Editor</span>
-                    <div>
-                        <button class="btn-run" onclick="runCode()"><i class="fas fa-play mr-2"></i>Run</button>
-                        <button class="btn-reset" onclick="resetCode()">Reset</button>
+            <div class="content-scroll">
+                <div class="content-container">
+                    <article class="lesson-body" id="lesson-content">
+                        <div class="welcome-screen">
+                            <div class="welcome-icon">⚡</div>
+                            <h2>Selamat Datang di JavaScript Learning Path!</h2>
+                            <p>Pilih pelajaran dari sidebar untuk mulai belajar JavaScript dari dasar hingga mahir, dengan latihan kode interaktif di setiap materi.</p>
+                            <div class="stats-grid">
+                                <div class="stat-card"><div class="stat-num">10</div><div class="stat-label">Modul</div></div>
+                                <div class="stat-card"><div class="stat-num">54</div><div class="stat-label">Pelajaran</div></div>
+                                <div class="stat-card"><div class="stat-num">10</div><div class="stat-label">Quiz</div></div>
+                                <div class="stat-card"><div class="stat-num">∞</div><div class="stat-label">Latihan</div></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Code Editor -->
+                    <section class="code-section" id="code-section" aria-label="Interactive code editor">
+                        <div class="code-header">
+                            <div class="code-header-left">
+                                <div class="code-dots">
+                                    <span class="code-dot red"></span>
+                                    <span class="code-dot yellow"></span>
+                                    <span class="code-dot green"></span>
+                                </div>
+                                <span class="code-label">Code Editor — JavaScript</span>
+                            </div>
+                            <div class="code-actions">
+                                <button class="btn btn-run" onclick="runCode()"><i class="fas fa-play"></i> Run</button>
+                                <button class="btn btn-reset" onclick="resetCode()"><i class="fas fa-undo"></i> Reset</button>
+                            </div>
+                        </div>
+                        <textarea id="code-editor" class="code-editor" spellcheck="false" placeholder="// Tulis kode JavaScript di sini..."></textarea>
+                        <div class="output-wrapper">
+                            <div class="output-label"><i class="fas fa-terminal"></i> Output</div>
+                            <div id="output" class="output-area"><span class="text-muted">// Output akan muncul di sini</span></div>
+                        </div>
+                        <div id="validation-msg" class="validation-msg hidden"></div>
+                    </section>
+
+                    <!-- Quiz -->
+                    <section class="quiz-section" id="quiz-section" style="display:none;" aria-label="Module quiz">
+                        <div class="quiz-header">
+                            <i class="fas fa-question-circle text-yellow-400"></i>
+                            <span>Quiz</span>
+                        </div>
+                        <div id="quiz-content"></div>
+                        <button class="btn btn-run" onclick="checkQuiz()" style="margin-top:1rem;">Submit Jawaban</button>
+                        <div id="quiz-result"></div>
+                    </section>
+
+                    <!-- Navigation -->
+                    <div class="nav-buttons" id="nav-buttons">
+                        <button class="btn btn-prev" id="prev-btn" onclick="prevLesson()" disabled><i class="fas fa-chevron-left"></i> Sebelumnya</button>
+                        <button class="btn btn-complete" id="complete-btn" onclick="markComplete()" style="display:none;"><i class="fas fa-check"></i> Tandai Selesai</button>
+                        <button class="btn btn-completed" id="completed-btn" style="display:none;"><i class="fas fa-check-double"></i> Sudah Selesai</button>
+                        <button class="btn btn-next" id="next-btn" onclick="nextLesson()">Selanjutnya <i class="fas fa-chevron-right"></i></button>
                     </div>
                 </div>
-                <textarea id="code-editor" class="code-editor" spellcheck="false" placeholder="# Write your JavaScript code here..."></textarea>
-                <div class="mt-2">
-                    <span class="text-xs text-gray-500">Output:</span>
-                    <div id="output" class="output-area"><span class="text-gray-600"># Output will appear here</span></div>
-                </div>
-                <div id="validation-msg" class="mt-3 p-3 rounded hidden"></div>
-            </div>
-
-            <!-- Quiz -->
-            <div class="quiz-section" id="quiz-section" style="max-width: 800px; margin: 24px auto; display: none;">
-                <div class="quiz-title"><i class="fas fa-question-circle mr-2 text-yellow-400"></i>Quiz</div>
-                <div id="quiz-content"></div>
-                <button class="btn-run mt-3" onclick="checkQuiz()">Submit Answer</button>
-                <div id="quiz-result"></div>
-            </div>
-
-            <!-- Navigation -->
-            <div class="nav-buttons" id="nav-buttons" style="max-width: 800px; margin: 0 auto; padding: 16px 24px;">
-                <button class="btn-nav btn-prev" id="prev-btn" onclick="prevLesson()" disabled><i class="fas fa-chevron-left mr-2"></i>Previous</button>
-                <button class="btn-complete" id="complete-btn" onclick="markComplete()" style="display:none;">Mark as Complete</button>
-                <button class="btn-completed" id="completed-btn" style="display:none;"><i class="fas fa-check mr-2"></i>Completed</button>
-                <button class="btn-nav btn-next" id="next-btn" onclick="nextLesson()">Next<i class="fas fa-chevron-right ml-2"></i></button>
             </div>
         </main>
     </div>
 
+    <script src="modules.js"></script>
     <script src="app.js"></script>
-
-<script src="enhancement.js"></script>
 </body>
 </html>

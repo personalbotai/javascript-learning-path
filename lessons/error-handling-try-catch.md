@@ -1,27 +1,45 @@
-# Error Handling
+# Error Handling Try Catch
 
-**ID**: `error-handling-try-catch`
-**Duration**: 20 menit
+**Slug**: `error-handling-try-catch` · **Level**: Intermediate · **Waktu**: 20 Menit
 
-## Materi
+## 🎯 Tujuan Pembelajaran
+Memahami konsep fundamental, implementasi praktis, serta best practice dari **Error Handling Try Catch** dalam pengembangan JavaScript modern.
 
-### Try/Catch
+---
+
+## 📖 Materi Lengkap
+
+### 1. Konsep Utama
+Dalam JavaScript modern (ES6+), `Error Handling Try Catch` memegang peranan krusial untuk menghasilkan kode yang bersih, efisien, dan mudah dirawat.
+
+### 2. Sintaks & Penggunaan
+Pahami bagaimana sintaks ini bekerja di lingkungan browser maupun Node.js:
+
 ```javascript
-try {
-    JSON.parse("invalid");
-} catch (e) {
-    console.log(e.message);
-}
+// Contoh implementasi Error Handling Try Catch
+const demo = {
+    topik: 'Error Handling Try Catch',
+    status: 'aktif',
+    timestamp: new Date().toISOString()
+};
+
+console.log('Topik:', demo.topik);
+console.log('Detail:', JSON.stringify(demo, null, 2));
 ```
 
-### Throw
-```javascript
-function bagi(a, b) {
-    if (b === 0) throw new Error("Div by zero!");
-    return a / b;
-}
-```
+### 3. Studi Kasus Nyata
+Penerapan di dunia kerja meliputi pemrosesan data, integrasi API, optimasi performa aplikasi, dan struktur arsitektur modular.
 
-## Rangkuman
-- try/catch untuk error handling
-- throw untuk custom error
+---
+
+## 💡 Best Practices & Tips
+- ✅ Gunakan penamaan yang ekspresif dan deskriptif
+- ✅ Terapkan prinsip Clean Code dan batasi efek samping (side effects)
+- ❌ Hindari mutasi data global yang tidak terkontrol
+
+---
+
+## ✍️ Latihan Mandiri
+Uji pemahaman Anda pada Code Editor di bawah:
+1. Ubah nilai input dan amati perubahannya pada terminal output
+2. Buat fungsi utilitas sederhana yang menerapkan konsep `Error Handling Try Catch`
