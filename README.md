@@ -4,6 +4,7 @@
 
 [![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-GitHub_Pages-f59e0b?style=for-the-badge&logo=github&logoColor=white)](https://personalbotai.github.io/javascript-learning-path/)
 [![Hub Portal](https://img.shields.io/badge/🚀_Hub_Portal-hub.syamsulbahri.dev-10b981?style=for-the-badge)](https://hub.syamsulbahri.dev)
+[![PWA Ready](https://img.shields.io/badge/📱_PWA-Installable-purple?style=for-the-badge)](https://personalbotai.github.io/javascript-learning-path/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
 ---
@@ -19,26 +20,27 @@
 ## ✨ Features
 
 - 💻 **Interactive Code Sandbox:** Write and execute modern JavaScript with real-time console output in browser.
-- 📖 **54 Practical Lessons:** Step-by-step progression across 10 structured modules.
-- 🎯 **Quizzes & Hands-on Challenges:** Test comprehension with instant validation after each concept.
-- 📊 **Persistent Progress:** Automatic tracking via `localStorage` so you never lose your spot.
-- 🎨 **Tailwind CSS Dark Theme:** Clean developer-first interface with full mobile responsiveness.
-- ⚡ **Zero Dependencies:** Pure HTML/CSS/JS architecture with fast static delivery via GitHub Pages.
+- 📖 **10 Structured Modules (100 Lessons):** Step-by-step progression from foundational syntax to advanced browser APIs, V8 optimizations, and async runtime mechanics.
+- 🎯 **In-Depth Technical Quizzes:** 100 challenging questions testing closures, prototype inheritance, event loop, and modern ES2024 features.
+- 🎖️ **Graduation Certificate Generator:** High-resolution Canvas certificate generator with PNG & PDF export — unlocked upon 100% completion.
+- 📱 **PWA & Offline Support:** Service Worker caching and installable web manifest for full offline capability.
+- 💾 **Persistent Learning State:** Automatically saves progress and completed modules to `localStorage`.
+- 🎨 **Tailwind CSS Dark Theme:** Clean developer-first interface with full mobile responsiveness, animated search, and theme toggle.
 
 ---
 
 ## 📚 Curriculum Overview
 
-1. **JS Fundamentals** — Variables (`let`, `const`), data types, type coercion, operators.
-2. **Control Flow** — Conditional statements, loops, error handling (`try-catch`).
-3. **Functions & Scope** — Function declarations, arrow functions, closures, hoisting, scope chain.
-4. **Data Structures** — Arrays, objects, Maps, Sets, array methods (`map`, `filter`, `reduce`).
-5. **Modern ES6+** — Destructuring, spread/rest, template literals, optional chaining, nullish coalescing.
-6. **DOM Manipulation & Events** — Selecting elements, DOM traversal, event listeners, bubbling & delegation.
-7. **Asynchronous JavaScript** — Callbacks, Promises, `async`/`await`, Event Loop & Microtasks.
-8. **Browser APIs & Networking** — `fetch` API, `localStorage`/`sessionStorage`, Web Workers, Geolocation.
-9. **OOP & Prototypes** — Prototypal inheritance, ES6 Classes, encapsulation, `this` binding.
-10. **Design Patterns & Architecture** — Modules (ESM), Observer pattern, Singleton, clean code practices.
+1. **JS Fundamentals** — Variables (`let`, `const`), data types, type coercion, operators, and memory lifecycle.
+2. **Control Flow** — Conditional statements, loops, error handling (`try-catch`), and labeled breaks.
+3. **Functions & Scope** — Function declarations, arrow functions, closures, hoisting, and lexical environment.
+4. **Data Structures** — Arrays, objects, Maps, Sets, WeakMap, and array methods (`map`, `filter`, `reduce`).
+5. **Modern ES6+** — Destructuring, spread/rest, template literals, optional chaining, and nullish coalescing.
+6. **DOM Manipulation & Events** — Selecting elements, DOM traversal, event listeners, bubbling, and delegation.
+7. **Asynchronous JavaScript** — Callbacks, Promises, `async`/`await`, Event Loop, Microtasks & Macrotasks.
+8. **Browser APIs & Networking** — `fetch` API, `localStorage`/`sessionStorage`, Web Workers, and Geolocation.
+9. **OOP & Prototypes** — Prototypal inheritance, ES6 Classes, encapsulation, and `this` binding.
+10. **Design Patterns & Architecture** — Modules (ESM), Observer pattern, Singleton, and clean architecture practices.
 
 ---
 
@@ -46,13 +48,14 @@
 
 This repository is part of the **PersonalBot Interactive Learning Series**:
 
-| Track | Language | Lessons | Live Demo |
-|---|---|---|---|
-| 🐍 | **Python** | 55 Lessons | [Open Python Path](https://personalbotai.github.io/python-learning-path/) |
-| ⚡ | **JavaScript** | 54 Lessons | [Open JavaScript Path](https://personalbotai.github.io/javascript-learning-path/) |
-| 📘 | **TypeScript** | 77 Lessons | [Open TypeScript Path](https://personalbotai.github.io/typescript-learning-path/) |
-| 🐹 | **Go (Golang)** | 69 Lessons | [Open Go Path](https://personalbotai.github.io/go-learning-path/) |
-| ☕ | **Java** | 30 Lessons | [Open Java Path](https://personalbotai.github.io/java-learning-path/) |
+| Track | Language | Scope & Lessons | Runtime Engine | Live Demo |
+|---|---|---|---|---|
+| 🐍 | **Python** | 55 In-Depth Lessons | Pyodide WASM (Lazy-Loaded) | [Open Python Path](https://personalbotai.github.io/python-learning-path/) |
+| ⚡ | **JavaScript** | 10 Modules (100 Lessons) | Native In-Browser Sandbox | [Open JavaScript Path](https://personalbotai.github.io/javascript-learning-path/) |
+| 📘 | **TypeScript** | 77 Type-Level Lessons | In-Browser TS Compiler & Transpiler | [Open TypeScript Path](https://personalbotai.github.io/typescript-learning-path/) |
+| 🐹 | **Go (Golang)** | 53 Idiomatic Lessons | Go Playground API & Sandbox | [Open Go Path](https://personalbotai.github.io/go-learning-path/) |
+| ☕ | **Java** | 30 Modern Java 21 Lessons | Judge0 CE JDK 17 Compiler | [Open Java Path](https://personalbotai.github.io/java-learning-path/) |
+
 
 ---
 
