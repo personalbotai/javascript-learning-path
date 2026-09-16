@@ -1895,15 +1895,12 @@ function updateCompleteButtons() {
   const isDone = isComplete(currentModuleId, currentLessonId);
   const a = document.getElementById('complete-btn');
   const b = document.getElementById('completed-btn');
-  const m = document.getElementById('complete-btn-mobile');
   if (isDone) {
     if (a) { a.classList.add('hidden'); a.classList.remove('sm:flex'); }
     if (b) { b.classList.remove('hidden'); b.classList.add('flex'); }
-    if (m) m.style.display = 'none';
   } else {
     if (a) { a.classList.remove('hidden'); a.classList.add('sm:flex'); }
     if (b) { b.classList.add('hidden'); b.classList.remove('flex'); }
-    if (m) m.style.display = 'flex';
   }
 }
 
