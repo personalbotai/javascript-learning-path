@@ -94,7 +94,8 @@ function updateProgress() {
 function resetProgress() {
   if (!confirm('Yakin reset semua kemajuan belajar?')) return;
   progress = {}; saveProgress(progress);
-  updateProgress(); renderNav(); updateCompleteButtons();
+  updateProgress(); renderNav();
+  loadLesson(1,1); updateCompleteButtons();
 }
 
 /* ============ Sidebar Nav (Accordion) ============ */
