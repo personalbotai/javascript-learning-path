@@ -147,6 +147,7 @@ const MODULES = [
 ];
 
 // Export for use in other modules
+window.MODULES = MODULES;
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = MODULES;
 }
