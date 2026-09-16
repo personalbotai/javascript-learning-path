@@ -1895,13 +1895,8 @@ function updateCompleteButtons() {
   const isDone = isComplete(currentModuleId, currentLessonId);
   const a = document.getElementById('complete-btn');
   const b = document.getElementById('completed-btn');
-  if (isDone) {
-    if (a) { a.classList.add('hidden'); a.classList.remove('sm:flex'); }
-    if (b) { b.classList.remove('hidden'); b.classList.add('flex'); }
-  } else {
-    if (a) { a.classList.remove('hidden'); a.classList.add('sm:flex'); }
-    if (b) { b.classList.add('hidden'); b.classList.remove('flex'); }
-  }
+  if (a) a.style.display = isDone ? 'none' : 'inline-flex';
+  if (b) b.style.display = isDone ? 'inline-flex' : 'none';
 }
 
 /* ============ Sidebar Mobile ============ */
