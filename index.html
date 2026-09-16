@@ -1,141 +1,226 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Learning Path — Master JavaScript dari Nol</title>
-    <meta name="description" content="Kursus interaktif JavaScript lengkap: modul terstruktur, code editor interaktif, quiz per modul. Gratis dan open source.">
-    <meta name="theme-color" content="#6366f1">
+    <title>JavaScript Learning Path — Interactive Course</title>
+    <meta name="description" content="Kursus JavaScript interaktif dari dasar sampai mahir. Belajar dengan code editor, quiz, dan materi terstruktur.">
+    <meta name="theme-color" content="#eab308">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: { 50:'#fefce8',100:'#fef9c3',200:'#fef08a',300:'#fde047',400:'#facc15',500:'#eab308',600:'#ca8a04',700:'#a16207',800:'#854d0e',900:'#713f12' },
+                        surface: { 50:'#f8fafc',100:'#f1f5f9',800:'#1e293b',850:'#172033',900:'#0f172a',950:'#0a0f1a' }
+                    }
+                }
+            }
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark-dimmed.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="search.css">
 </head>
-<body>
+<body class="bg-surface-950 text-slate-200 font-['Inter',sans-serif] antialiased">
+
     <!-- Mobile Header -->
-    <header class="mobile-header" id="mobile-header">
-        <button class="hamburger" id="menuToggle" aria-label="Toggle navigation menu">
-            <i class="fas fa-bars"></i>
-        </button>
-        <div class="mobile-title">
-            <i class="fab fa-js-square text-yellow-400"></i>
-            <span>JS Learning Path</span>
+    <header class="lg:hidden sticky top-0 z-50 bg-surface-900/95 backdrop-blur-md border-b border-white/5">
+        <div class="flex items-center justify-between px-4 py-3">
+            <button id="sidebar-toggle" class="p-2 rounded-lg hover:bg-white/10 transition" aria-label="Menu">
+                <i class="fas fa-bars text-lg"></i>
+            </button>
+            <div class="flex items-center gap-2">
+                <span class="text-xl">⚡</span>
+                <span class="font-bold text-sm bg-gradient-to-r from-yellow-400 to-amber-500 bg-clip-text text-transparent">JS Learning Path</span>
+            </div>
+            <div class="text-xs font-mono text-slate-400" id="mobile-progress">0%</div>
         </div>
-        <div class="mobile-progress" id="mobile-progress">0%</div>
     </header>
 
-    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <!-- Overlay -->
+    <div id="sidebar-overlay" class="fixed inset-0 bg-black/60 z-40 hidden lg:hidden" onclick="closeSidebar()"></div>
 
-    <div class="app-layout" id="app">
-        <!-- Sidebar -->
-        <aside class="sidebar" id="sidebar" aria-label="Course navigation">
-            <div class="sidebar-header">
-                <div class="brand">
-                    <div class="brand-icon"><i class="fab fa-js-square"></i></div>
+    <div class="flex h-[100dvh] lg:h-screen overflow-hidden">
+        <!-- Sidebar (300px) -->
+        <aside id="sidebar" class="fixed lg:static inset-y-0 left-0 z-50 w-[300px] bg-surface-900 border-r border-white/5 flex flex-col transform -translate-x-full lg:translate-x-0 transition-transform duration-300 ease-out">
+            <!-- Brand -->
+            <div class="p-5 border-b border-white/5">
+                <div class="flex items-center gap-3 mb-3">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-yellow-400 to-amber-500 flex items-center justify-center text-xl shadow-lg shadow-yellow-500/25">⚡</div>
                     <div>
-                        <div class="brand-title">JavaScript Learning Path</div>
-                        <div class="brand-sub">10 Modul &middot; 54 Pelajaran</div>
+                        <h1 class="font-bold text-white text-sm leading-tight">JavaScript Learning Path</h1>
+                        <p class="text-[11px] text-slate-500">Beginner → Advanced</p>
                     </div>
                 </div>
-                <div class="overall-progress">
-                    <div class="progress-info">
-                        <span>Progress Keseluruhan</span>
-                        <span class="course-progress" id="course-progress-text">0%</span>
+                <div class="flex items-center gap-3 mb-3">
+                    <div class="flex-1 h-1.5 bg-surface-800 rounded-full overflow-hidden">
+                        <div id="progress-fill" class="h-full bg-gradient-to-r from-yellow-400 to-amber-500 rounded-full transition-all duration-500" style="width:0%"></div>
                     </div>
-                    <div class="progress-track">
-                        <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
-                    </div>
+                    <span id="progress-text" class="text-[11px] font-mono text-slate-400 w-8 text-right">0%</span>
                 </div>
-                <div class="search-box">
-                    <i class="fas fa-search"></i>
-                    <input type="text" id="lesson-search" placeholder="Cari pelajaran..." aria-label="Search lessons">
+                <!-- Search -->
+                <div class="relative">
+                    <i class="fas fa-search absolute left-3 top-1/2 -translate-y-1/2 text-slate-500 text-xs"></i>
+                    <input id="lesson-search" type="text" placeholder="Cari pelajaran..." class="w-full bg-surface-800 border border-white/5 rounded-lg pl-8 pr-3 py-2 text-xs text-slate-300 placeholder-slate-600 focus:outline-none focus:border-brand-500/50 transition">
                 </div>
             </div>
-            <nav class="sidebar-nav" id="lessons-nav" aria-label="Lessons"></nav>
-            <div class="sidebar-footer">
-                <button class="reset-btn" onclick="resetProgress()" title="Reset semua progress">
-                    <i class="fas fa-redo-alt"></i> Reset Progress
+
+            <!-- Theme Toggle -->
+            <div class="px-5 py-2 border-b border-white/5 flex items-center justify-between">
+                <span class="text-[11px] text-slate-500">Theme</span>
+                <button id="theme-toggle" onclick="toggleTheme()" class="p-1.5 rounded-lg hover:bg-white/10 transition text-slate-400 hover:text-yellow-400" title="Toggle theme">
+                    <i class="fas fa-moon text-sm" id="theme-icon"></i>
                 </button>
+            </div>
+
+            <!-- Nav -->
+            <nav id="lessons-nav" class="flex-1 overflow-y-auto py-2 scrollbar-thin"></nav>
+
+            <!-- Footer -->
+            <div class="p-4 border-t border-white/5 flex items-center justify-between">
+                <button onclick="resetProgress()" class="text-[11px] text-slate-500 hover:text-red-400 transition flex items-center gap-1">
+                    <i class="fas fa-rotate-left"></i> Reset Progress
+                </button>
+                <a href="https://github.com/personalbotai/javascript-learning-path" target="_blank" class="text-slate-500 hover:text-white transition">
+                    <i class="fab fa-github"></i>
+                </a>
             </div>
         </aside>
 
         <!-- Main Content -->
-        <main class="main-content" id="main-content">
-            <div class="lesson-header" id="lesson-header">
-                <div class="lesson-header-inner">
-                    <div>
-                        <div class="breadcrumb" id="breadcrumb">
-                            <i class="fas fa-home"></i> Mulai Belajar
-                        </div>
-                        <h1 class="lesson-title" id="lesson-title">Pilih pelajaran untuk memulai</h1>
+        <main class="flex-1 flex flex-col overflow-hidden min-w-0">
+            <!-- Lesson Header (sticky glass) -->
+            <div id="lesson-header" class="sticky top-0 z-20 bg-surface-950/90 backdrop-blur-lg border-b border-white/5 px-4 sm:px-8 py-4">
+                <div class="max-w-4xl mx-auto flex items-center justify-between">
+                    <div class="min-w-0">
+                        <div class="text-[11px] font-medium text-brand-400 mb-0.5 uppercase tracking-wider" id="breadcrumb">Module 1</div>
+                        <h2 id="lesson-title" class="text-base sm:text-lg font-bold text-white truncate">Pilih pelajaran untuk mulai</h2>
                     </div>
-                    <div class="lesson-meta" id="lesson-meta"></div>
+                    <div class="flex items-center gap-2 shrink-0 ml-4">
+                        <button id="complete-btn" onclick="markComplete()" class="hidden sm:flex items-center gap-2 px-4 py-2 bg-brand-600 hover:bg-brand-500 text-white text-sm font-medium rounded-lg transition shadow-lg shadow-brand-600/20">
+                            <i class="fas fa-check"></i> <span class="hidden sm:inline">Selesai</span>
+                        </button>
+                        <button id="completed-btn" class="hidden items-center gap-2 px-4 py-2 bg-emerald-500/10 text-emerald-400 text-sm font-medium rounded-lg border border-emerald-500/20 cursor-default">
+                            <i class="fas fa-check-circle"></i> <span class="hidden sm:inline">Selesai ✓</span>
+                        </button>
+                    </div>
                 </div>
             </div>
 
-            <div class="content-scroll">
-                <div class="content-container">
-                    <article class="lesson-body" id="lesson-content">
-                        <div class="welcome-screen">
-                            <div class="welcome-icon">⚡</div>
-                            <h2>Selamat Datang di JavaScript Learning Path!</h2>
-                            <p>Pilih pelajaran dari sidebar untuk mulai belajar JavaScript dari dasar hingga mahir, dengan latihan kode interaktif di setiap materi.</p>
-                            <div class="stats-grid">
-                                <div class="stat-card"><div class="stat-num">10</div><div class="stat-label">Modul</div></div>
-                                <div class="stat-card"><div class="stat-num">54</div><div class="stat-label">Pelajaran</div></div>
-                                <div class="stat-card"><div class="stat-num">10</div><div class="stat-label">Quiz</div></div>
-                                <div class="stat-card"><div class="stat-num">∞</div><div class="stat-label">Latihan</div></div>
+            <!-- Scrollable Content -->
+            <div class="flex-1 overflow-y-auto scroll-smooth" id="content-scroll">
+                <!-- Lesson Content -->
+                <div class="max-w-4xl mx-auto px-4 sm:px-8 py-8">
+                    <article id="lesson-content" class="prose prose-invert prose-slate max-w-none">
+                        <div class="text-center py-20">
+                            <div class="text-6xl mb-4">⚡</div>
+                            <h2 class="text-2xl font-bold text-white mb-2">Selamat Datang!</h2>
+                            <p class="text-slate-400">Pilih pelajaran dari sidebar untuk memulai belajar JavaScript.</p>
+                            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-lg mx-auto mt-8">
+                                <div class="bg-surface-900 rounded-xl p-4 border border-white/5">
+                                    <div class="text-2xl font-bold text-brand-400">10</div>
+                                    <div class="text-[11px] text-slate-500 uppercase">Modul</div>
+                                </div>
+                                <div class="bg-surface-900 rounded-xl p-4 border border-white/5">
+                                    <div class="text-2xl font-bold text-brand-400">54</div>
+                                    <div class="text-[11px] text-slate-500 uppercase">Pelajaran</div>
+                                </div>
+                                <div class="bg-surface-900 rounded-xl p-4 border border-white/5">
+                                    <div class="text-2xl font-bold text-brand-400">10</div>
+                                    <div class="text-[11px] text-slate-500 uppercase">Quiz</div>
+                                </div>
+                                <div class="bg-surface-900 rounded-xl p-4 border border-white/5">
+                                    <div class="text-2xl font-bold text-brand-400">∞</div>
+                                    <div class="text-[11px] text-slate-500 uppercase">Latihan</div>
+                                </div>
                             </div>
                         </div>
                     </article>
+                </div>
 
-                    <!-- Code Editor -->
-                    <section class="code-section" id="code-section" aria-label="Interactive code editor">
-                        <div class="code-header">
-                            <div class="code-header-left">
-                                <div class="code-dots">
-                                    <span class="code-dot red"></span>
-                                    <span class="code-dot yellow"></span>
-                                    <span class="code-dot green"></span>
+                <!-- Code Editor -->
+                <div id="code-section" class="max-w-4xl mx-auto px-4 sm:px-8 pb-4">
+                    <div class="bg-surface-900 rounded-2xl border border-white/5 overflow-hidden shadow-2xl">
+                        <div class="flex items-center justify-between px-5 py-3 bg-surface-850 border-b border-white/5">
+                            <div class="flex items-center gap-2">
+                                <div class="flex gap-1.5">
+                                    <span class="w-3 h-3 rounded-full bg-red-500/80"></span>
+                                    <span class="w-3 h-3 rounded-full bg-yellow-500/80"></span>
+                                    <span class="w-3 h-3 rounded-full bg-green-500/80"></span>
                                 </div>
-                                <span class="code-label">Code Editor — JavaScript</span>
+                                <span class="text-xs text-slate-500 ml-2 font-mono">script.js</span>
                             </div>
-                            <div class="code-actions">
-                                <button class="btn btn-run" onclick="runCode()"><i class="fas fa-play"></i> Run</button>
-                                <button class="btn btn-reset" onclick="resetCode()"><i class="fas fa-undo"></i> Reset</button>
+                            <div class="flex gap-2">
+                                <button onclick="runCode()" class="flex items-center gap-2 px-4 py-1.5 bg-emerald-500 hover:bg-emerald-400 text-white text-xs font-semibold rounded-lg transition shadow-lg shadow-emerald-500/25">
+                                    <i class="fas fa-play text-[10px]"></i> Run
+                                </button>
+                                <button onclick="resetCode()" class="px-3 py-1.5 bg-white/5 hover:bg-white/10 text-slate-400 text-xs rounded-lg transition">
+                                    <i class="fas fa-rotate-left"></i>
+                                </button>
                             </div>
                         </div>
-                        <textarea id="code-editor" class="code-editor" spellcheck="false" placeholder="// Tulis kode JavaScript di sini..."></textarea>
-                        <div class="output-wrapper">
-                            <div class="output-label"><i class="fas fa-terminal"></i> Output</div>
-                            <div id="output" class="output-area"><span class="text-muted">// Output akan muncul di sini</span></div>
+                        <textarea id="code-editor" class="w-full bg-surface-950 text-yellow-300 font-['JetBrains_Mono',monospace] text-sm p-5 border-none resize-y min-h-[180px] focus:outline-none focus:ring-0 placeholder-slate-600" rows="8" spellcheck="false" placeholder="// Tulis kode JavaScript di sini..."></textarea>
+                        <div class="border-t border-white/5">
+                            <div class="px-5 py-2 flex items-center gap-2 bg-surface-850">
+                                <i class="fas fa-terminal text-[10px] text-slate-500"></i>
+                                <span class="text-[11px] text-slate-500 font-mono">Output</span>
+                            </div>
+                            <div id="output" class="px-5 py-4 bg-black/40 font-['JetBrains_Mono',monospace] text-sm text-emerald-400 min-h-[80px] max-h-[200px] overflow-auto">
+                                <span class="text-slate-600">// Output akan muncul di sini</span>
+                            </div>
                         </div>
-                        <div id="validation-msg" class="validation-msg hidden"></div>
-                    </section>
+                    </div>
+                    <div id="validation-msg" class="mt-3 p-4 rounded-xl hidden text-sm"></div>
+                </div>
 
-                    <!-- Quiz -->
-                    <section class="quiz-section" id="quiz-section" style="display:none;" aria-label="Module quiz">
-                        <div class="quiz-header">
-                            <i class="fas fa-question-circle text-yellow-400"></i>
-                            <span>Quiz</span>
+                <!-- Quiz -->
+                <div id="quiz-section" class="max-w-4xl mx-auto px-4 sm:px-8 pb-4 hidden">
+                    <div class="bg-surface-900 rounded-2xl border border-white/5 p-6 shadow-2xl">
+                        <div class="flex items-center gap-3 mb-5">
+                            <div class="w-9 h-9 rounded-xl bg-amber-500/10 flex items-center justify-center">
+                                <i class="fas fa-brain text-amber-400"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-white">Quiz</h3>
                         </div>
-                        <div id="quiz-content"></div>
-                        <button class="btn btn-run" onclick="checkQuiz()" style="margin-top:1rem;">Submit Jawaban</button>
-                        <div id="quiz-result"></div>
-                    </section>
-
-                    <!-- Navigation -->
-                    <div class="nav-buttons" id="nav-buttons">
-                        <button class="btn btn-prev" id="prev-btn" onclick="prevLesson()" disabled><i class="fas fa-chevron-left"></i> Sebelumnya</button>
-                        <button class="btn btn-complete" id="complete-btn" onclick="markComplete()" style="display:none;"><i class="fas fa-check"></i> Tandai Selesai</button>
-                        <button class="btn btn-completed" id="completed-btn" style="display:none;"><i class="fas fa-check-double"></i> Sudah Selesai</button>
-                        <button class="btn btn-next" id="next-btn" onclick="nextLesson()">Selanjutnya <i class="fas fa-chevron-right"></i></button>
+                        <div id="quiz-content" class="space-y-3"></div>
+                        <button onclick="checkQuiz()" class="mt-5 px-6 py-2.5 bg-brand-600 hover:bg-brand-500 text-white text-sm font-semibold rounded-xl transition shadow-lg shadow-brand-600/20">
+                            <i class="fas fa-paper-plane mr-2"></i>Submit
+                        </button>
+                        <div id="quiz-result" class="mt-3"></div>
                     </div>
                 </div>
+
+                <!-- Navigation -->
+                <div class="max-w-4xl mx-auto px-4 sm:px-8 py-6">
+                    <div class="flex items-center justify-between gap-3">
+                        <button id="prev-btn" onclick="prevLesson()" disabled class="flex items-center gap-2 px-5 py-2.5 bg-white/5 hover:bg-white/10 text-slate-300 text-sm font-medium rounded-xl transition disabled:opacity-30 disabled:cursor-not-allowed">
+                            <i class="fas fa-chevron-left text-xs"></i> Prev
+                        </button>
+                        <!-- Mobile complete btn -->
+                        <button id="complete-btn-mobile" onclick="markComplete()" class="sm:hidden flex items-center gap-2 px-4 py-2 bg-brand-600 hover:bg-brand-500 text-white text-sm font-medium rounded-lg transition" style="display:none">
+                            <i class="fas fa-check"></i> Selesai
+                        </button>
+                        <button id="next-btn" onclick="nextLesson()" class="flex items-center gap-2 px-5 py-2.5 bg-brand-600 hover:bg-brand-500 text-white text-sm font-semibold rounded-xl transition shadow-lg shadow-brand-600/20">
+                            Next <i class="fas fa-chevron-right text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <footer class="max-w-4xl mx-auto px-4 sm:px-8 pb-8">
+                    <div class="text-center text-xs text-slate-600 border-t border-white/5 pt-6">
+                        <p>JavaScript Learning Path — dibuat dengan <i class="fas fa-heart text-red-500/60"></i> untuk developer Indonesia</p>
+                        <p class="mt-1">© 2024 personalbotai · <a href="https://github.com/personalbotai" class="hover:text-brand-400 transition">GitHub</a></p>
+                    </div>
+                </footer>
             </div>
         </main>
     </div>
