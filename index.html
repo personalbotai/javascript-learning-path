@@ -49,7 +49,7 @@
             </button>
             <button id="sidebar-toggle" class="hidden" aria-label="Sidebar toggle"></button>
             <!-- Logo SB -->
-            <a href="#" class="flex items-center gap-3 shrink-0" onclick="loadLesson(0); return false;">
+            <a href="#" class="flex items-center gap-3 shrink-0" onclick="loadLesson(1,1); return false;">
                 <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-yellow-500 to-yellow-600 flex items-center justify-center font-extrabold text-sm text-white shadow-lg shadow-yellow-500/25">SB</div>
                 <div class="hidden sm:block leading-tight">
                     <div class="font-bold text-sm text-white flex items-center gap-2">JavaScript Learning Path <span class="hidden md:inline-flex text-[10px] font-bold tracking-wider px-2 py-0.5 rounded-full bg-gradient-to-r from-yellow-500 to-yellow-600 text-white">ES2024+</span></div>
@@ -139,7 +139,7 @@
                             </div>
                         </div>
                         <div class="flex items-center gap-2 shrink-0">
-                            <button id="complete-btn" onclick="markComplete()" class="hidden sm:flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-400 hover:to-orange-500 text-white text-sm font-semibold rounded-xl transition shadow-lg shadow-yellow-600/20">
+                            <button id="complete-btn" onclick="markComplete()" class="hidden sm:flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-400 hover:to-yellow-500 text-white text-sm font-semibold rounded-xl transition shadow-lg shadow-yellow-600/20">
                                 <i class="fas fa-check text-xs"></i> Tandai Selesai
                             </button>
                             <button id="completed-btn" class="hidden items-center gap-2 px-4 py-2 bg-emerald-500/10 text-emerald-400 text-sm font-medium rounded-xl border border-emerald-500/20">
@@ -164,8 +164,8 @@
                             <h2 class="text-2xl sm:text-3xl font-extrabold text-white mb-3 tracking-tight">Belajar JavaScript Modern dari Nol hingga Production</h2>
                             <p class="text-slate-400 max-w-2xl mx-auto leading-relaxed">JavaScript Learning Path menyatukan <b class="text-white">54 pelajaran</b> terkurasi, <b class="text-white">live code execution</b>, <b class="text-white">terminal output</b> & <b class="text-white">quiz interaktif</b> — semua jalan di browser, tanpa install. Materi modern: <code>async/await</code>, <code>?.</code>, <code>??=</code>, <code>Promise.allSettled</code>.</p>
                             <div class="flex flex-wrap gap-3 justify-center mt-8">
-                                <button onclick="loadLesson(0)" class="px-6 py-3 bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-400 hover:to-orange-500 text-white font-semibold rounded-xl shadow-lg shadow-yellow-600/20 transition"><i class="fas fa-play mr-2"></i>Mulai dari Awal</button>
-                                <button onclick="loadLesson(7)" class="px-6 py-3 bg-white/5 hover:bg-white/10 border border-white/10 text-white font-medium rounded-xl transition"><i class="fas fa-code-branch mr-2"></i>Lompat ke async/await</button>
+                                <button onclick="loadLesson(1,1)" class="px-6 py-3 bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-400 hover:to-yellow-500 text-white font-semibold rounded-xl shadow-lg shadow-yellow-600/20 transition"><i class="fas fa-play mr-2"></i>Mulai dari Awal</button>
+                                <button onclick="loadLesson(6,31)" class="px-6 py-3 bg-white/5 hover:bg-white/10 border border-white/10 text-white font-medium rounded-xl transition"><i class="fas fa-code-branch mr-2"></i>Lompat ke async/await</button>
                             </div>
                             <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-10 text-center">
                                 <div class="bg-white/[0.03] border border-white/5 rounded-2xl p-4"><div class="text-2xl font-extrabold text-white">54</div><div class="text-xs text-slate-500">Pelajaran</div></div>
@@ -194,7 +194,7 @@
                             </div>
                             <div class="flex gap-2">
                                 <button onclick="copyCode()" class="hidden sm:flex items-center gap-1.5 px-3 py-1.5 bg-white/5 hover:bg-white/10 text-slate-300 text-xs font-medium rounded-lg transition"><i class="far fa-copy"></i> Copy</button>
-                                <button onclick="runCode()" class="flex items-center gap-2 px-4 py-1.5 bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-400 hover:to-orange-500 text-white text-xs font-bold rounded-lg transition shadow-lg shadow-yellow-600/20">
+                                <button onclick="runCode()" class="flex items-center gap-2 px-4 py-1.5 bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-400 hover:to-yellow-500 text-white text-xs font-bold rounded-lg transition shadow-lg shadow-yellow-600/20">
                                     <i class="fas fa-play text-[10px]"></i> Run <span class="hidden sm:inline font-mono text-[10px] opacity-80">⌘↵</span>
                                 </button>
                                 <button onclick="resetCode()" class="px-3 py-1.5 bg-white/5 hover:bg-white/10 text-slate-400 text-xs rounded-lg transition" title="Reset code"><i class="fas fa-rotate-left"></i></button>
@@ -224,7 +224,7 @@
                         </div>
                         <div class="p-6">
                             <div id="quiz-content" class="space-y-3"></div>
-                            <button onclick="checkQuiz()" class="mt-5 px-6 py-2.5 bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-400 hover:to-orange-500 text-white text-sm font-semibold rounded-xl transition shadow-lg shadow-yellow-600/20">
+                            <button onclick="checkQuiz()" class="mt-5 px-6 py-2.5 bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-400 hover:to-yellow-500 text-white text-sm font-semibold rounded-xl transition shadow-lg shadow-yellow-600/20">
                                 <i class="fas fa-paper-plane mr-2"></i>Submit Jawaban
                             </button>
                             <div id="quiz-result" class="mt-4"></div>
@@ -238,7 +238,7 @@
                         <button id="prev-btn" onclick="prevLesson()" disabled class="flex items-center gap-2 px-5 py-2.5 bg-white/5 hover:bg-white/10 text-slate-300 text-sm font-medium rounded-xl transition disabled:opacity-30 disabled:cursor-not-allowed border border-white/5">
                             <i class="fas fa-chevron-left text-xs"></i> Prev
                         </button>
-                        <button id="next-btn" onclick="nextLesson()" class="flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-400 hover:to-orange-500 text-white text-sm font-semibold rounded-xl transition shadow-lg shadow-yellow-600/20">
+                        <button id="next-btn" onclick="nextLesson()" class="flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-400 hover:to-yellow-500 text-white text-sm font-semibold rounded-xl transition shadow-lg shadow-yellow-600/20">
                             Next <i class="fas fa-chevron-right text-xs"></i>
                         </button>
                     </div>
@@ -471,7 +471,7 @@
     }
     .cmd-item mark {
         background: transparent;
-        color: var(--brand, #38bdf8);
+        color: var(--brand, #eab308);
         font-weight: 700;
     }
     </style>
@@ -496,13 +496,13 @@
                 sub: 'Mulai kurikulum dari Lesson 1',
                 action: () => {
                     if (typeof loadLesson === 'function') {
-                        try { loadLesson(0); } catch { try { loadLesson(1, 1); } catch(e){} }
+                        try { loadLesson(1, 1); } catch { try { loadLesson(1, 1); } catch(e){} }
                     }
                 }
             });
             items.push({
                 type: 'action',
-                icon: 'fa-moon text-amber-400',
+                icon: 'fa-moon text-yellow-400',
                 title: 'Toggle Tema (Light / Dark)',
                 sub: 'Ganti tampilan antara mode gelap dan terang',
                 action: () => {

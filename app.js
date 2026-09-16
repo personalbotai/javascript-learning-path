@@ -1975,8 +1975,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   } catch {}
   if (!getLesson(m, l) && (window.MODULES ?? []).length) {
-    m = MODULES[0].id;
-    l = MODULES[0].lessons[0].id;
+    m = window.MODULES[0].id;
+    l = window.MODULES[0].lessons[0].id;
   }
   loadLesson(m, l);
 });

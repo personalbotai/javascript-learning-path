@@ -4,8 +4,8 @@
 :root {
   --brand: #eab308;
   --brand-hover: #facc15;
-  --brand-gradient: linear-gradient(135deg, #eab308, #f59e0b);
-  --brand-gradient-hover: linear-gradient(135deg, #facc15, #fb923c);
+  --brand-gradient: linear-gradient(135deg, #eab308, #ca8a04);
+  --brand-gradient-hover: linear-gradient(135deg, #facc15, #ca8a04);
   --bg-950: #0a0f1a;
   --bg-900: #0f172a;
   --bg-850: #172033;
@@ -82,7 +82,7 @@ body { font-family: 'Inter', system-ui, sans-serif; background: var(--bg-950); c
 .prose hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
 .prose img { border-radius: 12px; margin: 1rem 0; max-width: 100%; border: 1px solid var(--border); }
 
-/* Lesson active: gradient #eab308 -> #f59e0b */
+/* Lesson active: gradient #eab308 -> #ca8a04 (yellow premium) */
 .lesson-active {
   background: var(--brand-gradient) !important;
   color: #fff !important;
@@ -91,9 +91,9 @@ body { font-family: 'Inter', system-ui, sans-serif; background: var(--bg-950); c
 }
 .lesson-active .lesson-muted { color: rgba(255,255,255,.8) !important; }
 
-/* Progress bar gradient #eab308->#f59e0b */
+/* Progress bar gradient #eab308->#ca8a04 */
 .progress-fill, #progress-fill, #progress-fill-bar {
-  background: linear-gradient(90deg, #eab308, #f59e0b) !important;
+  background: linear-gradient(90deg, #eab308, #ca8a04) !important;
 }
 .progress-track, .progress-bar-track { background: rgba(255,255,255,.08); border-radius: 999px; overflow: hidden; }
 
