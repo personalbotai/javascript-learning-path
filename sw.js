@@ -1,5 +1,5 @@
 // Service Worker for JavaScript Learning Path (v1.2)
-const CACHE_NAME = 'javascript-lp-cache-v1.2';
+const CACHE_NAME = 'lp-cache-v2.0';
 const PRECACHE_URLS = [
   './',
   './index.html',

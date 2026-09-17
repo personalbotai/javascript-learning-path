@@ -279,7 +279,7 @@
     </div>
 
     <script src="modules.js"></script>
-    <script src="app.js"></script>
+    <script src="app.js?v=e0f936ca"></script>
     <script>
             
         // Mobile Search Bar Accordion Toggle
@@ -861,7 +861,7 @@
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('./sw.js').catch(err => console.debug('SW reg skipped:', err));
+                navigator.serviceWorker.register('./sw.js').then(r => r.update()).catch(err => console.debug('SW reg skipped:', err));
             });
         }
     </script>
